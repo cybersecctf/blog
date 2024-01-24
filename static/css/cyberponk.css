@@ -5,7 +5,9 @@
             margin: 0;
             padding: 20px;
         }
-
+.scrollable-element {
+  scrollbar-color: #000000;
+}
         h1, h2, h3 {
             color: #f5f542; /* cyberponk color */
         }
