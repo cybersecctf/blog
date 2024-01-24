@@ -103,9 +103,11 @@ function getQueryParamOrDefault(name, defaultValue) {
                     console.log('Flag0:', flag);
   
                     // Render the writeup content
-                    document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
+                     writeupContentElement=document.getElementById('writeup-content');
+                    writeupContentElement.innerHTML = renderMarkdown(data);
   
-                   
+                     writeupContentElement.style.maxHeight = '500px'; // Adjust the max height as needed
+            writeupContentElement.style.overflowY = 'auto';
                 })
                 .catch(error => {
                     console.error('Error fetching or parsing content:', error);
@@ -323,8 +325,10 @@ function getQueryParamOrDefault(name, defaultValue) {
                           console.log('Flag0:', flag);
       
                           // Render the writeup content
-                          document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
-      
+writeupContentElement=document.getElementById('writeup-content');
+                         writeupContentElement.innerHTML = renderMarkdown(data);
+        writeupContentElement.style.maxHeight = '500px'; // Adjust the max height as needed
+          writeupContentElement.style.overflowY = 'auto';
                          
                       })
                       .catch(error => {
