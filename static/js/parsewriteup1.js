@@ -106,8 +106,9 @@ function getQueryParamOrDefault(name, defaultValue) {
                      writeupContentElement=document.getElementById('writeup-content');
                     writeupContentElement.innerHTML = renderMarkdown(data);
   
-                     writeupContentElement.style.maxHeight = '1500px'; // Adjust the max height as needed
-            writeupContentElement.style.overflowY = 'auto';
+                     writeupContentElement.style.maxHeight = '1500px'; 
+           writeupContentElement.style.maxWidth = '100vw'; 
+            writeupContentElement.style.overflowX = 'auto';
                 })
                 .catch(error => {
                     console.error('Error fetching or parsing content:', error);
