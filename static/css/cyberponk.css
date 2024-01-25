@@ -11,7 +11,7 @@
         }
 
         a {
-            color: ##f5f542;  
+            color: #f5f542;  
         }
 
         ul {
@@ -161,7 +161,7 @@ $gray: #9b9b9b;
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: $gray;
+  color: $primary;
 }
 
 #search-box:focus {
