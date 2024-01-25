@@ -56,11 +56,13 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            background-color: #4CC0C0;
+
         }
 
         /* Change the link color to #111 (black) on hover */
         ul.horizontal li a:hover {
-            background-color: #4CC0C0;
+            background-color: #d0f5f5;
         }
 .comment-button {
         display: inline-block;
