@@ -444,7 +444,18 @@ writeupContentElement=document.getElementById('writeup-content');
       
         
  
+document.addEventListener('DOMContentLoaded', function () {
+               var writeupContentElement = document.getElementById('writeup-content');
+            writeupContentElement.innerHTML = renderMarkdown(data);
 
+            // Ensure the writeup content fits within the container size
+            writeupContentElement.style.maxWidth = '1500px'; // Set maxWidth to 1500px
+            writeupContentElement.style.maxHeight = '1500px'; // Set maxHeight to 1500px
+            writeupContentElement.style.overflowX = 'auto';
+
+            // Set the background color to black
+            writeupContentElement.style.color = '#000';
+ });
         
                 var specificURL = 'https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md';
     loadWriteupContent(specificURL);
