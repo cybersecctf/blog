@@ -18,7 +18,7 @@
     <div id="main-content">
      <div id="main-content">
 
-      <input type="text" id="search-box" placeholder="writeups or tags(without#) or event or....(just press enter)" onkeypress="find(event)" style="width: float;">
+      <input type="text" id="search-box" placeholder="writeups or tags(without#) or event or....(just press enter)" onkeypress="find(event)" style="width: float;" >
  
     <div id="checkflag" style="display: none;">
 
@@ -59,15 +59,12 @@
   
   const myTextBox = document.getElementById("search-box");
   const textToSimulate = getQueryParamOrDefault("query", "");
-   if((textToSimulate!= myTextBox.value )&&if(textToSimulate!=""))
-        myTextBox.value =myTextBox.value ;
-     else 
-  myTextBox.value = textToSimulate;
+   
   console.log("value:"+myTextBox.value );
            window.onload = function () {
 var writeupContentElement = document.getElementById("writeup-content");
  loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups();
+                filterWriteups("query");
 // Check if the element exists
 if (writeupContentElement) {
 // Get the inner HTML content of the element

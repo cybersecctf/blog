@@ -28,7 +28,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                 if(!checkFlag()) 
               {
                 loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups();
+                filterWriteups("find");
               }
                
                 return true;
@@ -44,8 +44,9 @@ function getQueryParamOrDefault(name, defaultValue) {
                 return false;
             }
         }
-  function filterWriteups() {
+  function filterWriteups(type) {
             var query = document.getElementById('search-box').value.toLowerCase();
+            if(type!="find")
             query= getQueryParamOrDefault('q', query);
             var links = document.getElementsByClassName('writeup-link');
            
@@ -197,7 +198,7 @@ function getQueryParamOrDefault(name, defaultValue) {
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups();
+            filterWriteups("sidebar");
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -257,7 +258,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                       if(!checkFlag()) 
                     {
                       loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                      filterWriteups();
+                      filterWriteups("find");
                     }
                      
                       return true;
@@ -274,8 +275,9 @@ function getQueryParamOrDefault(name, defaultValue) {
                   }
               }
 
-      function filterWriteups() {
+      function filterWriteups(type) {
                   var query = document.getElementById('search-box').value.toLowerCase();
+                  if(type!="find")
                   query= getQueryParamOrDefault('q', query);
                   var links = document.getElementsByClassName('writeup-link');
              
@@ -414,7 +416,7 @@ writeupContentElement=document.getElementById('writeup-content');
                   }
       
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups();
+                  filterWriteups("sidebar");
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
