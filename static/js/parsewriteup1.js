@@ -446,7 +446,7 @@ writeupContentElement=document.getElementById('writeup-content');
  
 document.addEventListener('DOMContentLoaded', function () {
                var writeupContentElement = document.getElementById('writeup-content');
-            writeupContentElement.innerHTML = renderMarkdown(data);
+      
 
             // Ensure the writeup content fits within the container size
             writeupContentElement.style.maxWidth = '1500px'; // Set maxWidth to 1500px
