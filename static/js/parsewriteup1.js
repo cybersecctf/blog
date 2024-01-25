@@ -33,7 +33,7 @@ function getQueryParamOrDefault(name, defaultValue) {
               }
                
                 return true;
-            } else {
+            } else { 
   var ulElement = document.getElementById("writeup-list");
   
   // Check if the element exists before trying to hide it
@@ -49,7 +49,8 @@ function getQueryParamOrDefault(name, defaultValue) {
         
           
            s=getQueryParamOrDefault('q', query));
-           query=s;
+           if(query=="")  
+            query=s;
             var links = document.getElementsByClassName('writeup-link');
            
             var resultsCount = 0;
@@ -281,9 +282,8 @@ function getQueryParamOrDefault(name, defaultValue) {
       function filterWriteups(query) {
                   var s = document.getElementById('search-box').value.toLowerCase();
              
-                  query=getQueryParamOrDefault('q', query);
-                   if(s!=query)
-                       if(s!="")
+                  s=getQueryParamOrDefault('q', query);
+                  if(query=="")
                          query=s;
                   var links = document.getElementsByClassName('writeup-link');
              
