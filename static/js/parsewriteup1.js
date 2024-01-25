@@ -107,8 +107,12 @@ function getQueryParamOrDefault(name, defaultValue) {
                     writeupContentElement.innerHTML = renderMarkdown(data);
   
                      writeupContentElement.style.maxHeight = '1500px'; 
-           writeupContentElement.style.maxWidth = '100vw'; 
+           writeupContentElement.style.maxWidth = '1500px'; 
             writeupContentElement.style.overflowX = 'auto';
+
+            // Set the background color to black
+            writeupContentElement.style.backgroundColor = '#000';
+            writeupContentElement.style.color = '#000';
                 })
                 .catch(error => {
                     console.error('Error fetching or parsing content:', error);
