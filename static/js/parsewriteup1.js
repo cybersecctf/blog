@@ -112,7 +112,7 @@ function getQueryParamOrDefault(name, defaultValue) {
 
             // Set the background color to black
             writeupContentElement.style.backgroundColor = '#000';
-            writeupContentElement.style.color = '#000';
+            writeupContentElement.style.color = '#fff';
                 })
                 .catch(error => {
                     console.error('Error fetching or parsing content:', error);
