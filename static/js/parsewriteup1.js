@@ -92,7 +92,7 @@ function getQueryParamOrDefault(name, defaultValue) {
   
                     var tempElement = document.createElement('div');
                     tempElement.innerHTML = data;
-                     content=data
+                     content=data;
                     // Extract the flag element
                     var flagElement = tempElement.querySelector('.flag');
   
