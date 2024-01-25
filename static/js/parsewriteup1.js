@@ -48,8 +48,8 @@ function getQueryParamOrDefault(name, defaultValue) {
   function filterWriteups(query) {
         
           
- 
-            query= getQueryParamOrDefault('q', query);
+           s=getQueryParamOrDefault('q', query));
+           query=s;
             var links = document.getElementsByClassName('writeup-link');
            
             var resultsCount = 0;
@@ -280,7 +280,7 @@ function getQueryParamOrDefault(name, defaultValue) {
 
       function filterWriteups(query) {
                   var query = document.getElementById('search-box').value.toLowerCase();
-                  if(query=="") 
+             
                   query=getQueryParamOrDefault('q', query);
                 
                   var links = document.getElementsByClassName('writeup-link');
