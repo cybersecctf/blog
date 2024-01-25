@@ -59,8 +59,10 @@
   
   const myTextBox = document.getElementById("search-box");
   const textToSimulate = getQueryParamOrDefault("query", "");
+   if((textToSimulate!= myTextBox.value )&&if(textToSimulate!=""))
+        myTextBox.value =myTextBox.value ;
+     else 
   myTextBox.value = textToSimulate;
-      
   console.log("value:"+myTextBox.value );
            window.onload = function () {
 var writeupContentElement = document.getElementById("writeup-content");
