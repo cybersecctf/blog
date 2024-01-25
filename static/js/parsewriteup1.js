@@ -103,11 +103,12 @@ function getQueryParamOrDefault(name, defaultValue) {
                     console.log('Flag0:', flag);
   
                     // Render the writeup content
-                     writeupContentElement=document.getElementById('writeup-content');
-                    writeupContentElement.innerHTML = renderMarkdown(data);
-  
-                     writeupContentElement.style.maxHeight = '1500px'; 
-           writeupContentElement.style.maxWidth = '1500px'; 
+                      var writeupContentElement = document.getElementById('writeup-content');
+            writeupContentElement.innerHTML = renderMarkdown(data);
+
+            // Ensure the writeup content fits within the container size
+            writeupContentElement.style.maxWidth = '1500px'; // Set maxWidth to 1500px
+            writeupContentElement.style.maxHeight = '1500px'; // Set maxHeight to 1500px
             writeupContentElement.style.overflowX = 'auto';
 
             // Set the background color to black
