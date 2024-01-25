@@ -28,7 +28,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                 if(!checkFlag()) 
               {
                 loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups("find");
+ var query = document.getElementById('search-box').value.toLowerCase();
+                filterWriteups(query);
               }
                
                 return true;
@@ -44,9 +45,10 @@ function getQueryParamOrDefault(name, defaultValue) {
                 return false;
             }
         }
-  function filterWriteups(type) {
-            var query = document.getElementById('search-box').value.toLowerCase();
-            if(type!="find")
+  function filterWriteups(query) {
+        
+          
+ 
             query= getQueryParamOrDefault('q', query);
             var links = document.getElementsByClassName('writeup-link');
            
@@ -198,7 +200,7 @@ function getQueryParamOrDefault(name, defaultValue) {
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups("sidebar");
+            filterWriteups("");
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -258,7 +260,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                       if(!checkFlag()) 
                     {
                       loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                      filterWriteups("find");
+    var query = document.getElementById('search-box').value.toLowerCase();
+                      filterWriteups(query);
                     }
                      
                       return true;
@@ -275,10 +278,11 @@ function getQueryParamOrDefault(name, defaultValue) {
                   }
               }
 
-      function filterWriteups(type) {
+      function filterWriteups(query) {
                   var query = document.getElementById('search-box').value.toLowerCase();
-                  if(type!="find")
-                  query= getQueryParamOrDefault('q', query);
+                  if(query=="") 
+                  query=getQueryParamOrDefault('q', query);
+                
                   var links = document.getElementsByClassName('writeup-link');
              
                   var resultsCount = 0;
@@ -416,7 +420,7 @@ writeupContentElement=document.getElementById('writeup-content');
                   }
       
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups("sidebar");
+                  filterWriteups("");
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
