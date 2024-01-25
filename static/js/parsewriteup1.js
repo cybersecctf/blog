@@ -279,10 +279,12 @@ function getQueryParamOrDefault(name, defaultValue) {
               }
 
       function filterWriteups(query) {
-                  var query = document.getElementById('search-box').value.toLowerCase();
+                  var s = document.getElementById('search-box').value.toLowerCase();
              
                   query=getQueryParamOrDefault('q', query);
-                
+                   if(s!=query)
+                       if(s!="")
+                         query=s;
                   var links = document.getElementsByClassName('writeup-link');
              
                   var resultsCount = 0;
