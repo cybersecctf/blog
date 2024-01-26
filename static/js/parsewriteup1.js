@@ -19,21 +19,7 @@ function getQueryParamOrDefault(name, defaultValue) {
   const myTextBox = document.getElementById("search-box");
   
    query=myTextBox.value ;
-  console.log("value:"+query );
-      
-var writeupContentElement = document.getElementById("writeup-content");
- loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups(query);
-// Check if the element exists
-if (writeupContentElement) {
-// Get the inner HTML content of the element
-var writeupContent = writeupContentElement.innerHTML;
-
-// Log the content to the console
-console.log(writeupContent);
-} else {
-console.log("no content found");
-}  ;
+  windows.location="https://phantom1ss.github.io/blog/?q="+query;
 }
         }
   function filterWriteups(query) {
@@ -218,31 +204,15 @@ console.log("no content found");
           return str.indexOf(suffix, str.length - suffix.length) !== -1;
       }
        function find(event) {
-        console.log(" key is pressed"+event.keyCode);
-
+       console.log("Enter key is pressed"+event.keyCode);
   
             if (event.keyCode == 13) {
                
                 
   const myTextBox = document.getElementById("search-box");
-  query=myTextBox.value ;
-   
-  console.log("value:"+query);
-      
-var writeupContentElement = document.getElementById("writeup-content");
- loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-
-                filterWriteups(query);
-// Check if the element exists
-if (writeupContentElement) {
-// Get the inner HTML content of the element
-var writeupContent = writeupContentElement.innerHTML;
-
-// Log the content to the console
-console.log(writeupContent);
-} else {
-console.log("no content found");
-}  ;
+  
+   query=myTextBox.value ;
+  windows.location="https://phantom1ss.github.io/blog/?q="+query;
 }
    
    
