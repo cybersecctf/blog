@@ -57,14 +57,18 @@
 <script>
 
   
-  const myTextBox = document.getElementById("search-box");
-  const textToSimulate = getQueryParamOrDefault("query", "");
+  
+           window.onload = function () {
+const myTextBox = document.getElementById("search-box");
+  const textToSimulate = getQueryParamOrDefault("q", "");
    
   console.log("value:"+myTextBox.value );
-           window.onload = function () {
+if(myTextBox.value !="")
+    query=myTextBox.value ;
+ 
 var writeupContentElement = document.getElementById("writeup-content");
  loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups("query");
+                filterWriteups(query);
 // Check if the element exists
 if (writeupContentElement) {
 // Get the inner HTML content of the element
