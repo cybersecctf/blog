@@ -14,36 +14,10 @@ function getQueryParamOrDefault(name, defaultValue) {
   console.log("Enter key is pressed"+event.keyCode);
   
             if (event.keyCode == 13) {
-     var ulElement = document.getElementById("writeup-list");
-     ulElement.style.display = "none";
-  // Check if the element exists before trying to hide it
-  if (ulElement) {
-    // Set the display property to "none"
-    if( ulElement.style.display == "block")
-     ulElement.style.display = "none";
-   else
-          ulElement.style.display = "block";
-  }
-                console.log("Enter key is pressed");
-                if(!checkFlag()) 
-              {
-                loadLinksFromTextFile('https://phantom1ss.github.io/blog/links.txt');
-                filterWriteups();
-              }
-               
-                return true;
-            } else {
-  var ulElement = document.getElementById("writeup-list");
-  
-  // Check if the element exists before trying to hide it
-  if (ulElement) {
-    // Set the display property to "none"
-    ulElement.style.display = "none";
-  }
-  
-                return false;
-            }
+       const myTextBox = document.getElementById("search-box");
+windows.location="https://phantom1ss.github.io/blog/index.html?q="+myTextBox.value ;
         }
+}
   function filterWriteups() {
             var query = document.getElementById('search-box').value.toLowerCase();
             query= getQueryParamOrDefault('query', query);
@@ -226,39 +200,12 @@ function getQueryParamOrDefault(name, defaultValue) {
           return str.indexOf(suffix, str.length - suffix.length) !== -1;
       }
        function find(event) {
-        console.log("Enter key is pressed"+event.keyCode);
-      
-                  if (event.keyCode == 13) {
-           var ulElement = document.getElementById("writeup-list");
-      
-        // Check if the element exists before trying to hide it
-         if (ulElement) {
-    // Set the display property to "none"
-    if( ulElement.style.display == "block")
-     ulElement.style.display = "none";
-   else
-          ulElement.style.display = "block";
-  }
-     
-                      console.log("Enter key is pressed");
-                      if(!checkFlag()) 
-                    {
-                      loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                      filterWriteups();
-                    }
-                     
-                      return true;
-                  } else {
-        var ulElement = document.getElementById("writeup-list");
-      
-        // Check if the element exists before trying to hide it
-        if (ulElement) {
-          // Set the display property to "none"
-          ulElement.style.display = "none";
+         console.log("Enter key is pressed"+event.keyCode);
+  
+            if (event.keyCode == 13) {
+       const myTextBox = document.getElementById("search-box");
+windows.location="https://phantom1ss.github.io/blog/index.html?q="+myTextBox.value ;
         }
-      
-                      return false;
-                  }
               }
       function filterWriteups() {
                   var query = document.getElementById('search-box').value.toLowerCase();
