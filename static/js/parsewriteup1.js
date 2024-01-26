@@ -18,12 +18,12 @@ function getQueryParamOrDefault(name, defaultValue) {
                 
   const myTextBox = document.getElementById("search-box");
   
-   
-  console.log("value:"+myTextBox.value );
+   query=myTextBox.value ;
+  console.log("value:"+query );
       
 var writeupContentElement = document.getElementById("writeup-content");
  loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups("query");
+                filterWriteups(query);
 // Check if the element exists
 if (writeupContentElement) {
 // Get the inner HTML content of the element
@@ -36,9 +36,8 @@ console.log("no content found");
 }  ;
 }
         }
-  function filterWriteups() {
-            var query = document.getElementById('search-box').value.toLowerCase();
-            query= getQueryParamOrDefault('query', query);
+  function filterWriteups(query) {
+            
             var links = document.getElementsByClassName('writeup-link');
             var searchResultsHeading = document.getElementById('search-results-heading');
             var resultsCount = 0;
@@ -176,7 +175,7 @@ console.log("no content found");
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups();
+            filterWriteups("");
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -225,13 +224,14 @@ console.log("no content found");
                
                 
   const myTextBox = document.getElementById("search-box");
-  
+  query=myTextBox.value ;
    
-  console.log("value:"+myTextBox.value );
+  console.log("value:"+query);
       
 var writeupContentElement = document.getElementById("writeup-content");
  loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                filterWriteups("query");
+
+                filterWriteups(query);
 // Check if the element exists
 if (writeupContentElement) {
 // Get the inner HTML content of the element
@@ -246,9 +246,8 @@ console.log("no content found");
    
    
               }
-      function filterWriteups() {
-                  var query = document.getElementById('search-box').value.toLowerCase();
-                  query= getQueryParamOrDefault('query', query);
+      function filterWriteups(query) {
+               
                   var links = document.getElementsByClassName('writeup-link');
                   var searchResultsHeading = document.getElementById('search-results-heading');
                   var resultsCount = 0;
@@ -382,7 +381,7 @@ console.log("no content found");
                   }
       
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups();
+                  filterWriteups("");
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
