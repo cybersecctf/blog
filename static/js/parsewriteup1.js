@@ -14,16 +14,39 @@ function getQueryParamOrDefault(name, defaultValue) {
   console.log("Enter key is pressed"+event.keyCode);
   
             if (event.keyCode == 13) {
+     var ulElement = document.getElementById("writeup-list");
+     ulElement.style.display = "none";
+  // Check if the element exists before trying to hide it
+  if (ulElement) {
+    // Set the display property to "none"
+    if( ulElement.style.display == "block")
+     ulElement.style.display = "none";
+   else
+          ulElement.style.display = "block";
+  }
+                console.log("Enter key is pressed");
+                if(!checkFlag()) 
+              {
+                loadLinksFromTextFile('https://phantom1ss.github.io/blog/links.txt');
+                filterWriteups();
+              }
                
-                
-  const myTextBox = document.getElementById("search-box");
+                return true;
+            } else {
+  var ulElement = document.getElementById("writeup-list");
   
-   query=myTextBox.value ;
-  windows.location="https://phantom1ss.github.io/blog/?q="+query;
-}
+  // Check if the element exists before trying to hide it
+  if (ulElement) {
+    // Set the display property to "none"
+    ulElement.style.display = "none";
+  }
+  
+                return false;
+            }
         }
-  function filterWriteups(query) {
-            
+  function filterWriteups() {
+            var query = document.getElementById('search-box').value.toLowerCase();
+            query= getQueryParamOrDefault('query', query);
             var links = document.getElementsByClassName('writeup-link');
             var searchResultsHeading = document.getElementById('search-results-heading');
             var resultsCount = 0;
@@ -161,7 +184,7 @@ function getQueryParamOrDefault(name, defaultValue) {
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups("");
+            filterWriteups();
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -171,8 +194,7 @@ function getQueryParamOrDefault(name, defaultValue) {
   
                     // Extract the flag text
                     var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
-                    if(flag=="fakeflag")
-                            return false; 
+  
             var userInput = document.getElementById('search-box').value;
                                 console.log('Flag:', flag+":"+userInput+":"+flag.localeCompare(userInput));
   
@@ -204,21 +226,43 @@ function getQueryParamOrDefault(name, defaultValue) {
           return str.indexOf(suffix, str.length - suffix.length) !== -1;
       }
        function find(event) {
-       console.log("Enter key is pressed"+event.keyCode);
-  
-            if (event.keyCode == 13) {
-               
-                
-  const myTextBox = document.getElementById("search-box");
-  
-   query=myTextBox.value ;
-  windows.location="https://phantom1ss.github.io/blog/?q="+query;
-}
-   
-   
+        console.log("Enter key is pressed"+event.keyCode);
+      
+                  if (event.keyCode == 13) {
+           var ulElement = document.getElementById("writeup-list");
+      
+        // Check if the element exists before trying to hide it
+         if (ulElement) {
+    // Set the display property to "none"
+    if( ulElement.style.display == "block")
+     ulElement.style.display = "none";
+   else
+          ulElement.style.display = "block";
+  }
+     
+                      console.log("Enter key is pressed");
+                      if(!checkFlag()) 
+                    {
+                      loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
+                      filterWriteups();
+                    }
+                     
+                      return true;
+                  } else {
+        var ulElement = document.getElementById("writeup-list");
+      
+        // Check if the element exists before trying to hide it
+        if (ulElement) {
+          // Set the display property to "none"
+          ulElement.style.display = "none";
+        }
+      
+                      return false;
+                  }
               }
-      function filterWriteups(query) {
-               
+      function filterWriteups() {
+                  var query = document.getElementById('search-box').value.toLowerCase();
+                  query= getQueryParamOrDefault('query', query);
                   var links = document.getElementsByClassName('writeup-link');
                   var searchResultsHeading = document.getElementById('search-results-heading');
                   var resultsCount = 0;
@@ -352,7 +396,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                   }
       
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups("");
+                  filterWriteups();
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
