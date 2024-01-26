@@ -26,3 +26,4 @@ thejohnsons irisctf2024 reverse enginering with gidra,  https://phantom1ss.githu
 Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and char, https://phantom1ss.github.io/blog/2024/practice/irisctf2024/runwhatsthat/writeup1.md 
 what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
 AwayOnVacation irisctf2024 osint and search in instagram,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
+gloryofgarden picoctf using strings and grep for get flag and search in file ,https://phantom1ss.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
