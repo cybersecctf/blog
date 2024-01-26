@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phantom$s</title>
- <link rel="stylesheet" href="https://missnhome.github.io/blog/static/css/cyberponk.css" />
+ <link rel="stylesheet" href="https://phantom1ss.github.io/blog/static/css/cyberponk.css" />
       
 
  
@@ -18,7 +19,10 @@
     <div id="main-content">
      <div id="main-content">
 
-      <input type="text" id="search-box" placeholder="writeups or tags(without#) or event or....(just press enter)" onkeypress="find(event)" style="width: float;" >
+ 
+  <input type="input" id="search-box" placeholder="$" name="name" id='name' required /  onkeypress="find(event)" style="width: float;">
+  <label for="name" class="form__label">$type and search here</label>
+ 
  
     <div id="checkflag" style="display: none;">
 
@@ -31,22 +35,22 @@
          </li>
         <ul class="horizontal" id="writeup-list">
   
-                          <li><a  onclick="loadWriteupContent('https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md')">czech-where</a></li>
+                          <li><a  onclick="loadWriteupContent('https://phantom1ss.github.io/blog/2024/irisctf/czech-where/writeup1.md')">czech-where</a></li>
         
-             <li><a href="https://github.com/missnhome/blog/blob/main/2024/asisctf2023">...</a></li>
+             <li><a href="https://github.com/phantom1ss/blog/blob/main/2024/asisctf2023">...</a></li>
              <div id="writeup-content">
 
-            <p>type writeup in searchbox and press enter or go on mobile</p>
+            <p>$ai search with press enter(go)</p>
         </div>
  
 
         </ul>
         <div id="writeup-content">
             <!-- Writeup content goes here -->
-            <p>find archive or tags or ctfevent or challenge after press enter or go in keyboard</p>
+            <p>select upper writeups with click on it </p>
         </div>
     </div>
-<script  src="https://missnhome.github.io/blog/static/js/flag.js">
+<script  src="https://phantom1ss.github.io/blog/static/js/flag.js">
      
     </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -55,31 +59,83 @@
  
  
 <script>
-
   
+ 
   
-           window.onload = function () {
- query="";
-const myTextBox = document.getElementById("search-box");
+  function extractUrlFromOnclick(onclickAttributeValue) {
+      var urlMatch = onclickAttributeValue.match(/loadWriteupContent\('([^']+)'\)/);
+      return urlMatch && urlMatch.length > 1 ? urlMatch[1] : null;
+    }
 
-   
-  console.log("value:"+myTextBox.value );
+    // Function to handle changes in the content
+    function handleContentChange(mutationsList, observer) {
+      mutationsList.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          // Get the first <a> element inside the first <li> after content change
+          var firstLink = myList.querySelector('li a');
 
+          if (firstLink) {
+            // Extract the URL from the onclick attribute
+            var onclickAttributeValue = firstLink.getAttribute('onclick');
+            console.log("url2"+onclickAttributeValue);      
+            var url = extractUrlFromOnclick(onclickAttributeValue);
 
- query=getQueryParamOrDefault("q", ""); 
-var writeupContentElement = document.getElementById("writeup-content");
- loadLinksFromTextFile('https://phantom1ss.github.io/blog/links.txt');
-                filterWriteups(query);
-// Check if the element exists
-if (writeupContentElement) {
-// Get the inner HTML content of the element
-var writeupContent = writeupContentElement.innerHTML;
+            if (url) {
+              // Now you can work with the URL
+              console.log("url1"+url);
+            }
+          }
+        }
+      });
+    }
+  
+  const myTextBox = document.getElementById("search-box");
+   textToSimulate = getQueryParamOrDefault("q", "");
+myTextBox.value = textToSimulate;
 
-// Log the content to the console
-console.log(writeupContent);
-} else {
-console.log("no content found");
-}  ;
+window.onload = function () {
+  textToSimulate = getQueryParamOrDefault("q", "");
+
+  if (textToSimulate !== "") {
+    // Load links from text file and filter writeups
+    var s = loadLinksFromTextFile('https://phantom1ss.github.io/blog/links.txt');
+    links=filterWriteups();
+var arr = Array.prototype.slice.call( links );
+    var myList = document.getElementById('writeup-list');
+
+     console.log("links"+myList);
+    // Get the reference to the ul element
+             url=  getFirstLinkUrl();   
+           console.log("log:"+url);
+  }
+};
+
+// Function to extract the URL from the onclick attribute
+function extractUrlFromOnclick(onclickAttributeValue) {
+  var urlMatch = onclickAttributeValue.match(/loadWriteupContent\('([^']+)'\)/);
+  return urlMatch && urlMatch.length > 1 ? urlMatch[1] : null;
+}
+
+// Function to get the URL of the first link in myList
+function getFirstLinkUrl() {
+  var myList = document.getElementById('writeup-list');
+  var firstLink = myList.querySelector('li a');
+
+  if (firstLink) {
+    // Extract the URL from the onclick attribute
+console.log(firstLink);
+
+    var onclickAttributeValue = firstLink.getAttribute('onclick');
+console.log(onclickAttributeValue);
+    var url = onclickAttributeValue;
+
+    if (url) {
+      // Now you can work with the URL
+      console.log("url1"+url);
+     
+    }
+  }
+return url;
 }
    
     </script>
