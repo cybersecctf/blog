@@ -17,7 +17,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                
                 
   const myTextBox = document.getElementById("search-box");
-  const textToSimulate = getQueryParamOrDefault("query", "");
+  
    
   console.log("value:"+myTextBox.value );
       
@@ -35,9 +35,6 @@ console.log(writeupContent);
 console.log("no content found");
 }  ;
 }
-   
-   
-
         }
   function filterWriteups() {
             var query = document.getElementById('search-box').value.toLowerCase();
@@ -221,39 +218,33 @@ console.log("no content found");
           return str.indexOf(suffix, str.length - suffix.length) !== -1;
       }
        function find(event) {
-        console.log("Enter key is pressed"+event.keyCode);
+        console.log(" key is pressed"+event.keyCode);
+
+  
+            if (event.keyCode == 13) {
+               
+                
+  const myTextBox = document.getElementById("search-box");
+  
+   
+  console.log("value:"+myTextBox.value );
       
-                  if (event.keyCode == 13) {
-           var ulElement = document.getElementById("writeup-list");
-      
-        // Check if the element exists before trying to hide it
-         if (ulElement) {
-    // Set the display property to "none"
-    if( ulElement.style.display == "block")
-     ulElement.style.display = "none";
-   else
-          ulElement.style.display = "block";
-  }
-     
-                      console.log("Enter key is pressed");
-                      if(!checkFlag()) 
-                    {
-                      loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-                      filterWriteups();
-                    }
-                     
-                      return true;
-                  } else {
-        var ulElement = document.getElementById("writeup-list");
-      
-        // Check if the element exists before trying to hide it
-        if (ulElement) {
-          // Set the display property to "none"
-          ulElement.style.display = "none";
-        }
-      
-                      return false;
-                  }
+var writeupContentElement = document.getElementById("writeup-content");
+ loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
+                filterWriteups("query");
+// Check if the element exists
+if (writeupContentElement) {
+// Get the inner HTML content of the element
+var writeupContent = writeupContentElement.innerHTML;
+
+// Log the content to the console
+console.log(writeupContent);
+} else {
+console.log("no content found");
+}  ;
+}
+   
+   
               }
       function filterWriteups() {
                   var query = document.getElementById('search-box').value.toLowerCase();
