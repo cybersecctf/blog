@@ -185,7 +185,8 @@ console.log("no content found");
   
                     // Extract the flag text
                     var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
-  
+                    if(flag=="fakeflag")
+                            return false; 
             var userInput = document.getElementById('search-box').value;
                                 console.log('Flag:', flag+":"+userInput+":"+flag.localeCompare(userInput));
   
