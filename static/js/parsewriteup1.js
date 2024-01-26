@@ -28,12 +28,11 @@ function getQueryParamOrDefault(name, defaultValue) {
                 if(!checkFlag()) 
               {
                 loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
- var query = document.getElementById('search-box').value.toLowerCase();
-                filterWriteups(query);
+                filterWriteups();
               }
                
                 return true;
-            } else { 
+            } else {
   var ulElement = document.getElementById("writeup-list");
   
   // Check if the element exists before trying to hide it
@@ -45,30 +44,23 @@ function getQueryParamOrDefault(name, defaultValue) {
                 return false;
             }
         }
-  function filterWriteups(query) {
-        
-          
-           s=getQueryParamOrDefault('q', query));
-           if(query=="")  
-            query=s;
+  function filterWriteups() {
+            var query = document.getElementById('search-box').value.toLowerCase();
+            query= getQueryParamOrDefault('query', query);
             var links = document.getElementsByClassName('writeup-link');
-           
+            var searchResultsHeading = document.getElementById('search-results-heading');
             var resultsCount = 0;
   
             for (var i = 0; i < links.length; i++) {
                 var title = links[i].textContent.toLowerCase();
                 var truncatedTitle = links[i].title.toLowerCase();
-                var link = links[i].href;
+                var link = links[i].href.toLowerCase();
                
                 var content = links[i].dataset.content.toLowerCase();
-                 var writeup="";
-               if(endsWith( link,".md"))
-                   writeup= renderMarkdown(link);
-            
+                var writeup=loadWriteupContent(link)
                 if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
                     links[i].parentElement.style.display = '';
                     resultsCount++;
-                  
                 } else {
                     links[i].parentElement.style.display = 'none';
                 }
@@ -76,12 +68,12 @@ function getQueryParamOrDefault(name, defaultValue) {
   
   
              if (links.length > 0) {
-     
- 
+  var searchResultsHeading = document.getElementById('search-results-heading');
+            searchResultsHeading.textContent = '';
             currentWriteupUrl = links[0].href;
-
+          //  loadWriteupContent(currentWriteupUrl);
         }
-   return links;
+   
         }
         function loadWriteupContent(writeupUrl) {
             fetch(writeupUrl)
@@ -96,7 +88,7 @@ function getQueryParamOrDefault(name, defaultValue) {
   
                     var tempElement = document.createElement('div');
                     tempElement.innerHTML = data;
-                     content=data;
+                     content=data
                     // Extract the flag element
                     var flagElement = tempElement.querySelector('.flag');
   
@@ -107,22 +99,13 @@ function getQueryParamOrDefault(name, defaultValue) {
                     console.log('Flag0:', flag);
   
                     // Render the writeup content
-                      var writeupContentElement = document.getElementById('writeup-content');
-            writeupContentElement.innerHTML = renderMarkdown(data);
-
-            // Ensure the writeup content fits within the container size
-            writeupContentElement.style.maxWidth = '1500px'; // Set maxWidth to 1500px
-            writeupContentElement.style.maxHeight = '1500px'; // Set maxHeight to 1500px
-            writeupContentElement.style.overflowX = 'auto';
-
-            // Set the background color to black
-            writeupContentElement.style.backgroundColor = '#000';
-            writeupContentElement.style.color = '#fff';
+                    document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
+  
+                   
                 })
                 .catch(error => {
                     console.error('Error fetching or parsing content:', error);
                 });
-
         }
         function loadLinksFromTextFile(file) {
             fetch(file)
@@ -170,14 +153,14 @@ function getQueryParamOrDefault(name, defaultValue) {
                 link.href = links[i].url;
                 if(i==0)  
                    if(endsWith(   link.href ,".md"))
-                        link.dataset.content = renderMarkdown(link.herf); 
+                    loadWriteupContent(  link.href ); // Pass the full title to loadWriteupContent
                        else
                        window.location.href=  link.href ;
                 words= links[i].title.split(' ');
                 link.textContent =words[0]+" "+words[1] 
                 link.title = links[i].title; // Store the full title as a title attribute
                 link.classList.add('writeup-link'); // Add the 'writeup-link' class
-            
+                link.dataset.content = ''; // Placeholder for content, update this dynamically if needed
                 writeupItem.appendChild(link);
                 writeupList.appendChild(writeupItem);
   
@@ -201,7 +184,7 @@ function getQueryParamOrDefault(name, defaultValue) {
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups("");
+            filterWriteups();
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -261,8 +244,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                       if(!checkFlag()) 
                     {
                       loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
-    var query = document.getElementById('search-box').value.toLowerCase();
-                      filterWriteups(query);
+                      filterWriteups();
                     }
                      
                       return true;
@@ -278,30 +260,23 @@ function getQueryParamOrDefault(name, defaultValue) {
                       return false;
                   }
               }
-
-      function filterWriteups(query) {
-                  var s = document.getElementById('search-box').value.toLowerCase();
-             
-                  s=getQueryParamOrDefault('q', query);
-                  if(query=="")
-                         query=s;
+      function filterWriteups() {
+                  var query = document.getElementById('search-box').value.toLowerCase();
+                  query= getQueryParamOrDefault('query', query);
                   var links = document.getElementsByClassName('writeup-link');
-             
+                  var searchResultsHeading = document.getElementById('search-results-heading');
                   var resultsCount = 0;
-     
+      
                   for (var i = 0; i < links.length; i++) {
                       var title = links[i].textContent.toLowerCase();
                       var truncatedTitle = links[i].title.toLowerCase();
-                      var link = links[i].href;
-                      var content = links[i].dataset.content.toLowerCase();
-                     var writeup="";
-                   if(endsWith( link,".md"))
+                      var link = links[i].href.toLowerCase();
                      
-                       writeup=renderMarkdown(link);
+                      var content = links[i].dataset.content.toLowerCase();
+                      var writeup=loadWriteupContent(link)
                       if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
                           links[i].parentElement.style.display = '';
                           resultsCount++;
-                        
                       } else {
                           links[i].parentElement.style.display = 'none';
                       }
@@ -309,11 +284,12 @@ function getQueryParamOrDefault(name, defaultValue) {
       
       
                    if (links.length > 0) {
-
+      
+                  searchResultsHeading.textContent = '';
                   currentWriteupUrl = links[0].href;
                   //loadWriteupContent(currentWriteupUrl);
               }
-         return links;
+         
               }
               function loadWriteupContent(writeupUrl) {
                   fetch(writeupUrl)
@@ -339,10 +315,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                           console.log('Flag0:', flag);
       
                           // Render the writeup content
-writeupContentElement=document.getElementById('writeup-content');
-                         writeupContentElement.innerHTML = renderMarkdown(data);
-        writeupContentElement.style.maxHeight = '500px'; // Adjust the max height as needed
-          writeupContentElement.style.overflowY = 'auto';
+                          document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
+      
                          
                       })
                       .catch(error => {
@@ -398,7 +372,7 @@ writeupContentElement=document.getElementById('writeup-content');
                       link.textContent =words[0]+" "+words[1] 
                       link.title = links[i].title; // Store the full title as a title attribute
                       link.classList.add('writeup-link'); // Add the 'writeup-link' class
-                      link.dataset.content = renderMarkdown( link.href); // Placeholder for content, update this dynamically if needed
+                      link.dataset.content = ''; // Placeholder for content, update this dynamically if needed
                       writeupItem.appendChild(link);
                       writeupList.appendChild(writeupItem);
       
@@ -422,11 +396,11 @@ writeupContentElement=document.getElementById('writeup-content');
                   }
       
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups("");
+                  filterWriteups();
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
-                          tempElement.innerHTML = "";
+                          tempElement.innerHTML = content;
       
                    var flagElement = tempElement.querySelector('.flag');
       
@@ -451,10 +425,10 @@ writeupContentElement=document.getElementById('writeup-content');
               }
       
         
- 
- 
-        
-                var specificURL = 'https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md';
+   // Load the content for a specific URL
+    var specificURL = 'https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md';
     loadWriteupContent(specificURL);
+        
+            
  
  
