@@ -59,13 +59,15 @@
   
   
            window.onload = function () {
+ query="";
 const myTextBox = document.getElementById("search-box");
-  const textToSimulate = getQueryParamOrDefault("q", "");
+
    
   console.log("value:"+myTextBox.value );
 if(myTextBox.value !="")
     query=myTextBox.value ;
- 
+else
+ query=getQueryParamOrDefault("q", ""); 
 var writeupContentElement = document.getElementById("writeup-content");
  loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
                 filterWriteups(query);
