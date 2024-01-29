@@ -92,7 +92,10 @@
   const myTextBox = document.getElementById("search-box");
    textToSimulate = getQueryParamOrDefault("q", "");
 myTextBox.value = textToSimulate;
-
+if (document.readyState == "complete") {
+    alert("Your page is loaded");
+getFirstLinkUrl();
+}
 window.onload = function () {
   textToSimulate = getQueryParamOrDefault("q", "");
 
