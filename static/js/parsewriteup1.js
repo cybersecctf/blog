@@ -350,17 +350,18 @@ currentWriteupUrl = links2[0].href;
                       // Add the link to the headings
                       var writeupItem = document.createElement('li');
                       var link = document.createElement('a');
+                 if(links[i].parentElement.style.display != 'none')
+{
                       link.href = links[i].url;
                       words= links[i].title.split(' ');
                       link.textContent =words[0]+" "+words[1] 
                       link.title = links[i].title; // Store the full title as a title attribute
                       link.classList.add('writeup-link'); // Add the 'writeup-link' class
                       link.dataset.content = renderMarkdown( link.href); // Placeholder for content, update this dynamically if needed
-                      if(link.parentElement.style.display != 'none')
-{
+     
                       writeupItem.appendChild(link);
                       writeupList.appendChild(writeupItem);
-}
+
       
                       // Load writeup content on click
                       link.addEventListener('click', function(event) {
@@ -380,7 +381,7 @@ currentWriteupUrl = links2[0].href;
         }
                       });
                   }
-      
+      }
                   // After updating the sidebar, trigger the filterWriteups function
                   filterWriteups();
               }
