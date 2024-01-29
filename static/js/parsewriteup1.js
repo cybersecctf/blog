@@ -248,7 +248,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                   currentWriteupUrl = links[0].href;
             console.log("current"+currentWriteupUrl);
 
-       loadWriteupContent(currentWriteupUrl);
+     
 
               }
          return links;
@@ -284,6 +284,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                       .catch(error => {
                           console.error('Error fetching or parsing content:', error);
                       });
+   console.log( document.getElementsByClassName('writeup-link').innerHTML);
+
               }
               function loadLinksFromTextFile(file) {
                   fetch(file)
