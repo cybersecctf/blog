@@ -350,7 +350,7 @@ currentWriteupUrl = links2[0].href;
                       // Add the link to the headings
                       var writeupItem = document.createElement('li');
                       var link = document.createElement('a');
-                 if(links[i].parentElement.style.display != 'none')
+                 if(links[i].url.parentElement.style.display != 'none')
 {
                       link.href = links[i].url;
                       words= links[i].title.split(' ');
