@@ -247,6 +247,11 @@ currentWriteupUrl = links2[0].href;
                        writeup=renderMarkdown(link);
                       if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
                           links[i].parentElement.style.display = '';
+ if(resultsCount==0)
+                          {
+                            console.log("visible"+links[i].href);    
+                             loadWriteupContent(links[i].href);
+                            }
                           resultsCount++;
                         
                       } else {
