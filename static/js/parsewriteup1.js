@@ -212,8 +212,15 @@ function getQueryParamOrDefault(name, defaultValue) {
         console.log("Enter key is pressed"+event.keyCode);
       
                   if (event.keyCode == 13) {
+
              var userInput = document.getElementById('search-box').value;
+
         window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
+ var links2 = document.getElementsByClassName('writeup-link');
+
+currentWriteupUrl = links2[0].href;
+            console.log("current"+currentWriteupUrl);
+
               }
 }
 
