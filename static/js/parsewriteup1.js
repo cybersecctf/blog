@@ -356,7 +356,7 @@ currentWriteupUrl = links2[0].href;
                       link.title = links[i].title; // Store the full title as a title attribute
                       link.classList.add('writeup-link'); // Add the 'writeup-link' class
                       link.dataset.content = renderMarkdown( link.href); // Placeholder for content, update this dynamically if needed
-                      if link.parentElement.style.display != 'none')
+                      if(link.parentElement.style.display != 'none')
 {
                       writeupItem.appendChild(link);
                       writeupList.appendChild(writeupItem);
