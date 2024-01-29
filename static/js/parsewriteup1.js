@@ -42,6 +42,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                             console.log("visible"+links[i].href);    
                              loadWriteupContent(links[i].href);
                             }
+                       if(resultsCount>2)
+                             break;
                     resultsCount++;
                   
                 } else {
@@ -350,8 +352,7 @@ currentWriteupUrl = links2[0].href;
                       // Add the link to the headings
                       var writeupItem = document.createElement('li');
                       var link = document.createElement('a');
-                 if(links[i].url.parentElement.style.display != 'none')
-{
+   
                       link.href = links[i].url;
                       words= links[i].title.split(' ');
                       link.textContent =words[0]+" "+words[1] 
@@ -381,7 +382,7 @@ currentWriteupUrl = links2[0].href;
         }
                       });
                   }
-      }
+       
                   // After updating the sidebar, trigger the filterWriteups function
                   filterWriteups();
               }
