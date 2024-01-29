@@ -248,7 +248,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                   currentWriteupUrl = links[0].href;
             console.log("current"+currentWriteupUrl);
 
-        document.getElementById('writeup-content').innerHTML = renderMarkdown(currentWriteupUrl);
+       loadWriteupContent(currentWriteupUrl);
 
               }
          return links;
