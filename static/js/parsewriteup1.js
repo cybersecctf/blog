@@ -49,8 +49,11 @@ function getQueryParamOrDefault(name, defaultValue) {
      
  
             currentWriteupUrl = links[0].href;
+            console.log("current"+currentWriteupUrl);
 
         }
+            console.log("current"+currentWriteupUrl);
+
    return links;
         }
         function loadWriteupContent(writeupUrl) {
@@ -242,6 +245,8 @@ function getQueryParamOrDefault(name, defaultValue) {
                    if (links.length > 0) {
 
                   currentWriteupUrl = links[0].href;
+            console.log("current"+currentWriteupUrl);
+
                   //loadWriteupContent(currentWriteupUrl);
               }
          return links;
