@@ -49,10 +49,11 @@ function getQueryParamOrDefault(name, defaultValue) {
      
  
             currentWriteupUrl = links[0].href;
-            console.log("current"+currentWriteupUrl);
+          
 
         }
-            console.log("current"+currentWriteupUrl);
+     
+
 
    return links;
         }
@@ -276,7 +277,7 @@ function getQueryParamOrDefault(name, defaultValue) {
       
                           // Render the writeup content
                           document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
-      
+                          console.log( document.getElementById('writeup-list').innerHTML );
                          
                       })
                       .catch(error => {
