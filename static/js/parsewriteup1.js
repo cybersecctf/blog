@@ -248,8 +248,10 @@ function getQueryParamOrDefault(name, defaultValue) {
                   currentWriteupUrl = links[0].href;
             console.log("current"+currentWriteupUrl);
 
-     
+                 var links2 = document.getElementsByClassName('writeup-link');
 
+currentWriteupUrl = links2[0].href;
+            console.log("current"+currentWriteupUrl);
               }
          return links;
               }
