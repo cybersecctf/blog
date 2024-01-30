@@ -97,9 +97,9 @@ else
                     console.log('Flag0:', flag);
             var userInput = document.getElementById('search-box').value;
       if (flag.localeCompare(userInput)==0) {
-                            document.getElementById('search-box').value="flag is correct";return true;
+                            alert("flag is correct");return true;
                           } else {
-                             document.getElementById('search-box').value ="flag is notcorrect";return false;
+                             alert("flag is notcorrect");return false;
                           }
                     // Render the writeup content
                     document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
