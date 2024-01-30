@@ -1,3 +1,4 @@
+var currenturl="";
 function getQueryParamOrDefault(name, defaultValue) {
     const urlParams = new URLSearchParams(window.location.search);
     const value = urlParams.get(name);
@@ -233,16 +234,25 @@ else
              var userInput = document.getElementById('search-box').value;
  if (userInput.includes('{') && userInput.includes('}'))
                   {
-                    var flagElement = tempElement.querySelector('.flag');
+var tempElement = document.createElement('div');
+data=renderMarkdown(currenturl);
+                          tempElement.innerHTML = data;
+                           content=data
+                          // Extract the flag element
+                          var flagElement = tempElement.querySelector('.flag');
+      
+                          // Extract the flag text
+                                       var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
+             var userInput = document.getElementById('search-box').value;
 
-       var flag = flagElement ? flagElement.textContent.trim() : null;
-                        var userInput = document.getElementById('search-box').value;
-                          // Display the flag in the console (for testing)
- if (flag.localeCompare(userInput)==0) {
-                            alert("flag is correct");return true;
-                          } else {
-                             alert("flag is notcorrect");return false;
-                          }
+                 if (flag.localeCompare(userInput)==0) {
+document.getElementById('search-box').value="flag is correct"; 
+}
+else
+{
+document.getElementById('search-box').value="flag is not correct"; 
+
+}
 }
 else
 {
@@ -277,7 +287,9 @@ currentWriteupUrl = links2[0].href;
  if(resultsCount==0)
                           {
                             console.log("visible"+links[i].href);    
+                               currenturl=links[i].href;
                              loadWriteupContent(links[i].href);
+
                             }
                           resultsCount++;
                         
@@ -419,7 +431,7 @@ currentWriteupUrl = links2[0].href;
                           var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
       
                   var userInput = document.getElementById('search-box').value;
-                                      console.log('Flag:', flag+":"+userInput+":"+flag.localeCompare(userInput));
+                             
        
                    if (flag.localeCompare(userInput)==0) {
                               document.getElementById('checkflag').style.display = 'block';return true;
