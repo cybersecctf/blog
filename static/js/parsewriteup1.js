@@ -232,7 +232,16 @@ else
 
              var userInput = document.getElementById('search-box').value;
  if (userInput.includes('{') && userInput.includes('}'))
-                      checkflag();
+                  {
+       var flag = flagElement ? flagElement.textContent.trim() : null;
+                        var userInput = document.getElementById('search-box').value;
+                          // Display the flag in the console (for testing)
+ if (flag.localeCompare(userInput)==0) {
+                            alert("flag is correct");return true;
+                          } else {
+                             alert("flag is notcorrect");return false;
+                          }
+}
 else
 {
         window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
@@ -306,14 +315,7 @@ currentWriteupUrl = links2[0].href;
                           var flagElement = tempElement.querySelector('.flag');
       
                           // Extract the flag text
-                          var flag = flagElement ? flagElement.textContent.trim() : null;
-                        var userInput = document.getElementById('search-box').value;
-                          // Display the flag in the console (for testing)
- if (flag.localeCompare(userInput)==0) {
-                            alert("flag is correct");return true;
-                          } else {
-                             alert("flag is notcorrect");return false;
-                          }
+                   
                           console.log('Flag01:', flag);
       
                           // Render the writeup content
