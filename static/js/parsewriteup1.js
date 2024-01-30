@@ -236,15 +236,16 @@ else
                   {
 var tempElement = document.createElement('div');
 data=renderMarkdown(currenturl);
+                
                           tempElement.innerHTML = data;
-                           content=data;
+                           content=data
                           // Extract the flag element
                           var flagElement = tempElement.querySelector('.flag');
       
                           // Extract the flag text
                                        var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
-             var userInput = document.getElementById('search-box').value;
-console.log(userInput+":"+flag+currenturl);
+                          console.log('Flag02:', flag);
+      
                  if (flag.localeCompare(userInput)==0) {
 document.getElementById('search-box').value="flag is correct"; 
 }
