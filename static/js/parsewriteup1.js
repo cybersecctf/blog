@@ -14,17 +14,21 @@ function getQueryParamOrDefault(name, defaultValue) {
         console.log("Enter key is pressed"+event.keyCode);
                   if (event.keyCode == 13) {
              var userInput = document.getElementById('search-box').value;
+   if (query.includes('{') && truncatedTitle.includes('}'))
+{
+ checkflag();
+return;
+}
         window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
               }
 }
   function filterWriteups() {
             var query = document.getElementById('search-box').value.toLowerCase();
             query= getQueryParamOrDefault('q', query);
-   if (query.includes('{') && truncatedTitle.includes('}'))
-{
- checkflag();
- return;
-}
+
+
+
+
             var links = document.getElementsByClassName('writeup-link');
            
             var resultsCount = 0;
