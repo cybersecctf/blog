@@ -1,4 +1,5 @@
 var currenturl="";
+var currentflag="";
 function getQueryParamOrDefault(name, defaultValue) {
     const urlParams = new URLSearchParams(window.location.search);
     const value = urlParams.get(name);
@@ -244,9 +245,9 @@ data=renderMarkdown(currenturl);
       
                           // Extract the flag text
                                        var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
-                          console.log('Flag02:', flag);
+                          console.log('Flag02:', flag,currentflag);
       
-                 if (flag.localeCompare(userInput)==0) {
+                 if (currentflag.localeCompare(userInput)==0) {
 document.getElementById('search-box').value="flag is correct"; 
 }
 else
@@ -331,6 +332,7 @@ currentWriteupUrl = links2[0].href;
       
                           // Extract the flag text
                                        var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
+                           currentflag=flag;
                           console.log('Flag01:', flag);
       
                           // Render the writeup content
