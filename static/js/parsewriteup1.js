@@ -189,7 +189,7 @@ else
         function checkFlag() {
   var tempElement = document.createElement('div');
                     tempElement.innerHTML = content;
-  
+
              var flagElement = tempElement.querySelector('.flag');
   
                     // Extract the flag text
@@ -233,6 +233,8 @@ else
              var userInput = document.getElementById('search-box').value;
  if (userInput.includes('{') && userInput.includes('}'))
                   {
+                    var flagElement = tempElement.querySelector('.flag');
+
        var flag = flagElement ? flagElement.textContent.trim() : null;
                         var userInput = document.getElementById('search-box').value;
                           // Display the flag in the console (for testing)
