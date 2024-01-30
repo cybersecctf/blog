@@ -197,7 +197,7 @@ else
                     var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
   
             var userInput = document.getElementById('search-box').value;
-                                console.log('Flag:', flag+":"+userInput+":"+flag.localeCompare(userInput));
+                                console.log('Flag:'+flag+":"+userInput+":");
   
              if (flag.localeCompare(userInput)==0) {
                        document.getElementById('writeup-content').innerHTML ="flag is correct";
@@ -334,7 +334,7 @@ currentWriteupUrl = links2[0].href;
       
                           // Render the writeup content
                           document.getElementById('writeup-content').innerHTML = renderMarkdown(data);
-                          console.log( document.getElementById('writeup-list').innerHTML );
+                      
                          
                       })
                       .catch(error => {
