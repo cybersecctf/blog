@@ -24,7 +24,7 @@ print(base64.b64decode(a)) for find if is base64 and yes work can use another en
     </ol>
 
     <h2>Flag</h2>
-    <p class="flag">The flag for this challenge is `picoCTF{the_m3tadata_1s_modified}`.</p>
+    <p class="flag">picoCTF{the_m3tadata_1s_modified}</p>
 
     <h2>Conclusion</h2>
     <p>easy ctf for cryptography and forensics and  base64 with  python code</p>

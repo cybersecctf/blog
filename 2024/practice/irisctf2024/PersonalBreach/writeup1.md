@@ -2,24 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <title>
+     irisctf2024- Personal Breach Challenge Writeup
+    </title>
 </head>
 <body>
     <h1>irisctf2024- Personal Breach Challenge Writeup</h1>

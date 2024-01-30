@@ -2,24 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <title>
+        What's My Password? irisctf 2024 Challenge Writeup
+    </title>
 </head>
 <body>
     <h1>What's My Password? irisctf 2024 Challenge Writeup</h1>

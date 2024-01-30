@@ -2,22 +2,7 @@
 <html>
 <head>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
+      <title>picopractice(2021)- mode 26 Challenge Writeup</title>
     </style>
 </head>
 <body>
@@ -41,7 +26,7 @@ print(codecs.encode("cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}", "r
     </ol>
 
     <h2>Flag</h2>
-    <p class="flag">The flag for this challenge is `picoCTF{next_time_I'll_try_2_rounds_of_rot13_TLcKBUdK}`.</p>
+    <p class="flag">picoCTF{next_time_I'll_try_2_rounds_of_rot13_TLcKBUdK}</p>
 
     <h2>Conclusion</h2>
     <p>easy ctf for cryptography and rot13 with  python code</p>

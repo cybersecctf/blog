@@ -25,7 +25,7 @@ http://eraas.web.nitectf.live/
     </ol>
 
     <h2>Flag</h2>
-    <p class="flag">The flag for this challenge is `nite{b3tt3r_n0_c5p_th7n_b7d_c5p_r16ht_fh8w4d}`.</p>
+    <p class="flag">nite{b3tt3r_n0_c5p_th7n_b7d_c5p_r16ht_fh8w4d}</p>
 
     <h2>Conclusion</h2>
     <p>this is a easy chanllenge for epoch and date time convertor using same command line injection and rce.</p>

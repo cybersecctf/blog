@@ -34,7 +34,7 @@ Find the flag being held on this server to get ahead of the competition http://m
     </ol>
 
     <h2>Flag</h2>
-    <p class="flag">The flag for this challenge is `picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}`.</p>
+    <p class="flag">picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}</p>
 
     <h2>Conclusion</h2>
     <p>easy ctf for work with files and get file and intro for pwn or maybe rev challenges</p>

@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <title>
+      picopractice(2021)- wave a flag Challenge Writeup
+    </title>
 </head>
 <body>
     <h1>picopractice(2021)- wave a flag Challenge Writeup</h1>
@@ -36,16 +21,9 @@
 <li>with input ./warm message say I don't know what 'message' means! I do know what -h means though!</li>
 <li>i use ./warm -h and say Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}
 </li>
-
-
-     
-               
-
-      
     </ol>
-
     <h2>Flag</h2>
-    <p class="flag">The flag for this challenge is `picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}`.</p>
+    <p class="flag">picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}</p>
 
     <h2>Conclusion</h2>
     <p>easy ctf for work with files and get file and intro for pwn or maybe rev challenges</p>

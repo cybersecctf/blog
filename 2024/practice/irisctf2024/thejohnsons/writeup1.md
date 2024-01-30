@@ -2,24 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <title>
+       irisctf 2024- The Johnson's Challenge Writeup
+    </title>
 </head>
 <body>
     <h1>irisctf 2024- The Johnson's Challenge Writeup</h1>

@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <title>Czech Where- irisctf 2024 Writeup
+</title>
 </head>
 <body>
     <h1>Czech Where- irisctf 2024 Writeup</h1>

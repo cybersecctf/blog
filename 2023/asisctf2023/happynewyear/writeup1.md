@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color:##131113;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+   
 </head>
 <body>
     <h1>aisisCTF 2023 - happy neew year ....2024 Challenge Writeup</h1>
