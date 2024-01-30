@@ -14,7 +14,7 @@ function getQueryParamOrDefault(name, defaultValue) {
         console.log("Enter key is pressed"+event.keyCode);
                   if (event.keyCode == 13) {
              var userInput = document.getElementById('search-box').value;
-   if (query.includes('{') && query.includes('}'))
+   if (userInput.includes('{') && userInput.includes('}'))
 {
  checkflag();
 return;
@@ -231,8 +231,8 @@ else
                   if (event.keyCode == 13) {
 
              var userInput = document.getElementById('search-box').value;
- if (query.includes('{') && query.includes('}'))
-                      checkflaf;
+ if (userInput.includes('{') && userInput.includes('}'))
+                      checkflag();
 else
 {
         window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
