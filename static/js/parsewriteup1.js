@@ -307,7 +307,7 @@ currentWriteupUrl = links2[0].href;
       
                           // Extract the flag text
                           var flag = flagElement ? flagElement.textContent.trim() : null;
-      
+                        var userInput = document.getElementById('search-box').value;
                           // Display the flag in the console (for testing)
  if (flag.localeCompare(userInput)==0) {
                             alert("flag is correct");return true;
