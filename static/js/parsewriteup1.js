@@ -244,7 +244,7 @@ data=renderMarkdown(currenturl);
                           // Extract the flag text
                                        var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
              var userInput = document.getElementById('search-box').value;
-
+console.log(userInput+":"+flag);
                  if (flag.localeCompare(userInput)==0) {
 document.getElementById('search-box').value="flag is correct"; 
 }
