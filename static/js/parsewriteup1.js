@@ -19,6 +19,7 @@ function getQueryParamOrDefault(name, defaultValue) {
  checkflag();
 return;
 }
+else
         window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
               }
 }
@@ -197,9 +198,9 @@ return;
                                 console.log('Flag:', flag+":"+userInput+":"+flag.localeCompare(userInput));
   
              if (flag.localeCompare(userInput)==0) {
-                        document.getElementById('checkflag').style.display = 'block';return true;
+                       document.getElementById('writeup-content').innerHTML ="flag is correct";
                     } else {
-                        document.getElementById('checkflag').style.display = 'none';return false;
+                        document.getElementById('writeup-content').innerHTML ="flag is wrong";
                     }
                     return false;
         }
