@@ -315,7 +315,7 @@ currentWriteupUrl = links2[0].href;
                           var flagElement = tempElement.querySelector('.flag');
       
                           // Extract the flag text
-                   
+                                       var flag = flagElement ? flagElement.textContent.trim() : "fakeflag";
                           console.log('Flag01:', flag);
       
                           // Render the writeup content
