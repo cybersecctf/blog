@@ -25,7 +25,7 @@ https://mercury.picoctf.net/static/d6f9aa16d2a2c51d2e431e658d87af9e/shark1.pcapn
      <li>  with wireshark you can open and analysis it and follow tcp stream like below</li>
    <li>  <img src=" https://missnhome.github.io/blog/2024/practice/picoctf/wiresharkdodo/selectfollow.png" alt="select" class="inline"/></li>
 <li>and then go to  5th stream and file text like this cvpbPGS{c33xno00_1_f33_h_qrnqorrs} that is cipher text</li>
-<li><img src=" https://missnhome.github.io/blog/2024/practice/picoctf/wiresharkdodo/streram5.png" alt="go to stream 5" class="inline"/></li>
+
 <li>and with online tool decode and find it 
     </ol>
 <br>
