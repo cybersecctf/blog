@@ -33,3 +33,4 @@ wasm learning in ctf webassembly Reverse Engineering,https://medium.com/tenable-
 wherearetherobots picoctf2019 web explotation aand find hiddenpage with robots,  https://phantom1ss.github.io/blog/2024/practice/picoctf/wherearetherobots/writeup1.md 
 thenumbers picoctf2019 cryptography with python for convert decimal and asci to char,  https://phantom1ss.github.io/blog/2024/practice/picoctf/thenumbers/writeup1.md 
 Wiresharkdoodo picoctf2021 work with pcapng file and network and forensics,  https://phantom1ss.github.io/blog/2024/practice/picoctf/wireshardodo/writeup1.md 
+cookies picoctf2021 set cookies in loops of values with python,  https://phantom1ss.github.io/blog/2024/practice/picoctf/cookies/writeup1.md 
