@@ -22,7 +22,7 @@
         li {
             margin-bottom: 10px;
         }
-pre { font-family:monospace;
+pre { user-select: all;font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
 background-color:gray;}
 
