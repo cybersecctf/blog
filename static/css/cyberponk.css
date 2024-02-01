@@ -24,7 +24,7 @@
         }
 pre { font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
-background-color:white;}
+background-color:gray;}
 
         #sidebar {
             float: left;
