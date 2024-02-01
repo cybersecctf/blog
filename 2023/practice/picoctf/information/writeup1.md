@@ -18,9 +18,9 @@ Files can always be changed in a secret way. Can you find the flag? link:cat.jpg
     <ol>
         <li>in every file in image for get flag is better use command $exiftool cat.jpg or strings and see if can get flag and see hints also)</li>
         <li>on exiftool cat.jpg  license is 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'   that is like base64
-<li>use with pytho codeimport base64
+<li>use with pytho code<pre>import base64
 a = 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'
-print(base64.b64decode(a)) for find if is base64 and yes work can use another encodings
+print(base64.b64decode(a))</pre> for find if is base64 and yes work can use another encodings
     </ol>
 
     <h2>Flag</h2>

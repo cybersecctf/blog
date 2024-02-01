@@ -16,10 +16,10 @@
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
         <li>use online tolls but for more pwn and rev and challenge like that is better use python code</li>
-        <li>import codecs
+        <pre>import codecs
 print(codecs.encode("cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}", "rot_13"))
 
-  </li>
+  </pre>
                
 
       

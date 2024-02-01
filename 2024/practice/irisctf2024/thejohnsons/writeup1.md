@@ -22,7 +22,7 @@ Please socialize with the Johnson's and get off your phone. You might be quizzed
        First, we need to know what happens when we execute the main file. It will prompt us the favourite food and colors of the Johnson's family memebers. If we answer all correctly, It will give us the flag. I will be using Ghidra to reverse engineer the given main file.
 
 We can see some strcmp functions that compares input with certain color name and foods. If iVar1 equals 0, the color and food name will be associate to the given option.
-
+<pre>
 Color Options
 
 red = 1
@@ -130,6 +130,7 @@ chosenFoods[0] = chicken
 chosenFoods[1] = pasta
 chosenFoods[2] = steak
 chosenFoods[3] = pizza
+</pre>
   <img src=" https://missnhome.github.io/blog/2024/practice/irisctf2024/thejohnsons/image.png" alt="flag result image" class="inline"/>
     
     </ol>

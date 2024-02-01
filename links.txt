@@ -3,7 +3,7 @@ obediantcat picoctf  in linux, https://phantom1ss.github.io/blog/2023/practice/p
 nicenetcat picoctf netcat in linux , https://phantom1ss.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
 mod 26 picoctf rot 13 with python, https://phantom1ss.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
 information picoctf   sample base64 with exiftool and forensics, https://phantom1ss.github.io/blog/2023/practice/picoctf/information/writeup1.md
-pythonwrangling picoctf  reverse and decode in python,https://github.com/phantom1ss/blog/blob/main/2023/practice/picoctf/PythonWrangling/writeup1.md
+pythonwrangling picoctf  reverse and decode in python, https://phantom1ss.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
 waveaflag picoctf  reverse on python, https://phantom1ss.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
 getahead  picoctf using burpsuit and curl for head request in url and web exploitation, https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
 happynewyear asisctf2023 copy and past flag https://phantom1ss.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md

