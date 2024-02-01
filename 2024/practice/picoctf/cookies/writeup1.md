@@ -23,8 +23,8 @@ Who doesn't love cookies? Try to figure out the best one. http://mercury.picoctf
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
         <li> you caan manully change value of cookie of pagae in developer tools and application tab and cookie like image  </li>
-        <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/cookies/cookie1.png" alt="ctf quetion image" class="inline"/>
-         <li>but i see that unitll value 5 get same result so use pytho code and while for set cookie in loof numbers</li>
+        <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/cookies/cookie1.png" alt="cookie location in google chrome" class="inline"/>
+         <li>but i see that unitll value 5 get same result so use pytho code and while for set cookie in loop numbers</li>
 <pre>
 import requests
 i=1
@@ -50,7 +50,7 @@ while True:
 ￼
 </pre>
     </ol>
-<li>in value 29(is random in different time) can get page</li>
+<li>in value 29(is random in different time) can get result page have pico or  flag</li>
 <br>
     <h2>Flag</h2>
     <p class="flag">picoCTF{3v3ry1_l0v3s_c00k135_064663be}
@@ -60,4 +60,3 @@ while True:
     <p>this is a very   easy chanllenge for work with cookies and web exploitation</p>
 </body>
 </html>
-
