@@ -35,3 +35,4 @@ thenumbers picoctf2019 cryptography with python for convert decimal and asci to 
 Wiresharkdoodo picoctf2021 work with pcapng file and network and forensics,  https://phantom1ss.github.io/blog/2024/practice/picoctf/wireshardodo/writeup1.md 
 cookies picoctf2021 set cookies in loops of values with python,  https://phantom1ss.github.io/blog/2024/practice/picoctf/cookies/writeup1.md 
 scavengerhunt picoctf2021 swork with apache  server in mac and web exploitation ,  https://phantom1ss.github.io/blog/2024/practice/picoctf/scavengerhunt/writeup1.md 
+webfunnylogin dicectf2024 sql injection and web exploitation and work with javascript,https://phantom1ss.github.io/blog/2024/dicectf/webfunnylogin/writeup1.md
