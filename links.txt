@@ -37,3 +37,4 @@ cookies picoctf2021 set cookies in loops of values with python,  https://phantom
 scavengerhunt picoctf2021 swork with apache  server in mac and web exploitation ,  https://phantom1ss.github.io/blog/2024/practice/picoctf/scavengerhunt/writeup1.md 
 webfunnylogin dicectf2024 sql injection and web exploitation and work with javascript,https://phantom1ss.github.io/blog/2024/dicectf/webfunnylogin/writeup1.md
 dicedicegoose dicectf2024 web exploitation with work on game and javascript and html ,https://phantom1ss.github.io/blog/2024/practice/dicectf/dicedicegoose/writeup1.md
+winter dicectf2024 Cryptography   with work on Winternitz signature scheme and python ,https://phantom1ss.github.io/blog/2024/practice/dicectf/cryptowinter/writeup1.md
