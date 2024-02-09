@@ -60,9 +60,9 @@ const html = `<!DOCTYPE html>
         <h1>gpwaf</h1>
         <p>i made a ejs renderer, its 100% hack proof im using gpt to check all your queries!</p>
         <form>
-           #(for prevent code  runing only not includede in code;) <textarea name="template" placeholder="template" rows="30"><%= query %></textarea>
+            <textarea name="template" placeholder="can search in my blog too?can code code?)" rows="30"><%= query %></textarea>
             <br>
-           # <button>run!</button>
+           <button>run!</button>
         </form>
         <br>
         <%= result %></pre>
