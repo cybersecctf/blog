@@ -39,3 +39,4 @@ webfunnylogin dicectf2024 sql injection and web exploitation and work with javas
 dicedicegoose dicectf2024 web exploitation with work on game and javascript and html ,https://phantom1ss.github.io/blog/2024/practice/dicectf/dicedicegoose/writeup1.md
 winter dicectf2024 Cryptography   with work on Winternitz signature scheme and python ,https://phantom1ss.github.io/blog/2024/practice/dicectf/cryptowinter/writeup1.md
 gpwaf dicectf 2024 work on SSTI web exploitations and javascript,https://phantom1ss.github.io/blog/2024/dicectf/gpwaf/writeup1.md
+ some assembly required 1 picoctf2021 sw wor web assembly and javascript and web expolitation,  https://phantom1ss.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
