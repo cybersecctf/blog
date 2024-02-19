@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>lactf2024- web/terms-and-conditions</h1>
 
     <h2>Challenge Description</h2>
     <p> web/terms-and-conditions
@@ -22,11 +22,11 @@ https://terms-and-conditions.chall.lac.tf
  <img src=" https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/web.png" alt="ctf quetion web" class="inline"/>
 
     so i open site and see script code was like this
-<pre>
-<script id="mainscript">
+<pre><code>
+ 
             const accept = document.getElementById("accept");
             document.body.addEventListener("touchstart", (e) => {
-                document.body.innerHTML = "<div><h1>NO TOUCHING ALLOWED</h1></div>";
+                document.body.innerHTML = "<iv><h 1>NO TOUCHING ALLOWED</h 1></d iv>";
             });
             let tx = 0;
             let ty = 0;
@@ -66,19 +66,12 @@ https://terms-and-conditions.chall.lac.tf
             }, 1);
             let width = window.innerWidth;
             let height = window.innerHeight;
-            setInterval(function() {
-                if (window.innerHeight !== height || window.innerWidth !== width) {
-                    document.body.innerHTML = "<div><h1>NO CONSOLE ALLOWED</h1></div>";
-                    height = window.innerHeight;
-                    width = window.innerWidth;
-                }
-            }, 10);
-        </script>
-</pre>
+       <a href="https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/Document.html">full code on this file</a>
+</code></pre>
 i remove this code contain touchstart and mouse move on here after saved page offline 
-<pre>
+<pre><code>
    document.body.addEventListener("touchstart", (e) => {
-                document.body.innerHTML = "<div><h1>NO TOUCHING ALLOWED</h1></div>";
+                document.body.innerHTML = "< div><h 1>NO TOUCHING ALLOWED</h 1></ div>";
             });
             let tx = 0;
             let ty = 0;
@@ -88,7 +81,7 @@ i remove this code contain touchstart and mouse move on here after saved page of
                 mx = e.clientX;
                 my = e.clientY;
             });
-</pre>
+</code></pre>
 and click button and get flag
  <img src=" https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/flag.png" alt="ctf quetion flag" class="inline"/>
     </ol>
@@ -104,3 +97,4 @@ and click button and get flag
 
 
  
+
