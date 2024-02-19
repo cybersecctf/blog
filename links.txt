@@ -41,3 +41,4 @@ winter dicectf2024 Cryptography   with work on Winternitz signature scheme and p
 gpwaf dicectf 2024 work on SSTI web exploitations and javascript,https://phantom1ss.github.io/blog/2024/dicectf/gpwaf/writeup1.md
  someassemblyrequired1 picoctf2021 sw wor web assembly and javascript and web expolitation,  https://phantom1ss.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
 0xL4ughCTF2024 library command injection in python,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
+lactf2024 save file and edit script and fix button and erbexploitation,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
