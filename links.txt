@@ -43,3 +43,4 @@ gpwaf dicectf 2024 work on SSTI web exploitations and javascript,https://phantom
 0xL4ughCTF2024 library command injection in python,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
 lactf2024 web/terms-and-conditions save file and edit script and fix button and erbexploitation,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
 comments githubissue,https://github.com/phantom1ss/blog/issues/1
+lactf2024 web/flaglang javascript yaml and web exploitation,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
