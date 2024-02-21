@@ -17,8 +17,8 @@ crackme picoctf reverse enginering and cryptography in python ,https://phantom1s
 2023 archive,https://github.com/phantom1ss/blog/tree/main/2023
 2024 practice archive,staticainotalwaysnoise024/practice
 2023 practice archive,https://github.com/phantom1ss/blog/tree/main/2023/practice
-nitectf 2023 archive,https://phantom1ss.github.io/blog/2023/nitectf2023
-asisctf 2023 archive,https://phantom1ss.github.io/blog/2023/asisctf2023
+nitectf 2023,https://phantom1ss.github.io/blog/2023/nitectf2023
+asisctf 2023,https://phantom1ss.github.io/blog/2023/asisctf2023
 warmedup  picoctf convert 0x hex to decimal in python ,https://phantom1ss.github.io/blog/2024/practice/picoctf/warmedup/writeup1.md
 bufferoverflow0 picoctf2022 binary exploitation via ,https://phantom1ss.github.io/blog/2024/practice/picoctf/bufferoverflow0/writeup1.md
 czech-where irisctf2024 osint search on internet and google map,https://phantom1ss.github.io/blog/2024/irisctf/czech-where/writeup1.md
@@ -42,3 +42,4 @@ gpwaf dicectf 2024 work on SSTI web exploitations and javascript,https://phantom
  someassemblyrequired1 picoctf2021 sw wor web assembly and javascript and web expolitation,  https://phantom1ss.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
 0xL4ughCTF2024 library command injection in python,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
 lactf2024 web/terms-and-conditions save file and edit script and fix button and erbexploitation,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
+comments githubissue,https://github.com/phantom1ss/blog/issues/1
