@@ -43,7 +43,7 @@ if (checkpass.substring(0, split) == 'pico') {
     }
 
 </pre>
-       if our flag was correct button alert password verified so ispect script in this order 0, split,split*2...... and get flag and yes was correct
+       if our flag was correct button alert Password Verifiedso inspect script in this order 0, split,split*2...... and get flag and yes was correct
     
     </ol>
 <br>

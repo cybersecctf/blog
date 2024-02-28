@@ -46,3 +46,4 @@ comments githubissue,https://github.com/phantom1ss/blog/issues/1
 lactf2024 web/flaglang javascript yaml and web exploitation,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
 picoctf2021 newcaesar reverse and cryptography of cuastom cipher and caesar in python,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
 picoctf2019 dont-use-client-side client side attack and javascript,https://phantom1ss.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
+learning Types of Client-Side Attacks,https://www.geeksforgeeks.org/types-of-client-side-attacks/
