@@ -1,32 +1,32 @@
-erass nitectf2023 using cat and wget in linux writeups1,https://phantom1ss.github.io/blog/2023/nitectf2023/erass/writeup1.md    
-obediantcat picoctf  in linux, https://phantom1ss.github.io/blog/2023/practice/picoctf/obediantcat/writeup1.md
-nicenetcat picoctf netcat in linux , https://phantom1ss.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
-mod 26 picoctf rot 13 with python, https://phantom1ss.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
-information picoctf   sample base64 with exiftool and forensics, https://phantom1ss.github.io/blog/2023/practice/picoctf/information/writeup1.md
-pythonwrangling picoctf  reverse and decode in python, https://phantom1ss.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
-waveaflag picoctf  reverse on python, https://phantom1ss.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
-getahead  picoctf using burpsuit and curl for head request in url and web exploitation, https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
-happynewyear asisctf2023 copy and past flag https://phantom1ss.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md
-MatryoshkaDoll picoctf  work with nested zip and images in python ,https://phantom1ss.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
-Insp3ct0r picoctf work with inspect and web developer in web browser, https://phantom1ss.github.io/blog/2024/practice/picoctf/Insp3ct0r/writeup1.md
-LetsWarmUp picoctf convert decimal to asci in python, https://phantom1ss.github.io/blog/2024/practice/picoctf/LetsWarmUp/writeup1.md
-tabtabattack picoctf  use tab autocomplete in linux terminal, https://phantom1ss.github.io/blog/2024/practice/picoctf/tabtabattack/writeup1.md
+erass nitectf2023 using cat and wget in linux writeups1 very easy,https://phantom1ss.github.io/blog/2023/nitectf2023/erass/writeup1.md    
+obediantcat picoctf  in linux very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/obediantcat/writeup1.md
+nicenetcat picoctf netcat in linux very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
+mod 26 picoctf rot 13 with python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
+information picoctf   sample base64 with exiftool and forensics very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/information/writeup1.md
+pythonwrangling picoctf  reverse and decode in python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
+waveaflag picoctf  reverse on python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
+getahead  picoctf using burpsuit and curl for head request in url and web exploitation very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
+happynewyear asisctf2023 copy and past flag very easy,https://phantom1ss.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md
+MatryoshkaDoll picoctf  work with nested zip and images in python very easy,https://phantom1ss.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
+Insp3ct0r picoctf work with inspect and web developer in web browser very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/Insp3ct0r/writeup1.md
+LetsWarmUp picoctf convert decimal to asci in python very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/LetsWarmUp/writeup1.md
+tabtabattack picoctf  use tab autocomplete in linux terminal very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/tabtabattack/writeup1.md
 Staticainotalwaysnoise picoctf analysis bash and elf binary files in linux, https://phantom1ss.github.io/blog//2024/practice/picoctf/Staticainotalwaysnoise/writeup1.md
-crackme picoctf reverse enginering and cryptography in python ,https://phantom1ss.github.io/blog/2024/practice/picoctf/crackme/writeup1.md
+crackme picoctf reverse enginering and cryptography in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/crackme/writeup1.md
 2024 archive,https://github.com/phantom1ss/blog/tree/main/2024
 2023 archive,https://github.com/phantom1ss/blog/tree/main/2023
 2024 practice archive,staticainotalwaysnoise024/practice
 2023 practice archive,https://github.com/phantom1ss/blog/tree/main/2023/practice
 nitectf 2023,https://phantom1ss.github.io/blog/2023/nitectf2023
 asisctf 2023,https://phantom1ss.github.io/blog/2023/asisctf2023
-warmedup  picoctf convert 0x hex to decimal in python ,https://phantom1ss.github.io/blog/2024/practice/picoctf/warmedup/writeup1.md
-bufferoverflow0 picoctf2022 binary exploitation via ,https://phantom1ss.github.io/blog/2024/practice/picoctf/bufferoverflow0/writeup1.md
-czech-where irisctf2024 osint search on internet and google map,https://phantom1ss.github.io/blog/2024/irisctf/czech-where/writeup1.md
-thejohnsons irisctf2024 reverse enginering with gidra,  https://phantom1ss.github.io/blog/2024/practice/irisctf2024/thejohnsons/writeup1.md 
-Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and char, https://phantom1ss.github.io/blog/2024/practice/irisctf2024/runwhatsthat/writeup1.md 
-what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
-AwayOnVacation irisctf2024 osint and search in instagram,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
-gloryofgarden picoctf2019 using strings and grep for get flag and search in file ,https://phantom1ss.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
+warmedup  picoctf convert 0x hex to decimal in python very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/warmedup/writeup1.md
+bufferoverflow0 picoctf2022 binary exploitation via easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/bufferoverflow0/writeup1.md
+czech-where irisctf2024 osint search on internet and google map easy,https://phantom1ss.github.io/blog/2024/irisctf/czech-where/writeup1.md
+thejohnsons irisctf2024 reverse enginering with gidra medium,  https://phantom1ss.github.io/blog/2024/practice/irisctf2024/thejohnsons/writeup1.md 
+Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and char easy, https://phantom1ss.github.io/blog/2024/practice/irisctf2024/runwhatsthat/writeup1.md 
+what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability medium,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
+AwayOnVacation irisctf2024 osint and search in instagram easy,https://phantom1ss.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
+gloryofgarden picoctf2019 using strings and grep for get flag and search in file very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
 what'sanetcat picoctf2019 using netcat ,https://phantom1ss.github.io/blog/2024/practice/picoctf/whatsanetcat/writeup1.md
 2Warm picoctf2019 convert decimal to binarywith python,https://phantom1ss.github.io/blog/2024/practice/picoctf/2warm/writeup1.md
 wasm learning in ctf webassembly Reverse Engineering,https://medium.com/tenable-techblog/coding-a-webassembly-ctf-challenge-5560576e9cb7
