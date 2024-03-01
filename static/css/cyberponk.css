@@ -24,10 +24,10 @@
         }
 pre { user-select: all;font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
-background-color:#fffb00;}
+background-color:#4CC0C0;}
 .flag { user-select: all;font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
-background-color:#fffb00;}
+background-color:#4CC0C0;}
         #sidebar {
             float: left;
             width: 20%;
