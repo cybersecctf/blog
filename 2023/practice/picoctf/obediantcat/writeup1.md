@@ -17,7 +17,7 @@ picopractice(2021)- Obedient Cat Challenge Writeup
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
         <li>i save link...</li>
-        <li>and use cat flag.txt for get flag after download with wget  </li>
+        <li>and use <pre>cat flag.txt</pre> for get flag after download with wget  </li>
                
 
       
