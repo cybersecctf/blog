@@ -20,7 +20,7 @@ picopractice(2021)- Obedient Cat Challenge Writeup
         <li>and use <pre>cat flag.txt</pre> for get flag after download with wget  </li>
                
 
-      
+      help
     </ol>
 
     <h2>Flag</h2>
