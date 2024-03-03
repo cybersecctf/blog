@@ -40,13 +40,13 @@ dicedicegoose dicectf2024 web exploitation with work on game and javascript and 
 winter dicectf2024 Cryptography   with work on Winternitz signature scheme and python medium,https://phantom1ss.github.io/blog/2024/practice/dicectf/cryptowinter/writeup1.md
 gpwaf dicectf 2024 work on SSTI web exploitations and javascript medium,https://phantom1ss.github.io/blog/2024/dicectf/gpwaf/writeup1.md
  someassemblyrequired1 picoctf2021 sw wor web assembly and javascript and web expolitation medium,  https://phantom1ss.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
-0xL4ughCTF2024 library command injection in python medium,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
-lactf2024 web/terms-and-conditions save file and edit script and fix button and erbexploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
+library 0xL4ughCTF2024 command injection in python medium,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
+web/terms-and-conditions lactf2024 save file and edit script and fix button and erbexploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
 comments githubissue,https://github.com/phantom1ss/blog/issues/1
-lactf2024 web/flaglang javascript yaml and web exploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
-picoctf2021 newcaesar reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
-picoctf2019 dont-use-client-side client side attack and javascript easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
+web/flaglang lactf2024 javascript yaml and web exploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
+newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
+dont-use-client-side client picoctf2019 side attack and javascript easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
 learning Types of Client-Side Attacks easy,https://www.geeksforgeeks.org/types-of-client-side-attacks/
-picomini2022beginner fixme2.py fix python script and =  very easy general,https://phantom1ss.github.io/blog/2024/practice/picoctf/fixme2py/writeup1.md
-picoctf2021 Stonks stack overflow in and solve with python and pwn medium,https://phantom1ss.github.io/blog/2024/practice/picoctf/stonks/writeup1.md
-picoctf2019 stringsit using strings and grep command in linux general easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/stringsit/writeup1.md
+fixme2.py fix picomini2022beginner python script and =  very easy general,https://phantom1ss.github.io/blog/2024/practice/picoctf/fixme2py/writeup1.md
+Stonks picoctf2021 stack overflow in and solve with python and pwn medium,https://phantom1ss.github.io/blog/2024/practice/picoctf/stonks/writeup1.md
+stringsit picoctf2019 using strings and grep command in linux general easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/stringsit/writeup1.md
