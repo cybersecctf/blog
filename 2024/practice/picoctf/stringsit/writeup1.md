@@ -11,7 +11,7 @@
 
 Description
 Can you find the flag in file without running it?
-<a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/stringsit/strings.file">strings</a>
+<a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/stringsit/strings">strings</a>
 </p>
 
     <h2>Solution Approach</h2>
@@ -23,8 +23,7 @@ so i use this command<pre>$strings ./strings |grep 'pico'</pre>grep command sear
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">Maybe try the 'strings' function? Take a look at the man page
-</p>
+    <p class="flag">picoCTF{5tRIng5_1T_827aee91}</p>
 
     <h2>Conclusion</h2>
     <p>this is a very   easy chanllenge for using linux strings and grep  command</p>

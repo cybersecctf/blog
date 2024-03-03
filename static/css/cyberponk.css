@@ -24,10 +24,16 @@
         }
 pre { user-select: all;font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
-background-color:#2e1700;}
+ background-color: #333333; /* Darker shade for <pre> elements */
+  color: #ffffff; /* Light text for readability */
+  padding: 1em;
+  border-radius: 8px;}
 .flag { user-select: all;font-family:monospace;
 white-space: pre-wrap; overflow-x: auto;
-background-color:#2e1700;}
+ background-color: #333333; /* Darker shade for <pre> elements */
+  color: #ffffff; /* Light text for readability */
+  padding: 1em;
+  border-radius: 8px;}
         #sidebar {
             float: left;
             width: 20%;
