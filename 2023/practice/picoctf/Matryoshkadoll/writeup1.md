@@ -42,7 +42,7 @@ and get flag.
       
     </ol>
 
-    <h2>picoCTF{336cf6d51c9d9774fd37196c1d7320ff}</h2>
+    <flag>picoCTF{336cf6d51c9d9774fd37196c1d7320ff}</flag>
 
     <h2>Conclusion</h2>
     <p>easy ctf for Forensics and get flag and folders from image and even zip files</p>

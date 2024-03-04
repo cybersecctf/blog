@@ -8,7 +8,7 @@ pythonwrangling picoctf  reverse and decode in python very easy, https://phantom
 waveaflag picoctf  reverse on python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
 getahead  picoctf using burpsuit and curl for head request in url and web exploitation very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
 happynewyear asisctf2023 copy and past flag very easy,https://phantom1ss.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md
-MatryoshkaDoll picoctf  work with nested zip and images in python very easy,https://phantom1ss.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
+MatryoshkaDoll picoctf  work with nested zip and images in python very easy Forensics,https://phantom1ss.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
 Insp3ct0r picoctf work with inspect and web developer in web browser very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/Insp3ct0r/writeup1.md
 LetsWarmUp picoctf convert decimal to asci in python very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/LetsWarmUp/writeup1.md
 tabtabattack picoctf  use tab autocomplete in linux terminal very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/tabtabattack/writeup1.md
