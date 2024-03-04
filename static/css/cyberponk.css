@@ -122,7 +122,7 @@ $gray: #9b9b9b;
   transition: border-color 0.2s;
 
   &::placeholder {
-    color: transparent;
+    color: white;
   }
 
   &:placeholder-shown ~ .form__label {
@@ -164,7 +164,7 @@ $gray: #9b9b9b;
   transition: border-color 0.2s;
 
   &::placeholder {
-    color: transparent;
+    color: white;
   }
 
   &:placeholder-shown ~ .form__label {
