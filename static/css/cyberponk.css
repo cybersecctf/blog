@@ -118,7 +118,7 @@ $gray: #9b9b9b;
   font-size: 1.3rem;
   color: #ffffff;
   padding: 7px 0;
-  background: transparent;
+  background:#333333;
   transition: border-color 0.2s;
 
   &::placeholder {
@@ -160,7 +160,7 @@ $gray: #9b9b9b;
   font-size: 1.3rem;
   color: $white;
   padding: 7px 0;
-  background: transparent;
+  background: #333333;
   transition: border-color 0.2s;
 
   &::placeholder {
@@ -241,7 +241,7 @@ width: 100%;
 {
  width: 100%;
  color: #ffffff;
-        background-color: #000000;
+        background-color: #333333;
    background: url("https://github.com/missnhome/missn.github.io/assets/154452140/8fe76c58-6bd6-484d-8b6c-7b6cf9284b83") no-repeat left;
   background-size: 20px;
 }

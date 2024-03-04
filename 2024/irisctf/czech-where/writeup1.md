@@ -33,9 +33,7 @@ on image i found it has label on door but picture was same from google map searc
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">irisctf{zlata_ulicka_u_daliborky}
-
-</p>
+    <p class="flag">irisctf{zlata_ulicka_u_daliborky}</p>
 
     <h2>Conclusion</h2>
     <p>this is a very   easy chanllenge for osint and search on internet</p>
