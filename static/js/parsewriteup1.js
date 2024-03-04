@@ -454,7 +454,6 @@ currentWriteupUrl = links2[0].href;
  
 
         
-                var specificURL = 'https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md';
-    loadWriteupContent(specificURL);
+               
  
  
