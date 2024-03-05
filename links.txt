@@ -52,4 +52,4 @@ fixme2.py fix picomini2022beginner python script and =  very easy general,https:
 Stonks picoctf2021 stack overflow in and solve with python and pwn medium,https://phantom1ss.github.io/blog/2024/practice/picoctf/stonks/writeup1.md
 stringsit picoctf2019 using strings and grep command in linux general easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/stringsit/writeup1.md
 valut-door-1 picoctf2019 java reverse engineering with python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/vaultdoor1/writeup1.md
-firast find search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md
+firstfind picogymExclusive search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md
