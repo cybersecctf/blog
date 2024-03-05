@@ -14,12 +14,12 @@
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
         <li> one why is looking at charat code and combine them after picoCTF{ and finish it with } in following weay</li>
-<code>
 in python code 
+<p class="code1">
 flag=['']*32
   replace password.charAt(0) == 'd'  with flag[0]='d'
 and print(flag)
-</code>
+</p>
            
     another is harder use pyton code for extract password from java file
 <pre>
