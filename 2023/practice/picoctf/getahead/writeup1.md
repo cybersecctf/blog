@@ -24,19 +24,14 @@ Find the flag being held on this server to get ahead of the competition http://m
 <li>another way is use burpsuit and change get to head request and forward it and see result in proxy histry</li>
 <li>and can get in burpsuit  whne click on post or head request in history 
 </li>
-<img src="https://github.com/missnhome/blog/blob/main/2023/practice/getahead/burp1.png" alt="burpsuit">
-
-
-     
-               
-
-      
+ <img src=" https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/burp1.png" alt="burpsuit" class="inline"/>
     </ol>
 
     <h2>Flag</h2>
     <p class="flag">picoCTF{b1scu1ts_4nd_gr4vy_18788aaa}</p>
 
     <h2>Conclusion</h2>
-    <p>easy ctf for work with files and get file and intro for pwn or maybe rev challenges</p>
+    <p>easy ctf for get head from url and burpsuit</p>
 </body>
 </html>
+
