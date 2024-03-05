@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>first find-picogym exclusive</h1>
 
     <h2>Challenge Description</h2>
     <p> AUTHOR: LT 'SYREAL' JONES
@@ -22,7 +22,6 @@ Download zip file:https://artifacts.picoctf.net/c/501/files.zip
 <pre>
 import zipfile
 import os
-
 def search_text_in_zip(zip_file_path, search_text):
     found_files = []
     content=[]
