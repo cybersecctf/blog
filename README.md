@@ -4,7 +4,12 @@
 
 <body>
     <h1>phantom$s teams-writeup page</h1>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phantom$s blog</title>
+ <link rel="stylesheet" href="https://phantom1ss.github.io/blog/static/css/cyberponk.css" />
+</head>
     <h2>Challenge Description</h2>
     <p> welcome to my ctf team writeups blog.in this part you will see challenge description
 </p>
@@ -12,8 +17,7 @@
     <h2>Solution Approach</h2>
     <p>in this part you will see solution</p>
     <ol>
-     you
-    
+
     </ol>
 <br>
     <h2>Flag</h2>
