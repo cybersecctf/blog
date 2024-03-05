@@ -13,17 +13,14 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        <li> one why is looking at charat code and combine them after picoCTF{ and finish it with }</li>
+        <li> one why is looking at charat code and combine them after picoCTF{ and finish it with } in following weay</li>
 <code>
-    password.length() == 32 &&
-               password.charAt(0) == 'd' &&
-               password.charAt(29)== '3' &&
-               password.charAt(4) == 'r' &&
-               password.charAt(2) == '5' &&
-               password.charAt(23) == 'r' &&
-               password.charAt(3) == 'c' &&
-               password.charAt(17) == '4' &&
-</code>   
+in python code 
+flag=['']*32
+  replace password.charAt(0) == 'd'  with flag[0]='d'
+and print(flag)
+</code>
+           
     another is harder use pyton code for extract password from java file
 <pre>
 import re
