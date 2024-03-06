@@ -239,8 +239,7 @@ width: 100%;
  
 } 
 .rounded-input {
- 
-
+    width: 100%;
     border-radius: 15px; /* Adjust the value as per your preference */
     border: 1px solid #ccc; /* Add border for better visibility */
     padding: 10px; /* Adjust the padding as per your preference */
@@ -271,11 +270,5 @@ width: 100%;
     #sidebar {
         max-width: 100%;
     }
-.rounded-input {
  
-    border-radius: 15px; /* Adjust the value as per your preference */
-    border: 1px solid #ccc; /* Add border for better visibility */
-    padding: 10px; /* Adjust the padding as per your preference */
-
-}
 }
