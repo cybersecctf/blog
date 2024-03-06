@@ -239,10 +239,12 @@ width: 100%;
  
 } 
 .rounded-input {
-    width: 100%; /* Set width to 100% */
-    border-radius: 15px !important; /* Adjust the value as per your preference */
+ 
+
+    border-radius: 15px; /* Adjust the value as per your preference */
     border: 1px solid #ccc; /* Add border for better visibility */
     padding: 10px; /* Adjust the padding as per your preference */
+
 }
 @media only screen and (max-width: 600px) {
 #search-box
@@ -270,9 +272,10 @@ width: 100%;
         max-width: 100%;
     }
 .rounded-input {
-    width: 100%; /* Set width to 100% */
-    border-radius: 15px !important;  /* Adjust the value as per your preference */
+ 
+    border-radius: 15px; /* Adjust the value as per your preference */
     border: 1px solid #ccc; /* Add border for better visibility */
     padding: 10px; /* Adjust the padding as per your preference */
+
 }
 }
