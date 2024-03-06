@@ -238,6 +238,10 @@ width: 100%;
         background-color: #000000;
  
 } 
+.round-input {
+    border-radius: 20px; /* Adjust the value as per your preference */
+    padding: 10px; /* Adjust the padding as per your preference */
+}
 @media only screen and (max-width: 600px) {
 #search-box
 {
