@@ -54,3 +54,4 @@ stringsit picoctf2019 using strings and grep command in linux general easy,https
 valut-door-1 picoctf2019 java reverse engineering with python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/vaultdoor1/writeup1.md
 firstfind picogymExclusive search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md
 BigZip picogymExclusive search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/bigzip/writeup1.md
+ASCIIFTW picogymExclusive work with ghidra and extract hex and convert to asci online,https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIIFTW/writeup1.md

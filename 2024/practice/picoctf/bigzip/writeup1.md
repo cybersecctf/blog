@@ -64,7 +64,7 @@ else:
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for search on zip files</p>
 </body>
 </html>
 
