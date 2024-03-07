@@ -35,7 +35,7 @@ and get flag
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">picoCTF{ASCII_IS_EASY__7BCD971D}
+    <p class="flag">picoCTF{ASCII_IS_EASY_7BCD971D}
 </p>
     <h2>Conclusion</h2>
     <p>this is a    medium chanllenge for work on ghidra and convert hex to asci
