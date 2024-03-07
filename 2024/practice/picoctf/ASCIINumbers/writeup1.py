@@ -6,3 +6,4 @@ for x in s.split():
  hex+=x.replace("0x","")
 hex = unhexlify(hex)
 print(hex) 
+ 

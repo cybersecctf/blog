@@ -56,3 +56,4 @@ firstfind picogymExclusive search text and filename in zip and nested folder,htt
 BigZip picogymExclusive search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/bigzip/writeup1.md
 ASCIIFTW picogymExclusive work with ghidra and extract hex and convert to asci online,https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIIFTW/writeup1.md
 ASCIINumbers picogymExclusive convert hex to ascii and text with python,https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIINumbers/writeup1.md
+Bit-O-Asm-1 picogymExclusive reverse engineering in x86-64 with asm and eax,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-1/writeup1.md
