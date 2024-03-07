@@ -17,6 +17,7 @@ You can download the file from  <a href="https://phantom1ss.github.io/blog/2024/
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+for disassembling the program we use ghidra and open it and search for 0x70 because program say flag start with and ascii of it is 'p' ,first part of pico and flag
     <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIIFTW/asciftwng.png" alt="ctf quetion image" class="inline"/>
        see a lot of hex like<code>0x700 x69 0x63 </code>that re our flag that started with hex 70 on base of problem combine them manaually and get<code>7069636f4354467b41534349495f49535f454153595f5f37424344393731447d</code> and convert with any online tool like <a href="https://www.rapidtables.com/convert/number/hex-to-ascii.html>this</a>and get flag
     </ol>
