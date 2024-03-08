@@ -1,0 +1,8 @@
+rbp_minus_0x4 = 0x9fe1a
+if rbp_minus_0x4 > 10000:
+        rbp_minus_0x4 -= 0x65
+else:
+        rbp_minus_0x4 += 0x65
+
+
+print(rbp_minus_0x4)
