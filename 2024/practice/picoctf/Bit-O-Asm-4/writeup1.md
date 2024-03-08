@@ -18,7 +18,7 @@ Download the assembly dump  <a href="https://artifacts.picoctf.net/c/511/disasse
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-we open assembly dmp and watch it
+we open assembly dump and watch it
 <code>
 <+0>:     endbr64 
 <+4>:     push   rbp

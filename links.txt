@@ -60,5 +60,5 @@ wasm learning in ctf webassembly Reverse Engineering medium,https://medium.com/t
 Bit-O-Asm-2  picogym Exclusive reverse engineering in x86-64 with asm and eax,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-2/writeup1.md
 Bit-O-Asm-3  picogym Exclusive reverse engineering in x86-64 with asm and eax with python,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-3/writeup1.md
 Bit-O-Asm-4  picogym Exclusive reverse engineering in x86-64 with asm and eax with python,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-4/writeup1.md
-GDB baby step 1  picogym Exclusive reverse engineering in x86-64 with asm and eax with python and disassemble main with gdb,https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep1/writeup1.md
+GDBbabystep1  picogym Exclusive reverse engineering in x86-64 with asm and eax with python and disassemble main with gdb,https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep1/writeup1.md
  

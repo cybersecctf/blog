@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>Bit-O-Asm-4- picogym Exclusive</h1>
+    <h1>GDB baby step 1- picogym Exclusive</h1>
 
     <h2>Challenge Description</h2>
     <p> 
@@ -17,8 +17,8 @@ Disassemble <a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/GDB
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
- we download file this time we should take assembly dump from gdb or any debugger and not giving directly like <a href="https://phantom1ss.github.io/blog/?q=Bit-O-Asm-4">previous</a> competetion in picogym Exclusive
-for get assembly dump file of main with gdb use this commands<pre>$gdb ./debugger0_a   then inside gdb type ) disassemble main</pre>      this dump file we get
+ we download file this time we should take assembly dump from gdb or any debugger and not giving directly like <a href="https://phantom1ss.github.io/blog/?q=Bit-O-Asm-4">previous</a> competetion in picogym Exclusive.
+for get assembly dump file of main with gdb use this commands:<pre>$gdb ./debugger0_a   then inside gdb type ) disassemble main</pre>     we get  this dump file  
 <pre>
 0x0000000000001129 <+0>:     endbr64
    0x000000000000112d <+4>:     push   %rbp
