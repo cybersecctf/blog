@@ -63,3 +63,4 @@ Bit-O-Asm-4  picogym Exclusive reverse engineering in x86-64 with asm and eax wi
 GDBbabystep1  picogymExclusive reverse engineering in x86-64 with asm and eax with python and disassemble main with gdb,https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep1/writeup1.md
 GDBbabystep2  picogymExclusive reverse engineering in x86-64 with asm and eax with python and disassemble main and watch eax with gdb,https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep2/writeup1.md 
 GDBbabystep3  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep3/writeup1.md
+GDBbabystep4  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep4/writeup1.md

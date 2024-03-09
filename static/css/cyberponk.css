@@ -28,6 +28,12 @@ white-space: pre-wrap; overflow-x: auto;
   color: #ffffff; /* Light text for readability */
   padding: 1em;
   border-radius: 8px;}
+code{ user-select: all;font-family:monospace;
+ 
+ background-color: #333333; /* Darker shade for <pre> elements */
+  color: #ffffff; /* Light text for readability */
+  padding: 1em;
+  border-radius: 8px;}
 .code1{ user-select: all;font-family:monospace;
  
  background-color: #333333; /* Darker shade for <pre> elements */
