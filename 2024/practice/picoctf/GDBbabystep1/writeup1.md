@@ -30,7 +30,7 @@ for get assembly dump file of main with gdb use this commands:<pre>$gdb ./debugg
    0x000000000000113e <+21>:    ret
 </pre>
 as see in line<code>0x0000000000001138 <+15>:    mov    $0x86342,%eax</code>
-value of eax is 0x86342 and after convert t o decimal  flag is found.
+value of eax is 0x86342 and flag is  decimal value of it .
 <br>
     <h2>Flag</h2>
     <p class="flag">picoCTF{549698}
