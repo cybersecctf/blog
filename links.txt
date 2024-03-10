@@ -20,6 +20,7 @@ crackme picoctf reverse enginering and cryptography in python easy,https://phant
 2023 practice archive,https://github.com/phantom1ss/blog/tree/main/2023/practice
 nitectf 2023,https://phantom1ss.github.io/blog/2023/nitectf2023
 asisctf 2023,https://phantom1ss.github.io/blog/2023/asisctf2023
+PickerI  picogymExclusive easy reverse engineering in python and netcat hex to text,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerI/writeup1.md 
 warmedup  picoctf convert 0x hex to decimal in python very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/warmedup/writeup1.md
 bufferoverflow0 picoctf2022 binary exploitation via easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/bufferoverflow0/writeup1.md
 czech-where irisctf2024 osint search on internet and google map easy,https://phantom1ss.github.io/blog/2024/irisctf/czech-where/writeup1.md
@@ -65,4 +66,3 @@ GDBbabystep2  picogymExclusive reverse engineering in x86-64 with asm and eax wi
 GDBbabystep3  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep3/writeup1.md
 GDBbabystep4  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run medium, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep4/writeup1.md
 LocalTarget  picogymExclusive easy buferover flow, https://phantom1ss.github.io/blog/2024/practice/picoctf/LocalTarget/writeup1.md
-Picker I  picogymExclusive easy reverse engineering in python and netcat, https://phantom1ss.github.io/blog/2024/practice/picoctf/LocalTarget/writeup1.md
