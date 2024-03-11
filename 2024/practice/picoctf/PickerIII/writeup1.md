@@ -80,7 +80,7 @@ def get_func(n):
 </pre>
 after some try and get error find this input  "win and add it in length of func_table like image below can get flag.
 <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIII/plickeriii.png" alt="plickeriii" class="inline"/>
-
+but flag is in hex. convert it to text with   code in this <a href="https://phantom1ss.github.io/blog/?q=hex">writeup</a> and get real flag
 </pre>
 </ol>
 <br>
@@ -94,3 +94,4 @@ after some try and get error find this input  "win and add it in length of func_
 
 
  
+<a href="https://phantom1ss.github.io/blog/?q=hex">writeup</a>
