@@ -12,7 +12,6 @@ func_table = ''
 
 def reset_table():
   global func_table
-
   # This table is formatted for easier viewing, but it is really one line
   func_table = \
 '''\
@@ -27,18 +26,13 @@ def check_table():
 
   if( len(func_table) != FUNC_TABLE_ENTRY_SIZE * FUNC_TABLE_SIZE):
     return False
-
   return True
-
-
 def get_func(n):
   global func_table
-
   # Check table for viability
   if( not check_table() ):
     print(CORRUPT_MESSAGE)
     return
-
   # Get function name from table
   func_name = ''
   func_name_offset = n * FUNC_TABLE_ENTRY_SIZE
