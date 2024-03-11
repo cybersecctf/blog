@@ -20,7 +20,7 @@ The program's source code can be downloaded <a href="https://artifacts.picoctf.n
 <h2>Solution Approach</h2>
 <p>Here are the steps we took to solve the challenge:</p>
 <ol>
-we download source and see is like<a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerI/writeup1.md">l picker I </a>except that it has filter for prevent input win and get flag
+we download source and see is like <a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerI/writeup1.md">picker I </a>except that it has filter for prevent input win and get flag
 <pre>
 def filter(user_input):
 if 'win' in user_input:
