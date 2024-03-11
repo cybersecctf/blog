@@ -34,8 +34,8 @@ win(): This function attempts to open a file named 'flag.txt' in read mode ('r')
 
 esoteric2(): Similar to esoteric1(), this function contains a multi-line string that seems to be C code related to testing the A20 line and the keyboard controller (KBC). Again, this function is not called in the script.
 </p>
-       netcat address print flag in hex when type win so like this <a href="https://phantom1ss.github.io/blog/?q=ASCIINumbers">code </a> 
-    for print flag in text
+       netcat address print flag in hex when type win so like this code from this<a href="https://phantom1ss.github.io/blog/?q=ASCIINumbers">writeup </a> 
+    for print flag in text just run this code 
 <pre>
 
 
