@@ -82,19 +82,41 @@ int main() {
   void (*foo)(void) = (void (*)())val;
   foo();
 }
-
 </p>
+in this code The user is prompted to enter a memory address in 
+
+hexadecimal format.
+
+The inputted value is read using scanf and stored in the variable 
+
+val.
+
+val is then interpreted as a function pointer and assigned to foo.
+
+Finally, foo() is called, effectively causing the program to jump to 
+the address provided by the user and execute whatever code is 
+
+located there. 
+so like <a href="https://phantom1ss.github.io/blog/?q=GDBbabystep4">this </a>we just on locate address of win with gdb with this command
+<pre>
+(gdb) --args picker-IV
+(gdb) layout asm
+</pre>
+in asm code see win address
+ <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/gdbwinaddress.png" alt="gdb win address" class="inline"/>
+and if enter it without hex  it jump to address of win and print flag
 </ol>
 <br>
 <h2>Flag</h2>
-<p class="flag">picoCTF{7h15_15_wh47_w3_g37_w17h_u53r5_1n_ch4rg3_a186f9ac}
+<p class="flag">picoCTF{n3v3r_jump_t0_u53r_5uppl13d_4ddr35535_14bc5444}
+
 
 <h2>Conclusion</h2>
-<p>this is a very easy challenge for work on reverse engineering with python and bypass filter input and modify then</p>
+<p>this is a very easy challenge for work on binary exploitation and ret2win</p>
 
 </body>
 </html>
 
 
  
-<a href="https://phantom1ss.github.io/blog/?q=hex">writeup</a>
+
