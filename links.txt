@@ -69,5 +69,4 @@ LocalTarget  picogymExclusive easy buferover flow, https://phantom1ss.github.io/
 PickerII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerII/writeup1.md 
 PickerIII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag with add new choice,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIII/writeup1.md 
 PickerIV  picogymExclusive easy ret2win binary explotion,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/writeup1.md 
-
-
+WPA-ingOut  picogymExclusive get passwords of pcaqp file from wifi,https://phantom1ss.github.io/blog/2024/practice/picoctf/WPA-ingOut/writeup1.md
