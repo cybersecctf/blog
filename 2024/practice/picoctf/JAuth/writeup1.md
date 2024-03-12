@@ -3,7 +3,7 @@
 <html>
  
 <body>
-    <h1>Picker I- picoGym Exclusive</h1>
+    <h1>JAuth- picoGym Exclusive</h1>
 
     <h2>Challenge Description</h2>
     <p> AUTHOR: LT 'SYREAL' JONES
