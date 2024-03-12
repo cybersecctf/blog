@@ -97,14 +97,14 @@ Finally, foo() is called, effectively causing the program to jump to
 the address provided by the user and execute whatever code is 
 
 located there. 
-so like <a href="https://phantom1ss.github.io/blog/?q=GDBbabystep4">this </a>we just on locate address of win with gdb with this command
+so like <a href="https://phantom1ss.github.io/blog/?q=GDBbabystep4">this </a>we just   locate address of win with gdb with this command
 <pre>
 (gdb) --args picker-IV
 (gdb) layout asm
 </pre>
-in asm code see win address
+in asm code ,can  see win address
  <img src=" https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/gdbwinaddress.png" alt="gdb win address" class="inline"/>
-and if enter it without hex  it jump to address of win and print flag
+and if enter it without hex , it jump to address of win and print flag
 </ol>
 <br>
 <h2>Flag</h2>
