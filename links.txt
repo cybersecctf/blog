@@ -70,4 +70,4 @@ PickerII  picogymExclusive easy reverse engineering in python and netcat filter 
 PickerIII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag with add new choice very easy ,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIII/writeup1.md 
 PickerIV  picogymExclusive easy ret2win binary explotion very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/writeup1.md 
 WPA-ingOut  picogymExclusive get passwords of pcaqp file from wifi easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/WPA-ingOut/writeup1.md
-JAuth picogymExclusive gweb exploitation and component security , https://phantom1ss.github.io/blog/2024/practice/picoctf/JAuth/writeup1.md
+JAuth picogymExclusive gweb exploitation and component security and jwt  vulnerability, https://phantom1ss.github.io/blog/2024/practice/picoctf/JAuth/writeup1.md
