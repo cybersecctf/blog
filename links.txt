@@ -43,7 +43,7 @@ gpwaf dicectf 2024 work on SSTI web exploitations and javascript medium,https://
  someassemblyrequired1 picoctf2021 sw wor web assembly and javascript and web expolitation medium,  https://phantom1ss.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
 library 0xL4ughCTF2024 command injection in python medium,https://phantom1ss.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
 web/terms-and-conditions lactf2024 save file and edit script and fix button and erbexploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
-comments githubissue,https://github.com/phantom1ss/blog/issues/1
+comments link,https://github.com/phantom1ss/blog/issues/1
 web/flaglang lactf2024 javascript yaml and web exploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
 newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
 dont-use-client-side client picoctf2019 side attack and javascript easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
@@ -72,4 +72,7 @@ PickerIV  picogymExclusive easy ret2win binary explotion very easy,https://phant
 WPA-ingOut  picogymExclusive get passwords of pcaqp file from wifi easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/WPA-ingOut/writeup1.md
 JAuth picogymExclusive gweb exploitation and component security and jwt  vulnerability, https://phantom1ss.github.io/blog/2024/practice/picoctf/JAuth/writeup1.md
 superssh picoctf2024 ssh easy,/home/kali/Desktop/blog/2024/pico2024/superssh/writeup1.md
-Commitmentissues picoctf2024,/home/kali/Desktop/blog/2024/pico2024/CommitmentIssues
+TimeMachine picoctf2024 github commit,/home/kali/Desktop/blog/2024/pico2024/TimeMachine/writeup1.md
+Commitmentissues picoctf2024 github commit,/home/kali/Desktop/blog/2024/pico2024/CommitmentIssues/writeup1.md
+BlameGame picoctf2024 github commit search on github commit,/home/kali/Desktop/blog/2024/pico2024/BlameGame/writeup1.md
+
