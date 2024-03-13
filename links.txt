@@ -71,3 +71,5 @@ PickerIII  picogymExclusive easy reverse engineering in python and netcat filter
 PickerIV  picogymExclusive easy ret2win binary explotion very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/writeup1.md 
 WPA-ingOut  picogymExclusive get passwords of pcaqp file from wifi easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/WPA-ingOut/writeup1.md
 JAuth picogymExclusive gweb exploitation and component security and jwt  vulnerability, https://phantom1ss.github.io/blog/2024/practice/picoctf/JAuth/writeup1.md
+superssh picoctf2024 ssh easy,/home/kali/Desktop/blog/2024/pico2024/superssh/writeup1.md
+Commitmentissues picoctf2024,/home/kali/Desktop/blog/2024/pico2024/CommitmentIssues
