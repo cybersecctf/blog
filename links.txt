@@ -82,3 +82,4 @@ SecretofthePolyglot picoctf2024 convert image type and use file in linux and  fo
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,/home/kali/Desktop/blog/2024/pico2024/Bookmarklet/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/interencdec/writeup1.md
 WebDecode picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/WebDecode/writeup1.md
+formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,/home/kali/Desktop/blog/2024/pico2024/formatstring0/writeup1.md
