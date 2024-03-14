@@ -77,3 +77,7 @@ Commitmentissues picoctf2024 github commit general,/home/kali/Desktop/blog/2024/
 BlameGame picoctf2024 github commit search on github commit general,/home/kali/Desktop/blog/2024/pico2024/BlameGame/writeup1.md
 CollaborativeDevelopment picoctf2024 github commit and branch and diff search on github commit and merge general,/home/kali/Desktop/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
 binhexa picoctf2024 doing binary operations on python and convert binary to hex general,/home/kali/Desktop/blog/2024/pico2024/binhexa/writeup1.md
+CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,/home/kali/Desktop/blog/2024/pico2024/CanYouSee/writeup1.md
+SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,/home/kali/Desktop/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
+Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,/home/kali/Desktop/blog/2024/pico2024/Bookmarklet/writeup1.md
+interencdec picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/interencdec/writeup1.md
