@@ -81,3 +81,4 @@ CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,/home/kali/Desktop/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,/home/kali/Desktop/blog/2024/pico2024/Bookmarklet/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/interencdec/writeup1.md
+WebDecode picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/WebDecode/writeup1.md
