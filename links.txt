@@ -87,6 +87,8 @@ ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,/home/
 Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,/home/kali/Desktop/blog/2024/pico2024/verify/writeup1.md
 heapoverflow pico2019  picoctf2024https://phantom1ss.github.io/blog/2024/practice/picoctf/heapoverflow/writeup1.md
 heap0 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,/home/kali/Desktop/blog/2024/pico2024/heap0/writeup1.md
+heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,/home/kali/Desktop/blog/2024/pico2024/heap1/writeup1.md
 MobPsycho picoctf2024  search and find  in apk content or file name for flag easy forensics,/home/kali/Desktop/blog/2024/pico2024/Mobpsycho/writeup1.md
 Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,/home/kali/Desktop/blog/2024/pico2024/Customencryption/writeup1.md
 c3  picoctf2024  Custom Cyclical Cipher! easy,/home/kali/Desktop/blog/2024/pico2024/C3/writeup1.md
+50char  learningctf2024  create 50 random character  in python very easy,/home/kali/Desktop/blog/2024/learningctf/char50/writeup1.md
