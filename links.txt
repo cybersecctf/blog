@@ -92,3 +92,6 @@ MobPsycho picoctf2024  search and find  in apk content or file name for flag eas
 Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,/home/kali/Desktop/blog/2024/pico2024/Customencryption/writeup1.md
 c3  picoctf2024  Custom Cyclical Cipher! easy,/home/kali/Desktop/blog/2024/pico2024/C3/writeup1.md
 50char  learningctf2024  create 50 random character  in python very easy,/home/kali/Desktop/blog/2024/learningctf/char50/writeup1.md
+packer  picoctf2024 reverse enginering easy,/home/kali/Desktop/blog/2024/pico2024/packer/writeup1.md
+Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,/home/kali/Desktop/blog/2024/pico2024/Unminify/writeup1.md
+endianness  picoctf2024 general skills  convert text to little and big Endian with c,/home/kali/Desktop/blog/2024/pico2024/endianness/writeup1.md
