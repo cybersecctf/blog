@@ -98,3 +98,4 @@ endianness  picoctf2024 general skills  convert text to little and big Endian wi
 heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,/home/kali/Desktop/blog/2024/pico2024/heap2/writeup1.md
 IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,/home/kali/Desktop/blog/2024/pico2024/IntroToBurp/writeup1.md
 dont-you-love-banners picoctf2024 medium,/home/kali/Desktop/blog/2024/pico2024/dont-you-love-banners/writeup1.md
+BinarySearch picoctf binraysearch on host and bash,/home/kali/Desktop/blog/2024/pico2024/BinarySearch/writeup1.md
