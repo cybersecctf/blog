@@ -84,7 +84,7 @@ interencdec picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/
 WebDecode picoctf2024 cryptography base64 caesar,/home/kali/Desktop/blog/2024/pico2024/WebDecode/writeup1.md
 formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,/home/kali/Desktop/blog/2024/pico2024/formatstring0/writeup1.md
 ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,/home/kali/Desktop/blog/2024/pico2024/ScanSurprise/writeup1.md
-Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,/home/kali/Desktop/blog/2024/pico2024/verify/writeup1.md
+Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,/home/kali/Desktop/blog/2024/pico2024/Verify/writeup1.md
 heapoverflow pico2019  picoctf2024https://phantom1ss.github.io/blog/2024/practice/picoctf/heapoverflow/writeup1.md
 heap0 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,/home/kali/Desktop/blog/2024/pico2024/heap0/writeup1.md
 heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,/home/kali/Desktop/blog/2024/pico2024/heap1/writeup1.md
