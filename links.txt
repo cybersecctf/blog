@@ -75,7 +75,7 @@ superssh picoctf2024 ssh easy general,/home/kali/Desktop/blog/2024/pico2024/supe
 TimeMachine picoctf2024 github commit general,/home/kali/Desktop/blog/2024/pico2024/TimeMachine/writeup1.md
 Commitmentissues picoctf2024 github commit general,/home/kali/Desktop/blog/2024/pico2024/CommitmentIssues/writeup1.md
 BlameGame picoctf2024 github commit search on github commit general,/home/kali/Desktop/blog/2024/pico2024/BlameGame/writeup1.md
-CollaborativeDevelopment picoctf2024 github commit and branch and diff search on github commit and merge general,/home/kali/Desktop/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
+CollaborativeDevelopment picoctf2024 github  diff search easy,/home/kali/Desktop/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
 binhexa picoctf2024 doing binary operations on python and convert binary to hex general,/home/kali/Desktop/blog/2024/pico2024/binhexa/writeup1.md
 CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,/home/kali/Desktop/blog/2024/pico2024/CanYouSee/writeup1.md
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,/home/kali/Desktop/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
