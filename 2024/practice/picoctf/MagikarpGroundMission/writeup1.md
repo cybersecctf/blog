@@ -10,7 +10,19 @@
 
 Description
 Do you know how to move between directories and read files in the shell? Start the container, `ssh` to it, and then `ls` once connected to begin. Login via `ssh` as `ctf-player` with the password, `abcba9f7`
-Additional details will be available after launching your challenge   <button id="instance">instance</button>
+Additional details will be available after launching your challenge   
+<script>
+  
+ document.getElementById("instance").addEventListener("click", function() {
+    var contentDiv = document.getElementById("content");
+    if (contentDiv.style.display === "none") {
+        contentDiv.style.display = "block"; // Show the div
+    } else {
+        contentDiv.style.display = "none"; // Hide the div
+    }
+});
+</script>
+<button id="instance">instance</button>
     <div id="content" style="display: none;">
         This content will be shown/hidden.
     </div>
