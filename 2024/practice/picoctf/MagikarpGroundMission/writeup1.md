@@ -15,7 +15,7 @@ Additional details will be available after launching your challenge   <button id
         This content will be shown/hidden.
     </div>
 </p>
-merge
+ 
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
