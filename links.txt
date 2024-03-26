@@ -92,6 +92,7 @@ MobPsycho picoctf2024  search and find  in apk content or file name for flag eas
 Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,/home/kali/Desktop/blog/2024/pico2024/Customencryption/writeup1.md
 c3  picoctf2024  Custom Cyclical Cipher! easy,/home/kali/Desktop/blog/2024/pico2024/C3/writeup1.md
 50char  learningctf2024  create 50 random character  in python very easy,/home/kali/Desktop/blog/2024/learningctf/char50/writeup1.md
+fileequallity learningctf2024 check file is equal,/home/kali/Desktop/blog/2024/learningctf/fileequallity/writeup1.md
 packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,/home/kali/Desktop/blog/2024/pico2024/packer/writeup1.md
 Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,/home/kali/Desktop/blog/2024/pico2024/Unminify/writeup1.md
 endianness  picoctf2024 general skills  convert text to little and big Endian with c easy,/home/kali/Desktop/blog/2024/pico2024/endianness/writeup1.md
@@ -99,3 +100,4 @@ heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflo
 IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,/home/kali/Desktop/blog/2024/pico2024/IntroToBurp/writeup1.md
 dont-you-love-banners picoctf2024 medium,/home/kali/Desktop/blog/2024/pico2024/dont-you-love-banners/writeup1.md
 BinarySearch picoctf binraysearch on host and bash,/home/kali/Desktop/blog/2024/pico2024/BinarySearch/writeup1.md
+MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md
