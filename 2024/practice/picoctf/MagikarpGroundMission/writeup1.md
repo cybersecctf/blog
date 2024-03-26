@@ -6,12 +6,17 @@
     <h1>Magikarp Ground Mission- picoctf2021</h1>
 
     <h2>Challenge Description</h2>
-    <p> AUTHOR: SYREAL
+     AUTHOR: SYREAL
 
 Description
 Do you know how to move between directories and read files in the shell? Start the container, `ssh` to it, and then `ls` once connected to begin. Login via `ssh` as `ctf-player` with the password, `abcba9f7`
 Additional details will be available after launching your challenge   
-<script>
+
+<button id="instance">instance</button>
+    <div id="content" style="display: none;">
+        This content will be shown/hidden.
+    </div>
+ <script>
   
  document.getElementById("instance").addEventListener("click", function() {
     var contentDiv = document.getElementById("content");
@@ -22,11 +27,6 @@ Additional details will be available after launching your challenge
     }
 });
 </script>
-<button id="instance">instance</button>
-    <div id="content" style="display: none;">
-        This content will be shown/hidden.
-    </div>
-</p>
  
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
