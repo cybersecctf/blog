@@ -1,0 +1,4 @@
+Binary result: 100001010000110
+0x4286
+
+Run  successed
