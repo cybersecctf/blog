@@ -1,4 +1,0 @@
-$ ./format-string-1
- print("A"*1024)
-
-Run  successed
