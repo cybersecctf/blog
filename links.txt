@@ -79,7 +79,7 @@ CollaborativeDevelopment picoctf2024 github  diff search easy,https://phantom1ss
 binhexa picoctf2024 doing binary operations on python and convert binary to hex general,https://phantom1ss.github.io/blog2024/pico2024/binhexa/writeup1.md
 CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,https://phantom1ss.github.io/blog2024/pico2024/CanYouSee/writeup1.md
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog2024/pico2024/SecretofthePolyglot/writeup1.md
-Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog2024/pico2024/Bookmarklet/writeup1.md
+Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog2024/pico2024/interencdec/writeup1.md
 WebDecode picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog2024/pico2024/WebDecode/writeup1.md
 formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,https://phantom1ss.github.io/blog2024/pico2024/formatstring0/writeup1.md
