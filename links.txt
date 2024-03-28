@@ -102,4 +102,4 @@ dont-you-love-banners picoctf2024 medium,https://phantom1ss.github.io/blog2024/p
 BinarySearch picoctf binraysearch on host and bash,https://phantom1ss.github.io/blog2024/pico2024/BinarySearch/writeup1.md
 MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
-tunn3lv1s10n picoctf2021,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
+tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
