@@ -1,43 +1,27 @@
 from pwn import *
 
-# Connect to the remote server
-p = remote("mercury.picoctf.net", 20266)
+KEY_LEN = 50000
+MAX_CHUNK = 1000
 
-# Receive the welcome message and encrypted flag
-print(p.recvuntil(b'flag!\n'))
-encrypted_flag = p.recvline().strip()
-print("Flag:", encrypted_flag)
+r = remote("mercury.picoctf.net", 20266)
+r.recvuntil("This is the encrypted flag!\n")
+flag = r.recvlineS(keepends = False)
+log.info(f"Flag: {flag}")
+bin_flag = unhex(flag)
 
-# Send your first data to encrypt (e.g., 12)
-p.sendline(b'12')
+counter = KEY_LEN - len(bin_flag)
 
-# Receive the encrypted data (e.g., 5004)
-print(p.recvuntil(b'Here ya go!\n'))
-ciphertext1 = p.recvline().strip()
-
-# Send your second data to encrypt (e.g., 23)
-p.sendline(b'23')
-
-# Receive the encrypted data (e.g., 6e4b)
-print(p.recvuntil(b'Here ya go!\n'))
-ciphertext2 = p.recvline().strip()
-
-print("Result 1:", ciphertext1)
-print("Result 2:", ciphertext2)
-
-# Convert the plaintexts and ciphertexts to integers
-plaintext1 = 12
-ciphertext1 = int(ciphertext1, 16)
-plaintext2 = 23
-ciphertext2 = int(ciphertext2, 16)
-print("Result 1:", ciphertext1)
-
-print("Result 2:", ciphertext2)
-# Attempt key recovery
-key_candidate = bytes([plaintext1 ^ (ciphertext1 & 0xFF)])
-
-# Confirm the key by XOR-ing with the second plaintext-ciphertext pair
-if bytes([plaintext2 ^ (ciphertext2 & 0xFF)]) == key_candidate:
-    print("Recovered Key:", key_candidate)
-else:
-    print("Key recovery failed.")
+with log.progress('waiting...') as p:
+    while counter > 0:
+        p.status(f"{counter} bytes left")
+        chunk_size = min(MAX_CHUNK, counter)
+        r.sendlineafter("What data would you like to encrypt? ", "a" * chunk_size)
+        
+        counter -= chunk_size
+ 
+r.sendlineafter("What data would you like to encrypt? ", bin_flag)
+r.recvlineS()
+flag=r.recvlineS()
+print("The flag: {}".format(flag))
+s=bytearray.fromhex(flag).decode()
+print(s)

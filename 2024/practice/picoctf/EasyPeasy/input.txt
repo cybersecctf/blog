@@ -1,3 +1,37 @@
-Decrypted Flag: 41214070216813656356826066096226453375625568647060804668430067635221532851779
+Original Flag: [Rg
+
+result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ k), flag, key))
+    print("This is the encrypted flag!\n{}\n".format("".join(result)))
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+flag{123454567}
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+Run  successed
+Original Flag: [Rg
+
+       key = kf[start:stop]
+    key_location = stop
+
+    result = list(map(lambda p, k: "{:02x}".format(ord(p) ^ k), ui, key))
+
+    print("Here ya go!\n{}\n".format("".join(result)))
 
 Run  successed

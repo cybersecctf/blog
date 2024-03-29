@@ -103,4 +103,4 @@ BinarySearch picoctf binraysearch on host and bash,https://phantom1ss.github.io/
 MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
-EasyPeasy picoctf2021 cryptography reverse python  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
+EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 

@@ -18,7 +18,8 @@ A one-time pad is unbreakable, but can you manage to recover the flag? (Wrap wit
        <p id="code1">
 $wget https://mercury.picoctf.net/static/84c434ada6e2f770b5000292cadae7eb/otp.py
  </p> 
-<pre>
+and open code see this is xor encrypting of flag whithis code
+<p id="code1">
 ui = input("What data would you like to encrypt? ").rstrip()
         if len(ui) == 0 or len(ui) > KEY_LEN:
                 return -1
@@ -47,17 +48,46 @@ c = startup(0)
 while c >= 0:
         c = encrypt(c)
 
-</pre>
-       
+</p>
+ and reverse it and opwn it and convert flag from hex to text and get flag
+<pre>
+from pwn import *
+
+KEY_LEN = 50000
+MAX_CHUNK = 1000
+
+r = remote("mercury.picoctf.net", 20266)
+r.recvuntil("This is the encrypted flag!\n")
+flag = r.recvlineS(keepends = False)
+log.info(f"Flag: {flag}")
+bin_flag = unhex(flag)
+
+counter = KEY_LEN - len(bin_flag)
+
+with log.progress('waiting...') as p:
+    while counter > 0:
+        p.status(f"{counter} bytes left")
+        chunk_size = min(MAX_CHUNK, counter)
+        r.sendlineafter("What data would you like to encrypt? ", "a" * chunk_size)
+        
+        counter -= chunk_size
+ 
+r.sendlineafter("What data would you like to encrypt? ", bin_flag)
+r.recvlineS()
+flag=r.recvlineS()
+print("The flag: {}".format(flag))
+s=bytearray.fromhex(flag).decode()
+print(s)
+</pre>      
     
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">picoCTF{99072996e6f7d397f6ea0128b4517c23}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for reversing enginering   python and    xor and pwn easy</p>
 </body>
 </html>
 
