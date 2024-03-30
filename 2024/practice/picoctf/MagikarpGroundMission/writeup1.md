@@ -32,9 +32,12 @@ Additional details will be available after launching your challenge
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
          go to terminal follow this process with ls and cat command
-<pre>
+sample ls<pre>
 $ls
-$ls -lah for show all files and  permissions
+</pre>
+for show all permissions and files
+<pre>
+$ls -lah
 </pre>
  and get flag in three part in different directories.full process is here
 <pre>
