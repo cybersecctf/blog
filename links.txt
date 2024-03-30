@@ -95,13 +95,14 @@ c3  picoctf2024  Custom Cyclical Cipher! easy,https://phantom1ss.github.io/blog2
 fileequallity learningctf2024 check file is equal,https://phantom1ss.github.io/blog2024/learningctf/fileequallity/writeup1.md
 packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://phantom1ss.github.io/blog2024/pico2024/packer/writeup1.md
 Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://phantom1ss.github.io/blog2024/pico2024/Unminify/writeup1.md 
-endianness  picoctf2024 general skills  convert text to little and big Endian with c easy,https://phantom1ss.github.io/blog2024/pico2024/endianness/writeup1.md
+
 heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,https://phantom1ss.github.io/blog2024/pico2024/heap2/writeup1.md
 IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://phantom1ss.github.io/blog2024/pico2024/IntroToBurp/writeup1.md
 dont-you-love-banners picoctf2024 medium,https://phantom1ss.github.io/blog2024/pico2024/dont-you-love-banners/writeup1.md
 BinarySearch picoctf binraysearch on host and bash,https://phantom1ss.github.io/blog2024/pico2024/BinarySearch/writeup1.md
 MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
+endianness  picoctf2024 general skills  convert text to little and big Endian with c easy,https://phantom1ss.github.io/blog2024/pico2024/endianness/writeup1.md
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
 EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
 ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
