@@ -76,33 +76,33 @@ TimeMachine picoctf2024 github commit general,https://phantom1ss.github.io/blog/
 Commitmentissues picoctf2024 github commit general,https://phantom1ss.github.io/blog/2024/pico2024/CommitmentIssues/writeup1.md
 BlameGame picoctf2024 github commit search on github commit general,https://phantom1ss.github.io/blog/2024/pico2024/BlameGame/writeup1.md
 CollaborativeDevelopment picoctf2024 github  diff search easy,https://phantom1ss.github.io/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
-binhexa picoctf2024 doing binary operations on python and convert binary to hex general,https://phantom1ss.github.io/blog2024/pico2024/binhexa/writeup1.md
-CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,https://phantom1ss.github.io/blog2024/pico2024/CanYouSee/writeup1.md
-SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog2024/pico2024/SecretofthePolyglot/writeup1.md
+binhexa picoctf2024 doing binary operations on python and convert binary to hex general,https://phantom1ss.github.io/blog/2024/pico2024/binhexa/writeup1.md
+CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/CanYouSee/writeup1.md
+SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
-interencdec picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog2024/pico2024/interencdec/writeup1.md
-WebDecode picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog2024/pico2024/WebDecode/writeup1.md
-formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,https://phantom1ss.github.io/blog2024/pico2024/formatstring0/writeup1.md
-ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,https://phantom1ss.github.io/blog2024/pico2024/ScanSurprise/writeup1.md
-Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,https://phantom1ss.github.io/blog2024/pico2024/Verify/writeup1.md
+interencdec picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
+WebDecode picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog/2024/pico2024/WebDecode/writeup1.md
+formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,https://phantom1ss.github.io/blog/2024/pico2024/formatstring0/writeup1.md
+ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,https://phantom1ss.github.io/blog/2024/pico2024/ScanSurprise/writeup1.md
+Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,https://phantom1ss.github.io/blog/2024/pico2024/Verify/writeup1.md
 heapoverflow pico2019  picoctf2024https://phantom1ss.github.io/blog/2024/practice/picoctf/heapoverflow/writeup1.md
-heap0 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://phantom1ss.github.io/blog2024/pico2024/heap0/writeup1.md
-heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://phantom1ss.github.io/blog2024/pico2024/heap1/writeup1.md
-MobPsycho picoctf2024  search and find  in apk content or file name for flag easy forensics,https://phantom1ss.github.io/blog2024/pico2024/Mobpsycho/writeup1.md
-Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,https://phantom1ss.github.io/blog2024/pico2024/Customencryption/writeup1.md
-c3  picoctf2024  Custom Cyclical Cipher! easy,https://phantom1ss.github.io/blog2024/pico2024/C3/writeup1.md
-50char  learningctf2024  create 50 random character  in python very easy,https://phantom1ss.github.io/blog2024/learningctf/char50/writeup1.md
-fileequallity learningctf2024 check file is equal,https://phantom1ss.github.io/blog2024/learningctf/fileequallity/writeup1.md
-packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://phantom1ss.github.io/blog2024/pico2024/packer/writeup1.md
-Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://phantom1ss.github.io/blog2024/pico2024/Unminify/writeup1.md 
+heap0 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://phantom1ss.github.io/blog/2024/pico2024/heap0/writeup1.md
+heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://phantom1ss.github.io/blog/2024/pico2024/heap1/writeup1.md
+MobPsycho picoctf2024  search and find  in apk content or file name for flag easy forensics,https://phantom1ss.github.io/blog/2024/pico2024/Mobpsycho/writeup1.md
+Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,https://phantom1ss.github.io/blog/2024/pico2024/Customencryption/writeup1.md
+c3  picoctf2024  Custom Cyclical Cipher! easy,https://phantom1ss.github.io/blog/2024/pico2024/C3/writeup1.md
+50char  learningctf2024  create 50 random character  in python very easy,https://phantom1ss.github.io/blog/2024/learningctf/char50/writeup1.md
+fileequallity learningctf2024 check file is equal,https://phantom1ss.github.io/blog/2024/learningctf/fileequallity/writeup1.md
+packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://phantom1ss.github.io/blog/2024/pico2024/packer/writeup1.md
+Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://phantom1ss.github.io/blog/2024/pico2024/Unminify/writeup1.md 
 
-heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,https://phantom1ss.github.io/blog2024/pico2024/heap2/writeup1.md
-IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://phantom1ss.github.io/blog2024/pico2024/IntroToBurp/writeup1.md
-dont-you-love-banners picoctf2024 medium,https://phantom1ss.github.io/blog2024/pico2024/dont-you-love-banners/writeup1.md
-BinarySearch picoctf binraysearch on host and bash,https://phantom1ss.github.io/blog2024/pico2024/BinarySearch/writeup1.md
+heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,https://phantom1ss.github.io/blog/2024/pico2024/heap2/writeup1.md
+IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://phantom1ss.github.io/blog/2024/pico2024/IntroToBurp/writeup1.md
+dont-you-love-banners picoctf2024 medium,https://phantom1ss.github.io/blog/2024/pico2024/dont-you-love-banners/writeup1.md
+BinarySearch picoctf binraysearch on host and bash,https://phantom1ss.github.io/blog/2024/pico2024/BinarySearch/writeup1.md
 MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
-endianness  picoctf2024 general skills  convert text to little and big Endian with c easy,https://phantom1ss.github.io/blog2024/pico2024/endianness/writeup1.md
+endianness  picoctf2024 general skills  convert text to little and big Endian with c easy,https://phantom1ss.github.io/blog/2024/pico2024/endianness/writeup1.md
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
 EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
 ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
