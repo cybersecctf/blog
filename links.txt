@@ -81,7 +81,7 @@ CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
-WebDecode picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog/2024/pico2024/WebDecode/writeup1.md
+WebDecode picoctf2024 inspect search wepages base64,https://phantom1ss.github.io/blog/2024/pico2024/WebDecode/writeup1.md
 formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,https://phantom1ss.github.io/blog/2024/pico2024/formatstring0/writeup1.md
 ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,https://phantom1ss.github.io/blog/2024/pico2024/ScanSurprise/writeup1.md
 Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,https://phantom1ss.github.io/blog/2024/pico2024/Verify/writeup1.md
