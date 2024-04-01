@@ -25,6 +25,7 @@ $echo "d3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrX2xoNjBsMDBpfQ==" |base64 -d
 </p>
 <pre>
 #python
+import sys
 def caesar_decrypt(ciphertext, shift):
     plaintext = ""
     for char in ciphertext:
@@ -40,7 +41,7 @@ def caesar_decrypt(ciphertext, shift):
 ciphertext="wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}"
 
 if len (sys.argv)>1:
- ciphertext =sys.argv[1]# "wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}"
+ ciphertext =sys.argv[1]#for decrypt another caesar text
 
 # Try all shifts from 1 to 32
 for shift in range(1, 33):
