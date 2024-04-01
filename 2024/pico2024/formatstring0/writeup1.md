@@ -31,7 +31,7 @@ def find_format_string_vulnerabilities(c_code):
         vulnerabilities.append(match.group(0))
     return vulnerabilities
 
-# Read C code from a file
+file_path="./format-string-0.c"
 def read_c_code_from_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
