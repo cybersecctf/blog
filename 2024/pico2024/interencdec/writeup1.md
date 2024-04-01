@@ -39,7 +39,7 @@ def caesar_decrypt(ciphertext, shift):
             plaintext += char
     return plaintext
 ciphertext="wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}"
-
+print(sys.argv)
 if len (sys.argv)>1:
  ciphertext =sys.argv[1]#for decrypt another caesar text
 

@@ -16,7 +16,7 @@ Additional details will be available after launching your challenge instance.
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        <li> steps1 </li>
+      
 we use  this code we check c  code have format string volunerbility or no that say this code have in two input
        <pre>
 #python
@@ -50,7 +50,8 @@ if vulnerabilities:
         print(vulnerability)
 else:
     print("No potential format string vulnerabilities found.")
-</pre>but only can use three value and not values like %%% .
+</pre>
+but only can use three value and not values like %%% .
 so see inputs when see input see this two value Gr%114d_Cheese
 and Cla%sic_Che%s%steak  have many %so check them and can get flag 
  
