@@ -37,7 +37,7 @@ def read_c_code_from_file(file_path):
         return file.read()
 
 # Specify the path to the C file
-c_file_path = 'format-string-0.c'
+c_file_path = './home/kali/Desktop/blog/2024/pico2024/formatstring0/format-string-0.c'
 
 # Read the C code from the file
 c_code = read_c_code_from_file(c_file_path)
