@@ -45,7 +45,6 @@ library 0xL4ughCTF2024 command injection in python medium,https://phantom1ss.git
 web/terms-and-conditions lactf2024 save file and edit script and fix button and erbexploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
 comments link,https://github.com/phantom1ss/blog/issues/1
 web/flaglang lactf2024 javascript yaml and web exploitation easy,https://phantom1ss.github.io/blog/2024/lactf2024/flaglang/writeup1.md
-newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
 dont-use-client-side client picoctf2019 side attack and javascript easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
 learning Types of Client-Side Attacks easy,https://www.geeksforgeeks.org/types-of-client-side-attacks/
 fixme2.py fix picomini2022beginner python script and =  very easy general,https://phantom1ss.github.io/blog/2024/practice/picoctf/fixme2py/writeup1.md
@@ -80,7 +79,6 @@ binhexa picoctf2024 doing binary operations on python and convert binary to hex 
 CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/CanYouSee/writeup1.md
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
-interencdec picoctf2024 cryptography base64 caesar,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
 WebDecode picoctf2024 inspect search wepages base64,https://phantom1ss.github.io/blog/2024/pico2024/WebDecode/writeup1.md
 formatstring0 picoctf2024 strings vulunerability linux very easy binary exploitation,https://phantom1ss.github.io/blog/2024/pico2024/formatstring0/writeup1.md
 ScanSurprise picoctf2024 search text in qrcodes inside zip forensics easy,https://phantom1ss.github.io/blog/2024/pico2024/ScanSurprise/writeup1.md
@@ -108,3 +106,5 @@ EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://phantom
 ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
 speedsandfeeds picoctf2021 gcode cnc viewer reverse engineering very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/speedsandfeeds/writeup1.md 
 Shop picoctf2024 hack nc shop convert decimal array string,https://phantom1ss.github.io/blog/2024/practice/picoctf/Shop/writeup1.md
+newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
+interencdec picoctf2024 cryptography base64 caesar decrypt easy,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
