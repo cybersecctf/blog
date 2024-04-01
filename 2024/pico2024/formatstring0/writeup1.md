@@ -53,7 +53,7 @@ else:
 </pre>but only can use three value and not values like %%% .
 so see inputs when see input see this two value Gr%114d_Cheese
 and Cla%sic_Che%s%steak  have many %so check them and can get flag 
-<pre>
+ 
 
     </ol>
 <br>
