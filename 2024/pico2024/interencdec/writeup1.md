@@ -47,7 +47,7 @@ print(sys.argv)
 if len (sys.argv)>1:
  ciphertext =sys.argv[1]#for decrypt another caesar text
  if len (sys.argv)>2:
-       if sys.argv.isnumeric():
+       if sys.argv[2].isnumeric():
             shift=sys.argv[2]
        else:
              searchtext=sys.argv[2] 
