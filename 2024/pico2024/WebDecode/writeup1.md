@@ -20,7 +20,15 @@ Start searching <a href="http://titan.picoctf.net:54494/">here</a> to find the f
  open website and search for flag with inspector        
     in about page .i get    base64 text inside it with this command convert it to text and get flag
 <pre>
-$echo  "cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMWY4MzI2MTV9"| base64 -d
+#python
+import base64,sys
+try:
+ a="cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMWY4MzI2MTV9"
+ if len(sys.argv)>1:
+  a = sys.argv[1]
+ print(base64.b64decode(a))
+except:
+ print("not a base 64 nymber")
 </pre>
     </ol>
 <br>
