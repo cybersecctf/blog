@@ -49,20 +49,20 @@ if len (sys.argv)>1:
  if len (sys.argv)>2:
        if sys.argv.isnumeric():
             shift=sys.argv[2]
-        else:
+       else:
              searchtext=sys.argv[2] 
 # Try all shifts from 1 to 32
 if shift ==-1:
-for shift in range(1, 33):
+ for shift in range(1, 33):
     plaintext = caesar_decrypt(ciphertext, shift)
-    if plaintext.startswith("pico"):
+    if searchtext in plaintext :
         print("Shift:", shift)
         print("Decrypted plaintext:", plaintext)
-        break
+     
 else:
     plaintext = caesar_decrypt(ciphertext, shift)
     print("Decrypted [plaintext] in [shift]: ", plaintext,shift)
-    break
+   
 </pre>
                    
     </ol>
