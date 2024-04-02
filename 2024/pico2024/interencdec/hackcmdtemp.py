@@ -15,7 +15,7 @@ def caesar_decrypt(ciphertext, shift):
             plaintext += char
     return plaintext
 ciphertext="wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}"
-searchtext=""
+searchtext="pico"
 shift=-1
 print(sys.argv)
 if len (sys.argv)>1:
@@ -29,10 +29,10 @@ if len (sys.argv)>1:
 if shift ==-1:
  for shift in range(1, 33):
     plaintext = caesar_decrypt(ciphertext, shift)
-    if searchtext in plaintext :
+    if plaintext.startswith("pico"):
         print("Shift:", shift)
         print("Decrypted plaintext:", plaintext)
-     
+        break
 else:
     plaintext = caesar_decrypt(ciphertext, shift)
     print("Decrypted [plaintext] in [shift]: ", plaintext,shift)

@@ -1,7 +1,7 @@
 from PIL import Image
 from pyzbar.pyzbar import decode
 import zipfile
-import os
+import os,sys
 def search_qr_text_in_zip(zip_file_path):
     found_text = []
 
@@ -40,13 +40,18 @@ def search_text_in_qrcode(png_file_path):
 
     # If no QR code is found, return None
     return None
-
+stext="pico"
 zip_file_path = 'challenge.zip'
-search_text = 'search_query'
-found_files = search_qr_text_in_zip(zip_file_path)
-if found_files:
+if len(sys.argv)>1:
+    zip_file_path = sys.argv[1]
+if len(sys.argv)>2:
+    stext = sys.argv[2]
+
+found_text= search_qr_text_in_zip(zip_file_path)
+if found_text:
     print("Found qr text in the following files:")
-    for file in found_files:
-        print(file)
+    for text in found_text:
+        if stext in text:
+         print(text)
 else:
     print("Text not found in any files.")
