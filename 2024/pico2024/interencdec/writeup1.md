@@ -34,9 +34,9 @@ def caesar_decrypt(ciphertext, shift):
         if char.isalpha():
             # Determine if the character is uppercase or lowercase
             if char.isupper():
-                plaintext += chr((ord(char) - shift - 65) % 26 + 65)
+                plaintext += chr((ord(char) - int(shift) - 65) % 26 + 65)
             else:
-                plaintext += chr((ord(char) - shift - 97) % 26 + 97)
+                plaintext += chr((ord(char) - int(shift) - 97) % 26 + 97)
         else:
             plaintext += char
     return plaintext
