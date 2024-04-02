@@ -20,6 +20,7 @@ Additional details will be available after launching your challenge instance.
     <ol>
       we can use this code and run for find qrcode text in zipfile
 <pre>
+#python
 from PIL import Image
 from pyzbar.pyzbar import decode
 import zipfile
