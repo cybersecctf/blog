@@ -89,7 +89,7 @@ heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflo
 MobPsycho picoctf2024  search and find  in apk content or file name for flag easy forensics,https://phantom1ss.github.io/blog/2024/pico2024/Mobpsycho/writeup1.md
 Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,https://phantom1ss.github.io/blog/2024/pico2024/Customencryption/writeup1.md
 c3  picoctf2024  Custom Cyclical Cipher! easy,https://phantom1ss.github.io/blog/2024/pico2024/C3/writeup1.md
-50char  learningctf2024  create 50 random character  in python very easy,https://phantom1ss.github.io/blog/2024/learningctf/char50/writeup1.md
+50char  learningctf2024  create 50 random character  in python very easy,https://phantom1ss.github.io/blog/2024/learningctf2024/char50/writeup1.md
 fileequallity learningctf2024 check file is equal,https://phantom1ss.github.io/blog/2024/learningctf/fileequallity/writeup1.md
 packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://phantom1ss.github.io/blog/2024/pico2024/packer/writeup1.md
 Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://phantom1ss.github.io/blog/2024/pico2024/Unminify/writeup1.md 
@@ -108,3 +108,5 @@ speedsandfeeds picoctf2021 gcode cnc viewer reverse engineering very easy,https:
 Shop picoctf2024 hack nc shop convert decimal array string,https://phantom1ss.github.io/blog/2024/practice/picoctf/Shop/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar decrypt easy,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
 newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
+
+ 
