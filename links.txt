@@ -3,7 +3,7 @@ obediantcat picoctf using cat  in linux very easy general, https://phantom1ss.gi
 erass nitectf2023 using cat and wget in linux writeups1 very easy,https://phantom1ss.github.io/blog/2023/nitectf2023/erass/writeup1.md    
 nicenetcat picoctf netcat in linux very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
 mod 26 picoctf rot 13 with python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
-information picoctf   sample base64 with exiftool and forensics very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/information/writeup1.md
+information picoctf   sample decrypt with exiftool and forensics very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/information/writeup1.md
 pythonwrangling picoctf  reverse and decode in python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
 waveaflag picoctf  reverse on python very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
 getahead  picoctf using burpsuit and curl for head request in url and web exploitation very easy, https://phantom1ss.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
@@ -76,7 +76,7 @@ Commitmentissues picoctf2024 github commit general,https://phantom1ss.github.io/
 BlameGame picoctf2024 github commit search on github commit general,https://phantom1ss.github.io/blog/2024/pico2024/BlameGame/writeup1.md
 CollaborativeDevelopment picoctf2024 github  diff search easy,https://phantom1ss.github.io/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
 binhexa picoctf2024 doing binary operations on python and convert binary to hex general,https://phantom1ss.github.io/blog/2024/pico2024/binhexa/writeup1.md
-CanYouSee picoctf2024 exiftool image and decode base64 and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/CanYouSee/writeup1.md
+CanYouSee picoctf2024 exiftool image and decodebase64 and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/CanYouSee/writeup1.md
 SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://phantom1ss.github.io/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
 Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://phantom1ss.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
 WebDecode picoctf2024 inspect search wepages base64,https://phantom1ss.github.io/blog/2024/pico2024/WebDecode/writeup1.md
