@@ -19,7 +19,7 @@ I've hidden a flag in this file. Can you find it?
     and see is hidden file use command cat ppt/slideMasters/hidden and get text is like base64 but not complete mode so use this code for get flag from this
 <pre>
 #python
-import base64
+import base64,sys
 
 def test_base64(string):
     try:
