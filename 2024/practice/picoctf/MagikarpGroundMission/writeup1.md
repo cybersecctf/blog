@@ -18,6 +18,7 @@ I've hidden a flag in this file. Can you find it?
          remove space in name and convert it   to <a href="https://mercury.picoctf.net/static/9a7436948cc502e9cacf5bc84d2cccb5/Forensicsisfun.pptm">Forensics is fun.pptm</a>
     and see is hidden file use command cat ppt/slideMasters/hidden and get text is like base64 but not complete mode so use this code for get flag from this
 <pre>
+#python
 import base64
 
 def test_base64(string):
