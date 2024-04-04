@@ -55,6 +55,7 @@ firstfind picogymExclusive search text and filename in zip and nested folder,htt
 BigZip picogymExclusive search text and filename in zip and nested folder,https://phantom1ss.github.io/blog/2024/practice/picoctf/bigzip/writeup1.md
 ASCIIFTW picogymExclusive work with ghidra and extract hex and convert to asci online,https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIIFTW/writeup1.md
 ASCIINumbers picogymExclusive convert hex to ascii and text with python,https://phantom1ss.github.io/blog/2024/practice/picoctf/ASCIINumbers/writeup1.md
+ARMssembly1 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly1/writeup1.md 
 Bit-O-Asm-1 picogymExclusive reverse engineering in x86-64 with asm and eax,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-1/writeup1.md
 wasm learning in ctf webassembly Reverse Engineering medium,https://medium.com/tenable-techblog/coding-a-webassembly-ctf-challenge-5560576e9cb7
 Bit-O-Asm-2  picogym Exclusive reverse engineering in x86-64 with asm and eax,https://phantom1ss.github.io/blog/2024/practice/picoctf/Bit-O-Asm-2/writeup1.md
@@ -104,7 +105,6 @@ MagikarpGroundMission pico2021 ls move between directories in linux very easy an
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
 EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
 ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
-ARMssembly1 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/ARMssembly1/writeup1.md 
 speedsandfeeds picoctf2021 gcode cnc viewer reverse engineering very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/speedsandfeeds/writeup1.md 
 Shop picoctf2024 hack nc shop convert decimal array string,https://phantom1ss.github.io/blog/2024/practice/picoctf/Shop/writeup1.md
 interencdec picoctf2024 cryptography base64 caesar decrypt easy,https://phantom1ss.github.io/blog/2024/pico2024/interencdec/writeup1.md
