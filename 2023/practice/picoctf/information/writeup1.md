@@ -16,7 +16,9 @@ Files can always be changed in a secret way. Can you find the flag? link:cat.jpg
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-     in this challenge i use <pre> exiftool $1</pre>(if use in file)or <pre>$exiftool  cat.jpg </pre>  
+     in this challenge i use <pre> 
+$exiftool $1
+</pre>(if use in file)or <pre>$exiftool  cat.jpg </pre>  
 
 in       exiftool cat.jpg  license is 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'   that is like base64
 use with pytho code
