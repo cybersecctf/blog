@@ -66,6 +66,7 @@ GDBbabystep2  picogymExclusive reverse engineering in x86-64 with asm and eax wi
 GDBbabystep3  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep3/writeup1.md
 GDBbabystep4  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run medium, https://phantom1ss.github.io/blog/2024/practice/picoctf/GDBbabystep4/writeup1.md
 LocalTarget  picogymExclusive easy buferover flow very easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/LocalTarget/writeup1.md
+printhello learningctf2024 print argument very easy,https://phantom1ss.github.io/blog/2024/learningctf2024/printhello/writeup1.md
 PickerII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerII/writeup1.md 
 PickerIII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag with add new choice very easy ,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIII/writeup1.md 
 PickerIV  picogymExclusive easy ret2win binary explotion very easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/PickerIV/writeup1.md 
