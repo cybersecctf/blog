@@ -13,6 +13,7 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+The tcache bin consists of a linked list, where one chunk points to the next chunk. This attack consists of using a bug to overwrite a pointer in the linked list to an address we want to allocate, then allocating it when it's that chunks turn to be allocated.
         for see how tcache attack working see this code and run it and see final value for get flag
 <pre>
 #include <stdio.h>
