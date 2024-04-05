@@ -112,3 +112,4 @@ interencdec picoctf2024 cryptography base64 caesar decrypt easy,https://phantom1
 newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
 tcacheattack leaningctf with   sample c code easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/CacheMeOutside/writeup2.md
 CacheMeOutside picoctf2021  tcache attack with c and heap/binary exploitation medium,https://phantom1ss.github.io/blog/2024/practice/picoctf/CacheMeOutside/writeup1.md
+minirsa picoctf2021   rsa small values n c e=3 easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/MiniRSA/writeup1.md
