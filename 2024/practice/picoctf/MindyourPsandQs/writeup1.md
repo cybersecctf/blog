@@ -16,14 +16,27 @@ merge
     <ol>
   mindyourpsqs is english <a href="https://en.wikipedia.org/wiki/Mind_your_Ps_and_Qs">term</a>  means watch your tals and manners .see wiki page for complete define here means separate p and q in n via <a href="http://factordb.com/index.php?showid=1100000002524321038">factordb</a>or any way and then use this code and run it and get flag.this ways is good for small n and notice that small n isn't good for encryption with rsa at all.
 <pre>
+#python
 from Crypto.Util.number import inverse, long_to_bytes
+import sys
 
-c = 240986837130071017759137533082982207147971245672412893755780400885108149004760496
 n = 831416828080417866340504968188990032810316193533653516022175784399720141076262857
+if len(sys.argv)>1:
+ n=sys.argv[1]
 e = 65537
+if len(sys.argv)>2:
+ e=sys.argv[2]
+c = 240986837130071017759137533082982207147971245672412893755780400885108149004760496
+if len(sys.argv)>3:
+ c=sys.argv[3]
 p = 1593021310640923782355996681284584012117
+if len(sys.argv)>4:
+  p=sys.argv[4]
 q = 521911930824021492581321351826927897005221
+if len(sys.argv)>5:
+ q=sys.argv[5]
 
+ 
 phi = (p-1)*(q-1)
 
 d = inverse(e, phi)
