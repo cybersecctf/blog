@@ -43,7 +43,7 @@ after convert it with separation<p id="code1">I USED THE PROGRAM AND HID IT WITH
 
 program was in zip in user/bin steghide so extract one of file.see size of picture3.bmp is bigger than normal so should use it?
     <pre>
-$steghide extract -sf picture3.bmp
+$./steghide extract -sf picture3.bmp
 </pre>
 and enter passphrase  DUEDILIGENCE and it extract <a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/TrivialFlagTransferProtocol/flag.txt">flag.txt</a>
 that ahve flag inside it.

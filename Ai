@@ -114,4 +114,4 @@ tcacheattack leaningctf with   sample c code easy,https://phantom1ss.github.io/b
 CacheMeOutside picoctf2021  tcache attack with c and heap/binary exploitation medium,https://phantom1ss.github.io/blog/2024/practice/picoctf/CacheMeOutside/writeup1.md
 minirsa picoctf2021   rsa small values n c e=3 easy, https://phantom1ss.github.io/blog/2024/practice/picoctf/MiniRSA/writeup1.md
 DachshundAttacks picoctf2021 rsa small d and Wiener RSA attack easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/DachshundAttacks/writeup1.md
-TrivialFlagTransferProtocol picoctf2021  extract wifi file and image with steghide forensics easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/TrivialFlagTransferProtocol/writeup1.md
+TrivialFlagTransferProtocol picoctf2021  extract wifi file and image with steghide image forensics easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/TrivialFlagTransferProtocol/writeup1.md
