@@ -16,8 +16,8 @@
         <li>
 <pre>
 #python
-def solve():
- import os
+import os,sys
+def solve(file):
  filename = "dolls.jpg"
  extract_dir = "ext"
  flag = 0
@@ -35,6 +35,11 @@ def solve():
             flag = 1
         else:
             filename = file
+file = "dolls.jpg"
+if len(sys.argv)>1:
+     file=sys.argv[1]
+solve(file)
+
 </pre>
 and get flag.
   </li>
