@@ -15,6 +15,7 @@
         <li>matrioska doll is a nested dool commonly means nested files and zip and image in this case for solve this problem i use this code fr</li>
         <li>
 <pre>
+#python
 def solve():
  import os
  filename = "dolls.jpg"
