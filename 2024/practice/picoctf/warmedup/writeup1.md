@@ -1,26 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 { 
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            color: #999;
-        }
-        .flag {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
-</head>
+
 <body>
     <h1>picoctf 2019- Warmed Up Challenge Writeup</h1>
 
@@ -35,7 +16,13 @@ What is 0x3D (base 16) in decimal (base 10)?
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        <li> we can use this python code<pre>print(int('0x3D',16))</pre> </li>
+        <li> we can use this python code<pre>
+#python
+import sys
+val='0x3D'
+if len(sys.argv)>1:
+    val=sys.argv[1]
+print(int(val,16))</pre> </li>
         <li>or use online tool for convert them
     
     </ol>
