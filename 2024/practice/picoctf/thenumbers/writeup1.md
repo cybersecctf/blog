@@ -16,6 +16,7 @@ numbers:https://jupiter.challenges.picoctf.org/static/f209a32253affb6f547a585649
         <li> open image see numbers in pictures start with 16 if add ascii of them with 96 get p so do others to see can get flag </li>
         <li>with this code and get flag</li>
 <pre>
+#python
 import sys
 numbers="16 9 3 15 3 20 6 20 8 5  14 21 13 2 5 18 19 13 1 19 15 14"
 prefix=0 #change it to 96 for this problem
