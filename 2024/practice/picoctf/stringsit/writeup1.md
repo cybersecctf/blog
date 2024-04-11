@@ -17,8 +17,8 @@ Can you find the flag in file without running it?
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-     i download strings file.it was elf file.execute it on linux say<code>Maybe try the 'strings' function? Take a look at the man page</code>strings is command in linux that like cat show content of file but unlike it have many command for search in file and flag and use for find flag in text or elf file more specially for larger files.
-so i use this command<pre>$strings ./strings |grep 'pico'</pre>grep command search(grep) text in  file and becaouse of flag start with pico grep 'pico' and work in this example becaouse this executable file is large and can't find flag manually.
+     i download strings file.it was elf file.execute it on linux say<code>Maybe try the 'strings' function? Take a look at the man page</code>strings is command in linux that like cat show content of file but unlike it have many command for search in file and flag and use for find flag in text or elf file more specially for larger files.(for this challenge replace $1 with ./strings and $2 with "pico")
+so i use this command<pre>$strings $1 |grep $2</pre>grep command search(grep) text in  file and becaouse of flag start with pico grep 'pico' and work in this example becaouse this executable file is large and can't find flag manually.
     
     </ol>
 <br>
