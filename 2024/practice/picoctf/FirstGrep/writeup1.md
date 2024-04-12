@@ -20,7 +20,7 @@ Can you find the flag in
        we download file and grep pico from file with run this command and get flag
 <pre>
 #!/bin/bash
-$strings $1|grep $2
+strings $1|grep $2
 </pre>
     </ol>
 <br>
