@@ -26,7 +26,7 @@ ARG1=${1:-'./strings'}
 ARG2=${2:-'pico'}
 
 # Execute the strings command with ARG1 as the argument, pipe the output to grep, and search for ARG2
-strings "$ARG1" | grep "$ARG2"
+strings $1 | grep $2
 </pre>grep command search(grep) text in  file and becaouse of flag start with pico grep 'pico' and work in this example becaouse this executable file is large and can't find flag manually.
     
     </ol>
