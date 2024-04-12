@@ -17,17 +17,18 @@ Can you find the flag in
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        <li> steps1 </li>
-       
-    
+       we download file and grep pico from file with run this command and get flag
+<pre>
+$strings $1|grep $2
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">picoCTF{grep_is_good_to_find_things_dba08a45}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge  for grep flag from file</p>
 </body>
 </html>
 
