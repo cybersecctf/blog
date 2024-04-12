@@ -19,6 +19,7 @@ Can you find the flag in
     <ol>
        we download file and grep pico from file with run this command and get flag
 <pre>
+#!/bin/bash
 $strings $1|grep $2
 </pre>
     </ol>
