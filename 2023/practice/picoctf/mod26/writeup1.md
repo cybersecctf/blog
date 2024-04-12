@@ -23,7 +23,7 @@ val="cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}"
 type="rot13"
 if len(sys.argv)>1:
    val=sys.argv[1]
-if (len(sys.argv)>2:
+if len(sys.argv)>2:
    type=sys.argv[2]
 print(codecs.encode( val, type))
 
