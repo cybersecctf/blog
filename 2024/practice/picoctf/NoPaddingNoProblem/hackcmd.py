@@ -1,0 +1,37 @@
+from decimal import *
+from tqdm import tqdm
+
+N = Decimal(96541459317357550138527327845172549672637034825525424896716864563324316171191475798959595343102383777364365629098810879940187601974356899608534435008740007926574263984097668744169172793432825608174765957189452772629225242708492346567000762283679760945287592681543892014039360208082017821802075758808947626299)
+e = Decimal(65537)
+c = Decimal(62199869825116227386840573927863875172456194166841643569219276006754172860927496519943206107915518797231514937519638486540570398022066322953204755540163033459049731551439290316825532380940485928062325270392974732307485060261942170768279631192382149466828160173562803974069298838876298377935820813405015470396)
+
+
+def int_to_ascii(m):
+    # Decode to ascii (from https://crypto.stackexchange.com/a/80346)
+    m_hex = hex(int(m))[2:-1]  # Number to hex
+    m_ascii = "".join(
+        chr(int(m_hex[i : i + 2], 16)) for i in range(0, len(m_hex), 2)
+    )  # Hex to Ascii
+    return m_ascii
+
+
+# Find padding
+getcontext().prec = 280  # Increase precision
+padding = 0
+for k in tqdm(range(0, 10_000)):
+    m = pow(k * N + c, 1 / e)
+
+    m_ascii = int_to_ascii(m)
+
+    if "pico" in m_ascii:
+        padding = k
+        break
+
+print("Padding: %s" % padding)
+
+# Increase precision further to get entire flag
+getcontext().prec = 700
+ 
+m = pow(padding * N + c, 1 / e)
+m_ascii = int_to_ascii(m)
+print("Flag: %s" % m_ascii.strip(),m)
