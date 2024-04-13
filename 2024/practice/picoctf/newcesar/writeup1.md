@@ -5,7 +5,13 @@
     <h1>picoctf 2021- New Caesar</h1>
 
     <h2>Challenge Description</h2>
-    <p> https://mercury.picoctf.net/static/d9c139d91d2dfec8fd197ca6d970381a/new_caesar.py:https://mercury.picoctf.net/static/d9c139d91d2dfec8fd197ca6d970381a/new_caesar.py
+    <p>AUTHOR: MADSTACKS
+
+Description
+We found a brand new type of encryption, can you break the secret code? (Wrap with picoCTF{}) kjlijdliljhdjdhfkfkhhjkkhhkihlhnhghekfhmhjhkhfhekfkkkjkghghjhlhghmhhhfkikfkfhm 
+
+<a href="https://mercury.picoctf.net/static/d9c139d91d2dfec8fd197ca6d970381a/new_caesar.py">new_caesar.py</a>
+
 </p>
 
     <h2>Solution Approach</h2>
@@ -37,8 +43,9 @@ This function takes the text and turns each character into binary, then turns th
 
 With this information I created a python script:
 <pre>
+#python
 # import string
-import string
+import string,sys
 
 # constants
 LOWERCASE_OFFSET = ord("a")
@@ -67,7 +74,8 @@ def unshift(c, k):
 
 # encrypted flag
 enc = "mlnklfnknljflfmhjimkmhjhmljhjomhmmjkjpmmjmjkjpjojgjmjpjojojnjojmmkmlmijimhjmmj"
-
+if len(sys.argv)>1:
+    enc=sys.argv[1]
 # loop through all possible keys
 for key in ALPHABET:
     # initialize string
@@ -106,4 +114,5 @@ i tested lines wrapped in picoCTF{} and finnaly et_tu?_1ac5f3d7920a85610afeb2572
     <p>this is a very   easy chanllenge for reverse python and custom caesar decryption and cryptography</p>
 </body>
 </html>
+
 
