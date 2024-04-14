@@ -45,11 +45,11 @@ n = 1234567890123456789012345678901234567890  # Replace with actual RSA modulus
 e = 65537  # Replace with actual public exponent
 c = 1234567890123456789012345678901234567890  # Replace with actual ciphertext
 if len(sys.argv)>1:
-    n=sys.argv[1]
+    n=int(sys.argv[1])
 if len(sys.argv)>2:
-    e=sys.argv[2]
+    e=int(sys.argv[2])
 if len(sys.argv)>3:
-    c=sys.argv[3]
+    c=int(sys.argv[3])
 if check_for_bleichenbacher_attack(n, e, c):
     print("Potential for Bleichenbacher attack.")
     # You can proceed with implementing the attack algorithm here
