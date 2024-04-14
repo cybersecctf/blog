@@ -17,6 +17,7 @@
 wrap result in flag
         <pre>
 #python
+import rsa
 from Crypto.Util.number import inverse
 import sys
 def check_for_bleichenbacher_attack(n, e, c):
@@ -52,6 +53,8 @@ if len(sys.argv)>3:
     c=int(sys.argv[3])
 if check_for_bleichenbacher_attack(n, e, c):
     print("Potential for Bleichenbacher attack.")
+    public_key = rsa.PublicKey(n, e)
+    print("decrypted text",rsa.decrypt(c, public_key)) 
     # You can proceed with implementing the attack algorithm here
 else:
     print("Not suitable for a Bleichenbacher attack.")
