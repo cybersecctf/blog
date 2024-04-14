@@ -126,3 +126,4 @@ caesar picoctf2019 caesay decrypt and crypto easy,https://phantom1ss.github.io/b
 firstgrep picoctf2019  grep forensics easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
 bases picoctf2019  convert base64 to text crypto  easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
  NoPaddingNoProblem picoctf2021 rsa oracle attack with pwn nc cryptography easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/NoPaddingNoProblem/writeup1.md 
+rsaattack learningctf2024 find rsaatttack and decrypt c cryptography medium,https://phantom1ss.github.io/blog/2024/learningctf2024/rsaatttack/writeup1.md
