@@ -20,63 +20,50 @@ Reading Bitsdeep's article on RSA Oracle, we could multiply the ciphertext my an
 a offline code for get argument of n e c and get plain text by oracle is 
     <pre>
 #python
-from sage.all import ZZ
-import sys
-def oracle(c):
-    """
-    Parity oracle function.
-    :param c: the ciphertext
-    :return: the last bit of the plaintext
-    """
-    # Example of a basic parity oracle function
-    # For demonstration purposes, we'll assume that the LSB of the plaintext is even
-    if c % 2 == 0:
-        return 0
-    else:
-        return 1
+from pwn import *
 
-def attack(N, e, c, oracle):
-    """
-    Recovers the plaintext from the ciphertext using the LSB oracle (parity oracle) attack.
-    :param N: the modulus
-    :param e: the public exponent
-    :param c: the encrypted message
-    :param oracle: a function which returns the last bit of a plaintext for a given ciphertext
-    :return: the plaintext
-    """
-    left = ZZ(0)
-    right = ZZ(N)
-    while right - left > 1:
-        c = (c * pow(2, e, N)) % N
-        if oracle(c) == 0:
-            right = (right + left) / 2
-        else:
-            left = (right + left) / 2
 
-    return int(right)
+def integer_to_bytes(integer, _bytes):
+    output = bytearray()
+    for byte in range(_bytes):
+        output.append((integer >> (8 * (_bytes - 1 - byte))) & 255)
+    return output
 
-if __name__ == "__main__":
-    # Replace these values with the actual values of N, e, and c
-    n = 98524538629006920616866965132508384740762164637286054397513191511896967408143387757541544190507265202059306443031292035065714317238341724495034701641903571428795565294055761442024589901825231845904391209607913732358002320345219099874637281965297127466426574938796920221240984800693094926335824061103985537053
-    if len(sys.argv)>1:
-              n=sys.argv[1]
-    e = 65537
-    if len(sys.argv)>2:
-              e=sys.argv[2] 
-    c = 4891645030297899446429574591326970846046146372144618957809891858829368498078724649071669657458090635019167066205906480552401333302465888983738830944954303109671704749593828302042731270232456812684780666211922809016430579885915688915901353179654616097491120262918876320928131489862082861820920496294629094119
-    if len(sys.argv)>3:
-              c=sys.argv[3]
-    plaintext = attack(n, e, c, oracle)
-    print("Recovered plaintext:", plaintext)
+address='mercury.picoctf.net'
+if len(sys.argv)>1:
+ address=sys.argv[1]
+port=30048
+if len(sys.argv)>2:
+ port=sys.argv[2]
+
+
+conn = remote(address, port)
+conn.recvuntil("n: ")
+n = int(conn.recvline().decode('utf-8'))
+conn.recvuntil("e: ")
+e = int(conn.recvline().decode('utf-8'))
+conn.recvuntil("ciphertext: ")
+c = int(conn.recvline().decode('utf-8'))
+#plaintext = "helloworld"
+#plaintext = "".join([str(ord(c)) for c in plaintext])
+#encrypted = str(pow(int(plaintext), e, n)).encode('utf-8')
+# print(plaintext)
+evil = pow(2, e, n)
+encrypted = str(evil * c)
+conn.sendline(encrypted.encode('utf-8'))
+conn.recvuntil("go: ")
+p = int(conn.recvline().decode('utf-8')) // 2
+print(bytes.fromhex(hex(p)[2:]).decode('utf-8'))
+</pre>
 
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_5052620}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for work on oracle rsa attack on python</p>
 </body>
 </html>
 
