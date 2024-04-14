@@ -30,6 +30,7 @@ The numbers are converted into characters by looking up their corresponding posi
 The resulting characters are concatenated together to form the final ciphertext.
 this is full code of sample   substitution cipher with number and decimal
 <pre>
+#python
 import sys
 
 s="128 322 353 235 336 73 198 332 202 285 57 87 262 221 218 405 335 101 256 227 112 140"
