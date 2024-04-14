@@ -16,7 +16,7 @@
        we run nc and this n and c and e values see info .when search  search google it comes with  <"https://en.wikipedia.org/wiki/Wiener%27s_attack">Wiener's attack </a> and search for code and found this with nc values and get flag after run it
 <pre>
 #python
- from Crypto.Util.number import *
+from Crypto.Util.number import *
 
 from typing import Tuple, Iterator, Iterable, Optional
 import owiener

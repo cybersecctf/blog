@@ -19,6 +19,7 @@ Oracles can be your best friend, they will decrypt anything, except the flag's c
 Reading Bitsdeep's article on RSA Oracle, we could multiply the ciphertext my another cipher text c2 which me know the plain text of and recover the decrypted c1 ciphertext. Heres how the math works: C = c*c_2 = M^e*2^e = 2M^e. So we just need to divide the returned plaintext by 2 to get the deciphered flag.
 a offline code for get argument of n e c and get plain text by oracle is 
     <pre>
+#python
 from sage.all import ZZ
 import sys
 def oracle(c):
