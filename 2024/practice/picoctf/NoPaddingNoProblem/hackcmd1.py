@@ -1,26 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h1>No Padding, No Problem- picoctf 2021</h1>
-
-    <h2>Challenge Description</h2>
-    <p>AUTHOR: SARA
-
-Description
-Oracles can be your best friend, they will decrypt anything, except the flag's ciphertext. How will you break it? Connect with nc mercury.picoctf.net 30048.
-</p>
- 
-    <h2>Solution Approach</h2>
-    <p>on base of https://ctftime.org/writeup/27357  </p>
-    <ol>
-        The provided netcat connection gives the public modulus n and public exponent e as well as the ciphertext. This is also a Oracle because we can provide come ciphertext and the program will decrypt it for us.
-Reading Bitsdeep's article on RSA Oracle, we could multiply the ciphertext my another cipher text c2 which me know the plain text of and recover the decrypted c1 ciphertext. Heres how the math works: C = c*c_2 = M^e*2^e = 2M^e. So we just need to divide the returned plaintext by 2 to get the deciphered flag.
-a offline code for get argument of n e c and get plain text by oracle is 
-    <pre>
 from sage.all import ZZ
-import sys
+
 def oracle(c):
     """
     Parity oracle function.
@@ -57,25 +36,9 @@ def attack(N, e, c, oracle):
 if __name__ == "__main__":
     # Replace these values with the actual values of N, e, and c
     n = 98524538629006920616866965132508384740762164637286054397513191511896967408143387757541544190507265202059306443031292035065714317238341724495034701641903571428795565294055761442024589901825231845904391209607913732358002320345219099874637281965297127466426574938796920221240984800693094926335824061103985537053
-    if len(sys.argv)>1:
-              n=sys.argv[1]
+    
     e = 65537
-    if len(sys.argv)>2:
-              e=sys.argv[2] 
     c = 4891645030297899446429574591326970846046146372144618957809891858829368498078724649071669657458090635019167066205906480552401333302465888983738830944954303109671704749593828302042731270232456812684780666211922809016430579885915688915901353179654616097491120262918876320928131489862082861820920496294629094119
-    if len(sys.argv)>3:
-              c=sys.argv[3]
+
     plaintext = attack(n, e, c, oracle)
     print("Recovered plaintext:", plaintext)
-
-    </ol>
-<br>
-    <h2>Flag</h2>
-    <p class="flag">flag{}
-</p>
-
-    <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
-</body>
-</html>
-
