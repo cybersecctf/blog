@@ -38,11 +38,12 @@ if len(sys.argv)>1:
    s=sys.argv[1]
 
 alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+modn=len(alphabet)
 if len(sys.argv)>2:
   alphabet=sys.argv[2]
 f=""
 for x in s.split():
-    f+=alphabet[int(x)%37]
+    f+=alphabet[int(x)%modn]
 print(f)
 </pre>     
     and run and wrap result with picoCTF
