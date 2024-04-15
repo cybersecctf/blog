@@ -128,3 +128,4 @@ bases picoctf2019  convert base64 to text crypto  easy,https://phantom1ss.github
  NoPaddingNoProblem picoctf2021 rsa oracle attack with pwn nc cryptography easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/NoPaddingNoProblem/writeup1.md 
 rsaattack learningctf2024 find rsaatttack and decrypt c cryptography medium,https://phantom1ss.github.io/blog/2024/learningctf2024/rsaatttack/writeup1.md
 basic-mod1 picoct2022    substitution cipher python cryptography   easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md
+basic-mod2 picoct2022    substitution cipher python cryptography modular inverse   easy,https://phantom1ss.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md

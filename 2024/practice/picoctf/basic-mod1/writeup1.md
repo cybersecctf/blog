@@ -31,32 +31,44 @@ The resulting characters are concatenated together to form the final ciphertext.
 this is full code of sample   substitution cipher with number and decimal
 <pre>
 #python
+def modInverse(A, M):
+ 
+    for X in range(1, M):
+        if (((A % M) * (X % M)) % M == 1):
+            return X
+    return -1
 import sys
-
-s="128 322 353 235 336 73 198 332 202 285 57 87 262 221 218 405 335 101 256 227 112 140"
+s="432 331 192 108 180 50 231 188 105 51 364 168 344 195 297 342 292 198 448 62 236 342 63"
 if len(sys.argv)>1:
    s=sys.argv[1]
 
 alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
 modn=len(alphabet)
+ 
 if len(sys.argv)>2:
   alphabet=sys.argv[2]
 if len(sys.argv)>3:
   modn=int(sys.argv[3])
+modn=41
 f=""
+fmod=""
 for x in s.split():
-    f+=alphabet[int(x)%modn]
+    s=int(x)%modn
+    s= modInverse(s,41)
+    fmod+=str(s)
+    f+=alphabet[s-1]
+print("modular inverse of val and n is",s,modn,fmod) 
 print(f)
 </pre>     
     and run and wrap result with picoCTF
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">picoCTF{R0UND_N_R0UND_79C18FB3}
+    <p class="flag">picoCTF{1NV3R53LY_H4RD_C680BDC1}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for     substitution cipher  and cryptography with python</p>
+    <p>this is a very   easy chanllenge for     substitution cipher  and cryptography and modular inverse with python</p>
 </body>
 </html>
 
