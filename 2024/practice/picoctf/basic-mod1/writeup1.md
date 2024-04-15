@@ -42,7 +42,7 @@ modn=len(alphabet)
 if len(sys.argv)>2:
   alphabet=sys.argv[2]
 if len(sys.argv)>3:
-  modn=sys.argv[3]
+  modn=int(sys.argv[3])
 f=""
 for x in s.split():
     f+=alphabet[int(x)%modn]
