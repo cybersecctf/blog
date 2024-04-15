@@ -9,9 +9,9 @@
     <p> AUTHOR: WILL HONG
 
 Description
-We found this weird message being passed around on the servers, we think we have a working decryption scheme.
-Download the message <a href="https://artifacts.picoctf.net/c/127/message.txt">here</a>.
-Take each number mod 37 and map it to the following character set: 0-25 is the alphabet (uppercase), 26-35 are the decimal digits, and 36 is an underscore.
+A new modular challenge!
+Download the message <a href="A new modular challenge!">here</a>.
+Take each number mod 41 and find the modular inverse for the result. Then map to the following character set: 1-26 are the alphabet, 27-36 are the decimal digits, and 37 is an underscore.
 Wrap your decrypted message in the picoCTF flag format (i.e. picoCTF{decrypted_message})
 </p>
  
@@ -41,8 +41,6 @@ alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
 modn=len(alphabet)
 if len(sys.argv)>2:
   alphabet=sys.argv[2]
-if len(sys.argv)>3:
-  modn=sys.argv[3]
 f=""
 for x in s.split():
     f+=alphabet[int(x)%modn]
