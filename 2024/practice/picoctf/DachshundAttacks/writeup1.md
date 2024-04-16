@@ -3,11 +3,11 @@
 <html>
 
 <body>
-    <h1>Dachshund Attacks- picoctf 2021</h1>
+    <h1>Dachshud Atntacks- picoctf 2021</h1>
 
     <h2>Challenge Description</h2>
-    <p> your description
- 
+    <p> What if d is too small?
+
 </p>
  
     <h2>Solution Approach</h2>
