@@ -21,7 +21,7 @@ Download zip file:https://artifacts.picoctf.net/c/501/files.zip
  is a nested folder and files so use a script fror find secrets or filename this is a code for find file or secret inside zip run it and  get flag
 <pre>
 import zipfile
-import os
+import os,sys
 def search_text_in_zip(zip_file_path, search_text):
     found_files = []
     content=[]
@@ -47,6 +47,10 @@ def search_text_in_zip(zip_file_path, search_text):
 # Example usage
 zip_file_path = 'files.zip'
 search_text = 'pico'
+if len(sys.argv)>1:
+  zip_file_path=sys.argv[1]
+if len(sys.argv)>2:
+  search_text=sys.argv[2]
 found_files = search_text_in_zip(zip_file_path, search_text)
 if found_files:
     print("Found in the following files:")
