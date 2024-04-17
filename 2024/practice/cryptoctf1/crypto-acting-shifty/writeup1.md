@@ -57,6 +57,7 @@ if len(sys.argv)>3:
 known_ciphertext="uiuweg"
 if key=="":
   key = find_key(knownplain, knownchipher)
+  print("key is",key)
 decrypted_text = vigenere_decrypt(cipher, key)
 print("Decrypted message:", decrypted_text)
 </pre>
