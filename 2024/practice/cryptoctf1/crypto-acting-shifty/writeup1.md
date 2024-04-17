@@ -17,7 +17,8 @@
          this is asample vigener chipher and we know part of plaintext start with utflag so use this code for find key and decrypt vigener chipher
 and get flag
 <pre>
-#python
+#python 
+# -v "uiuweg{0jx_0fm_b@vj3ex3}" "utflag" "uiuweg"
 import sys
 def find_key(known_plaintext, known_ciphertext):
     key = ''
