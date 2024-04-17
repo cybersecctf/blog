@@ -18,7 +18,7 @@ Download zip file:https://artifacts.picoctf.net/c/505/big-zip-files.zip
     <ol>
        it was like <a href="https://phantom1ss.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md">firstfind</a> writeup from this blog .open zip and search flag that is hard and tak long in this challenge or use this code and get flag<pre>
 import zipfile
-import os
+import os,sys
 def search_text_in_zip(zip_file_path, search_text):
     found_files = []
     content=[]
@@ -43,7 +43,11 @@ def search_text_in_zip(zip_file_path, search_text):
 
 # Example usage
 zip_file_path = 'big-zip-files.zip'
+if len(sys.argv)>1:
+     zip_file_path = sys.argv[1]
 search_text = 'pico'
+if len(sys.argv)>2:
+     search_text = sys.argv[2]
 found_files = search_text_in_zip(zip_file_path, search_text)
 if found_files:
     print("Found in the following files:")
