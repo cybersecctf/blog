@@ -16,17 +16,23 @@
         <pre>
           #!/bin/bash
            $sudo fcrackzip -u -D -p /home/rockyou.txt $1
+           for i in *.zip; do
+    echo "Scanning $i"
+    unzip -q -c "$i" | grep "utflag" && echo "Found in $i:" && unzip -q -c "$i" | grep $2 || echo "Not found in $i"
+done
+
           </pre> 
-       and see password and open folder and 
+       and see password inside zip 
     
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">utflag{d0wn_th3_r@bb1t_h0l3}
+
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for  search password in zip</p>
 </body>
 </html>
 
