@@ -22,7 +22,7 @@ function getQueryParamOrDefault(name, defaultValue) {
 return;
 }
 else
-        window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
+        window.location.href=  "https://cybersecctf.github.io/blog/?q="+userInput ;
               }
 }
   function filterWriteups() {
@@ -258,7 +258,7 @@ document.getElementById('search-box').value="flag is not correct";
 }
 else
 {
-        window.location.href=  "https://phantom1ss.github.io/blog/?q="+userInput ;
+        window.location.href=  "https://cybersecctf.github.io/blog/?q="+userInput ;
  var links2 = document.getElementsByClassName('writeup-link');
 
 currentWriteupUrl = links2[0].href;
