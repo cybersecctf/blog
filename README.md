@@ -3,7 +3,7 @@ c
 <html>
 
 <body>
-    <h1>phantom$s teams-writeup page</h1>
+    <h1>cybersectctf  blog and ctf writeups  </h1>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
