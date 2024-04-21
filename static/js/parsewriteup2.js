@@ -27,7 +27,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                 console.log("Enter key is pressed");
                 if(!checkFlag()) 
               {
-                loadLinksFromTextFile('https://missnhome.github.io/blog/links.txt');
+                loadLinksFromTextFile('https://cybersecctf.github.io/blog/links.txt');
                 filterWriteups();
              var myList = document.getElementById('writeup-list');
 
@@ -451,7 +451,7 @@ loadWriteupContent(url);
       
         
    // Load the content for a specific URL
-    var specificURL = 'https://missnhome.github.io/blog/2024/irisctf/czech-where/writeup1.md';
+    var specificURL = 'https://cybersecctf.github.io/blog/2024/irisctf/czech-where/writeup1.md';
     loadWriteupContent(specificURL);
         
             
