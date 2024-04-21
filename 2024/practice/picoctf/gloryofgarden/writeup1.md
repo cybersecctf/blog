@@ -16,6 +16,7 @@ garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f
         <li>after using binawalk and exiftool not working using <pre>$strings $1|grep $2</li>
        
      and get flag
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>
