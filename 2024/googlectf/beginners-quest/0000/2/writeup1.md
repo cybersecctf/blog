@@ -26,7 +26,11 @@ def FCcipher(MESSAGE: str) -> str:
             text=  message
     result = ''
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    if len(sys.argv)>2:
+          alphabet=sys.argv[2]
     change =    'FCKHOSMYBVQUPLRTNIAJGEZWXD'
+    if len(sys.argv)>3:
+          change=sys.argv[3] 
     for char in text:
         if char in alphabet:
             result += change[alphabet.index(char)]
