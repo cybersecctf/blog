@@ -132,7 +132,9 @@ basic-mod2 picoct2022    substitution cipher python cryptography modular inverse
 cryptoctf1  crypto-acting-shifty vigener chipher with key or plaintext crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptoctf1/crypto-acting-shifty/writeup1.md
 cryptoctf1 keepitzipped zip password   and search text inside it forensics crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptoctf1/keepitzipped/writeup1.md
 MTVCribs RickAndMortyCTF crypto xor onetimepad xorwith key from values medum,https://cybersecctf.github.io/blog/2024/practice/RickAndMortyCTF/crypto-mtv-cribs/writeup1.md
-babyrsa dicectf2022 rsa rooted n rsa easy crypto, https://cybersecctf.github.io/blog/2024/practice/dicectf/babyrsa/writeup1.md 
+babyrsa dicectf2022 rsa rooted n rsa easy crypto, https://cybersecctf.github.io/blog/2024/practice/dicectf/babyrsa/writeup1.md  
 googlectf-beginners-quest 0000-0  caesar and crypto easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/0/writeup1.md
-googlectf-beginners-quest 0000-0  caesar with key and vigenere cipher
+googlectf-beginners-quest 0000-1  caesar with key and vigenere cipher
 crypto easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/1/writeup1.md
+googlectf-beginners-quest 0000-2  vigenere cipher
+crypto  with frequency analysis easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/2/writeup1.md
