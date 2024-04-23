@@ -12,13 +12,13 @@ fetch('https://cybersecctf.github.io/blog/Ai')
         inputLine.addEventListener('click', function() {
             // Get the current input value
             var input = inputLine.value;
-            if(input!="")
+            
             // Loop   over the lines
             for (var i = 0; i < lines.length; i++) {
                 // If the line includes the keyword
                 if (lines[i].includes(input)) {
                     // Extract the URL of the markdown file from the line
-                    var mdFileUrl = lines[i].split(',')[1];
+                    var mdFileUrl = lines[i].split(', ')[1];
 
                     // Fetch the content of the markdown file
                     fetch(mdFileUrl)
