@@ -7,12 +7,12 @@ fetch('https://cybersecctf.github.io/blog/Ai')
  
         // Get the input line element
 
-
+ var inputLine = document.getElementById('input-button');
         // Add a click event listener to the input line
         inputLine.addEventListener('click', function() {
-                    var inputLine = document.getElementById('input-line');  
+                     
             // Get the current input value
-            var input = inputLine.value;
+            var input =   document.getElementById('input-line').value;
             
             // Loop   over the lines
             for (var i = 0; i < lines.length; i++) {
