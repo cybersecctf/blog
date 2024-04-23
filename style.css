@@ -1,0 +1,19 @@
+body {
+    background-color: #000;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #00FF00;
+}
+#terminal {
+    padding: 10px;
+}
+.input-line {
+    white-space: pre;
+    cursor: block;
+}
+input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    caret-color: #00FF00;
+}
