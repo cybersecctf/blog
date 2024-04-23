@@ -6,10 +6,11 @@ fetch('https://cybersecctf.github.io/blog/Ai')
         var lines = data.split('\n');
  
         // Get the input line element
-        var inputLine = document.getElementById('input-line');
+
 
         // Add a click event listener to the input line
         inputLine.addEventListener('click', function() {
+                    var inputLine = document.getElementById('input-line');  
             // Get the current input value
             var input = inputLine.value;
             
