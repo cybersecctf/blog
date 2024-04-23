@@ -8,7 +8,7 @@ fetch('https://cybersecctf.github.io/blog/ai.txt')
         // Loop over the lines
         for (var i = 0; i < lines.length; i++) {
             // If the line includes the keyword
-             var input = event.target.value; 
+             var input = document.getElementById('input').innerText
             if (lines[i].includes(input)) {
                 // Extract the URL of the markdown file from the line
                 var mdFileUrl = lines[i].split(', ')[1];
