@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cybersectctf blog</title>
- <link rel="stylesheet" href="https://cybersecctf.github.io/blog/static/css/cyberponk.css" />
+ 
 </head>
     <h2>Challenge Description</h2>
     <p> welcome to  my blog about cybersecurity and ctfs challenges
