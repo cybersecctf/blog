@@ -22,20 +22,40 @@
     <ol>
      we open message code and use normal decrypt morse code and not work so use american  morse code translator with python and it work.
 <pre>
+#python
 import sys
 flag = "-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. ."
 if len(sys.argv)>1:
  flag=sys.argv[1]
 american_morse_dict = {
-    '-': 'T',
-    '. ..': 'R',
     '....-': '4',
-    '-.': 'N',
     '---': '5',
-    '⸺': 'L',
-    '-.': 'N',
+    '.-': 'A',
+    '-...': 'B',
+    '.. .': 'C',
+    '-..': 'D',
+    '.': 'E',
+    '.-.': 'F',
+    '--.': 'G',
+    '....': 'H',
     '..': 'I',
-    '.. .': 'C'
+    '-.-.': 'J',
+    '-.-': 'K',
+    '⸺': 'L',
+    '--': 'M',
+    '-.': 'N',
+    '. .': 'O',
+    '.....': 'P',
+    '..-.': 'Q',
+    '. ..': 'R',
+    '...': 'S',
+    '-': 'T',
+    '..-': 'U',
+    '...-': 'V',
+    '.--': 'W',
+    '.-..': 'X',
+    '.. ..': 'Y',
+    '... .': 'Z',
 }
 
 flag = flag.split('   ')
