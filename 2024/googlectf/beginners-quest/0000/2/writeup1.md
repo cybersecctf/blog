@@ -2,7 +2,7 @@
 <html>
 
 <body>
-    <h1>beginnersquest-0000-2</h1>
+    <h1>googlectf beginnersquest-0000-2</h1>
 
     <h2>Challenge Description</h2>
     <p> We use our alphabet too frequently, let's try     W  an alternative one 
