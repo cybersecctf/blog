@@ -17,3 +17,52 @@ input {
     color: inherit;
     caret-color: #00FF00;
 }
+#search-box {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $primary;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 7px 0;
+  background:#333333;
+  transition: border-color 0.2s;
+  border-radius: 8px;
+  &::placeholder {
+    color: #f5f542;
+  }
+pre { user-select: all;font-family:monospace;
+white-space: pre-wrap; overflow-x: auto;
+ background-color: #333333; /* Darker shade for <pre> elements */
+  color: #ffffff; /* Light text for readability */
+  padding: 1em;
+  border-radius: 8px;}
+code{ user-select: all;font-family:monospace;
+ 
+ background-color: #333333; /* Darker shade for <pre> elements */
+  color: #ffffff; /* Light text for readability */
+  padding: 1em;
+  border-radius: 8px;}
+  @media only screen and (max-width: 600px) {
+#search-box
+{
+  border-radius: 8px; width: 100%;
+ color: #ffffff;
+        background-color: #333333;
+   
+  background-size: 20px;
+}
+
+.searchbotton
+{
+ color: #ffffff;
+        background-color: #000000;
+ padding-left: 25px;
+ 
+  background-size: 20px;
+} 
+    #main-content {
+        margin: 5px;
+    }
+
