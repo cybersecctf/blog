@@ -21,7 +21,7 @@
 give this text:
 EOYFPIJPIYBGYNSVSDRPTMIYBJXSEC
 that is not real words or answers so see hint say use vigener chipher but we don't know keys.see hints agains say:Pemberton was a Confederate general who used    the Vigenère cipher searchh via google for key with this words and find this <a href="https://cryptiana.web.fc2.com/code/civilwar4.htm">page</a> say It is well-known that the Confederates used a polyalphabetic (Vigenere) cipher during the Civil War. The present article describes its use with various keywords, including those other than the well-known three ("Manchester Bluff", "Complete Victory", "Come Retribution"). In particular, the present author recovered a keyword "Where Liberty Dwells, There Is Our Country" used between the Confederate Secretary of State and a commissioner in France. so use text 
-EOYFPIJPIYBGYNSVSDRPTMIYBJXSEC with key MANCHESTERBLUFFCOMPLETEVICTORYCOMERETRIBUTION and run them with this python code or online tools and get flag.
+EOYFPIJPIYBGYNSVSDRPTMIYBJXSEC with key MANCHESTERBLUFFCOMPLETEVICTORY and run them with this python code or online tools and get flag.
 <pre>
 #python 
 # -v "uiuweg{0jx_0fm_b@vj3ex3}" "utflag" "uiuweg"
@@ -69,11 +69,11 @@ decrypted_text = vigenere_decrypt(cipher, key)
 print("Decrypted message:", decrypted_text)
 
 </pre>
-after run this python will geet flag below.
+after run this python will get this text:SOLDIERWEHAVEINTERCEPTEDTHEENE that wasn't flag.see quetion description say find book code maybe key is flag and use MANCHESTERBLUFFCOMPLETEVICTORY and it work.
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">FLAG{SOLDIERWEHAVEINTERCEPTEDTHEENE}
+    <p class="flag">FLAG{MANCHESTERBLUFFCOMPLETEVICTORY}
 </p>
 
     <h2>Conclusion</h2>
