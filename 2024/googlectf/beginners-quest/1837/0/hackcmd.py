@@ -1,3 +1,4 @@
+import sys
 flag = "-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. ."
 american_morse_dict = {
     '-': 'T',
@@ -10,7 +11,8 @@ american_morse_dict = {
     '..': 'I',
     '.. .': 'C'
 }
-
+if len(sys.argv)>1:
+   flag=sys.argv[1]
 flag = flag.split('   ')
 decoded_flag = ''
 for code in flag:

@@ -1,21 +1,55 @@
-flag = "-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. ."
+#python
+import sys
 american_morse_dict = {
-    '-': 'T',
-    '. ..': 'R',
-    '....-': '4',
-    '-.': 'N',
-    '---': '5',
-    '⸺': 'L',
-    '-.': 'N',
+    '.-': 'A',
+    '-...': 'B',
+    '.. .': 'C',
+    '-..': 'D',
+    '.': 'E',
+    '.-.': 'F',
+    '--.': 'G',
+    '....': 'H',
     '..': 'I',
-    '.. .': 'C'
+    '-.-.': 'J',
+    '-.-': 'K',
+    '⸺': 'L',
+    '--': 'M',
+    '-.': 'N',
+    '. .': 'O',
+    '.....': 'P',
+    '..-.': 'Q',
+    '. ..': 'R',
+    '...': 'S',
+    '-': 'T',
+    '..-': 'U',
+    '...-': 'V',
+    '.--': 'W',
+    '.-..': 'X',
+    '.. ..': 'Y',
+    '... .': 'Z',
 }
 
-flag = flag.split('   ')
-decoded_flag = ''
-for code in flag:
+# read text from 1.txt
+file='message.txt'
+if len(sys.argv)>1:
+   file=sys.argv[1]
+with open(file, 'rb') as f:
+    text = f.read().decode('utf-8')
+
+text = text.replace('/', "  /  ")
+text = text.replace('{', "  {  ")
+text = text.replace('}', "  }  ")
+text = text.split('   ')
+
+decoded_text = ''
+for code in text:
     if code in american_morse_dict:
-        decoded_flag += american_morse_dict[code]
+        decoded_text += american_morse_dict[code]
     else:
-        decoded_flag += code
-print("FLAG{" + decoded_flag + "}")
+        decoded_text += code
+
+decoded_text = decoded_text.replace('/', ' ')
+decoded_text = decoded_text.replace(' {', '{')
+decoded_text = decoded_text.replace('} ', '}')
+
+print(decoded_text)
