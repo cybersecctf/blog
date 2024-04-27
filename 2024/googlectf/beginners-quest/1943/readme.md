@@ -1,0 +1,1 @@
+The Venona Project was a joint American-British counterintelligence program, with the goal of decrypting Soviet intelligence communications.
