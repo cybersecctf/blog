@@ -29,10 +29,12 @@ try:
  if len(sys.argv)>2:
     text=sys.argv[2]
  if type=="encode":
-  print("encoede base64:",text.encode("ascii") )
+  sample_string_bytes = text.encode("ascii") 
+  base64_bytes = base64.b64encode(sample_string_bytes) 
+  print( "encoded in base64:",base64_bytes.decode("ascii") )
  else:
    base64_bytes = text.encode("ascii") 
-   print("decoded base64:",base64.b64decode(base64_bytes) )
+   print("decoded from base64:",base64.b64decode(base64_bytes) )
  
 except Exception as   e:
  print("error:"+str(e)) 
