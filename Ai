@@ -140,3 +140,4 @@ googlectf-beginners-quest 0000-3    cipher  transposition substitution   easy wi
 googlectf-beginners-quest 1837-0  american morse code decoder  easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/0/writeup1.md
 googlectf-beginners-quest 1837-1  decode vigener chipher after american morse code decoder  easy with python  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/1/writeup1.md
 googlectf-beginners-quest 1837-2  detect adfgvx and  decode with key medium crypto  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup2.md
+googlectf-beginners-quest 1837-2  get flag from two chipher and plain text crypto medium ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup1.md
