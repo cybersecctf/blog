@@ -22,8 +22,8 @@ key management skills and carried this key: "VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFV
 import sys,base64,binascii
 codecs="text"
 text =" VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg=="
- type="decode"
- if len(sys.argv)>1:
+type="decode"
+if len(sys.argv)>1:
      type=sys.argv[1]
  else:
       print("usage -v decode/encode text [hex]")
