@@ -20,18 +20,19 @@ key management skills and carried this key: "VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFV
 <pre>
 #python
 import sys,base64,binascii
-codecs=""
+codecs="text"
+text =" VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg=="
+ type="decode"
+ if len(sys.argv)>1:
+     type=sys.argv[1]
+ else:
+      print("usage -v decode/encode text [hex]")
 if len(sys.argv)>2:
     text=sys.argv[2]
 if len(sys.argv)>3:
     codecs=sys.argv[3]       
 try:
- type="decode"
- text =" VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg=="
- if len(sys.argv)>1:
-     type=sys.argv[1]
- else:
-      print("usage -v decode/encode text")
+
  
  
  if type=="encode":
