@@ -25,7 +25,7 @@ text =" VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGln
 type="decode"
 if len(sys.argv)>1:
      type=sys.argv[1]
- else:
+else:
       print("usage -v decode/encode text [hex]")
 if len(sys.argv)>2:
     text=sys.argv[2]
