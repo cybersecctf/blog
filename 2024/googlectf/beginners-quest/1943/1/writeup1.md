@@ -13,57 +13,64 @@ Phew, that was close... but you decrypted that one and  escaped the ambush in ti
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        decode base 64 with this script
+         we connect to socat and and inher see this time 4 base64 text
+ <img src=" https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/base64.png" alt="ctf quetion image" class="inline"/>
+that seems To decrypt the given ciphertexts encrypted using the multi-time pad method, you would typically perform a known-plaintext attack or a crib dragging attack.first need find all known words of 4 base64 with this code
 <pre>
-import sys,base64
-try:
- type="decode"
- text =" VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg=="
- if len(sys.argv)>1:
-     type=sys.argv[1]
- else:
-      print("usage -v decode/encode text")
- if len(sys.argv)>2:
-    text=sys.argv[2]
- if type=="encode":
-  sample_string_bytes = text.encode("ascii") 
-  base64_bytes = base64.b64encode(sample_string_bytes) 
-  print( "encoded in base64:",base64_bytes.decode("ascii") )
- else:
-   base64_bytes = text.encode("ascii") 
-   print("decoded from base64:",base64.b64decode(base64_bytes) )
- 
-except Exception as   e:
- print("error:"+str(e)) 
+#python
+from pwn import *
+
+
+import string
+import base64
+import itertools
+
+ciphers = [
+    "bWqznPKmVMkt0Obu8bAINKvcBYpurA2yC0NKkUTXWw24Y8AtW9eK9+zipS2Cs6qBHDF7Jpn4z2jm2iT/RWXw6QbQgNb2Ty64i5IuVZxpHsZ6GGr860eM7g==",
+    "dmrn1eTjXYw8y+bIx4V4buP0UcJ8qhG+X3hGnFiSTFiJZskgTI7Tssv9uDeE/b+QGjVsZdX63X28k0rfanPYvBrFjaL2UWucmIMLX+lyEtZtHGD26EmF9g==",
+    "amqiy6HpTN5ox6/fypQqaavmRIRq+0jGF05W2FWWW1+vL84iRoDd5uXzvmOG9v6RDDw1JID73Hjljg7GZj7N/Q6KycvxAjuJmJ8TRbxrHcYzWVL07UWM6g==",
+    "A7K+WILzJAdYo41+QSfb/Ud6MvX+cIopvwYoAcP5V3Y+6g2vYtZdzlulJPc1jvu1uDIgz1hjbLxAz6ya6zzIR7zc8Q9xeqJid/8KOg7HPhD/QI7Ohyj4Sg=="
+]
+
+crib = b"multi-time pad"
+
+for i, j in itertools.combinations(range(len(ciphers)), 2):
+    log.info(f"XORing {i} and {j}")
+    xored = xor(base64.b64decode(ciphers[i]), base64.b64decode(ciphers[j]))
+    for offset in range(len(xored) - len(crib) + 1):
+        output = xor(xored[offset:offset+len(crib)], crib)
+        if all(chr(c) in string.printable for c in output):
+            log.info(f"Found readable string at offset {offset}: {output}")
 </pre>
-       and get this message
+
+and then xor two pairs of 4 base64     and get two hex
 <pre>
-    The Venona project was a United States counterintelligence program initiated during World War II.
+1b00544916450945111b00263635705a4828544812061c0c543b0c0d1c4517553105090d17595945271f1d1a064e1511060417434c0212155a496e202f1628551c150d74001e45241311250a751b0c1017040a0a030e0918
+
+07001157534f1817451749313b24225d003a410e045745741c0d1c4911410052174c0e0f1d57571109111b4e04455410100d4e021903131003542a39235b3d14085a491d074d1531130d3d10200203004941380806020004
 </pre>
-challenge say it is key for message 
-so connect socat with this command
+and use this command
 <pre>
-socat file:`tty`,rawer tcp:otp1.2023-bq.ctfcompetition.com:1337
+python3 cribdrag.py <A_xored_HEX_FROM_ABOVE>
 </pre>
- and enter password Sidney as secret provided in desription
-see  start  <img src=" https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/start0.png" alt="ctf quetion image" class="inline"/>
-going spamis encrypted when pass  key that is
+and when request scribe and offset test result get from upper code and get final text
 <pre>
-    The Venona project was a United States counterintelligence program initiated during World War II.
+let's meet ASAP. I have their nuclear weapons technology. CTF{MultiTimePadIsUnbreakable}
+we need to get that spy, Sidney Rilley. Fortunately, multi-time pad is truly unbreakable
+keep our ciphers safe! They can't know that we use multi-time pad. In paritcular, Sidney
 </pre>
-and press enter show this message
- <img src=" https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/flag0.png" alt="flag" class="inline"/>
-that is our flag
+that is flag 
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">CTF{Ace_of_Spies} 
+    <p class="flag">CTF{MultiTimePadIsUnbreakable}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a     easy chanllenge for  connect socat and base64 decode</p>
+    <p>this is a     medium  chanllenge for  base64 decode and xor and mult time pad</p>
 </body>
 </html>
+
 
 
 

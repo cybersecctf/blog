@@ -1,0 +1,28 @@
+import base64
+import binascii
+
+# Define the two hex values
+hex_value1 = "6d6ab39cf2a654c92dd0e6eef1b00834abdc058a6eac0db20b434a9144d75b0db863c02d5bd78af7ece2a52d82b3aa811c317b2699f8cf68e6da24ff4565f0e906d080d6f64f2eb88b922e559c691ec67a186afceb478cee"
+hex_value2 = "766ae7d5e4e35d8c3ccbe6c8c785786ee3f451c27caa11be5f78469c58924c588966c9204c8ed3b2cbfdb83784fdbf901a356c65d5fadd7dbc934adf6a73d8bc1ac58da2f6516b9c98830b5fe97212d66d1c60f6e84985f6"
+
+# Convert hex_value2 to bytes and then to base64
+ 
+base64_value1 = base64.b64encode(binascii.unhexlify(hex_value1)).decode('utf-8')
+  
+
+# Convert both hex values to bytes
+bytes_value1 = binascii.unhexlify(hex_value1)
+bytes_value2 = binascii.unhexlify(hex_value2)
+hex
+# Perform XOR operation
+xor_result_bytes = bytes([a ^ b for a, b in zip(bytes_value1, bytes_value2)])
+
+# Convert the result back to hexadecimal
+result_hex = binascii.hexlify(xor_result_bytes).decode('utf-8')
+
+# Convert hexadecimal to ASCII
+result_text = binascii.unhexlify(result_hex).decode('ascii')
+
+print("Result (Hexadecimal):", result_hex)
+print("Result (ASCII):", result_text)
+
