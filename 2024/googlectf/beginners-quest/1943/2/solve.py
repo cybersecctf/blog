@@ -1,23 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h1>google ctf begginer quest-  1943 -2</h1>
-
-    <h2>Challenge Description</h2>
-    <p>  
-Consider us impressed, Sidney! We caught the spy leaking our weapons technology thanks to your outstanding crypto skills. You deserve a promotion, sir! But first  things first: we intercepted a message that's short. Key information hides in there. Can you decrypt it? Connect to your terminal with the command:  "socat file:`tty`,rawertcp:otp2.2023-bq.ctfcompetition.com:1337". Your password is "Sidney". The enemy hasn't given up on the unbreakable encryption scheme just yet.  HINT: A short key repeats. If it was a one-byte key, you could use frequency analysis to find the key. How can you reduce the multi-byte key case to the one-byte  case?                                                
-FLAG FORMAT: CTF{example}
-</p>
- 
-    <h2>Solution Approach</h2>
-    <p>Here are the steps we took to solve the challenge:</p>
-    <ol>
-    this is easier from challenge1 becaouse use key for all messages so with this code can get flag and
-    decode message like <a href="https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/2/cipher.txt">it</a> and pass file as argument.after run this code can get flag that is key
-and also even mesdsage!
-<pre>
 from base64 import b64decode
 from code19432 import singlechar_xor_brute_force, get_english_score
 from code194322 import repeating_key_xor
@@ -117,20 +97,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-#on base of codes from TF_Writeups/blob/main/Google%20CTF%20Beginner's%20Quest%20-%202023/1943/CHALLENGE%202.md
-</pre>
-    </ol>
-<br>
-    <h2>Flag</h2>
-    <p class="flag">CTF{MiniKey}
-</p>
-
-    <h2>Conclusion</h2>
-    <p>this is a     medium  chanllenge for  base64 decode and xor and one  time pad</p>
-</body>
-</html>
-
-
-
-
-
