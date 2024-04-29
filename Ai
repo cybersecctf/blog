@@ -141,7 +141,7 @@ googlectf-beginners-quest 1837-0  american morse code decoder  easy with python 
 googlectf-beginners-quest 1837-1  decode vigener chipher after american morse code decoder  easy with python  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/1/writeup1.md
 googlectf-beginners-quest 1837-2  detect adfgvx and  decode with key medium crypto  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup2.md
 googlectf-beginners-quest 1837-2  get flag from two chipher and plain text crypto medium ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup1.md
-googlectf-beginners-quest 1943-0 socat connect and base64 decode encode venona  easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/0/writeup1.md
-googlectf-beginners-quest 1943-1   venona  multi  time pad medium xor attack,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/writeup1.md
-googlectf-beginners-quest 1943-2   venona  one   time pad xor python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/2/writeup1.md
-googlectf-beginners-quest 1965-0   basic   reverse string python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1965/0/writeup1.md
+googlectf-beginners-quest 1943-0 google socat connect and base64 decode encode venona  easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/0/writeup1.md
+googlectf-beginners-quest 1943-1   google venona  multi  time pad medium xor attack,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/writeup1.md
+googlectf-beginners-quest 1943-2   google venona  one   time pad xor python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/2/writeup1.md
+googlectf-beginners-quest 1965-0   google basic   reverse string python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1965/0/writeup1.md
