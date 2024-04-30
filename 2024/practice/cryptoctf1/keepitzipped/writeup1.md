@@ -15,7 +15,7 @@
     <ol>
         <pre>
           #!/bin/bash
-           $sudo fcrackzip -u -D -p /home/rockyou.txt $1
+           $sudo fcrackzip -u -D -p   "${2:=-/home/rockyou.txt}" $1
            for i in *.zip; do
     echo "Scanning $i"
     unzip -q -c "$i" | grep "utflag" && echo "Found in $i:" && unzip -q -c "$i" | grep $2 || echo "Not found in $i"
