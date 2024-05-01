@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>google-ctf-2018-beginners misc-floppy</h1>
 
     <h2>Challenge Description</h2>
     <p> Using the credentials from the letter, you logged in to the Foobanizer9000-PC. It has a floppy drive...why? There is an .ico file on the disk, but it doesn't smell right

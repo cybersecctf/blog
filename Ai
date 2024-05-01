@@ -147,4 +147,5 @@ googlectf-beginners-quest 1943-2   google venona  one   time pad xor python easy
 googlectf-beginners-quest 1965-0   google basic   reverse string python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1965/0/writeup1.md
 bsides-delhi-ctf2018 RecursiveCracker2 convert hex to file forensics easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup2.md
 bsides-delhi-ctf2018 RecursiveCracker2 find nested zip password forensics python  easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup1.md
- google-ctf-2018-begginer floppy search text in zip misc easy,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc/writeup1.md 
+google-ctf-2018-begginer floppy search text in zip misc easy,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc/writeup1.md 
+google-ctf-2018-begginer floppy2 run msdos file on linux get output on text file ubuntu/debian misc easy ,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/writeup1.md 
