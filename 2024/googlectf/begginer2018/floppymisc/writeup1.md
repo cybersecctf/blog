@@ -13,7 +13,7 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-in this challenge we see that this file is zip file in txy format so via this  <a href="https://cybersecctf.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md">writeup</a>find this code for search on it 
+in this challenge we see that this file is zip filein text format  after looking around it  so via this  <a href="https://cybersecctf.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md">writeup</a>find this code for search on it 
 
         <pre>
 #python
