@@ -13,7 +13,8 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-since .com file were ms dos file and were in floppy so for test run www.com in msdos
+since .com file were ms dos file and were in floppy so for test run www.com in msdos on this code with dosbox and installed it with <code>sudo apt install --assume-yes dosbox</code>
+python version is 
 <pre>
 #python
 import sys
@@ -22,7 +23,7 @@ if len(sys.argv)>1:
     file=sys.argv[1]
 os.system("dosbox "+file)
 </pre>
- emulator on ubuntu with this command and on emulator type www.com>www.txt and in <a href="https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/attachments/temp_extract/www.txt">www.txt<</a> see flag
+ after run emulator on ubuntu with this command and on emulator type www.com>www.txt and in <a href="https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/attachments/temp_extract/www.txt">www.txt<</a> can see flag
     </ol>
 <br>
     <h2>Flag</h2>
