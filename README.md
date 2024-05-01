@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +15,7 @@
 </p>
 
     <h2>Solution Approach</h2>
-    <p>in this part you will see solution</p>
+    <p>in this part you will see solutions</p>
     <ol>
 
     </ol>
