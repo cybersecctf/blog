@@ -17,11 +17,11 @@ since .com file were ms dos file and were in floppy so for test run www.com in m
 python version is 
 <pre>
 #python
-import sys,os
+import sys,subprocess
 file="www.com"
 if len(sys.argv)>1:
     file=sys.argv[1]
-os.system("dosbox "+file)
+subprocess.call(['dosbox', file])
 </pre>
  after run emulator on ubuntu with this command and on emulator type www.com>www.txt and in <a href="https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/attachments/temp_extract/www.txt">www.txt<</a> can see flag
     </ol>
