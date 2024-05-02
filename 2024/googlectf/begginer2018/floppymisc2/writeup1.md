@@ -17,7 +17,7 @@ since .com file were ms dos file and were in floppy so for test run www.com in m
 python version is 
 <pre>
 #python
-import sys
+import sys,os
 file="www.com"
 if len(sys.argv)>1:
     file=sys.argv[1]
