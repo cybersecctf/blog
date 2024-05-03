@@ -19,7 +19,7 @@ http://eraas.web.nitectf.live/
         <li>i open link...</li>
         <li>this is a epoch and unix date time convertor convert milisecond to date...</li>
                 <li>no normal ls or cat input accespt so i used 123&&ls and it run both and get flag.txt...</li>
-                                    <li>iuse <pre>123&&cat flag.txt</pre> and get flag ..</li>
+                                    <li>iuse <pre> 123&&cat flag.txt</pre> and get flag ..</li>
 
       
     </ol>
