@@ -29,7 +29,8 @@ if len(sys.argv)>2:
 result = unhexlify(s)
 if type=='base64':
   result = base64.b64encode(result)
-print(result) 
+print(result)
+
 </pre>
        
     and after run code can get flag
