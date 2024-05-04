@@ -29,7 +29,6 @@ if len(sys.argv)>1:
 if len(sys.argv)>2:
    search=sys.argv[2]
 os.system("python solve.py  "+file+" "+search)
-
 </pre>
        
     also can do <code>$ls -lah</code>on all  folders for find password
