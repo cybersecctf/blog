@@ -153,4 +153,4 @@ ctflearn BasicInjection1     sql injection easy web sanitiz inputs,https://cyber
 ctflearn charcterencoding convert hex to ascii and base64 easy crypto ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/charcterencoding/writeup1.md
 ctflearn Forensics101 strings file and image pic grep flag easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
 ctflearn TakingLS ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/TakingLS/writeup1.md
-
+ctflearn base22the6 ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/base22the6/writeup1.md
