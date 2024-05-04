@@ -14,11 +14,9 @@
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
 we download zip file and search inside it and find password inside
-<code>
-
+<p id="code1">
 TheFlag/The Flag/.ThePassword/ThePassword.txt
-</code>
-and open password protected pdf  with it and see flag
+</p>
 <pre>
 import zipfile,sys,os
 
@@ -43,7 +41,8 @@ if len(sys.argv)>2:
    search=sys.argv[2]
 search_zip_files(file, search)
 </pre>
-       
+       and open password protected pdf  with it and see flag
+
     also can do <code>$ls -lah</code>on all  folders for find password
     </ol>
 <br>
