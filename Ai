@@ -152,4 +152,5 @@ google-ctf-2018-begginer floppy2 run msdos file on linux get output on text file
 ctflearn BasicInjection1     sql injection easy web sanitiz inputs,https://cybersecctf.github.io/blog/2024/practice/ctflearn/BasicInjection/writeup1.md
 ctflearn charcterencoding convert hex to ascii and base64 easy crypto ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/charcterencoding/writeup1.md
 ctflearn Forensics101 strings file and image pic grep flag easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
-ctflearn Taking LS search inside zip file forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
+ctflearn Taking LS search inside zip file forensics easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/TakingLS/writeup1.md
+
