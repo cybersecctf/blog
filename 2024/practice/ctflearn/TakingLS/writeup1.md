@@ -15,9 +15,10 @@
     <ol>
 we download zip file and search inside it and find password inside
 <code>
+
 TheFlag/The Flag/.ThePassword/ThePassword.txt
-and open password protected pdf  with it and see flag
 </code>
+and open password protected pdf  with it and see flag
 <pre>
 import zipfile,sys,os
 
@@ -33,7 +34,7 @@ def search_zip_files(zip_file, text):
                         print(f'Found "{text}" in file: {file} inside {zip_file}')
                 except UnicodeDecodeError:
                      print("not text",file)
-# Replace 'your_zip_file.zip' and 'your_text' with your specific zip file and text
+#  Replace 'your_zip_file.zip' and 'your_text' with your specific zip file and text
 file="TheFlag.zip"
 search=""
 if len(sys.argv)>1:
@@ -41,7 +42,6 @@ if len(sys.argv)>1:
 if len(sys.argv)>2:
    search=sys.argv[2]
 search_zip_files(file, search)
-
 </pre>
        
     also can do <code>$ls -lah</code>on all  folders for find password
