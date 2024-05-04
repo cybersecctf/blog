@@ -19,8 +19,20 @@ TheFlag/The Flag/.ThePassword/ThePassword.txt
 and open password protected pdf  with it and see flag
 </code>
 <pre>
-#python
-import os
+import zipfile,sys,os
+
+def search_zip_files(zip_file, text):
+    with zipfile.ZipFile(zip_file, 'r') as myzip:
+        for file in myzip.namelist():
+            with myzip.open(file, 'r') as myfile:
+                try:
+                    s = myfile.read().decode('utf-8')
+                    print(file)
+                    print(s)
+                    if text in s:
+                        print(f'Found "{text}" in file: {file} inside {zip_file}')
+                except UnicodeDecodeError:
+                     print("not text",file)
 # Replace 'your_zip_file.zip' and 'your_text' with your specific zip file and text
 file="TheFlag.zip"
 search=""
@@ -28,7 +40,8 @@ if len(sys.argv)>1:
    file=sys.argv[1]
 if len(sys.argv)>2:
    search=sys.argv[2]
-os.system("python solve.py  "+file+" "+search)
+search_zip_files(file, search)
+
 </pre>
        
     also can do <code>$ls -lah</code>on all  folders for find password
