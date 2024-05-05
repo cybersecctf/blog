@@ -52,11 +52,11 @@ $binwalk --dd='.*'  PurpleThing.jpeg
     </ol> 
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">ABCTF{b1nw4lk_is_us3ful}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for use and search with binwalk and forensics</p>
 </body>
 </html>
 
