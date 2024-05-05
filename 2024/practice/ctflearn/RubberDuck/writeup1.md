@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Rubber Duck- ctflearn</h1>
+
+    <h2>Challenge Description</h2>
+    <p> Find the flag! Simple forensics challenge to get started with.
+https://ctflearn.com/challenge/download/933
+
+ 
+</p>
+ 
+    <h2>Solution Approach</h2>
+    <p>Here are the steps we took to solve the challenge:</p>
+    <ol>
+        this time there is no mention to exiftool like <a href="https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
+">this</a> but still i try exiftool from it and it work and find in meta
+of this image
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/RubberDuck.jpg" alt="RubberDuck" class="inline"/>
+or use  this command 
+<pre>$exiftool $1</pre>and add pic in $1
+       
+    
+    </ol>
+<br>
+    <h2>Flag</h2>
+    <p class="flag">CTFlearn{ILoveJakarta}.
+</p>
+
+    <h2>Conclusion</h2>
+    <p>this is a very   easy chanllenge for work on exiftool and forensics</p>
+</body>
+</html>
+
+
+
