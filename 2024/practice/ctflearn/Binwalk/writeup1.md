@@ -17,8 +17,7 @@ for use binwalk for advanced big files and search text or extract can use this p
 <pre>
 #python
 import binwalk,os,sys
- 
-def extract_and_search(file_path, search_text):
+ def extract_and_search(file_path, search_text):
     # Use binwalk to extract files
     for module in binwalk.scan(file_path, signature=True, quiet=False, extract=True):
         print(f"{module.name} Results:")
@@ -41,7 +40,7 @@ if len(sys.argv)>1:
 if len(sys.argv)>2:
  search=sys.argv[2]
  extract_and_search(file,search)
-else
+else:
   os.system("binwalk --dd='.*'  "+file)
 </pre>
 or simply for this problem can use this command
