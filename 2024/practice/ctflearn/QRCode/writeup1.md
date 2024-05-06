@@ -48,7 +48,7 @@ try:
   else:  
    print( base64_bytes.encode("ascii") )
  
- elif type=="decodes":
+ elif type=="decode":
    base64_bytes = text.encode("ascii") 
    if decodes=="hex":
      print(binascii.hexlify(base64_bytes))
