@@ -165,3 +165,4 @@ vigenerecipher ctflearn vigenere cipher with key and python easy crypto,https://
 exif ctflean exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
 RubberDuck ctflearn    exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
 HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/HyperStreamtest/writeup1.md 
+QRCode ctflearn qrcode rot13 base64 decode encode python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/QRCode/writeup1.md 
