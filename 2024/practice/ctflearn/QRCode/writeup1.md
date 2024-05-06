@@ -46,7 +46,7 @@ try:
   elif  decodes=="rot13":
       print(codecs.encode(text, 'rot_13'))
   else:  
-   print( base64_bytes.decode("ascii") )
+   print( base64_bytes.encode("ascii") )
  
  elif type=="decodes":
    base64_bytes = text.encode("ascii") 
