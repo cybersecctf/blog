@@ -16,6 +16,7 @@
         this is beacon cipher way that mapping alphabet to a,b in many way find mapping is tricky but use this code for test some possible mapping or online
 tools
 <pre>
+#python
 import string, itertools
 
 import sys
