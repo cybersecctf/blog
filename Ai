@@ -149,7 +149,7 @@ bsides-delhi-ctf2018 RecursiveCracker2 convert hex to file forensics easy ,  htt
 bsides-delhi-ctf2018 RecursiveCracker2 find nested zip password forensics python  easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup1.md
 google-ctf-2018-begginer floppy search text in zip misc easy,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc/writeup1.md 
 google-ctf-2018-begginer floppy2 run msdos file on linux get output on text file ubuntu/debian misc easy ,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/writeup1.md 
-ctflearn BasicInjection1     sql injection easy web sanitiz inputs,https://cybersecctf.github.io/blog/2024/practice/ctflearn/BasicInjection/writeup1.md
+ctflearn BasicInjection1  sql injection easy web sanitiz inputs,https://cybersecctf.github.io/blog/2024/practice/ctflearn/BasicInjection/writeup1.md
 ctflearn charcterencoding convert hex to ascii and base64 easy crypto ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/charcterencoding/writeup1.md
 ctflearn Forensics101 strings file and image pic grep flag easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
 ctflearn TakingLS ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/TakingLS/writeup1.md
@@ -161,7 +161,7 @@ wikipedia ctflearn wikipedia search very easy web,https://cybersecctf.github.io/
 WOWSoMeta ctflearn get meta of pic and image with exiftool forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/WOWSoMeta/writeup1.md
 Binwalk ctflearn extract files inside another zip and pic any forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Binwalk/writeup1.md 
 Hextroadinary ctflearn xor and convert result to hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Hextroadinary/writeup1.md
-vigenerecipher ctflearn vigenere cipher with key and python easy crypto,ctflearnhttps://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
+vigenerecipher ctflearn vigenere cipher with key and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
 exif ctflean exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
 RubberDuck ctflearn    exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
 HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/HyperStreamtest/writeup1.md 
