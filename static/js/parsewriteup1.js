@@ -306,7 +306,7 @@ function filterWriteups2() {
     commentLink.href = "https://github.com/cybersecctf/blog/issues/1";
     commentLink.textContent = "Comment here";
     commentLink.className = "writeup-link";
-    document.body.appendChild(commentLink);
+ 
     randomLinks.push(commentLink);
 
     return randomLinks;
