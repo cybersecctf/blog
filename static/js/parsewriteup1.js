@@ -1,4 +1,4 @@
-var currenturl="";
+ var currenturl="";
 var currentflag="";
 function getQueryParamOrDefault(name, defaultValue) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -267,8 +267,49 @@ currentWriteupUrl = links2[0].href;
 
               }
 }
+function filterWriteups() {
+    var query = document.getElementById('search-box').value.toLowerCase();
+    query = getQueryParamOrDefault('q', query);
+    var links = document.getElementsByClassName('writeup-link');
+    var resultsCount = 0;
+    var randomLinks = [];
 
-      function filterWriteups() {
+    for (var i = 0; i < links.length; i++) {
+        var title = links[i].textContent.toLowerCase();
+        var truncatedTitle = links[i].title.toLowerCase();
+        var link = links[i].href;
+        var content = links[i].dataset.content.toLowerCase();
+        var writeup = "";
+        if (endsWith(link, ".md"))
+            writeup = renderMarkdown(link);
+        if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
+            links[i].parentElement.style.display = '';
+            if (resultsCount < 3) {
+                console.log("visible" + links[i].href);
+                currenturl = links[i].href;
+                loadWriteupContent(links[i].href);
+                randomLinks.push(links[i]);
+                resultsCount++;
+            }
+        } else {
+            links[i].parentElement.style.display = 'none';
+        }
+    }
+
+    if (randomLinks.length > 0) {
+        currentWriteupUrl = randomLinks[0].href;
+        console.log("current" + currentWriteupUrl);
+    }
+
+    // Add comment link
+    var commentLink = document.createElement('a');
+    commentLink.href = "https://github.com/cybersecctf/blog/issues/1";
+    commentLink.textContent = "Comment here";
+    document.body.appendChild(commentLink);
+
+    return links;
+}
+      function filterWriteups3() {
                   var query = document.getElementById('search-box').value.toLowerCase();
                   query= getQueryParamOrDefault('q', query);
                   var links = document.getElementsByClassName('writeup-link');
