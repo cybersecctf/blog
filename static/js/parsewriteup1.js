@@ -274,40 +274,40 @@ function filterWriteups2() {
     var resultsCount = 0;
     var randomLinks = [];
 
-    for (var i = 0; i < links.length; i++) {
-        var title = links[i].textContent.toLowerCase();
-        var truncatedTitle = links[i].title.toLowerCase();
-        var link = links[i].href;
-        var content = links[i].dataset.content.toLowerCase();
+    // Shuffle the array of links
+    var shuffledLinks = Array.from(links).sort(() => 0.5 - Math.random());
+
+    for (var i = 0; i < shuffledLinks.length; i++) {
+        var title = shuffledLinks[i].textContent.toLowerCase();
+        var truncatedTitle = shuffledLinks[i].title.toLowerCase();
+        var link = shuffledLinks[i].href;
+        var content = shuffledLinks[i].dataset.content.toLowerCase();
         var writeup = "";
         if (endsWith(link, ".md"))
             writeup = renderMarkdown(link);
         if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
-            links[i].parentElement.style.display = '';
             if (resultsCount < 3) {
-                console.log("visible" + links[i].href);
-                currenturl = links[i].href;
-                loadWriteupContent(links[i].href);
-                randomLinks.push(links[i]);
+                console.log("visible" + shuffledLinks[i].href);
+                currenturl = shuffledLinks[i].href;
+                loadWriteupContent(shuffledLinks[i].href);
+                randomLinks.push(shuffledLinks[i]);
                 resultsCount++;
             }
+            shuffledLinks[i].parentElement.style.display = 'none';
         } else {
-            links[i].parentElement.style.display = 'none';
+            shuffledLinks[i].parentElement.style.display = 'none';
         }
     }
 
-    if (randomLinks.length > 0) {
-        currentWriteupUrl = randomLinks[0].href;
-        console.log("current" + currentWriteupUrl);
-    }
-
-    // Add comment link
+    // Add comment link as the fourth writeup
     var commentLink = document.createElement('a');
     commentLink.href = "https://github.com/cybersecctf/blog/issues/1";
     commentLink.textContent = "Comment here";
+    commentLink.className = "writeup-link";
     document.body.appendChild(commentLink);
+    randomLinks.push(commentLink);
 
-    return links;
+    return randomLinks;
 }
       function filterWriteups3() {
                   var query = document.getElementById('search-box').value.toLowerCase();
@@ -490,11 +490,3 @@ currentWriteupUrl = links2[0].href;
                       .replace(/\n/g, '<br>')
                       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
               }
-      
-        
- 
-
-        
-               
- 
- 
