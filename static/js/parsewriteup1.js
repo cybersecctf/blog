@@ -35,8 +35,10 @@ else
             var links = document.getElementsByClassName('writeup-link');
            
             var resultsCount = 0;
-  
-            for (var i = 0; i < links.length; i++) {
+            var linksvalue=links.length
+            if linksvalue>3:
+                       linksvalue=3
+            for (var i = 0; i < linksvalue; i++) {
                 var title = links[i].textContent.toLowerCase();
                 var truncatedTitle = links[i].title.toLowerCase();
                 var link = links[i].href;
