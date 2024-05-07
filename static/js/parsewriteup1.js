@@ -310,51 +310,46 @@ function filterWriteups2() {
     return randomLinks;
 }
       function filterWriteups3() {
-                  var query = document.getElementById('search-box').value.toLowerCase();
-                  query= getQueryParamOrDefault('q', query);
-                  var links = document.getElementsByClassName('writeup-link');
-             
-                  var resultsCount = 0;
-                  s=links.length
-                  if s>3:
-                       s=3
-                  for (var i = 0; i <s; i++) {
-                      var title = links[i].textContent.toLowerCase();
-                      var truncatedTitle = links[i].title.toLowerCase();
-                      var link = links[i].href;
-                      var content = links[i].dataset.content.toLowerCase();
-                     var writeup="";
-                   if(endsWith( link,".md"))
-                     
-                       writeup=renderMarkdown(link);
-                      if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
-                          links[i].parentElement.style.display = '';
- if(resultsCount==0)
-                          {
-                            console.log("visible"+links[i].href);    
-                               currenturl=links[i].href;
-                             loadWriteupContent(links[i].href);
-
-                            }
-                          resultsCount++;
-                        
-                      } else {
-                          links[i].parentElement.style.display = 'none';
-                      }
-                  }
-      
-      
-                   if (links.length > 0) {
-
-                  currentWriteupUrl = links[0].href;
-            console.log("current"+currentWriteupUrl);
-
-                 var links2 = document.getElementsByClassName('writeup-link');
-
-currentWriteupUrl = links2[0].href;
-            console.log("current"+currentWriteupUrl);
-              }
-         return links;
+        var query = document.getElementById('search-box').value.toLowerCase();
+        query = getQueryParamOrDefault('q', query);
+        var links = document.getElementsByClassName('writeup-link');
+        var resultsCount = 0;
+        var randomLinks = [];
+    
+        for (var i = 0; i < links.length; i++) {
+            var title = links[i].textContent.toLowerCase();
+            var truncatedTitle = links[i].title.toLowerCase();
+            var link = links[i].href;
+            var content = links[i].dataset.content.toLowerCase();
+            var writeup = "";
+            if (endsWith(link, ".md"))
+                writeup = renderMarkdown(link);
+            if (title.includes(query) || truncatedTitle.includes(query) || link.includes(query) || content.includes(query)) {
+                links[i].parentElement.style.display = '';
+                if (resultsCount < 3) {
+                    console.log("visible" + links[i].href);
+                    currenturl = links[i].href;
+                    loadWriteupContent(links[i].href);
+                    randomLinks.push(links[i]);
+                    resultsCount++;
+                }
+            } else {
+                links[i].parentElement.style.display = 'none';
+            }
+        }
+    
+        if (randomLinks.length > 0) {
+            currentWriteupUrl = randomLinks[0].href;
+            console.log("current" + currentWriteupUrl);
+        }
+    
+        // Add comment link
+        var commentLink = document.createElement('a');
+        commentLink.href = "https://github.com/cybersecctf/blog/issues/1";
+        commentLink.textContent = "Comment here";
+        links.push(commentLink);
+    
+        return links;
               }
               function loadWriteupContent(writeupUrl) {
                   fetch(writeupUrl)
