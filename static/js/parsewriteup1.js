@@ -277,7 +277,7 @@ function filterWriteups2() {
     // Shuffle the array of links
     var shuffledLinks = Array.from(links).sort(() => 0.5 - Math.random());
 
-    for (var i = 0; i < shuffledLinks.length; i++) {
+    for (var i = 0; i <3; i++) {
         var title = shuffledLinks[i].textContent.toLowerCase();
         var truncatedTitle = shuffledLinks[i].title.toLowerCase();
         var link = shuffledLinks[i].href;
@@ -304,7 +304,7 @@ function filterWriteups2() {
     commentLink.href = "https://github.com/cybersecctf/blog/issues/1";
     commentLink.textContent = "Comment here";
     commentLink.className = "writeup-link";
-    document.body.appendChild(commentLink);
+ 
     randomLinks.push(commentLink);
 
     return randomLinks;
@@ -315,8 +315,10 @@ function filterWriteups2() {
                   var links = document.getElementsByClassName('writeup-link');
              
                   var resultsCount = 0;
-     
-                  for (var i = 0; i < links.length; i++) {
+                  s=links.length
+                  if s>3:
+                       s=3
+                  for (var i = 0; i <s; i++) {
                       var title = links[i].textContent.toLowerCase();
                       var truncatedTitle = links[i].title.toLowerCase();
                       var link = links[i].href;
@@ -463,7 +465,7 @@ currentWriteupUrl = links2[0].href;
                   }
        
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups2();
+                  filterWriteups3();
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
