@@ -1,4 +1,4 @@
- var currenturl="";
+var currenturl="";
 var currentflag="";
 function getQueryParamOrDefault(name, defaultValue) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -186,7 +186,7 @@ else
             }
   
             // After updating the sidebar, trigger the filterWriteups function
-            filterWriteups();
+            filterWriteups2();
         }
         function checkFlag() {
   var tempElement = document.createElement('div');
@@ -267,7 +267,7 @@ currentWriteupUrl = links2[0].href;
 
               }
 }
-function filterWriteups() {
+function filterWriteups2() {
     var query = document.getElementById('search-box').value.toLowerCase();
     query = getQueryParamOrDefault('q', query);
     var links = document.getElementsByClassName('writeup-link');
@@ -463,7 +463,7 @@ currentWriteupUrl = links2[0].href;
                   }
        
                   // After updating the sidebar, trigger the filterWriteups function
-                  filterWriteups();
+                  filterWriteups2();
               }
               function checkFlag() {
       var tempElement = document.createElement('div');
