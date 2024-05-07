@@ -168,3 +168,5 @@ HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://
 QRCode ctflearn qrcode rot13 base64 decode encode python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/QRCode/writeup1.md 
 SimpleProgramming ctflearn python programming read lines coun 1 0 easy rev ,gitisgood ctflearn git show history changes easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/GitIsGood/writeup1.md
 https://cybersecctf.github.io/blog/2024/practice/ctflearn/SimpleProgramming/writeup1.md
+iamdump ctflearn cat dump file linux forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Imadump/writeup1.md 
+Snowboard ctflearn file linux forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Snowboard/writeup1.md
