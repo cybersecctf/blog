@@ -36,7 +36,7 @@ else
            
             var resultsCount = 0;
             var linksvalue=links.length
-            if linksvalue>3:
+            if (linksvalue>3)
                        linksvalue=3
             for (var i = 0; i < linksvalue; i++) {
                 var title = links[i].textContent.toLowerCase();
