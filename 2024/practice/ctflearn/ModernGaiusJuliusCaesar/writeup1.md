@@ -30,7 +30,22 @@ if len(sys.argv)>2:
  shift=int(sys.argv[2])
 if len(sys.argv)>3:
  typekey=sys.argv[3] 
-os.system("python solve.py  "+ciphertext+" "+str(shift)+" "+str(typekey))
+ 
+import subprocess
+
+# Define the command as a list
+command = ["python", "solve.py", ciphertext, str(shift), str(typekey)]
+
+# Run the command
+process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+# Get the output and error (if any)
+stdout, stderr = process.communicate()
+# Print the output
+print(stdout.decode())
+# Print the error (if any)
+if stderr:
+    print(stderr.decode())
 
 </pre>
        
