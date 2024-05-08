@@ -19,33 +19,35 @@ Modern Gaius Julius Caesar  and alphabet maybe means keyboard shift chipher that
 like caesar so use this code and get flag  CTFlearn{Cyb3r-Cae54r]
 that should changed to have correct version of flag.
 <pre>
-#python
-import sys,os
+import sys
+def keyboard_shift_decrypt(ciphertext, shift,type="qwertyus"):
+    keyboard = "1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:\"zxcvbnm,./ZXCVBNM<>?"
+    keyboard += keyboard.upper()  # Add uppercase letters
+    keyboard += ' '  # Add space
+    decrypted_text = ''
+
+    for char in ciphertext:
+        if char in keyboard:
+            # Get the index of the new character
+            new_index = (keyboard.index(char) - shift) % len(keyboard)
+            decrypted_text += keyboard[new_index]
+        else:
+            decrypted_text += char  # If character is not in the keyboard, just append it
+
+    return decrypted_text
+
+# Usage
 typekey="qwertyus"
 ciphertext = "BUH'tdy,|Bim5y~Bdt76yQ"
 if len(sys.argv)>1:
  ciphertext=sys.argv[1]
 shift = 2  # Replace with the actual shift used
 if len(sys.argv)>2:
- shift=int(sys.argv[2])
+ shift=sys.argv[2]
 if len(sys.argv)>3:
  typekey=sys.argv[3] 
- 
-import subprocess
-
-# Define the command as a list
-command = ["python", "solve.py", ciphertext, str(shift), str(typekey)]
-
-# Run the command
-process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-# Get the output and error (if any)
-stdout, stderr = process.communicate()
-# Print the output
-print(stdout.decode())
-# Print the error (if any)
-if stderr:
-    print(stderr.decode())
+plaintext = keyboard_shift_decrypt(ciphertext, shift,typekey)
+print(plaintext)
 
 </pre>
        
