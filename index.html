@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,6 +88,8 @@ window.onload = function () {
     // Load links from text file and filter writeups
     var s = loadLinksFromTextFile('https://cybersecctf.github.io/blog/Ai');
     links=filterWriteups2();
+    if (links.length>3)
+       links =links [:3]
 var arr = Array.prototype.slice.call( links );
     var myList = document.getElementById('writeup-list');
 
