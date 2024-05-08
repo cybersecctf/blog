@@ -18,14 +18,13 @@ BUH'tdy,|Bim5y~Bdt76yQ
 Modern Gaius Julius Caesar  and alphabet maybe means keyboard shift chipher that is use keyboard alphabet for shift number 
 like caesar so use this code and get flag  CTFlearn{Cyb3r-Cae54r]
 that should changed to have correct version of flag.
-       <pre>
+<pre>
+#python
 import sys
 def keyboard_shift_decrypt(ciphertext, shift,type="qwertyus"):
     keyboard = "1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:\"zxcvbnm,./ZXCVBNM<>?"
     if type == "azerty":
      keyboard = "&é\"'(-è_çàAZERTYUIOPQSDFGHJKLM<WXCVBN,;:!"
-
-
     if type=="dvorak":
          keyboard="`1234567890[]',.PYFGCRL/=AOEUIDHTNS-;QJKXBMWVZ" 
     if type=="colemak":
