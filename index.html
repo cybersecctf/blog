@@ -89,7 +89,7 @@ window.onload = function () {
     var s = loadLinksFromTextFile('https://cybersecctf.github.io/blog/Ai');
     links=filterWriteups2();
     if (links.length>3)
-       links =links [:3]
+       links = links.slice(0,3);
 var arr = Array.prototype.slice.call( links );
     var myList = document.getElementById('writeup-list');
 
