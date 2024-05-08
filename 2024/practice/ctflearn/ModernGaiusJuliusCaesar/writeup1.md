@@ -23,7 +23,8 @@ import sys
 def keyboard_shift_decrypt(ciphertext, shift,type="qwertyus"):
     keyboard = "1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:\"zxcvbnm,./ZXCVBNM<>?"
     if type == "azerty":
-      keyboard = "&é\"'(-è_çàAZERTYUIOPQSDFGHJKLM<WXCVBN,;:!"
+     keyboard = "&é\"'(-è_çàAZERTYUIOPQSDFGHJKLM<WXCVBN,;:!"
+
 
     if type=="dvorak":
          keyboard="`1234567890[]',.PYFGCRL/=AOEUIDHTNS-;QJKXBMWVZ" 
