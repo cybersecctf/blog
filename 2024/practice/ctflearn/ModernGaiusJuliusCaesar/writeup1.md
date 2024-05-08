@@ -27,10 +27,10 @@ if len(sys.argv)>1:
  ciphertext=sys.argv[1]
 shift = 2  # Replace with the actual shift used
 if len(sys.argv)>2:
- shift=sys.argv[2]
+ shift=int(sys.argv[2])
 if len(sys.argv)>3:
  typekey=sys.argv[3] 
-os.system("python solve.py  "+ciphertext+" "+shift+" "+typekey)
+os.system("python solve.py  "+ciphertext+" "+str(shift)+" "+str(typekey))
 
 </pre>
        
