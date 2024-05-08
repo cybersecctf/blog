@@ -28,7 +28,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                 if(!checkFlag()) 
               {
                 loadLinksFromTextFile('https://cybersecctf.github.io/blog/links.txt');
-                filterWriteups();
+                filterWriteups2();
              var myList = document.getElementById('writeup-list');
 
   // Get the text content of the first li

@@ -278,7 +278,7 @@ function filterWriteups2() {
 
     // Shuffle the array of links
     var shuffledLinks = Array.from(links).sort(() => 0.5 - Math.random());
-
+       
     for (var i = 0; i < shuffledLinks.length; i++) {
         var title = shuffledLinks[i].textContent.toLowerCase();
         var truncatedTitle = shuffledLinks[i].title.toLowerCase();

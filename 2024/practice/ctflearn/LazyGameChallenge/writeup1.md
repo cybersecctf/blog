@@ -15,9 +15,8 @@ To get flag, pwn the server at: nc thekidofarcrania.com 10001
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-         lazy game when coming with add and minus and shop ...like that in ctf challenges means wwhen someone 
-   remove some value 10-value python code do it on any value even in negative 10-(-10)=20 so for shoup or bet here 
-you can have minus value.this ctf havn't source but i found it here you can see if bet  value -$1000000 and then
+         lazy game when coming with add and minus and shop ... in ctf challenges means  python calculate on any  value even in negative 10-(-10)=20 so for shup or bet here 
+you can have minus value and add to your bet.this ctf havn't source but i found it here you can see if bet  value -$1000000 and then
 do game one time can get flag easy source code is <a href="https://cybersecctf.github.io/blog/2024/practice/ctflearn/LazyGameChallenge/game.md">here</a> that i found on net. after ply in above roles you can get result like it.
 <pre>
 Sorry you didn't made it !
