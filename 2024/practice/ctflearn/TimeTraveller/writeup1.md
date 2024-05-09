@@ -27,11 +27,11 @@ webbrowser.open('https://web.archive.org/web/19961231235847/http://www.nasa.gov/
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">CTFlearn{ today@nasa.gov}
+    <p class="flag">CTFlearn{today@nasa.gov}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a    easy chanllenge for search on archive of  webs</p>
 </body>
 </html>
 
