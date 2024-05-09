@@ -13,6 +13,8 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+i download file 
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/PhoIsTasty/971" alt="ctf quetion image" class="inline"/>
        using exiftool and strings not work but after search see that hexdump is working so
 use this python code for search with or without pattern in hexdump and find flag
 <pre>
@@ -104,4 +106,5 @@ remove dots and will get flag
     <p>this is a     easy chanllenge for search on hexdump of files</p>
 </body>
 </html>
+
 
