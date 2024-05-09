@@ -19,6 +19,11 @@ search for nasa.gov and click on snapshot like below
         https://web.archive.org/web/19961231235847/http://www.nasa.gov/
        
     and go to page and find email
+<pre >
+#python
+import webbrowser
+webbrowser.open('https://web.archive.org/web/19961231235847/http://www.nasa.gov/', new=2)
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>
