@@ -13,6 +13,9 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+we download image
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/Hey_You.png" alt="minion image" class="inline"/>
+nothing found in srtings or  exiftools but using this script in image and 
     <pre>
 #python
 import zipfile
@@ -68,16 +71,48 @@ elif type=="binwalk" or not file.endswith("zip"):
 else:
  search_in_zip(file,search)
 </pre>
-       
-    
+       binwalk say that have files inside it and text inside
+Nothing_Here_16/..txt  but can't unrar it because name ..txt is not supported and should be something like 1.txt 
+or open it inside tool
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/ubuntuextractor.png" alt="ctf quetion image" class="inline"/>
+and see link that open new image of minions
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/Only_Few_Steps.jpg" alt="ctf quetion image" class="inline"/>
+    using binwalk of this script give me this image 
+
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/_Only_Few_Steps.jpg.extracted/YouWon(Almost).jpg" alt="ctf quetion image" class="inline"/>
+strings this picture give me this text
+<pre>
+CTF{VmtaU1IxUXhUbFZSYXpsV1RWUnNRMVpYZEZkYWJFWTJVVmhrVlZGVU1Eaz0=)
+</pre>
+that is base64 text but should do a lot of(5) base64 text on it to get it
+<pre>
+ 
+dawoodctf@dawoodctf-virtual-machine:~/Desktop/blog/2024/practice/ctflearn/Minions decode VmtaU1IxUXhUbFZSYXpsV1RWUnNRMVpYZEZkYWJFWTJVVmhrVlZGVU1Eaz0=
+decoded from base64: b'VkZSR1QxTlVRazlWTVRsQ1ZXdFdabEY2UVhkVVFUMDk='
+
+ 
+
+dawoodctf@dawoodctf-virtual-machine:~/Desktop/blog/2024/practice/ctflearn/Minions decode VkZSR1QxTlVRazlWTVRsQ1ZXdFdabEY2UVhkVVFUMDk=
+decoded from base64: b'VFRGT1NUQk9VMTlCVWtWZlF6QXdUQT09'
+
+dawoodctf@dawoodctf-virtual-machine:~/Desktop/blog/2024/practice/ctflearn/Minions decode VFRGT1NUQk9VMTlCVWtWZlF6QXdUQT09
+decoded from base64: b'TTFOSTBOU19BUkVfQzAwTA=='
+
+dawoodctf@dawoodctf-virtual-machine:~/Desktop/blog/2024/practice/ctflearn/Minions decode TTFOSTBOU19BUkVfQzAwTA==
+decoded from base64: b'M1NI0NS_ARE_C00L'
+
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">CTFlearn{M1NI0NS_ARE_C00L}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for work on binwalk and unrar and unzip and forensics</p>
 </body>
 </html>
+
+
+
 
