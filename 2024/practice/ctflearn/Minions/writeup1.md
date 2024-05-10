@@ -18,6 +18,7 @@ we download image
 nothing found in srtings or  exiftools but using this script in image and 
     <pre>
 #python
+import binwalk
 import zipfile
 import rarfile
 import io,os,sys
