@@ -1,0 +1,43 @@
+import zipfile
+import rarfile
+import io,sys
+
+def search_in_zip(zip_path, search_text):
+    with zipfile.ZipFile(zip_path, 'r') as myzip:
+        for i in myzip.infolist():
+            if not i.is_dir() and i.filename.endswith('.txt'):
+                with myzip.open(i.filename) as myfile:
+                    if search_text in myfile.read().decode():
+                        print(f'Found "{search_text}" in {i.filename}')
+                        return True
+    return False
+
+def search_in_rar(rar_path, search_text):
+    with rarfile.RarFile(rar_path) as myrar:
+        for f in myrar.infolist():
+            if not f.isdir() and f.filename.endswith('.txt'):
+                with myrar.open(f) as myfile:
+                    if search_text in myfile.read().decode():
+                        print(f'Found "{search_text}" in {f.filename}')
+                        return True
+    return False
+
+
+# Example usage
+zip_file_path = 'Hey_You.png'
+if len(sys.argv)>1:
+     zip_file_path = sys.argv[1]
+search_text = ''
+if len(sys.argv)>2:
+     search_text = sys.argv[2]
+found_files = search_in_zip(zip_file_path, search_text)
+if zip_file_path.endswith(".rar"):
+ found_files = search_in_rar(zip_file_path, search_text)
+if found_files:
+    print("Found in the following files:")
+ 
+    for file in found_files:
+        print(file)
+        os.system("cat "+file)
+else:
+    print("Text not found in any files.")
