@@ -72,7 +72,7 @@ def main():
 
     # Check that the hamming distance function works properly
     assert hamming_distance(b'this is a test', b'wokka wokka!!!') == 37
-    file="cipher"
+    file="cipher1.txt"
     type="base64"
     data=""
     if len(sys.argv)>1:
