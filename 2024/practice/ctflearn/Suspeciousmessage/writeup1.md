@@ -14,9 +14,8 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-this is playfair cipher open this <a href="https://www.boxentriq.com/code-breaking/playfair-cipher       
-">site</a> with this options 
- <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/Screenshot 2024-05-10 123419.png" alt="ctf quetion image" class="inline"/>
+this is playfair cipher open this <a href="https://www.boxentriq.com/code-breaking/playfair-cipher">site</a> with this options 
+ <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/Screenshot 2024-05-10123419.png" alt="ctf quetion image" class="inline"/>
 and get flag
 
     
