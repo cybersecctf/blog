@@ -1,4 +1,5 @@
 import base64,sys
+
 a = "xD6kfO2UrE5SnLQ6WgESK4kvD/Y/rDJPXNU45k/p"
 if len(sys.argv)>1:
  a=sys.argv[1]
