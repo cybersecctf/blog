@@ -96,10 +96,13 @@ You did it! Congratuations!
 CTFlearn{buffer_0verflows_4re_c00l!}
 */
 </pre>
-    we add flag in end of 48 1 or any char because secret comming after them and should be<pre>if (secret == 0x67616c66) {
-    puts("You did it! Congratuations!");</pre>
+    we add flag in end of 48 1(32*"1"+16*"1"+"flag") or any char because secret comming after them and should be<pre>  if (secret == 0x67616c66) {
+    puts("You did it! Congratuations!");
+    print_flag(); // Print out the flag. You deserve it.
+    return;
+  } </pre>
 that 0x67616c66 is hex of flag in reverse(ord('f')=102,hex(102)
-'0x66') )and secret should be flag for get full flag for us
+'0x66') )and secret should be flag for reach print_flag()  and print flag. 
     </ol>
 <br>
     <h2>Flag</h2>
