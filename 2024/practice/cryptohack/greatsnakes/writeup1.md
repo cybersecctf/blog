@@ -27,19 +27,30 @@ this is a challenge for test python version and run python code and get flag if 
 after run code below will get flag
 <pre>
 #python
+import ast
 import sys
 # import this
-
+print("custom usage -v listinstring hex")
 if sys.version_info.major == 2:
     print("You are running Python 2, which is no longer supported. Please update to Python 3.")
-print(sys.version_info)
-ords = [81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79]
+
 if len(sys.argv)>1:
   ords=sys.argv[1]
+  ords= ast.literal_eval(ords)
 
+else:
+  ords = [81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79]
+hexs="0x32" 
+if len(sys.argv)>2:
+  hexs=sys.argv[2]
+print(ords)
+for x in ords:
+  print(x)
 print("Here is your flag:")
-print("".join(chr(o ^ 0x32) for o in ords))
-</pre>    
+
+hexs = int(hexs, 16)
+print("".join(chr(o ^ hexs) for o in ords))
+
     </ol>
 <br>
     <h2>Flag</h2>
