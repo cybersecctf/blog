@@ -26,7 +26,7 @@ Resources:
 this is a challenge for test python version and run python code and get flag if version is not 2.
 after run code below will get flag
 <pre>
-       #python
+#python
 import sys
 # import this
 
@@ -34,6 +34,8 @@ if sys.version_info.major == 2:
     print("You are running Python 2, which is no longer supported. Please update to Python 3.")
 print(sys.version_info)
 ords = [81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79]
+if len(sys.argv)>1:
+  ords=sys.argv[1]
 
 print("Here is your flag:")
 print("".join(chr(o ^ 0x32) for o in ords))
