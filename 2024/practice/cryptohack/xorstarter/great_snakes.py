@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#python
 import ast
 import sys
 # import this
