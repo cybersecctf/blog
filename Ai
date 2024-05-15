@@ -193,3 +193,4 @@ cryptohack ascii decimal to asci python easy   crypto,https://cybersecctf.github
 cryptohack hex to ascii python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/hex/writeup1.md
 cryptohack base64 hex to base64 ascii easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/base64/writeup1.md
 cryptohack BytesandBigIntegers    decode encode long byte message base64 ascii easy,crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/BytesandBigIntegers/writeup1.md
+xorstarter cryptohack xor string integer list  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorstarter/writeup1.md>
