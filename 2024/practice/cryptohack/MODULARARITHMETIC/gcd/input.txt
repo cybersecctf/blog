@@ -1,0 +1,8 @@
+usage -v  value1 value2
+10245 -8404
+
+Run  successed
+usage -v  value1 value2
+10245 -8404
+
+Run  successed
