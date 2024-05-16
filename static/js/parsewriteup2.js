@@ -65,6 +65,7 @@ loadWriteupContent(url);
                 return false;
             }
         }
+    }
   function filterWriteups() {
             var query = document.getElementById('search-box').value.toLowerCase();
             query= getQueryParamOrDefault('query', query);
@@ -164,7 +165,7 @@ loadWriteupContent(url);
             
             archiveList.innerHTML = ''; // Clear existing content
             writeupList.innerHTML = ''; // Clear existing content
-  
+                        
             for (var i = 0; i < links.length; i++) {
                 // Add the link to the archive
                 var archiveItem = document.createElement('li');
@@ -376,6 +377,20 @@ loadWriteupContent(url);
                   }
                   return links;
               }
+function addcomment(writeupList)
+{
+                      // Add the link to the headings
+                      var writeupItem = document.createElement('li');
+                      var link = document.createElement('a');
+                      link.href = "https://github.com/cybersecctf/blog/issues/1";
+                      link.textContent ="comments";
+                      link.title = "comments";
+                      link.classList.add('writeup-link'); // Add the 'writeup-link' class
+                      link.dataset.content = ''; // Placeholder for content, update this dynamically if needed
+                      writeupItem.appendChild(link);
+                      writeupList.appendChild(writeupItem);
+                      return writeupList;
+}
                 function updateSidebar(links) {
                   var archiveList = document.getElementById('archive-list');
                   var writeupList = document.getElementById('writeup-list');
@@ -451,9 +466,10 @@ loadWriteupContent(url);
       
         
    // Load the content for a specific URL
+
     var specificURL = 'https://cybersecctf.github.io/blog/2024/irisctf/czech-where/writeup1.md';
     loadWriteupContent(specificURL);
+
         
             
- 
  
