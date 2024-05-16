@@ -39,11 +39,11 @@ def euclid(a,b):
   return a
 a = 66528
 if len(sys.argv)>1:
-  a=sys.argv[1]
+  a=int(sys.argv[1])
 
 b = 52920 
 if len(sys.argv)>2:
-  b=sys.argv[2]
+  b=int(sys.argv[2])
 else:
   print("usage -v  value1 value2")
 print(euclid(a,b))
