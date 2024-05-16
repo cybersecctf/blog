@@ -70,7 +70,7 @@ loadWriteupContent(url);
             var query = document.getElementById('search-box').value.toLowerCase();
             query= getQueryParamOrDefault('query', query);
             var links = document.getElementsByClassName('writeup-link');
-           
+           links=addcomment(links); 
             var resultsCount = 0;
   
             for (var i = 0; i < links.length; i++) {
