@@ -52,6 +52,15 @@ if len(sys.argv)>4:
 x = a % b
 y = c % d
 print(f"x: {x}, y: {y}")
+def are_congruent(numbers, n):
+    remainders = [num % n for num in numbers]
+    return len(set(remainders)) == 1
+
+# Test the function with two numbers
+print(are_congruent([a, b], c))  # should print True
+
+# Test the function with four numbers
+print(are_congruent([a, b, c, d], c))  # should print False
 
 </pre>
 and smallest number between x,y is flag        
