@@ -18,10 +18,10 @@ I've hidden some data using XOR with a single byte, but that byte is a secret. D
     <ol>
 This is a single byte XOR-cypher. In order to break it we need to xor each single byte of our decoded data with one single byte at time. Iterating through all the possible bytes we finally get our flag
 <pre>
+#python
 import sys
 from binascii import unhexlify
 import string
-#python 
 def single_byte_xor(input, key):
     if len(chr(key)) != 1:
       raise "KEY LENGTH EXCEPTION: In single_byte_xor key must be 1 byte long!"
@@ -44,7 +44,7 @@ if len(sys.argv)>2:
    search=sys.argv[2]                
 decoded = unhexlify(data)
 
-print("[-] HEX_DECODE: {}\n".format(decoded))
+print("[-] HEX_DECODE: {}\n".format(decoded),":",decoded.decode())
 
 result = {}
 for i in range(256):
