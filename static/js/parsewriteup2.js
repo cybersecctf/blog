@@ -30,7 +30,7 @@ function getQueryParamOrDefault(name, defaultValue) {
                 loadLinksFromTextFile('https://cybersecctf.github.io/blog/links.txt');
                 filterWriteups2();
              var myList = document.getElementById('writeup-list');
-
+            
   // Get the text content of the first li
     var url = myList.getElementsByTagName('li')[0].textContent;
 console.log( myList.getElementsByTagName('li')[0])
