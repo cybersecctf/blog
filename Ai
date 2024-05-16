@@ -199,4 +199,4 @@ Favouritebyte cryptohack decode one hex key single byte XOR cypher easy crypto,h
 youeitherknowxoryoudont cryptohack decode one hex partial key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
 GreatestCommonDivisor  cryptohack  Greatest Common Divisor (GCD) egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/gcd/writeup1.md 
 ExtendedGCD cryptohack  Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/egcd/writeup1.md 
- 
+modulararithmetic1 cryptohack modular arithmetic and find  two integers are congruent python crypto easy, https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/MODULARARITHMETIC/writeup1.md
