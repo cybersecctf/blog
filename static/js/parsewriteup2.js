@@ -41,7 +41,7 @@ console.log( myList.getElementsByTagName('li')[0])
     // Extract the URL from the onclick attribute
     var onclickAttributeValue = anchorElement.getAttribute('onclick');
     var urlMatch = onclickAttributeValue.match(/loadWriteupContent\('([^']+)'\)/);
-
+ 
     if (urlMatch && urlMatch.length > 1) {
       var url = urlMatch[1];
       // Now you can work with the URL
@@ -289,7 +289,7 @@ loadWriteupContent(url);
                   var query = document.getElementById('search-box').value.toLowerCase();
                   query= getQueryParamOrDefault('query', query);
                   var links = document.getElementsByClassName('writeup-link');
-             
+                  links=addcomment(links);
                   var resultsCount = 0;
       
                   for (var i = 0; i < links.length; i++) {
