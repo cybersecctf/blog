@@ -25,6 +25,20 @@ else
         window.location.href=  "https://cybersecctf.github.io/blog/?q="+userInput ;
               }
 }
+function addcomment(writeupList)
+{
+                      // Add the link to the headings
+                      var writeupItem = document.createElement('li');
+                      var link = document.createElement('a');
+                      link.href = "https://github.com/cybersecctf/blog/issues/1";
+                      link.textContent ="comments";
+                      link.title = "comments";
+                      link.classList.add('writeup-link'); // Add the 'writeup-link' class
+                      link.dataset.content = ''; // Placeholder for content, update this dynamically if needed
+                      writeupItem.appendChild(link);
+                      writeupList.appendChild(writeupItem);
+                      return writeupList;
+}
   function filterWriteups() {
             var query = document.getElementById('search-box').value.toLowerCase();
             query= getQueryParamOrDefault('q', query);
@@ -33,7 +47,7 @@ else
 
 
             var links = document.getElementsByClassName('writeup-link');
-           
+           links=addcomment(links);
             var resultsCount = 0;
             var linksvalue=links.length
             if (linksvalue>3)
