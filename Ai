@@ -196,4 +196,5 @@ cryptohack BytesandBigIntegers    decode encode long byte message base64 ascii e
 xorstarter cryptohack xor string integer list  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorstarter/writeup1.md
 XORProperties cryptohack xor two hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorproperties/writeup1.md
 Favouritebyte cryptohack decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/Favouritebyte/writeup1.md
-youeitherknowxoryoudont cryptohack decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
+youeitherknowxoryoudont cryptohack decode one hex partial key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
+GreatestCommonDivisor  cryptohack  Greatest Common Divisor (GCD) with  Euclid's Algorithm python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/writeup1.md 
