@@ -37,7 +37,7 @@ def single_byte_xor(input, key):
 data = "73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
 key="crypto"
 if len(sys.argv)>1:
-   string=sys.argv[1]  
+   data=sys.argv[1]  
 else:
    print("usage -v hex search(text in text{ for example")  
 if len(sys.argv)>2:
