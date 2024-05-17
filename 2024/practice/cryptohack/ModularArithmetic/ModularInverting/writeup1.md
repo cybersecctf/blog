@@ -24,7 +24,7 @@ What is the inverse element: 3 * d ≡ 1 mod 13?
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
 this is using extended gcd from       <a href="https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/egcd/writeup1.md">this</a>
-problem 
+problem  for calculate modular invert and get flag with this code
 <pre>
 #python
 import sys
@@ -49,7 +49,7 @@ if len(sys.argv)>2:
 d = mod_inverse(a, m)
 print(f"The value of d in the equation {a} * d ≡ 1 mod {m} and flag  is {d}")
 </pre>
-       
+       flag is final result and d
     </ol>
 <br>
     <h2>Flag</h2>
