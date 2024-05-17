@@ -201,3 +201,4 @@ GreatestCommonDivisor  cryptohack  Greatest Common Divisor (GCD) egcd  with  Euc
 ExtendedGCD cryptohack  Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/egcd/writeup1.md 
 modulararithmetic1 cryptohack modular arithmetic and find  two integers are congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
 ModularArithmetic2 cryptohack  Fermat's little theorem is 1 easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
+ModularInverting cryptohack Modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
