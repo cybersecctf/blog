@@ -41,11 +41,11 @@ def mod_inverse(a, m):
     else:
         return x % m
 a = 3
-if len(sys.argv)>1:
-  a=sys.argv[1]
+if len(sys.argv)>1: 
+  a=int(sys.argv[1])
 m = 13
 if len(sys.argv)>2:
-  m=sys.argv[2]
+  m=int(sys.argv[2])
 d = mod_inverse(a, m)
 print(f"The value of d in the equation {a} * d ≡ 1 mod {m} and flag  is {d}")
 </pre>
