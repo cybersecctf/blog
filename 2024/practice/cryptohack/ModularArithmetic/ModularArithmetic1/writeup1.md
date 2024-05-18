@@ -38,17 +38,16 @@ The solution is the smaller of the two integers.
 import sys
 a=11
 if len(sys.argv)>1:
- a=sys.argv[1]
-
+ a=int(sys.argv[1]))
 b=6
 if len(sys.argv)>2:
- b=sys.argv[2]
+ b=int(sys.argv[2]
 c=8146798528947
 if len(sys.argv)>3:
- c=sys.argv[3]
+ c=int(sys.argv[3])
 d=17
 if len(sys.argv)>4:
- d=sys.argv[4]
+ d=int(sys.argv[4])
 x = a % b
 y = c % d
 if len(sys.argv)>2:
