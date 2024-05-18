@@ -38,7 +38,7 @@ The solution is the smaller of the two integers.
 import sys
 a=11
 if len(sys.argv)>1:
- a=int(sys.argv[1]))
+ a=int(sys.argv[1])
 b=6
 if len(sys.argv)>2:
  b=int(sys.argv[2]
