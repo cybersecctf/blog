@@ -40,20 +40,20 @@ a=11
 if len(sys.argv)>1:
  a=int(sys.argv[1])
 b=6
+x=0
+y=0
 if len(sys.argv)>2:
- b=int(sys.argv[2]
+  b=int(sys.argv[2])
+  x = a % b
+  print(x)
 c=8146798528947
 if len(sys.argv)>3:
  c=int(sys.argv[3])
 d=17
 if len(sys.argv)>4:
- d=int(sys.argv[4])
-x = a % b
-y = c % d
-if len(sys.argv)>2:
- print(x)
-if len(sys.argv)>4:
- print(y)
+  d=int(sys.argv[4])
+  y = c % d
+  print(y)
 flag=x
 if x>y:
  flag=y
