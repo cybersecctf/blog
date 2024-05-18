@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>MODULAR ARITHMETIC-cryptohack</h1>
+    <h1>Modular Arithmetic 1-cryptohack</h1>
 
     <h2>Challenge Description</h2>
     <p> Imagine you lean over and look at a cryptographer's notebook. You see some notes in the margin:
@@ -25,14 +25,14 @@ Calculate the following integers:
 11 ≡ x mod 6
 8146798528947 ≡ y mod 17
 
-The solution is for find  two integers congruent modulo on python
- with 4 number
+The solution is the smaller of the two integers.
+ 
 </p>
  
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-we can use this code for 
+      this is challenge for calculate mod of two number and from two pair find smallest we use this code
 <pre>
 #python
 import sys
@@ -42,7 +42,7 @@ if len(sys.argv)>1:
 
 b=6
 if len(sys.argv)>2:
- b=sys.argv[1]
+ b=sys.argv[2]
 c=8146798528947
 if len(sys.argv)>3:
  c=sys.argv[3]
@@ -51,8 +51,15 @@ if len(sys.argv)>4:
  d=sys.argv[4]
 x = a % b
 y = c % d
-print(f"x: {x}, y: {y}")
-def are_congruent(numbers, n):
+if len(sys.argv)>2:
+ print(x)
+if len(sys.argv)>4:
+ print(y)
+flag=x
+if x>y:
+ flag=y
+ print("flag:",flag)
+def are_congruent(numbers, n): 
     remainders = [num % n for num in numbers]
     return len(set(remainders)) == 1
 
@@ -61,9 +68,8 @@ print(are_congruent([a, b], c))  # should print True
 
 # Test the function with four numbers
 print(are_congruent([a, b, c, d], c))  # should print False
-
 </pre>
-and smallest number between x,y is flag        
+       
     
     </ol>
 <br>
@@ -72,7 +78,7 @@ and smallest number between x,y is flag
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for modular arithmetic and find  two integers are congruen</p>
+    <p>this is a very   easy chanllenge for work on  calculate mods and congruent number</p>
 </body>
 </html>
 
