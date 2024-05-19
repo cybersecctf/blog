@@ -40,17 +40,44 @@ ints = [14, 6, 11]
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-writing...................
+this code will print square roots module and square roots and minimum square roots
+<pre>
+def find_square_roots_modulo(p, ints):
+    residues = []
+    non_residues = []
+    for a in range(1, p):
+        for i in ints:
+            if (a*a) % p == i:
+                residues.append((i, a))
+                break
+        else:
+            non_residues.append(a)
+    return residues, non_residues
+
+p = 29
+ints = [14, 6, 11]
+residues, non_residues = find_square_roots_modulo(p, ints)
+
+print("Quadratic residues and their square roots:")
+for i, a in residues:
+    print(f"{i} has square roots {a} and {-a % p}")
+
+print("\nQuadratic non-residues:")
+for a in non_residues:
+    print(a)
+qr = [a for a in range(p) if pow(a,2,p) in ints]
+print(f"flag {min(qr)}")
+</pre>
        
     
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">8
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on QuadraticResidues</p>
+    <p>this is a     easy chanllenge for work on QuadraticResidues minimum</p>
 </body>
 </html>
 
