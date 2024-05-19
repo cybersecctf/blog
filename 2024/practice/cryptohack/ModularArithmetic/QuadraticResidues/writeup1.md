@@ -42,6 +42,7 @@ ints = [14, 6, 11]
     <ol>
 this code will print square roots module and square roots and minimum square roots
 <pre>
+#python
 def find_square_roots_modulo(p, ints):
     residues = []
     non_residues = []
@@ -53,9 +54,15 @@ def find_square_roots_modulo(p, ints):
         else:
             non_residues.append(a)
     return residues, non_residues
-
+import sys
 p = 29
+if len(sys.argv)>1:
+ p=sys.argv[1]
 ints = [14, 6, 11]
+if len(sys.argv)>2:
+ if ords.startswith("[") and ords.endswith("]") and "," in ords:
+   ints= ast.literal_eval(ords)
+ 
 residues, non_residues = find_square_roots_modulo(p, ints)
 
 print("Quadratic residues and their square roots:")
