@@ -58,7 +58,7 @@ def find_square_roots_modulo(p, ints):
 import sys
 p = 29
 if len(sys.argv)>1:
- p=sys.argv[1]
+ p=int(sys.argv[1])
 ints = [14, 6, 11]
 if len(sys.argv)>2:
  ints=sys.argv[2]
