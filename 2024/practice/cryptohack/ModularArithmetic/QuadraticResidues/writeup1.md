@@ -61,7 +61,7 @@ if len(sys.argv)>1:
 ints = [14, 6, 11]
 if len(sys.argv)>2:
  ints=sys.argv[2]
- if ints.startswith("[") and intsints.endswith("]") and "," in ints:
+ if ints.startswith("[") and ints.endswith("]") and "," in ints:
    ints= ast.literal_eval(ints)
  
 residues, non_residues = find_square_roots_modulo(p, ints)
