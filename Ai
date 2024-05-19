@@ -197,9 +197,11 @@ xorstarter cryptohack xor string integer list  easy crypto,https://cybersecctf.g
 XORProperties cryptohack xor two hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorproperties/writeup1.md
 Favouritebyte cryptohack decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/Favouritebyte/writeup1.md
 youeitherknowxoryoudont cryptohack decode one hex partial key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
-GreatestCommonDivisor  cryptohack  Greatest Common Divisor (GCD) egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/gcd/writeup1.md 
-ExtendedGCD cryptohack  Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/MODULARARITHMETIC/egcd/writeup1.md 
+GreatestCommonDivisor  cryptohack  Greatest Common Divisor (GCD) egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/gcd/writeup1.md 
+ExtendedGCD cryptohack  Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/egcd/writeup1.md 
 modulararithmetic1 cryptohack modular arithmetic and find  two integers mod and check congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
 ModularArithmetic2 cryptohack  Fermat's little theorem is 1 easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
 ModularInverting cryptohack modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
 QuadraticResidues cryptohack easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
+
+https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/gcd/writeup1.md
