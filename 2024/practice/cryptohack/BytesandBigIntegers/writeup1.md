@@ -33,6 +33,7 @@ Convert the following integer back into a message:
         <li> steps1 </li>
        we can use this script to decode/encode on asci/long/nase64 and get message
 <pre>
+#python
 import base64, sys
 from Crypto.Util.number import long_to_bytes, bytes_to_long
 
