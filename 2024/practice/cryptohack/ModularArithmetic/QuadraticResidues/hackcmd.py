@@ -1,5 +1,7 @@
-
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
+
 def find_square_roots_modulo(p, ints):
     residues = []
     non_residues = []
@@ -20,8 +22,8 @@ def square_root(p,n):
         break
     else:
            print(f"No square root found for {n} modulo {p}")
-p=setval(29,1)
-ints =setval( [14, 6, 11],2)
+p=blog.setval(29,1)
+ints =blog.setval( "[14, 6, 11]",2)
 
 residues, non_residues = find_square_roots_modulo(p, ints)
 
@@ -34,3 +36,10 @@ for a in non_residues:
     print(a)
 qr = [a for a in range(p) if pow(a,2,p) in ints]
 print(f"flag {min(qr)}")
+
+ 
+
+ 
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+import blog

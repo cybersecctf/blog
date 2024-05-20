@@ -1,3 +1,8 @@
+
+
+#python   
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 def fermat_test(a, p):
     return pow(a, p - 1, p)
@@ -6,5 +11,9 @@ import sys
 
 a=blog.setval(273246787654,1)
 
-p=blog.setval(17,2)
-print(fermat_test(a, p))
+p=blog.setval(17,2) 
+
+print(fermat_test(a, p))   
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+import blog

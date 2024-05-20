@@ -1,10 +1,9 @@
- 
 <!DOCTYPE html>
 <html>
 
 <body>
     <h1>Modular Arithmetic 2- cryptohack</h1>
-
+ 
     <h2>Challenge Description</h2>
     <p> We'll pick up from the last challenge and imagine we've picked a modulus p, and we will restrict ourselves to the case when p is prime.
 
@@ -35,19 +34,22 @@ Did you need a calculator?
 this is quetion for see if two  number 
 are set in Fermat's little theorem. or no and so a^b+1 %b-1 is 1 or no (need in rsa).
 <pre>
-#python
+#python   
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 def fermat_test(a, p):
-    return pow(a, p - 1, p)
+    return pow(a, p - 1, p)  
 import sys
 # Test the function with your number and a prime
 
 a=blog.setval(273246787654,1)
 
 p=blog.setval(17,2) 
+ 
 print(fermat_test(a, p))   
 </pre>
-       
+        
     
     </ol>
 <br> 
