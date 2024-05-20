@@ -1,3 +1,5 @@
+
+import blog
 def find_square_roots_modulo(p, ints):
     residues = []
     non_residues = []
@@ -9,9 +11,18 @@ def find_square_roots_modulo(p, ints):
         else:
             non_residues.append(a)
     return residues, non_residues
+import sys
+#one number
+def square_root(p,n):
+ for a in range(1, p):
+    if (a*a) % p == n:
+        print(f"The square root of {n} modulo {p} is {a}")
+        break
+    else:
+           print(f"No square root found for {n} modulo {p}")
+p=setval(29,1)
+ints =setval( [14, 6, 11],2)
 
-p = 29
-ints = [14, 6, 11]
 residues, non_residues = find_square_roots_modulo(p, ints)
 
 print("Quadratic residues and their square roots:")
@@ -21,8 +32,5 @@ for i, a in residues:
 print("\nQuadratic non-residues:")
 for a in non_residues:
     print(a)
-p = 29
-ints = [14, 6, 11]
-
 qr = [a for a in range(p) if pow(a,2,p) in ints]
 print(f"flag {min(qr)}")

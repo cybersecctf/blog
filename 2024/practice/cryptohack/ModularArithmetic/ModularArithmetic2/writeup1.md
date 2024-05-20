@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html>
 
@@ -36,25 +36,23 @@ this is quetion for see if two  number
 are set in Fermat's little theorem. or no and so a^b+1 %b-1 is 1 or no (need in rsa).
 <pre>
 #python
+import blog
 def fermat_test(a, p):
     return pow(a, p - 1, p)
 import sys
 # Test the function with your number and a prime
-a = 273246787654
-if len(sys.argv)>1:
-  a=int(sys.argv[1])
 
-p = 17  # example of a prime number
-if len(sys.argv)>2:
-  p=int(sys.argv[2])
+a=blog.setval(273246787654,1)
+
+p=blog.setval(17,2) 
 print(fermat_test(a, p))   
 </pre>
        
     
     </ol>
-<br>
+<br> 
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">1
 </p>
 
     <h2>Conclusion</h2>
