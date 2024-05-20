@@ -56,7 +56,8 @@ def find_square_roots_modulo(p, ints):
             non_residues.append(a)
     return residues, non_residues
 import sys
-def square_root(p,n);
+#one number
+def square_root(p,n):
 for a in range(1, p):
     if (a*a) % p == n:
         print(f"The square root of {n} modulo {p} is {a}")
