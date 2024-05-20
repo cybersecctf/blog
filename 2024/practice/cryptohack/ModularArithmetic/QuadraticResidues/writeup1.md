@@ -56,6 +56,13 @@ def find_square_roots_modulo(p, ints):
             non_residues.append(a)
     return residues, non_residues
 import sys
+def square_root(p,n);
+for a in range(1, p):
+    if (a*a) % p == n:
+        print(f"The square root of {n} modulo {p} is {a}")
+        break
+    else:
+           print(f"No square root found for {n} modulo {p}")
 p = 29
 if len(sys.argv)>1:
  p=int(sys.argv[1])
@@ -64,6 +71,9 @@ if len(sys.argv)>2:
  ints=sys.argv[2]
  if ints.startswith("[") and ints.endswith("]") and "," in ints:
    ints= ast.literal_eval(ints)
+ else:
+   n=(int)(ints)
+   print(square_root(p,n))
 residues, non_residues = find_square_roots_modulo(p, ints)
 
 print("Quadratic residues and their square roots:")
