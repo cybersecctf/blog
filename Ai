@@ -202,5 +202,5 @@ ExtendedGCD cryptohack  Extended GCD egcd  with  Euclid's Algorithm non recursiv
 modulararithmetic1 cryptohack modular arithmetic and find  two integers mod and check congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
 ModularArithmetic2 cryptohack  Fermat's little theorem fermat test easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
 ModularInverting cryptohack modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
-QuadraticResidues cryptohack Find   quadratic residue  calculate square root  module smaller one as the flag easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
-
+QuadraticResidues cryptohack root0   quadratic residue  calculate square root  module smaller one as the flag easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
+LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/LegendreSymbol/writeup1.md
