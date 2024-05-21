@@ -1,1 +1,1 @@
-from collections.abc import Iterable
+print(type(2))
