@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -37,13 +35,14 @@ p = 29
 ints = [14, 6, 11]
  
 </p>
- 
+   
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
  
 <pre>
 #python
+from collections.abc import Iterable
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
@@ -70,13 +69,12 @@ def square_root(p,n):
            print(f"No square root found for {n} modulo {p}")
 p=blog.setval(29,1)
 ints =blog.setval( "[14, 6, 11]",2)
-
+if not isinstance(ints,list):
+  ints=[ints]
 residues, non_residues = find_square_roots_modulo(p, ints)
-
 print("Quadratic residues and their square roots:")
 for i, a in residues:
     print(f"{i} has square roots {a} and {-a % p}")
-
 print("\nQuadratic non-residues:")
 for a in non_residues:
     print(a)

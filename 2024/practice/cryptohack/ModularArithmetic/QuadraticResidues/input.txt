@@ -25,13 +25,12 @@ def square_root(p,n):
            print(f"No square root found for {n} modulo {p}")
 p=blog.setval(29,1)
 ints =blog.setval( "[14, 6, 11]",2)
-
+if not isinstance(ints,list):
+  ints=[ints]
 residues, non_residues = find_square_roots_modulo(p, ints)
-
 print("Quadratic residues and their square roots:")
 for i, a in residues:
     print(f"{i} has square roots {a} and {-a % p}")
-
 print("\nQuadratic non-residues:")
 for a in non_residues:
     print(a)
