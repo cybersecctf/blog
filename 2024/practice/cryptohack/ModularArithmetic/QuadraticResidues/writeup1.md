@@ -39,7 +39,7 @@ ints = [14, 6, 11]
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
- 
+ we run this code for square root and..
 <pre>
 #python
 from collections.abc import Iterable
@@ -70,7 +70,10 @@ def square_root(p,n):
 p=blog.setval(29,1)
 ints =blog.setval( "[14, 6, 11]",2)
 if not isinstance(ints,list):
-  ints=[ints]
+  x=[]
+  for a in range(ints):
+    x.append(a)
+  ints=x
 residues, non_residues = find_square_roots_modulo(p, ints)
 print("Quadratic residues and their square roots:")
 for i, a in residues:
@@ -81,7 +84,7 @@ for a in non_residues:
 qr = [a for a in range(p) if pow(a,2,p) in ints]
 print(f"flag {min(qr)} and min of {qr}") 
 </pre>
-       
+        
     and flag is result
     </ol>
 <br>
