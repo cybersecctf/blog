@@ -70,10 +70,7 @@ def square_root(p,n):
 p=blog.setval(29,1)
 ints =blog.setval( "[14, 6, 11]",2)
 if not isinstance(ints,list):
-  x=[]
-  for a in range(ints):
-    x.append(a)
-  ints=x
+  ints=[x]
 residues, non_residues = find_square_roots_modulo(p, ints)
 print("Quadratic residues and their square roots:")
 for i, a in residues:
