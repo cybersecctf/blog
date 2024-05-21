@@ -81,7 +81,7 @@ print("\nQuadratic non-residues:")
 for a in non_residues:
     print(a)
 qr = [a for a in range(p) if pow(a,2,p) in ints]
-print(f"flag {min(qr)}")
+print(f"flag {min(qr)} and min of {qr}") 
 </pre>
        
     and flag is result
