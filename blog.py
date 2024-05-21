@@ -1,5 +1,5 @@
 import ast,sys
-def setval(val, i=1):
+def set(val, i=1):
     if i<=0:
           print("argument value should be more than 0 not",i)
           return        
