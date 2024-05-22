@@ -1,5 +1,7 @@
->>#python
+#python
 import sys
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 def run(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
@@ -18,4 +20,3 @@ a=blog.set(66528,1)
 b=blog.set(52920,2)  
 gcd, x, y = run(a, b)
 print(gcd)
-Run  successed

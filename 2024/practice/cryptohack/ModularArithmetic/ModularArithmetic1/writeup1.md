@@ -50,7 +50,6 @@ c=blog.set(8146798528947,3)
 d=17
 d=blog.set(17,3)
 if d!=17: 
-  d=int(sys.argv[4])
   y = c % d
   print(y)
 flag=x

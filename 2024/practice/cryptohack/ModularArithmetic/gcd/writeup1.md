@@ -34,7 +34,8 @@ we run this code for get gcd with Euclid's Algorithm non recursive method on pyt
 <pre>
 #python
 import sys
-def extended_gcd(a, b):
+import blog
+def run(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
     while b != 0:
         q, a, b = a // b, b, a % b
@@ -44,16 +45,12 @@ def extended_gcd(a, b):
 
 # Test the function
 
-a = 66528
-if len(sys.argv)>1:
-  a=int(sys.argv[1])
+ 
+a=blog.set(66528,1)
 
-b = 52920  
-if len(sys.argv)>2:
-  b=int(sys.argv[2])
-else:
-  print("usage -v  value1 value2")
-gcd, x, y = extended_gcd(a, b)
+ 
+b=blog.set(52920,2)  
+gcd, x, y = run(a, b)
 print(gcd)
 </pre>
        
