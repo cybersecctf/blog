@@ -206,3 +206,4 @@ QuadraticResidues cryptohack root0   quadratic residue  calculate square root  m
 LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/LegendreSymbol/writeup1.md
  ModularSquareRoot cryptohack ,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularSquareRoot/writeup1.md 
 ChineseRemainderTheorem cryptohack modinverse easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ChineseRemainderTheorem/writeup1.md
+AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/AdriensSigns/writeup1.md
