@@ -36,21 +36,20 @@ The solution is the smaller of the two integers.
 <pre>
 #python
 import sys
+import blog
 a=11
-if len(sys.argv)>1:
- a=int(sys.argv[1])
+a=blog.set(11,1)
 b=6
 x=0
 y=0
-if len(sys.argv)>2:
-  b=int(sys.argv[2])
-  x = a % b
-  print(x)
-c=8146798528947
-if len(sys.argv)>3:
- c=int(sys.argv[3])
+b=blog.set(6,2)
+if b!=6:
+ x = a % b
+ print(x)
+c=blog.set(8146798528947,3)
 d=17
-if len(sys.argv)>4:
+d=blog.set(17,3)
+if d!=17: 
   d=int(sys.argv[4])
   y = c % d
   print(y)
