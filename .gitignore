@@ -2,4 +2,6 @@
 input.txt
 writeup1.py
 */__pycache__/
+/__pycache__/*
+/__pycache__/
 hackcmd.py
