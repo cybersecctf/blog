@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>Chinese Remainder - cryptohack</h1>
 
     <h2>Challenge Description</h2>
     <p>The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime.
@@ -42,38 +42,34 @@ Find the integer a such that x ≡ a mod 935
 run this code and get flag
 <pre>
 #python
+from functools import reduce
 import blog
-def extended_gcd(a, b):
-    if b == 0:
-        return a, 1, 0
-    gcd, x1, y1 = extended_gcd(b, a % b)
-    x = y1
-    y = x1 - (a // b) * y1
-    return gcd, x, y
+def run(n, a):
+    sum = 0
+    prod = reduce(lambda a, b: a*b, n)
+    for n_i, a_i in zip(n,a):
+        p = prod/n_i
+        sum += a_i * mul_inv(p, n_i) * p
+    return sum % prod
+    
+def mul_inv(a, b):
+    b0 = b
+    x0, x1 = 0,1
+    if b == 1:
+        return 1
+    while a > 1:
+        q = a // b
+        a , b = b, a%b
+        x0, x1 = x1 -q*x0, x0
+    if x1 < 0:
+        x1 += b0
+    return x1
 
-def mod_inverse(a, m):
-    gcd, x, _ = extended_gcd(a, m)
-    if gcd != 1:
-        raise ValueError("Inverse does not exist")
-    return x % m
+a = [blog.set(2,1),blog.set(3,2),blog.set(5,3)] # x = a mod x
+n = [blog.set(5,4),blog.set(11,5),blog.set(17,6)] # x = x mod n
 
-# Given congruences
-N = blog.set(935,1)
-N1 = blog.set(5,2)
-N2 = blog.set(11,3)
-N3= blog.set(17,4)
-
-N1, N2, N3 = N3*N2,N1*N3,N1*N2
-y1, y2, y3 = mod_inverse(N1, 5), mod_inverse(N2, 11), mod_inverse(N3, 17)
-
-# Calculate a_i values
-a1 = (2 * N1 * y1) % N
-a2 = (3 * N2 * y2) % N
-a3 = (5 * N3 * y3) % N
-
-# Compute x
-x = (a1 + a2 + a3) % N
-print(f"The integer a such that x ≡ a mod 935 is: {x}")
+print(a,n)
+print(run(n,a))
 
 </pre>       
     
