@@ -42,8 +42,7 @@ def run(term, *args):
     
     # Step 2: Extract URLs from the line
     md_url, py_url = extract_urls_from_line(line)
-    print(f"Markdown URL: {md_url}")
-    print(f"Python URL: {py_url}")
+  
     
     # Step 3: Import the Python file dynamically
     module_name = os.path.basename(py_url).replace('.py', '')
@@ -54,7 +53,7 @@ def run(term, *args):
     # Step 4: Run the function from the imported module
     result = run_function_from_module(module, 'run', *args)
     if result is not None:
-        print(f"Result: {result}")
+        return result
  
  
 def detect_value_type(value):
