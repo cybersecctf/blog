@@ -31,7 +31,7 @@ we run this code for get extened gcd with Euclidean algorithm non recursive meth
     <ol>
 <pre>
 import sys
-def extended_gcd(a, b):
+def run(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
     while b != 0:
         q, a, b = a // b, b, a % b
@@ -50,7 +50,7 @@ if len(sys.argv)>2:
   b=int(sys.argv[2])
 else:
   print("usage -v  value1 value2")
-gcd, x, y = extended_gcd(a, b)
+gcd, x, y = run(a, b)
 print(x,y)
 </pre>
 flag is value that is smallest       
