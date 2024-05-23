@@ -19,4 +19,5 @@ import blog
  
 hex_string=blog.set("72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf",1)
 type=blog.set("base64",2,"str")
-run(hex_string,type)
+if __name__ == '__main__':
+ run(hex_string,type)
