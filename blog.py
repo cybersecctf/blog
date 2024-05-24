@@ -1,7 +1,7 @@
 import ast,sys
 from decimal import Decimal, InvalidOperation
 import importlib.util
-import os
+import os 
 def find_term_in_file(file_path, search_term):
     with open(file_path, 'r') as file:
         lines = file.readlines()
@@ -51,7 +51,7 @@ def run(term, *args):
     module = import_function_from_file(module_name, py_file_path)
     
     # Step 4: Run the function from the imported module
-    result = run_function_from_module(module, 'run', *args)
+    result = run_function_from_module(module, 'solve', *args)
     if result is not None:
         return result
  

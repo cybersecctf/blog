@@ -1,3 +1,0 @@
-usage -v hex search(text in text{ for example
-
-Run  successed
