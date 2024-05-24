@@ -20,8 +20,9 @@ Take the below hex string, decode it into bytes and then encode it into Base64.
     <ol>
 with this code can convert hex to asci and base64 and get flag
 <pre>
-import base64,sys
-
+#python
+import base64
+import blog
 def solve(hex_string,type="base64"):
  bytes_value = bytes.fromhex(hex_string)
  encodings = ['utf-8', 'latin1', 'ascii', 'cp1252']
@@ -32,11 +33,8 @@ def solve(hex_string,type="base64"):
         print(f"The decoded string in {encoding} is: {ascii_value}") 
     except UnicodeDecodeError:
         print(f"Unable to decode the string using {encoding}")
- else:
+ else: 
    print(base64.b64encode(bytes_value))
-print("-v vlaue base64/ascii")
-import blog
- 
 hex_string=blog.set("72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf",1)
 type=blog.set("base64",2,"str")
 if __name__ == '__main__':

@@ -21,6 +21,7 @@ Remember the flag format and how it might help you in this challenge!
 We know that is a XOR-cipher, the first thing we can try, as suggested, it's to look for a part of the key by xoring the first seven character of the FLAG which is "crypto{" and the same number of character from our ciphertext (code section "First Step").
 As result we have "myXORke". By using not so much immgination we can try myXORkey as key and by repeating it over the lenght of our ciphertext and xoring with all the cipher we get our flag (code section "Second Step").
 <pre>
+#python
 import sys
 from binascii import unhexlify
 import blog

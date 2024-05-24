@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -20,11 +19,13 @@ Included below is a flag encoded as a hex string. Decode this back into bytes to
     <ol>
          we use this python code on abse of description for convert hex to ascii
 <pre>
-import sys
-hex="63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d"
-if len(sys.argv)>1:
- hex=sys.argv[1]
-print(bytes.fromhex(hex))
+#python
+import blog
+def solve(hex): 
+   return bytes.fromhex(hex)
+if __name__ == "__main__" :
+ hex=blog.set("63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d",1)
+ print(solve(hex))
 </pre>
        and get flag that is ascii bytes only need text inside ''       b'crypto{You_will_be_working_with_hex_strings_a_lot}'
 

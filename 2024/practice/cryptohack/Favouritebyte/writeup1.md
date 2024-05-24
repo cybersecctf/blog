@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -19,7 +18,7 @@ I've hidden some data using XOR with a single byte, but that byte is a secret. D
 This is a single byte XOR-cypher. In order to break it we need to xor each single byte of our decoded data with one single byte at time. Iterating through all the possible bytes we finally get our flag
 <pre>
 #python
-import sys
+import blog
 from binascii import unhexlify
 import string
 def single_byte_xor(input, key):
@@ -34,24 +33,17 @@ def single_byte_xor(input, key):
         return output.decode("utf-8")
     except:
         return "Cannot Decode some bytes"
-data = "73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
-key="crypto"
-if len(sys.argv)>1:
-   data=sys.argv[1]  
-else:
-   print("usage -v hex search(text in text{ for example")  
-if len(sys.argv)>2:
-   search=sys.argv[2]                
-decoded = unhexlify(data)
-
-print("[-] HEX_DECODE: {}\n".format(decoded),":",decoded.decode())
-
-result = {}
-for i in range(256):
+def solve(data,key):        
+ decoded = unhexlify(data)
+ print("[-] HEX_DECODE: {}\n".format(decoded),":",decoded.decode())
+ result = {}
+ for i in range(256):
     result[i] = (single_byte_xor(decoded, i))
-    #print("[-] KEY: {}\nSTRING: {}".format(i,single_byte_xor(decoded, i)))
-
-print("[*] FLAG: {}".format([s for s in result.values() if key in s]))
+ return "{}".format([s for s in result.values() if key in s])
+if __name__ == "__main__" :
+ data=blog.set("73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d",1)
+ key=blog.set("crypto",2)
+print(solve(data,key))
 #modified from https://captainmich.github.io/programming_language/CTF/Challenge/CryptoHack/general.html code
 </pre>
        
