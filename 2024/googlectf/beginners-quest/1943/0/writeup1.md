@@ -44,10 +44,6 @@ if __name__ == "__main__" :
  text=blog.set("VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg==",2)
  codecs=blog.set("text",3)
  solve(type,text,codecs)
- 
- 
- 
-
 </pre>
        and get this message
 <pre>

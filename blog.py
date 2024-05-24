@@ -32,7 +32,7 @@ def run_function_from_module(module, func_name, *args):
         print(f"The module does not have a '{func_name}' function.")
         return None
 
-def run(term, *args):
+def solveup(term, *args):
     global isprinted
     search_term = term
     file_path = "/home/mrrobot/Desktop/blog/Ai"
