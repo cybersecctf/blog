@@ -50,8 +50,10 @@ print("Here is your flag:")
 
 hexs = int(hexs, 16)
 print("".join(chr(o ^ hexs) for o in ords))
-
-    </ol>
+import blog
+blog.run("hex to base64","72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf")
+</pre>
+    </ol> 
 <br>
     <h2>Flag</h2>
     <p class="flag">crypto{z3n_0f_pyth0n}
