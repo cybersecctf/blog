@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -35,8 +34,10 @@ The solution is the smaller of the two integers.
       this is challenge for calculate mod of two number and from two pair find smallest we use this code
 <pre>
 #python
-import sys
 import blog
+def are_congruent(numbers, n): 
+    remainders = [num % n for num in numbers]
+    return len(set(remainders)) == 1
 def solve(a,b,c,d,type="2mod"):
  x=a%b
  y=c%d
@@ -54,10 +55,9 @@ a=blog.set(11,1)
 b=blog.set(6,2)
 c=blog.set(8146798528947,3)
 d=blog.set(17,3)
-print("flag:",solve(a,b,c,d,"4mod"))
-def are_congruent(numbers, n): 
-    remainders = [num % n for num in numbers]
-    return len(set(remainders)) == 1
+if __name__ == "__main__" :
+ print("flag:",solve(a,b,c,d,"4mod"))
+
 </pre>
     and after run it get code   
     
