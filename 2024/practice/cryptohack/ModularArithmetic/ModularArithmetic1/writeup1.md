@@ -41,7 +41,7 @@ def solve(a,b,c,d,type="2mod"):
  x=a%b
  y=c%d
  if type=="2mod":
-    return a
+    return x
  elif type=="4mod":
   return min(x,y)
  elif type=="2congruent":
