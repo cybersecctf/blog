@@ -57,8 +57,11 @@ def run(term, *args):
     
      # Step 4: Run the function from the imported module
      result = run_function_from_module(module, 'solve', *args)
-     if result is not None:
-       return result
+    if result is not None:
+        print(f"Function: solve")
+        print(f"Arguments: {args}")
+        print(f"Result: {result}")
+        return result
     else:
        return None
 
