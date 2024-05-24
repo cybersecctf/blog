@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -21,7 +20,7 @@ key management skills and carried this key: "VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFV
 #python
 import sys,base64,binascii
 import blog
-def solve(type,text,codecs):
+def solve(type,text,codecs="text"):
  try:
   if type=="encode":
    sample_string_bytes = text.encode("ascii") 
@@ -39,11 +38,12 @@ def solve(type,text,codecs):
  
  except Exception as   e:
   print("error:"+str(e)) 
-codecs="text"
-type=blog.set("decode",1,"str","usage -v decode/encode text [text[default] hex base64]")
-text=blog.set("VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg==",2)
-codecs=blog.set("text",3)
-solve(type,text,codecs)
+if __name__ == "__main__" :
+ codecs="text"
+ type=blog.set("decode",1,"str","usage -v decode/encode text [text[default] hex base64]")
+ text=blog.set("VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg==",2)
+ codecs=blog.set("text",3)
+ solve(type,text,codecs)
  
  
  
