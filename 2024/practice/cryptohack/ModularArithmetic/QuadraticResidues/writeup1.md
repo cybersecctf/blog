@@ -41,8 +41,7 @@ for calculate square root and Quadratic residues  and minimum value of it and fl
 <pre>
 #python
 from collections.abc import Iterable
-import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+
 import blog
 def find_square_roots_modulo(p, ints):
     residues = []
@@ -65,9 +64,11 @@ def square_root(p,n):
     else:
         print(f"No square root found for {n} modulo {p}")
 
-p = blog.setval(29,1)
-ints = blog.setval("[14, 6, 11]",2)
-type= blog.setval("Quadratic residues full",2)
+p = blog.set(29,1)
+ints = blog.set("[14, 6, 11]",2)
+type= blog.set("Quadratic residues full",2)
+
+
 if not isinstance(ints, Iterable):
     ints = range(1, ints+1)
 s= list(ints)
@@ -94,6 +95,7 @@ if type=="Quadratic non-residues":
 if type=="Quadratic residues full": 
   s=sorted(set([x[0] for x in q]))
   print(s,"flag is=",min(s))
+
 </pre>
        
     

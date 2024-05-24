@@ -46,7 +46,6 @@ def run(a, b):
 # Test the function
 
  
-
 if __name__ == '__main__':
  a=blog.set(66528,1)
 
@@ -54,6 +53,7 @@ if __name__ == '__main__':
  b=blog.set(52920,2)  
  gcd, x, y = run(a, b)
  print(gcd)
+
 </pre>
        
     

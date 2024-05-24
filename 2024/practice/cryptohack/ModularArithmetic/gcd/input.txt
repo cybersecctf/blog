@@ -12,7 +12,7 @@ def run(a, b):
 # Test the function
 
  
-
+print(blog.run("gcd",66528,52920))
 if __name__ == '__main__':
  a=blog.set(66528,1)
 
