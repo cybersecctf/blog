@@ -37,36 +37,29 @@ The solution is the smaller of the two integers.
 #python
 import sys
 import blog
-a=11
+def solve(a,b,c,d,type="2mod"):
+ x=a%b
+ y=c%d
+ if type=="2mod":
+    return a
+ elif type=="4mod":
+  return min(x,y)
+ elif type=="2congruent":
+   return are_congruent([a, b], c)
+ elif type=="4congruent":
+   return are_congruent([a, b, c, d], c)
+ else:
+   return a%b
 a=blog.set(11,1)
-b=6
-x=0
-y=0
 b=blog.set(6,2)
-if b!=6:
- x = a % b
- print(x)
 c=blog.set(8146798528947,3)
-d=17
 d=blog.set(17,3)
-if d!=17: 
-  y = c % d
-  print(y)
-flag=x
-if x>y:
- flag=y
- print("flag:",flag)
+print("flag:",solve(a,b,c,d,"4mod"))
 def are_congruent(numbers, n): 
     remainders = [num % n for num in numbers]
     return len(set(remainders)) == 1
-
-# Test the function with two numbers
-print(are_congruent([a, b], c))  # should print True
-
-# Test the function with four numbers
-print(are_congruent([a, b, c, d], c))  # should print False
 </pre>
-       
+    and after run it get code   
     
     </ol>
 <br>
@@ -75,7 +68,7 @@ print(are_congruent([a, b, c, d], c))  # should print False
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on  calculate mods and congruent number</p>
+    <p>this is a very   easy chanllenge for work on  mod of twwo number</p>
 </body>
 </html>
 

@@ -44,7 +44,7 @@ run this code and get flag
 #python
 from functools import reduce
 import blog
-def run(n, a):
+def solve(n, a):
     sum = 0
     prod = reduce(lambda a, b: a*b, n)
     for n_i, a_i in zip(n,a):
@@ -69,7 +69,7 @@ a = [blog.set(2,1),blog.set(3,2),blog.set(5,3)] # x = a mod x
 n = [blog.set(5,4),blog.set(11,5),blog.set(17,6)] # x = x mod n
 
 print(a,n)
-print(run(n,a))
+print(solve(n,a))
 
 </pre>       
     

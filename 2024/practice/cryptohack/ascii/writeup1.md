@@ -1,41 +1,34 @@
-
 <!DOCTYPE html>
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>ASCII- cryptohack</h1>
 
     <h2>Challenge Description</h2>
-    <p> your description
+    <p>ASCII is a 7-bit encoding standard which allows the representation of text using the integers 0-127.
+
+Using the below integer array, convert the numbers to their corresponding ASCII characters to obtain a flag.
+
+[99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
+
+ In Python, the chr() function can be used to convert an ASCII ordinal number to a character (the ord() function does the opposite).
  
 </p>
  
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+run this code and get flag
 <pre>
 #python
-#!/usr/bin/env python3
-import ast
-import sys
-# import this
-
-if sys.version_info.major == 2:
-    print("You are running Python 2, which is no longer supported. Please update to Python 3.")
-
-if len(sys.argv)>1:
-  ords=sys.argv[1]
-  ords= ast.literal_eval(ords)
-
-else:
-  ords = [81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79]
- 
-print(ords)
-for x in ords:
-  print(x)
-print("Here is your flag:")
-print("".join(chr(o ) for o in ords))
-
+import blog
+def solve(nums):
+  for _ in nums:
+     print(chr(_), end='')
+if __name__ == "__main__" :
+  
+  nums=blog.set("[99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]",1)
+  solve(nums)
 </pre>
        
     
