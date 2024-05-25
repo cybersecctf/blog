@@ -192,7 +192,7 @@ cryptohack greatesnakes join python decimal to asci with hex version run easy   
 cryptohack ascii decimal to asci python easy   crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ascii/writeup1.md 
 cryptohack hex to ascii python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/hex/writeup1.md
 cryptohack base64 encode/decode hex to base64 ascii easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/base64/writeup1.md
-cryptohack BytesandBigIntegers    decode encode long byte message base64 ascii easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/BytesandBigIntegers/writeup1.md
+cryptohack BytesandBigIntegers    encode/decode long byte message base64 ascii easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/BytesandBigIntegers/writeup1.md
 xorstarter cryptohack xor string integer list  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorstarter/writeup1.md
 XORProperties cryptohack xor two hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorproperties/writeup1.md
 Favouritebyte cryptohack decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/Favouritebyte/writeup1.md

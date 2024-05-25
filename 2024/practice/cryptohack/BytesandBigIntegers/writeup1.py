@@ -39,3 +39,4 @@ if __name__ == "__main__" :
  type = blog.set("long",2)
  operation =blog.set("decode",3)
  solve(input_value,type,operation)
+ solve("dawood","ascii","encode")
