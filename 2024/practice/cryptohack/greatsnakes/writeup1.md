@@ -2,11 +2,10 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>Great Snakes- cryptohack</h1>
 
     <h2>Challenge Description</h2>
-    <p> your description
-Modern cryptography involves code, and code involves coding. CryptoHack provides a good opportunity to sharpen your skills.
+    <p>Modern cryptography involves code, and code involves coding. CryptoHack provides a good opportunity to sharpen your skills.
 
 Of all modern programming languages, Python 3 stands out as ideal for quickly writing cryptographic scripts and attacks. For more information about why we think Python is so great for this, please see the FAQ.
 
@@ -26,13 +25,18 @@ this is a challenge for test python version and run python code and get flag if 
 after run code below will get flag
 <pre>
 #python
+import sys
+if sys.version_info.major == 2:
+    print("You are running Python 2, which is no longer supported. Please update to Python 3. or use $python3 if have")
+    exit(0)
 import blog
 # import this
-print("custom usage -v listinstring hex")
-if sys.version_info.major == 2:
-    print("You are running Python 2, which is no longer supported. Please update to Python 3.")
+
+
+
 
 def solve(ords,hexs):
+
  print("Here is your flag:")
  hexs = int(hexs, 16) 
  print("".join(chr(o ^ hexs) for o in ords))

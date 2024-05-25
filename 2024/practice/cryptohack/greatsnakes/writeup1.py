@@ -1,13 +1,18 @@
 #python
 import sys
+if sys.version_info.major == 2:
+    print("You are running Python 2, which is no longer supported. Please update to Python 3. or use $python3 if have")
+    exit(0)
+import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 # import this
-print("custom usage -v listinstring hex")
-if sys.version_info.major == 2:
-    print("You are running Python 2, which is no longer supported. Please update to Python 3.")
+
+
+
 
 def solve(ords,hexs):
+
  print("Here is your flag:")
  hexs = int(hexs, 16) 
  print("".join(chr(o ^ hexs) for o in ords))
