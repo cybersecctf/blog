@@ -35,7 +35,7 @@ we run this code for get gcd with Euclid's Algorithm non recursive method on pyt
 #python
 import sys
 import blog
-def run(a, b):
+def solve(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
     while b != 0:
         q, a, b = a // b, b, a % b
@@ -51,9 +51,9 @@ if __name__ == '__main__':
 
  
  b=blog.set(52920,2)  
- gcd, x, y = run(a, b)
+ gcd, x, y = solve(a, b)
  print(gcd)
-
+ 
 </pre>
        
     

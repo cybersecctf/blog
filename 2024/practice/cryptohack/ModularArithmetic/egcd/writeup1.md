@@ -30,8 +30,8 @@ Enter whichever of u and v is the lower number as the flag.
 we run this code for get extened gcd with Euclidean algorithm non recursive method
     <ol>
 <pre>
-import sys
-def run(a, b):
+import blog
+def solve(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
     while b != 0:
         q, a, b = a // b, b, a % b
@@ -41,16 +41,10 @@ def run(a, b):
 
 # Test the function
 
-a = 26513
-if len(sys.argv)>1:
-  a=int(sys.argv[1])
+a = blog.set(26513,1)
+b =blog.set( 32321,2)
 
-b = 32321 
-if len(sys.argv)>2:
-  b=int(sys.argv[2])
-else:
-  print("usage -v  value1 value2")
-gcd, x, y = run(a, b)
+gcd, x, y = solve(a, b)
 print(x,y)
 </pre>
 flag is value that is smallest       

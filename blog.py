@@ -4,6 +4,10 @@ import sys
 import ast
 from decimal import Decimal, InvalidOperation
 isprinted=False
+islog=False
+def log(str):
+  if islog:
+   print(str)
 def find_term_in_file(file_path, search_term):
     with open(file_path, 'r') as file:
         lines = file.readlines()
@@ -29,18 +33,21 @@ def run_function_from_module(module, func_name, *args):
         func = getattr(module, func_name)
         return func(*args)
     else:
-        print(f"The module does not have a '{func_name}' function.")
+        log(f"The module does not have a '{func_name}' function.")
         return None
 
 def solveup(term, *args):
     global isprinted
+    if term.endswith("-log"): 
+        terms=term[:-4]
+        islog=True
     search_term = term
     file_path = "/home/mrrobot/Desktop/blog/Ai"
     
     # Step 1: Search for the term in the file
     line = find_term_in_file(file_path, search_term)
     if not line:
-        print(f"Search term '{search_term}' not found in the file.")
+        log(f"Search term '{search_term}' not found in the file.")
         return
     
     # Step 2: Extract URLs from the line
@@ -52,21 +59,21 @@ def solveup(term, *args):
      # Step 3: Import the Python file dynamically
      module_name = os.path.basename(py_url).replace('.py', '')
      py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', '/home/mrrobot/Desktop/blog/')  # Adjust this as needed
-    
+     
      module = import_function_from_file(module_name, py_file_path)
     
      # Step 4: Run the function from the imported module
      result = run_function_from_module(module, 'solve', *args)
     if result is not None:
-        print(f"Function: solve")
-        print(f"Arguments: {args}")
-        print(f"Result: {result}")
+        log(f"Function: solve")
+        log(f"Arguments: {args}")
+        log(f"Result: {result}")
         return result
     else:
        return None
 
 def detect_value_type(value):
-    print(f"Detecting value type for: {value}")
+    log(f"Detecting value type for: {value}")
     # Check for integer
     try:
         int_value = int(value)
@@ -83,23 +90,23 @@ def detect_value_type(value):
         else:
             return 'decimal'
     except InvalidOperation as e:
-        print(f"Error detecting decimal for {value}: {str(e)}")
+        log(f"Error detecting decimal for {value}: {str(e)}")
 
     # Check for float
     try:
         float_value = float(value)
         return 'float'
     except ValueError as e:
-        print(f"Error detecting float for {value}: {str(e)}")
+        log(f"Error detecting float for {value}: {str(e)}")
 
     # If all conversions fail, it's a string
     return 'string'
 
 def set(val, i=1, type="auto", alert="usage argument -v"):
-    print(f"Setting value: val={val}, i={i}, type={type}")
+    log(f"Setting value: val={val}, i={i}, type={type}")
     
     if i <= 0:
-        print("Argument value should be more than 0, not", i)
+        log("Argument value should be more than 0, not", i)
         return     
     if len(sys.argv) > i:
         val = sys.argv[i] 
@@ -119,12 +126,10 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
         else:
             val = val  # do nothing     
     except Exception as e:
-        print(f"Exception in val {val}: {str(e)}")
-    if len(sys.argv) == 1:
-        if alert == "usage argument -v":
-            print(alert + " " + str(i) + "th value") 
+        log(f"Exception in val {val}: {str(e)}")
+    if len(sys.argv) == 1: 
+        if alert == "usage argument -v": 
+            log(alert + " " + str(i) + "th value") 
         else:
             print(alert)
     return val
-
-

@@ -25,34 +25,37 @@ def square_root(p,n):
     else:
         print(f"No square root found for {n} modulo {p}")
 
-p = blog.set(29,1)
-ints = blog.set("[14, 6, 11]",2)
-type= blog.set("Quadratic residues full",2)
 
 
-if not isinstance(ints, Iterable):
+def solve(p,ints,type):
+ if not isinstance(ints, Iterable):
     ints = range(1, ints+1)
-s= list(ints)
+ s= list(ints)
  
 
-residues, non_residues = find_square_roots_modulo(p, ints)
-q = []
-if type=="square root":
- print("Quadratic residues and their square roots:")
-for i, a in residues:
+ residues, non_residues = find_square_roots_modulo(p, ints)
+ q = []
+ if type=="square root":
+  print("Quadratic residues and their square roots:")
+ for i, a in residues:
     q.append((-a % p, a))
     if type=="square root":
      print(f"{i} has square roots {a} and {-a % p}")
 
-print("Quadratic residues full", set(q))
-if type=="Quadratic non-residues":
- print("\nQuadratic non-residues:")
-qn = [] 
-for a in range(1,p):
+ print("Quadratic residues full", set(q))
+ if type=="Quadratic non-residues":
+  print("\nQuadratic non-residues:")
+ qn = [] 
+ for a in range(1,p):
     if not any(a == x[1] for x in q):
         qn.append(a)
-if type=="Quadratic non-residues": 
+ if type=="Quadratic non-residues": 
    print(qn)
-if type=="Quadratic residues full": 
+ if type=="Quadratic residues full": 
   s=sorted(set([x[0] for x in q]))
   print(s,"flag is=",min(s))
+if __name__ == "__main__" :
+ p = blog.set(29,1)
+ ints = blog.set("[14, 6, 11]",2)
+ type= blog.set("Quadratic residues full",3)
+ solve(p,ints,type)

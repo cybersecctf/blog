@@ -1,5 +1,3 @@
-#python
-import sys
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
@@ -13,11 +11,8 @@ def solve(a, b):
 
 # Test the function
 
- 
-if __name__ == '__main__':
- a=blog.set(66528,1)
+a = blog.set(26513,1)
+b =blog.set( 32321,2)
 
- 
- b=blog.set(52920,2)  
- gcd, x, y = solve(a, b)
- print(gcd)
+gcd, x, y = solve(a, b)
+print(x,y)
