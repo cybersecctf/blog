@@ -23,8 +23,7 @@ run this code and get flag
 #python
 import blog
 def solve(nums):
-  for _ in nums:
-     print(chr(_), end='')
+  print("".join((chr(o) for o in nums)))
 if __name__ == "__main__" :
   
   nums=blog.set("[99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]",1)
@@ -36,11 +35,12 @@ if __name__ == "__main__" :
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">crypto{ASCII_pr1nt4bl3}
+
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for  convert decimal to ascii</p>
 </body>
 </html>
 

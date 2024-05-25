@@ -1,3 +1,4 @@
+#python
 import base64
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
@@ -12,7 +13,7 @@ def solve(hex_string,type="base64"):
         print(f"The decoded string in {encoding} is: {ascii_value}") 
     except UnicodeDecodeError:
         print(f"Unable to decode the string using {encoding}")
- else:
+ else: 
    print(base64.b64encode(bytes_value))
 hex_string=blog.set("72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf",1)
 type=blog.set("base64",2,"str")
