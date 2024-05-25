@@ -25,18 +25,14 @@ this is a challenge for test python version and run python code and get flag if 
 after run code below will get flag
 <pre>
 #python
-import sys
-if sys.version_info.major == 2:
-    print("You are running Python 2, which is no longer supported. Please update to Python 3. or use $python3 if have")
-    exit(0)
+
 import blog
-# import this
-
-
-
 
 def solve(ords,hexs):
-
+ import sys
+ if sys.version_info.major == 2:
+    print("You are running Python 2, which is no longer supported. Please update to Python 3. or use $python3 if have")
+    exit(0) 
  print("Here is your flag:")
  hexs = int(hexs, 16) 
  print("".join(chr(o ^ hexs) for o in ords))
@@ -50,7 +46,6 @@ if __name__ == "__main__" :
     <h2>Flag</h2>
     <p class="flag">crypto{z3n_0f_pyth0n}
 </p>
-
     <h2>Conclusion</h2>
     <p>this is a challenge for get python version and run it</p>
 </body>
