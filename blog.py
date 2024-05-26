@@ -15,7 +15,6 @@ def find_term_in_file(file_path, search_term):
         if search_term in line:
             return line.strip()
     return None
-
 def extract_urls_from_line(line):
     parts = line.split(',')
     md_url = parts[-1]
