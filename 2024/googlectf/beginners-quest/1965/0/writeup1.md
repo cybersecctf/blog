@@ -19,13 +19,12 @@ only need reverse string at end of code
 with this code
 <pre>
 #python
-import sys
-s="MELBORP_A_EVLOS_OT_SDRAWKCAB_GNIKROW"
-if len(sys.argv)>1:
-         s=sys.argv[1]
-         if s=="$basic":
-             os.system("bwBASIC")
-print(s[::-1])
+def solve(s):
+  print(s[::-1])
+import blog
+s=blog.set("MELBORP_A_EVLOS_OT_SDRAWKCAB_GNIKROW",1)
+if __name__ == "__main__" :
+  solve(s)
 </pre>
 for flag as this line say should wrap with FLAG
 <pre>

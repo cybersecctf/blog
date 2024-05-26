@@ -8,7 +8,6 @@
     <h2>Challenge Description</h2>
     <p>AUTHOR: NGIRIMANA SCHADRACK
 
-Description
 Can you get the real meaning from this file.
 Download the file 
 <a href="https://artifacts.picoctf.net/c_titan/1/enc_flag">here</a>.
@@ -25,9 +24,7 @@ $echo "d3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrX2xoNjBsMDBpfQ==" |base64 -d
 </p>
 <pre>
 #python
-import sys
-values=sys.argv
- 
+import blog
 def caesar_decrypt(ciphertext, shift):
     plaintext = ""
     for char in ciphertext:
@@ -40,29 +37,25 @@ def caesar_decrypt(ciphertext, shift):
         else:
             plaintext += char
     return plaintext
-ciphertext="wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}"
-searchtext=""
-shift=-1
-print(sys.argv)
-if len (sys.argv)>1:
- ciphertext =sys.argv[1]#for decrypt another caesar text
- if len (sys.argv)>2:
-       if sys.argv[2].isnumeric():
-            shift=sys.argv[2]
-       else:
-             searchtext=sys.argv[2] 
-# Try all shifts from 1 to 32
-if shift ==-1:
- for shift in range(1, 33):
+def solve(ciphertext,searchtext,shift=-1):
+ if searchtext.isnumeric():
+            shift=int(searchtext)
+ # Try all shifts from 1 to 32
+ if shift ==-1:
+  for shift in range(1, 33):
     plaintext = caesar_decrypt(ciphertext, shift)
     if searchtext in plaintext :
         print("Shift:", shift)
-        print("Decrypted plaintext:", plaintext)
+        print("Decrypted result plaintext:", plaintext)
      
-else:
+ else:
     plaintext = caesar_decrypt(ciphertext, shift)
     print("Decrypted [plaintext] in [shift]: ", plaintext,shift)
-   
+if __name__ == "__main__" :
+    ciphertext=blog.set("wpjvJAM{jhlzhy_k3jy9wa3k_lh60l00i}",1)
+    searchtext=blog.set("",2)
+    shift=blog.set(-1,3)
+    solve(ciphertext,searchtext,shift)
 </pre>
                    
     </ol>
