@@ -28,7 +28,7 @@ after run code below will get flag
 
 import blog
 
-def solve(ords,hexs):
+def solve(ords,hexs,search="crypto"):
  import sys
  if sys.version_info.major == 2:
     print("You are running Python 2, which is no longer supported. Please update to Python 3. or use $python3 if have")
