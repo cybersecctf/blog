@@ -18,7 +18,7 @@
     we reverse string in challenge description and see  say get flag from 
 discord see flag in reverse in discord pinned message in #misc and get it after reversed it.
  <pre>
-import blog
+import blog#use blog.py in https://cybersecctf.github.io/blog
 def solve(word):
   blog.solveup("reverse string",word)#reverse challenge description here
 if __name__ == "__main__" :
@@ -32,7 +32,7 @@ if __name__ == "__main__" :
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for sanity check</p>
 </body>
 </html>
 
