@@ -102,7 +102,6 @@ dont-you-love-banners picoctf2024 medium,https://cybersecctf.github.io/blog/2024
 BinarySearch picoctf binraysearch on host and bash,https://cybersecctf.github.io/blog/2024/pico2024/BinarySearch/writeup1.md
 MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy and decrypt-base64 easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
-
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
 EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
 ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
@@ -208,3 +207,7 @@ LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy cry
  ModularSquareRoot cryptohack ,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularSquareRoot/writeup1.md 
 ChineseRemainderTheorem cryptohack modinverse easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ChineseRemainderTheorem/writeup1.md
 AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/AdriensSigns/writeup1.md
+sanitycheck angstromctf2024 reverse string python very easy misc,   https://cybersecctf.github.io/blog/2024/actf/sanity/writeup1.md 
+putnam angstromctf2024 connect netcat sum python easy misc,https://cybersecctf.github.io/blog/2024/actf/putnam/writeup1.md
+
+trip angstromctf2024  linuex python exiftool very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md
