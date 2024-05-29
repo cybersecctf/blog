@@ -11,13 +11,10 @@ class Result:
         self.py_url = py_url
         self.score = score
         self.code = None
-
     def add_score(self, points):
         self.score += points
-
     def set_code(self, code):
         self.code = code
-
     def __str__(self):
         return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
 def log(str):
@@ -41,6 +38,9 @@ def extract_urls_from_line(line):
     return md_url, py_url
 
 def import_function_from_file(module_name, file_path):
+    if " " in file_path:
+      file_path=file_path.split(" ")[1].strip()
+    print("f",file_path)
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -56,6 +56,7 @@ def run_function_from_module(module, func_name, *args):
 
 def solveup(term, *args):
     global isprinted
+    result="" 
     if term.endswith("-log"): 
         terms=term[:-4]
         islog=True

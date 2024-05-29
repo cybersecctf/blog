@@ -17,8 +17,11 @@ For example, if the road was "Colesville Road" the flag would be actf{colesville
 <pre> 
 #python
 import blog 
-blog.solveup("exif","trip.jpeg")
-
+import os
+def solve(file="trip.jpeg"):
+  blog.solveup("exiftool linux",file)
+if __name__ == "__main__" :
+  solve("trip.jpeg")
 </pre>
    and get flag that is road namevia cordinateds of gps in info:
  <img src=" https://cybersecctf.github.io/blog/2024/actf/trip/google.png" alt="google search result" class="inline"/>
@@ -26,7 +29,7 @@ blog.solveup("exif","trip.jpeg")
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">actf{Chincotegue}
+    <p class="flag">actf{chincotegue}
 </p>
 
     <h2>Conclusion</h2>

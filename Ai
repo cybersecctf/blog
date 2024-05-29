@@ -157,7 +157,7 @@ Morse Code  ctflearn convert moresecode to english and american style text easy 
 wherecanmyrobotgo ctflearn find robot in site with python easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wherecanmyrobotgo/writeup1.md
 ReversePolarity ctflearn convert base to string crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ReversePolarity/writeup1.md
 wikipedia ctflearn wikipedia search very easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wikipedia/writeup1.md
-WOWSoMeta ctflearn get meta of pic and image with exiftool forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/WOWSoMeta/writeup1.md
+WOWSoMeta ctflearn exiftool linux get meta of pic and image with  forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/WOWSoMeta/writeup1.md
 Binwalk ctflearn extract files inside another zip and pic any forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Binwalk/writeup1.md 
 Hextroadinary ctflearn xor and convert result to hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Hextroadinary/writeup1.md
 vigenerecipher ctflearn vigenere cipher with key and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
@@ -209,5 +209,4 @@ ChineseRemainderTheorem cryptohack modinverse easy crypto,https://cybersecctf.gi
 AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/AdriensSigns/writeup1.md
 sanitycheck angstromctf2024 reverse string python very easy misc,   https://cybersecctf.github.io/blog/2024/actf/sanity/writeup1.md 
 putnam angstromctf2024 connect netcat sum python easy misc,https://cybersecctf.github.io/blog/2024/actf/putnam/writeup1.md
-trip angstromctf2024  linuex python exiftool very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md
- 
+trip angstromctf2024 exiftool linux python  very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md

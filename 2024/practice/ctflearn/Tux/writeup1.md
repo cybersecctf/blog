@@ -15,15 +15,14 @@ https://ctflearn.com/challenge/download/973
         we download image
  <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Tux/973.png" alt="ctf quetion image" class="inline"/>
 and do exiftool  
-<pre>
-$exiftool $1
-</pre>
- see base 64 that is password  <pre>b'      Password: Linux12345\n'</pre>    so this image have 
+ 
+ see base 64 that is password  <code>b'      Password: Linux12345\n'</code>    so this image have 
 file inside it use binwalk on it
 <pre>
 #python
-import binwalk,os,sys
-def extract_and_search(file_path, search_text):
+import binwalk,os
+import blog 
+def solve(file_path, search_text):
     # Use binwalk to extract files
     for module in binwalk.scan(file_path, signature=True, quiet=False, extract=True):
         print(f"{module.name} Results:")
@@ -38,16 +37,12 @@ def extract_and_search(file_path, search_text):
                 contents = f.read()
                 if search_text in contents:
                     print(f"Found '{search_text}' in {file}")
-
-file='test.bin'
-search='text'
-if len(sys.argv)>1:
- file=sys.argv[1]
-if len(sys.argv)>2:
- search=sys.argv[2]
- extract_and_search(file,search)
-else:
-   print("-v usage file search")
+if __name__ == "__main__" :
+ print("d")
+ file=blog.set('test.bin',1)
+ search=blog.set('text',2)
+ print("d")
+ solve(file,search)
 </pre>
 and see 1570 zip file is protected and use Linux12345 as password and unzip it and see flag
     
