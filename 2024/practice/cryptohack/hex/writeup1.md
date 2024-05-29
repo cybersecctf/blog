@@ -21,11 +21,16 @@ Included below is a flag encoded as a hex string. Decode this back into bytes to
 <pre>
 #python
 import blog
-def solve(hex): 
-   return bytes.fromhex(hex)
+import binascii 
+def solve(operation,hexs): 
+  if operation=="decode":
+    return bytes.fromhex(hexs)
+  if operation=="encode":
+    return  binascii.hexlify(hexs)
+    
 if __name__ == "__main__" :
  hex=blog.set("63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d",1)
- print(solve(hex))
+ print(solve("decode",hex))
 </pre>
        and get flag that is ascii bytes only need text inside ''       b'crypto{You_will_be_working_with_hex_strings_a_lot}'
 
