@@ -29,3 +29,9 @@
 </body>
 </html>
  
+<pre>
+import blog
+blog.islog=True
+blog.solveup("snakes search")
+print("p",blog.results)
+</pre>

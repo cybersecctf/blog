@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-<pre>
 import sys
 # import this
 
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 def solve(d,search="crypto",i1=300):
  ords=d 
@@ -24,4 +24,3 @@ if __name__ == "__main__" :
  ords=blog.set([81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79],1)
  search=blog.set("crypto",2);
  solve("da","",0x23)
-</pre> 

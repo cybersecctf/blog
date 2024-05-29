@@ -16,6 +16,7 @@
 <pre>
 #python
 from Crypto.Util.number import inverse
+from binascii import unhexlify
 
 # Given values
 n = 86088719452932625928188797700212036385645851492281481088289877829109110203124545852827976798704364393182426900932380436551569867036871171400190786913084554536903236375579771401257801115918586590639686117179685431627540567894983403579070366895343181435791515535593260495162656111028487919107927692512155290673
@@ -31,7 +32,9 @@ m = pow(c, d, n)
 
 # Convert the message from int to bytes
 flag_bytes = m.to_bytes((m.bit_length() + 7) // 8, 'big')
-
+flag_bytes=str(flag_bytes).replace("\\x"," ")
+print(flag_bytes)
+s=unhexlify("8c 98 c2 c1 c1")
 # Convert the bytes to ASCII
 # Convert the bytes to a string using UTF-8 encoding
 # Convert the bytes to a hexadecimal string
@@ -39,7 +42,7 @@ flag_bytes = m.to_bytes((m.bit_length() + 7) // 8, 'big')
 # Convert the hexadecimal string to ASCII
 #flag_ascii = bytes.fromhex(str(flag_bytes)).decode('ascii')
 
-print(f"Decrypted flag: {flag_bytes}")
+print(f"Decrypted flag: {s}")
 
 
 

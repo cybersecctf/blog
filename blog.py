@@ -5,20 +5,39 @@ import ast
 from decimal import Decimal, InvalidOperation
 isprinted=False
 islog=False
+class Result:
+    def __init__(self, md_url, py_url, score=0):
+        self.md_url = md_url
+        self.py_url = py_url
+        self.score = score
+        self.code = None
+
+    def add_score(self, points):
+        self.score += points
+
+    def set_code(self, code):
+        self.code = code
+
+    def __str__(self):
+        return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
 def log(str):
   if islog:
    print(str)
 def find_term_in_file(file_path, search_term):
+ 
+    issearch=True;
     with open(file_path, 'r') as file:
         lines = file.readlines()
     for line in lines:
-        if search_term in line:
-            return line.strip()
+ 
+         if search_term in line :
+          
+             return line.strip()
     return None
 def extract_urls_from_line(line):
     parts = line.split(',')
     md_url = parts[-1]
-    py_url = md_url.replace('writeup1.md', 'writeup1.py')
+    py_url = md_url.replace('.md', '.py')
     return md_url, py_url
 
 def import_function_from_file(module_name, file_path):
@@ -43,8 +62,10 @@ def solveup(term, *args):
     search_term = term
     file_path = "/home/mrrobot/Desktop/blog/Ai"
     
-    # Step 1: Search for the term in the file
+ 
+
     line = find_term_in_file(file_path, search_term)
+    
     if not line:
         log(f"Search term '{search_term}' not found in the file.")
         return
