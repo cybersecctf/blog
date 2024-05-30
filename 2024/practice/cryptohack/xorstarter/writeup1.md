@@ -28,46 +28,27 @@ you can use this script with argument <code>python file.py label 13</code>
 and get flag 
 <pre>
 #python
-import ast
-import sys
-# import this
-
-if sys.version_info.major == 2:
-    print("You are running Python 2, which is no longer supported. Please update to Python 3.")
-
-if len(sys.argv)>1:
-  ords=sys.argv[1]
-  if ords.startswith("[") and ords.endswith("]") and "," in ords:
-   ords= ast.literal_eval(ords)
-  else:
-    d=[]
-    for x in ords:
-      d.append(ord(x))
-    ords=d
-
-else:
-  ords = [81, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79]
-import blog 
-hexs="0x32" 
-type="int"
-hexs=blog.set(0x32,1)
-type=blog.set("int",2)
-print(ords)
-for x in ords:
-  print(x)
-print("Here is your flag:")
-if type=="int":
-   hexs=hex(int(hexs))
-hexs = int(hexs, 16)
-print("".join(chr(o ^ hexs) for o in ords))
-
+import blog
+def solve(s,n):
+ try:
+  ords=blog.solveup("encode/decode full","encode",s,"ascii") 
+  hexs = hex(int(n))
+  hexs=int(hexs,16)
+  return "".join(chr(o ^ hexs) for o in ords) 
+ except Exception as e:
+   return str(e) 
+if __name__ == "__main__" :
+ s =blog.set("label",1)
+ n =blog.set(13,2)
+  
+ solve(s,n)
 </pre>
        
     
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">crypto{z3n_0f_pyth0n}
+    <p class="flag">crypto{aloha}
 </p>
 
     <h2>Conclusion</h2>
