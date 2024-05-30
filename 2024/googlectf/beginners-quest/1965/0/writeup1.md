@@ -18,12 +18,12 @@ you reverse this to get the flag?
 only need reverse string at end of code
 with this code
 <pre>
+ import blog
 #python
 def solve(s):
   print(s[::-1])
-import blog
-s=blog.set("MELBORP_A_EVLOS_OT_SDRAWKCAB_GNIKROW",1)
 if __name__ == "__main__" :
+  s=blog.set("MELBORP_A_EVLOS_OT_SDRAWKCAB_GNIKROW",1) 
   solve(s)
 </pre>
 for flag as this line say should wrap with FLAG

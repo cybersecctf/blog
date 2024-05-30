@@ -29,19 +29,23 @@ and get flag
 <pre>
 #python
 import blog
-def solve(s,n):
- try:
-  ords=blog.solveup("encode/decode full","encode",s,"ascii") 
-  hexs = hex(int(n))
-  hexs=int(hexs,16)
-  return "".join(chr(o ^ hexs) for o in ords) 
- except Exception as e:
-   return str(e) 
-if __name__ == "__main__" :
- s =blog.set("label",1)
- n =blog.set(13,2)
-  
- solve(s,n)
+
+def solve(s, n):
+    try:
+        ords = blog.solveup("encode/decode full", "encode", s, "ascii")
+        print(ords)
+        hexs = hex(int(n))
+        hexs = int(hexs, 16)
+        result = "".join(chr(o ^ hexs) for o in ords)
+        return result
+    except Exception as e:
+        return "err" + str(e)
+
+if __name__ == "__main__":
+    s = blog.set("label", 1)
+    n = blog.set(13, 2)
+    print(solve(s, n))
+
 </pre>
        
     

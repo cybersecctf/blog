@@ -53,4 +53,3 @@ if __name__ == "__main__" :
  print(solve("encode","HELLO","long"))
  print(solve("encode","HELLO","hex"))
  print(solve("encode","HELLO","ascii"))
-blog.solveup("ascii to hex")
