@@ -48,12 +48,13 @@ def solve(operation,input_value,type):
         for encoding in encodings:
             try:
                 ascii_value = bytes_value.decode(encoding)
-                return f"The decoded string in {encoding} is: {ascii_value}" 
+                return f"The decoded string in {encoding} is:  {ascii_value}" 
                 return   ascii_value         
             except UnicodeDecodeError:
                 return f"Unable to decode the string using {encoding}" 
     elif type == "hex":
-         return bs.unhexlify(input_value) 
+         s= bs.unhexlify(input_value) 
+         return s.decode('utf-8') 
     elif type == "long":
         try:
             num = int(input_value)
@@ -68,7 +69,7 @@ def solve(operation,input_value,type):
         return [ord(c) for c in input_value] 
     elif type=="hex":
             text=input_value.encode()
-            return str(bs.hexlify(bytes(text))) 
+            return bs.hexlify(bytes(text)).decode('utf-8')
              
     elif type == "long":
         return bytes_to_long(input_value.encode('utf-8')) 
@@ -83,9 +84,9 @@ if __name__ == "__main__" :
  print(solve(operation,input_value,type))
  print(solve("encode","HELLO","base64"))
  print(solve("encode","HELLO","long"))
- print(solve("encode","HELLO","hex"))
+ print(solve("decode","48454c4c4f","hex"))
  print(solve("encode","HELLO","ascii"))
-
+ 
 </pre>
     and print flag
     </ol>
@@ -93,7 +94,7 @@ if __name__ == "__main__" :
     <h2>Flag</h2>
     <p class="flag">crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}
 </p>
-
+ 
     <h2>Conclusion</h2>
     <p>this is a very   easy chanllenge for decode encodeon base64 asci long</p>
 </body>

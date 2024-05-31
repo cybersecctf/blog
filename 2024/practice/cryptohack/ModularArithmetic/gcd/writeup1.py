@@ -21,3 +21,4 @@ if __name__ == '__main__':
  b=blog.set(52920,2)  
  gcd, x, y = solve(a, b)
  print(gcd)
+ print(blog.solveup("gcd",12,18))

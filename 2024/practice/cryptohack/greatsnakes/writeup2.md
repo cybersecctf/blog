@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 <pre>
+#python
 import sys
 # import this
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -32,25 +31,21 @@ FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
 i use this code for pairing xor and have flag
 <pre>
 from pwn import *
-import sys
+import blog
 # needed for the xor()
-
-type="hex"
-a="a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313"
-b="37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e"
-if len(sys.argv)>1:
-  a=sys.argv[1]
-if len(sys.argv)>2:
-  b=sys.argv[2]
-if len(sys.argv)>3:
-  type=sys.argv[3]
-a = bytes.fromhex(a)
-b = bytes.fromhex(b)
-s=xor(a, b)
-if type=="hex":
- print(s.hex())
-else:
-  print(s.decode())           
+def solve(a,b,type="hex"):
+ a = bytes.fromhex(a)
+ b = bytes.fromhex(b)
+ s=xor(a, b)
+ if type=="hex":
+  return s.hex()
+ else:
+   return s.decode()     
+if __name__ == "__main__" :
+ a=blog.set("a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313",1)
+ b=blog.set("37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e",2)
+ type=blog.set("hex",3)    
+ print(solve(a,b,type) ) 
 </pre>
 this is commands and arguments i use in this python code
 (last number is result)

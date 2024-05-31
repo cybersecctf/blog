@@ -18,7 +18,12 @@ a * u + b * v = gcd(a,b)
 Using the two primes p = 26513, q = 32321, find the integers u,v such that
 
 p * u + q * v = gcd(p,q)
-
+<pre>
+import blog
+p = 26513
+q = 32321
+print(blog.solveup("egcd",p,q))
+</pre>
 Enter whichever of u and v is the lower number as the flag.
 
  Knowing that p,q are prime, what would you expect gcd(p,q) to be? For more details on the extended Euclidean algorithm, check out this page.
@@ -30,6 +35,7 @@ Enter whichever of u and v is the lower number as the flag.
 we run this code for get extened gcd with Euclidean algorithm non recursive method
     <ol>
 <pre>
+#python
 import blog
 def solve(a, b):
     x0, x1, y0, y1 = 1, 0, 0, 1
@@ -43,11 +49,10 @@ def solve(a, b):
 
 a = blog.set(26513,1)
 b =blog.set( 32321,2)
-
 gcd, x, y = solve(a, b)
 print(x,y)
 </pre>
-flag is value that is smallest       
+flag is value that is smallest       because print(10245*26513+ -8404*32321) is 1
     
     </ol>
 <br>

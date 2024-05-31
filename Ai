@@ -5,7 +5,7 @@ nicenetcat picoctf netcat in linux very easy, https://cybersecctf.github.io/blog
 mod26 picoctf rot 13 with python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
 information picoctf   sample decrypt with exiftool  image and forensics very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/information/writeup1.md
 pythonwrangling picoctf  reverse and decode in python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
-waveaflag picoctf  reverse on python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md
+waveaflag picoctf  reverse on python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md 
 getahead  picoctf using burpsuit and curl for head request in url and web exploitation very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
 happynewyear asisctf2023 copy and past flag very easy,https://cybersecctf.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md
 MatryoshkaDoll picoctf  work with nested zip and images in python very easy Forensics,https://cybersecctf.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
@@ -196,11 +196,12 @@ cryptohack BytesandBigIntegers    encode/decode full long byte message base64 as
 cryptohack xorstarter xor string integer list  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorstarter/writeup1.md
 XORProperties cryptohack xor two hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorproperties/writeup1.md
 cryptohack Favouritebyte decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/Favouritebyte/writeup1.md
-youeitherknowxoryoudont cryptohack decode one hex partial key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
+youeitherknowxoryoudont cryptohack decode one xor hex partial key search single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
 cryptohack  GreatestCommonDivisor Greatest Common Divisor (GCD) egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/gcd/writeup1.md 
 cryptohack ExtendedGCD   Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/egcd/writeup1.md 
 cryptohack modulararithmetic1  modular arithmetic and find  two integers mod and check congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
 cryptohack ModularArithmetic2   Fermat's little theorem fermat test easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
+cryptohack fermatfindpq   Fermat  little  n find pq easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup2.md
 cryptohack ModularInverting  modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
 cryptohack QuadraticResidues  root0   quadratic residue  calculate square root  module smaller one as the flag easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
 LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/LegendreSymbol/writeup1.md
@@ -210,4 +211,3 @@ AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersec
 sanitycheck angstromctf2024 reverse string python very easy misc,   https://cybersecctf.github.io/blog/2024/actf/sanity/writeup1.md 
 putnam angstromctf2024 connect netcat sum python easy misc,https://cybersecctf.github.io/blog/2024/actf/putnam/writeup1.md
 trip angstromctf2024 exiftool linux python  very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md
- 

@@ -6,7 +6,6 @@ import blog
 def solve(s, n):
     try:
         ords = blog.solveup("encode/decode full", "encode", s, "ascii")
-        print(ords)
         hexs = hex(int(n))
         hexs = int(hexs, 16)
         result = "".join(chr(o ^ hexs) for o in ords)

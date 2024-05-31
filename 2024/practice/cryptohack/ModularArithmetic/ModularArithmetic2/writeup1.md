@@ -35,8 +35,6 @@ this is quetion for see if two  number
 are set in Fermat's little theorem. or no and so a^b+1 %b-1 is 1 or no (need in rsa).
 <pre>
 #python   
-import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 def fermat_test(a, p):
     return pow(a, p - 1, p)  

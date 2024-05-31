@@ -6,7 +6,7 @@
     <h1>You either know, XOR you don't- cryptohack</h1>
 
     <h2>Challenge Description</h2>
-    <p>You either know, XOR you don't30 pts · 18240 Solves
+    <p>You either know, XOR you don't 
 I've encrypted the flag with my secret key, you'll never be able to guess it.
 
 Remember the flag format and how it might help you in this challenge!

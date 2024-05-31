@@ -26,5 +26,5 @@ def solve(data,key):
 if __name__ == "__main__" :
  data=blog.set("73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d",1)
  key=blog.set("crypto",2)
-print(solve(data,key))
+ print(solve(data,key))
 #modified from https://captainmich.github.io/programming_language/CTF/Challenge/CryptoHack/general.html code
