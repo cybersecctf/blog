@@ -27,27 +27,25 @@ this is using extended gcd from       <a href="https://cybersecctf.github.io/blo
 problem  for calculate modular invert and get flag with this code
 <pre>
 #python
-import sys
+import blog
 def extended_gcd(a, b):
     if a == 0:
         return b, 0, 1
     else:
         g, x, y = extended_gcd(b % a, a)
         return g, y - (b // a) * x, x
-def mod_inverse(a, m):
+def solve(a, m):
     g, x, _ = extended_gcd(a, m)
     if g != 1:
         raise Exception('Modular inverse does not exist')
     else:
         return x % m
 a = 3
-if len(sys.argv)>1: 
-  a=int(sys.argv[1])
-m = 13
-if len(sys.argv)>2:
-  m=int(sys.argv[2])
-d = mod_inverse(a, m)
-print(f"The value of d in the equation {a} * d ≡ 1 mod {m} and flag  is {d}")
+if __name__ == "__main__" :
+  a=blog.set(3,1)
+  m = blog.set(13,2)
+  d = solve(a, m)
+  print(f"The value of d in the equation {a} * d ≡ 1 mod {m} and flag  is {d}")
 </pre>
        flag is final result and d
     </ol>

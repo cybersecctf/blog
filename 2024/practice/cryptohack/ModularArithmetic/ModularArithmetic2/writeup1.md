@@ -34,22 +34,20 @@ Did you need a calculator?
 this is quetion for see if two  number 
 are set in Fermat's little theorem. or no and so a^b+1 %b-1 is 1 or no (need in rsa).
 <pre>
-#python   
-import blog
-def fermat_test(a, p):
-    return pow(a, p - 1, p)  
-import sys
-# Test the function with your number and a prime
-
-a=blog.set(273246787654,1)
-
-p=blog.set(17,2) 
  
-print(fermat_test(a, p))   
+import blog
+def solve(a, p):
+    return pow(a, p - 1, p)  
+ 
+# Test the function with your number and a prime
+if __name__ == "__main__" :
+ a=blog.set(273246787654,1)
+ p=blog.set(17,2) 
+ print(solve(a, p))   
 </pre>
         
     
-    </ol>
+    </ol> 
 <br> 
     <h2>Flag</h2>
     <p class="flag">1

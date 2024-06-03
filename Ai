@@ -153,7 +153,7 @@ ctflearn charcterencoding convert hex to ascii and base64 easy crypto ,https://c
 ctflearn Forensics101 strings file and image pic grep flag easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
 ctflearn TakingLS ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/TakingLS/writeup1.md
 ctflearn base22the6 ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/base22the6/writeup1.md
-Morse Code  ctflearn convert moresecode to english and american style text easy crypto,  https://cybersecctf.github.io/blog/2024/practice/ctflearn/MorseCode/writeup1.md
+morsecode ctflearn convert moresecode to english and american style text easy crypto,  https://cybersecctf.github.io/blog/2024/practice/ctflearn/MorseCode/writeup1.md
 wherecanmyrobotgo ctflearn find robot in site with python easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wherecanmyrobotgo/writeup1.md
 ReversePolarity ctflearn convert base to string crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ReversePolarity/writeup1.md
 wikipedia ctflearn wikipedia search very easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wikipedia/writeup1.md
@@ -201,7 +201,7 @@ cryptohack  GreatestCommonDivisor Greatest Common Divisor (GCD) egcd  with  Eucl
 cryptohack ExtendedGCD   Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/egcd/writeup1.md 
 cryptohack modulararithmetic1  modular arithmetic and find  two integers mod and check congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
 cryptohack ModularArithmetic2   Fermat's little theorem fermat test easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
-cryptohack fermatfindpq   Fermat  little  n find pq easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup2.md
+cryptohack findpq2  small  n with fermat little  n find pq easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/fermatfactor/writeup1.md
 cryptohack ModularInverting  modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
 cryptohack QuadraticResidues  root0   quadratic residue  calculate square root  module smaller one as the flag easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
 LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/LegendreSymbol/writeup1.md
@@ -211,3 +211,4 @@ AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersec
 sanitycheck angstromctf2024 reverse string python very easy misc,   https://cybersecctf.github.io/blog/2024/actf/sanity/writeup1.md 
 putnam angstromctf2024 connect netcat sum python easy misc,https://cybersecctf.github.io/blog/2024/actf/putnam/writeup1.md
 trip angstromctf2024 exiftool linux python  very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md
+jojo1 nopsctf convert hex to string easy crypto,https://cybersecctf.github.io/blog/2024/nopsctf/jojo/1/writeup1.md 

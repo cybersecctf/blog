@@ -23,12 +23,13 @@
      we open message code and use normal decrypt morse code and not work so use american  morse code translator with python and it work.
 <pre>
 #python
-import sys
+import blog
 import re
 
-flag = "-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. ."
 
-american_morse_dict = {
+
+def solve(flag): 
+ american_morse_dict = {
     '.-': 'A',
     '-...': 'B',
     '-.-.': 'C',
@@ -85,20 +86,20 @@ american_morse_dict = {
     '.--.-.': '@',
     '⸺': 'L'  # Replace with the appropriate Morse code for 'L'
 }
-
-if len(sys.argv) > 1:
-    flag = sys.argv[1]
-
-flag = re.split(r'\s+', flag)
-decoded_flag = ''
-
-for code in flag:
+ flag = re.split(r'\s+', flag)
+ decoded_flag = ''
+ for code in flag:
     if code in american_morse_dict:
         decoded_flag += american_morse_dict[code]
     else:
         decoded_flag += code
 
-print("FLAG{" + decoded_flag + "}")
+ print("FLAG{" + decoded_flag + "}")
+if __name__ == "__main__" :
+  flag = blog.set("-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. .",1)
+
+  
+  solve(flag)
 </pre>
 after run this python will geet flag below.
     </ol>

@@ -12,10 +12,16 @@ garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f
 
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
-    <ol>
-        <li>after using binawalk and exiftool not working using <pre>$strings $1|grep $2</li>
-       
-     and get flag
+    <ol> 
+        <li>after using binawalk and exiftool not working using 
+
+<pre>
+import blog
+import os
+def solve(file,search="pico"):
+       os.system(f"strings {file}|grep={search}")
+if __name__ == "__main__" :
+  solve("garden.jpg")
 </pre>
     </ol>
 <br>

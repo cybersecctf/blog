@@ -42,25 +42,20 @@ def vigenere_decrypt(ciphertext, key):
         else:
             plaintext += char
     return plaintext
+import blog
 print("usage $hack chipher -v   fullcipher   knowplain( or key)    knowncipher ") 
-cipher="uiuweg{0jx_0fm_b@vj3ex3}"
-knownplain="utflag"
-knownchipher="uiuweg"
-key=""
-if len(sys.argv)>1:
-   cipher=sys.argv[1]
-if len(sys.argv)>2:
-   key=sys.argv[2]
-if len(sys.argv)>3:
-   knownplain=sys.argv[2]
-   knownchipher= sys.argv[3]
-   key=""   
-known_ciphertext="uiuweg"
-if key=="":
+def  solve(cipher,key="",knownplain="",knownchipher=""):
+ if key=="":
   key = find_key(knownplain, knownchipher)
-  print("key is",key)
-decrypted_text = vigenere_decrypt(cipher, key)
-print("Decrypted message:", decrypted_text)
+ 
+ decrypted_text = vigenere_decrypt(cipher, key)
+ return "Decrypted message:"+decrypted_text+"\nkey:"+key
+if __name__ == "__main__" :
+ cipher=blog.set("uiuweg{0jx_0fm_b@vj3ex3}",1)
+ knownplain=blog.set("utflag",2)
+ knownchipher=blog.set("uiuweg",3)
+ key=blog.set("",1)
+ print(solve(cipher,key,knownplain,knownchipher))
 </pre>
     
     </ol>

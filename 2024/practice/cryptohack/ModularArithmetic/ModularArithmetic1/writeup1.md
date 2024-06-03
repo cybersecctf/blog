@@ -46,7 +46,7 @@ def solve(a,b,c=8146798528947,d=17,type="2mod"):
  elif type=="4mod":
   return x,y
  elif type=="2congruent":
-   return are_congruent([a, b], c)
+   return are_congruent([a, b], c) 
  elif type=="4congruent":
    return are_congruent([a, b, c, d], c)
  else:

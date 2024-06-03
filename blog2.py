@@ -6,6 +6,7 @@ from decimal import Decimal, InvalidOperation
 
 isprinted = False
 islog = False
+results = []
 
 class Result:
     def __init__(self, md_url, py_url, score=0):
@@ -28,7 +29,7 @@ def log(message):
         print(message)
 
 def find_terms_in_file(file_path, search_terms):
-    results = []
+    global results
     with open(file_path, 'r') as file:
         lines = file.readlines()
     for line in lines:
@@ -193,5 +194,7 @@ class Blog:
             if alert == "usage argument -v":
                 log(alert + " " + str(i) + "th value")
             else:
-                print(alert)
+                print(alert) 
         return val
+blog=Blog()
+print(blog.solveup("string reverse","hi")) 

@@ -10,7 +10,7 @@ def find_square_roots_modulo(p, ints):
     for a in range(1, p):
         for i in ints:
             if (a*a) % p == i:
-                residues.append((i, a))
+                residues.append((i, a)) 
                 break
         else:
             non_residues.append(a)
@@ -59,3 +59,4 @@ if __name__ == "__main__" :
  ints = blog.set("[14, 6, 11]",2)
  type= blog.set("Quadratic residues full",3)
  solve(p,ints,type)
+print(blog.solveup("cryptohack ModularInverting",21,8))

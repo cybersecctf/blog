@@ -15,7 +15,7 @@
          as we see in description this is morse code and can decode by this code in this <a href="https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/0/writeup1.md">writeup</a>
  <pre>
 #python
-import sys
+import blog
 import re
 
 flag = "-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. ."

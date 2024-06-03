@@ -17,7 +17,16 @@ picopractice(2021)- Obedient Cat Challenge Writeup
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
         <li>i save link...</li>
-        <li>and use <pre>cat flag.txt</pre> for get flag after download with wget  </li>
+        <li>and use 
+
+<pre>
+import blog
+import os
+def solve(file="flag.txt"):
+  os.system(f"strings {file}");
+if __name__ == "__main__" :
+  solve()
+</pre> for get flag after download with wget  </li>
                
 
       help
