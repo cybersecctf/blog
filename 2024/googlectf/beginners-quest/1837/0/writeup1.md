@@ -94,12 +94,12 @@ def solve(flag):
     else:
         decoded_flag += code
 
- print("FLAG{" + decoded_flag + "}")
+ return  decoded_flag 
 if __name__ == "__main__" :
   flag = blog.set("-   . ..   ....-   -.   ---   ....-   -   ⸺   ....-   -.   -   ..   .. .",1)
 
   
-  solve(flag)
+  print("FLAG{" +solve(flag)+"}")
 </pre>
 after run this python will geet flag below.
     </ol>

@@ -1,7 +1,18 @@
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
-s="....-  ...-- -.... ..-. -.... . -.... --... --... ..--- -.... .---- --... ....- --... .- ..--- .---- ..--- ----- ..... ....- -.... ---.. -.... ..... ..--- ----- -.... -.... -.... -.-. -.... .---- -.... --... ..--- ----- -.... ----. --... ...-- ...-- .- ..--- ----- ....- . ...-- ----- ..... ----- ..... ...-- --... -... ....- -.. ...-- ----- --... ..--- ..... ...-- ...-- ...-- ..... ..-. ....- ....- ...-- ...-- -.... ...-- ...-- ----- -.... ....- ...-- ...-- ..... ..--- ..... ..-. ..... ----- --... ..--- ...-- ----- --... -.." 
-hex="43 6F 6E 67 72 61 74 7A 21 20 54 68 65 20 66 6C 61 67 20 69 73 3A 20 4E 30 50 53 7B 4D 30 72 53 33 5F 44 33 63 30 64 33 52 5F 50 72 30 7D"
+import os
+def solve(morse):
+ s=morse
  
-print(blog.solveup("cryptohack hex","decode",hex))
+ if os.path.exists(morse):
+    with open(morse, "r+") as f:
+       s=f.read()
+ s=blog.solveup("morse",s) 
+ if " " in s:
+  n=2
+  hex=" ".join([s[i:i+n] for i in range(0, len(s), n)])
+ return blog.solveup("jojo1",s)
+if __name__ == "__main__" :
+ s=blog.set("challenge.txt",1)
+ solve(s)
