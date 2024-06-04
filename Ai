@@ -215,3 +215,4 @@ jojo1 nopsctf convert hex to string easy crypto,https://cybersecctf.github.io/bl
 MorseMe nopsctf decode morse from file string easy crypto, https://cybersecctf.github.io/blog/2024/nopsctf/MorseMe/writeup1.md
 whreiiam1/3 nopsctf   search in google leans easy osint,https://cybersecctf.github.io/blog/2024/nopsctf/whreiiam/writeup1.md
 MODULAR BINOMIALS binomials and find pq witn ne1e2c1c2 crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularBinomials/writeup1.md
+KeyedPermutations cryptohack bijection defination implementation easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/KeyedPermutations/writeup1.md
