@@ -70,4 +70,4 @@ def solve(operation,text,key):
 if __name__ == "__main__" :
  key=blog.set( b'This is a key123',1)
  text=blog.set( b'This is some data we want to encrypt.',2)
- print(solve("encrypt",key,text))
+ print(solve("decrypt",key,text))
