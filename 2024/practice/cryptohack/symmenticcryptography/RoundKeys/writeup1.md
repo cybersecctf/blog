@@ -55,9 +55,9 @@ if __name__ == "__main__" :
 ]
  state=blog.set(state,1)
  round_key=blog.set(round_key,2) 
- operation=blog.set("text",3)
+ operation=blog.set("byte",3)
  x=add_round_key(state, round_key)
- if operation=="text":
+ if operation=="byte":
   print(blog.solveup("matrix","matrixtobyte",x))
 </pre>
        
@@ -65,11 +65,11 @@ if __name__ == "__main__" :
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">crypto{r0undk3y}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for xor two matrix and convert them to byte </p>
 </body>
 </html>
 
