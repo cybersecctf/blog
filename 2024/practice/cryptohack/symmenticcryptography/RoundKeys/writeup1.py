@@ -31,7 +31,7 @@ if __name__ == "__main__" :
 ]
  state=blog.set(state,1)
  round_key=blog.set(round_key,2) 
- operation=blog.set("text",3)
+ operation=blog.set("byte",3)
  x=add_round_key(state, round_key)
- if operation=="text":
+ if operation=="byte":
   print(blog.solveup("matrix","matrixtobyte",x))
