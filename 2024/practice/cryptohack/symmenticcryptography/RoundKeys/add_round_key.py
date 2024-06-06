@@ -14,20 +14,25 @@ round_key = [
 ]
 
 
-def add_round_key(s, k):
-  s = [ [0]*len(k) for i in range(len(s))]
-  i=0
-  j=0
+def add_round_key(s, k,row=4):
   s = [
     [206, 243, 61, 34],
     [171, 11, 93, 31],
     [16, 200, 91, 108],
     [150, 3, 194, 51],
 ]
-x= [ [0]*len(s) for i in range(len(s))]
-print(x) 
- 
+  x= [ [-1]*len(s) for i in range(len(s))]
+  i=0
+  for i in range(row):
+   for j in range(row):
+     if x[i][j]==-1 :
+       x[i][j]=s[i][j]^k[i][j]
+  return x     
+        
+               
 
-
-print(add_round_key(state, round_key))
-
+import sys
+sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+import blog
+x=add_round_key(state, round_key)
+print(blog.solveup("matrix","matrixtobyte",x))

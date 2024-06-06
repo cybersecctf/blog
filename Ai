@@ -218,4 +218,4 @@ MODULAR BINOMIALS binomials and find pq witn ne1e2c1c2 crypto easy,https://cyber
 KeyedPermutations cryptohack bijection defination implementation easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/KeyedPermutations/writeup1.md
 ResistingBruteforce cryptohack single-key attack against AES biclique easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ResistingBruteforce/writeup1.md
 StructureofAES cryptohack SYMMETRIC  convert byte matrix easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/StructureofAES/writeup1.md
-RoundKeys cryptohack  SYMMETRIC KeyExpansion  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/RoundKeys/writeup1.md
+RoundKeys cryptohack  SYMMETRIC addroundkeys   xor two matrix to byte  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/RoundKeys/writeup1.md
