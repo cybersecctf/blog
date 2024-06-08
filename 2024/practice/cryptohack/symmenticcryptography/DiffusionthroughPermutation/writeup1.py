@@ -60,5 +60,4 @@ if __name__ == "__main__":
         [94, 79, 8, 54],
     ], 1)
     flag=solve("diffusion", state,"byte")
- 
-    print(flag)  # Expected correct flag
+    print(flag)

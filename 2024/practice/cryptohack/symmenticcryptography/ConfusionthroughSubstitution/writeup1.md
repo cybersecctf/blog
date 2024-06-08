@@ -84,7 +84,7 @@ if __name__ == "__main__" :
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">crypto{l1n34rly}
 </p>
 
     <h2>Conclusion</h2>

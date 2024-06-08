@@ -3,7 +3,7 @@
 <html>
 
 <body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
+    <h1>Diffusion through Permutation- cryptohack</h1>
 
     <h2>Challenge Description</h2>
     <p> We've seen how S-box substitution provides confusion. The other crucial property described by Shannon is "diffusion". This relates to how every part of a cipher's input should spread to every part of the output.
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a medium chanllenge for work Diffusion  on matrixin aes learning</p>
+    <p>this is a medium chanllenge for work on Diffusion  in  matrix and aes learning</p>
 </body>
 </html>
 
