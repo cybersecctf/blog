@@ -28,6 +28,8 @@ Challenge files:
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+challenge give code for modify it and run and get flag after modify like below
+this is full code
 <pre>
 #python
 N_ROUNDS = 10
