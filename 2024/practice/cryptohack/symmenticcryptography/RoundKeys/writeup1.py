@@ -12,7 +12,12 @@ def add_round_key(s, k):
    for j in range(c):
      if x[i][j]==-1 :
        x[i][j]=s[i][j]^k[i][j]
-  return x      
+  return x  
+def solve(state,round_key,type=""):
+      x=add_round_key(state, round_key)
+      if type=="byte":
+         return blog.solveup("matrix","matrixtobyte",x)
+      return x         
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
@@ -31,7 +36,5 @@ if __name__ == "__main__" :
 ]
  state=blog.set(state,1)
  round_key=blog.set(round_key,2) 
- operation=blog.set("byte",3)
- x=add_round_key(state, round_key)
- if operation=="byte":
-  print(blog.solveup("matrix","matrixtobyte",x))
+ type=blog.set("byte",3)
+ print(solve(state, round_key,type))

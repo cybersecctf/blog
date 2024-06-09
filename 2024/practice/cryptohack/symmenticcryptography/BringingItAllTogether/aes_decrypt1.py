@@ -1,5 +1,5 @@
 N_ROUNDS = 10
-
+ 
 key        = b'\xc3,\\\xa6\xb5\x80^\x0c\xdb\x8d\xa5z*\xb6\xfe\\'
 ciphertext = b'\xd1O\x14j\xa4+O\xb6\xa1\xc4\x08B)\x8f\x12\xdd'
 
@@ -49,23 +49,12 @@ def expand_key(master_key):
     # Group key words in 4x4 byte matrices.
     return [key_columns[4*i : 4*(i+1)] for i in range(len(key_columns) // 4)]
 
-def create_state_matrix(ciphertext):
-    # Assuming ciphertext is a 128-bit input (16 bytes)
-    if len(ciphertext) != 16:
-        raise ValueError("Ciphertext must be 16 bytes long.")
 
-    # Convert the ciphertext into a 4x4 state matrix
-    state_matrix = [[0 for x in range(4)] for y in range(4)]
-    for i in range(4):
-        for j in range(4):
-            state_matrix[j][i] = ciphertext[i * 4 + j]
-
-    return state_matrix
 def decrypt(key, ciphertext):
     round_keys = expand_key(key) # Remember to start from the last round key and work backwards through them when decrypting
 
-    state=create_state_matrix(ciphertext)
- 
+    # Convert ciphertext to state matrix
+
     # Initial add round key step
 
     for i in range(N_ROUNDS - 1, 0, -1):
