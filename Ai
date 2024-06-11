@@ -222,3 +222,4 @@ RoundKeys cryptohack  SYMMETRIC addroundkeys   xor two matrix to byte  easy cryp
 ConfusionthroughSubstitution cryptohack crypto easy, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ConfusionthroughSubstitution/writeup1.md
 DiffusionthroughPermutation    cryptohack diffusion  shiftrows mixcolumns  crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/DiffusionthroughPermutation/writeup1.md
 BringingItAllTogether    cryptohack  aes decrypt full learning crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BringingItAllTogether/writeup1.md
+ModesofOperationStarter    cryptohack  aes encrypt decrypt hex full learning crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ModesofOperationStarter/writeup1.md
