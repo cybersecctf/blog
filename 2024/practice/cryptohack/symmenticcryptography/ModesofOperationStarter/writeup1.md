@@ -25,6 +25,10 @@ and see code go to
 and go this page and get flag as challenge say.
 https://aes.cryptohack.org//block_cipher_starter/encrypt_flag/
  <img src=" https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ModesofOperationStarter/cryptohackaesdecryptencrypt.png" alt="ctf quetion image" class="inline"/>
+<pre>
+cryptohack
+ 
+</pre>
     </ol>
 <br>
     <h2>Flag</h2>

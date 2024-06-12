@@ -30,7 +30,10 @@ Challenge files:
     <ol>
 challenge give code for modify it and run and get flag after modify like below and run can get flag
 this is full code
+
 <pre>
+
+
 #python
 N_ROUNDS = 10
 
