@@ -16,7 +16,7 @@
  we search on discord for flag in pinned message in annoncement  and see hex number 
 and converted it to text via code below and get flag
 <pre>
- import blog
+import blog
 def solve(hex):
  print(blog.solveup("cryptohack hex","decode",hex))
 if __name__ == "__main__" :
