@@ -60,14 +60,13 @@ def bruteforce():
         if flag.endswith('}'): break
 def checkkey(key):
     if len(key) not in [16, 24, 32]:
+            # Ensure the key is of valid length (16, 24, or 32 bytes)
+             #and getcipher      
         raise ValueError("Key must be 16, 24, or 32 bytes long.")
     else:     
         cipher = AES.new(key, AES.MODE_ECB)
         return cipher             
 def solve(operation, value, key):
-    # Ensure the key is of valid length (16, 24, or 32 bytes)
-    
-
     
     if operation == 'encode':
         # Encrypt the value
