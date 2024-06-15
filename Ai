@@ -227,4 +227,4 @@ PasswordsasKeys cryptohack aes decrpt key attack wordlist python easy crypto, ht
 ECBOracle cryptohack easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ECBOracle/writeup1.md
 ECBCBCWTF cryptohack aes-128-cbc decrypt medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ECBCBCWTF/writeup1.md
 FlippingCookie cryptohack aes 128  admin cookie medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/FlippingCookie/writeup1.md
-symmenticcryptography cryptohack aes encrypt decrypt site medium crypto,mediumhttps://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/Symmetry/writeup1.md
+symmenticcryptography cryptohack aes encrypt decrypt site medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/Symmetry/writeup1.md
