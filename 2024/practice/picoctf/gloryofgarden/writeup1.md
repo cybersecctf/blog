@@ -17,11 +17,18 @@ garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f
 
 <pre>
 import blog
-import os
-def solve(file,search="pico"):
-       os.system(f"strings {file}|grep={search}")
+
+import os,subprocess
+def solve(file, search=""):
+    result=""
+    if search!="":       
+        result = subprocess.run(f"strings {file} | grep {search}", shell=True, text=True, capture_output=True)
+    else:
+           result = subprocess.run(f"strings {file}", shell=True, text=True, capture_output=True)          
+    return result.stdout
+
 if __name__ == "__main__" :
-  solve("garden.jpg")
+  print(solve("garden.jpg"))
 </pre>
     </ol>
 <br>

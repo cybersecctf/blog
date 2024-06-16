@@ -15,24 +15,25 @@
         we downloadifle and use this command and python code for find flag insided image 
 <pre>
 #python
-import sys,os
-file="file.jpg"
-search="{"#flag have '{' normally
-if len(sys.argv)>1:
-      file=sys.argv[1]
-if len(sys.argv)>2:
-      search=sys.argv[2]
-os.system("strings "+file+"|grep "+search)
-</pre>    
-and find flag that is in uncommon format 
-<pre>
-L{2^
-[P{!
-{~T{@
-we|C{
-v{*{8
-flag{wow!_data_is_cool}
-AG{u
+import blog
+#python
+import subprocess,os
+
+def solve(file, search=""):
+    result=""
+    if search!="":       
+        result = subprocess.run(f"strings {file} | grep {search}", shell=True, text=True, capture_output=True)
+    else:
+           result = subprocess.run(f"strings {file}", shell=True, text=True, capture_output=True)          
+    return result.stdout
+
+if __name__ == "__main__":
+    file=blog.set("file.jpg",1)
+    search=blog.set("{",2)  #flag have '{' normally    
+    print("d",solve("file.jpg", search))
+</pre>
+after run code above see text that have flag
+
 </pre>
     </ol>
 <br>

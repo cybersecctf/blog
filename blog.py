@@ -72,7 +72,7 @@ def solveup(term, *args):
     
     module_name = os.path.basename(py_url).replace('.py', '')
     py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', '/home/mrrobot/Desktop/blog/')
-    
+    log(f"Url:{md_url}")
     if not os.path.exists(py_file_path):
         log(f"File not found: {py_file_path}")
         return None
@@ -84,6 +84,7 @@ def solveup(term, *args):
         log(f"Function: solve")
         log(f"Arguments: {args}")
         log(f"Result: {result}")
+        log(f"Url:{md_url}")
         return result
     else:
         log("Function returned None")
