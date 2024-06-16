@@ -36,7 +36,7 @@ with open('bean_counter.png', 'wb') as fd:
     fd.write(bytes(png))
 </pre>        
 
-       it create image that have png
+       it create image that have flag
      <img src=" https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BeanCounter/bean_counter.png" alt="ctf quetion image" class="inline"/>
     </ol>
 <br>
