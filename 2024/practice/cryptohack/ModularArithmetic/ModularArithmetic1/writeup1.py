@@ -1,3 +1,4 @@
+
 #python
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
@@ -24,3 +25,4 @@ if __name__ == "__main__" :
   c=blog.set(8146798528947,3)
   d=blog.set(17,3)
   print("flag:",min(solve(a,b,c,d,"4mod")))
+

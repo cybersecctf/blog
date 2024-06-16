@@ -230,3 +230,4 @@ FlippingCookie cryptohack aes 128  admin cookie medium crypto,https://cybersecct
 symmenticcryptography cryptohack aes encrypt decrypt site medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/Symmetry/writeup1.md
 BeanCounter cryptohack ecb 128 xor png enc file data medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BeanCounter/writeup1.md
 intro-PUBLIC-KEY-CRYPTOGRAPHY cryptohack secure communication sign end recive python,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/writeup1.md
+RSAStarter1 cryptohack introduce rsa two integer mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter1/writeup1.md
