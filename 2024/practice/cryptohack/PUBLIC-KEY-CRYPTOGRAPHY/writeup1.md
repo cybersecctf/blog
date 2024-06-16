@@ -144,11 +144,11 @@ if __name__ == "__main__" :
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">flag{intro}
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for intro to rsa and public key communication</p>
 </body>
 </html>
 
