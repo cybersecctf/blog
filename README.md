@@ -16,6 +16,15 @@
 
     <h2>Solution Approach</h2>
     <p>in this part you will see solutions</p>
+if see codes like this <pre>
+import blog
+ords=blog.set([97, 64, 75, 66, 70, 93, 73, 72, 1, 92, 109, 2, 84, 109, 66, 75, 70, 90, 2, 92, 79],1)
+hexs=blog.set("",2)
+blog.solveup("snakes search",ords,hexs)#will publish ascii of this list of numbers
+</pre>
+and want run it
+clone blog and add blog.py to your path in linux or directory of this  code  and run it
+blog.py is for solve up challenges on base of privious challenges like AI
     <ol>
  
     </ol>
@@ -29,9 +38,3 @@
 </body>
 </html>
  
-<pre>
-import blog
-blog.islog=True
-blog.solveup("snakes search")
-print("p",blog.results)
-</pre>
