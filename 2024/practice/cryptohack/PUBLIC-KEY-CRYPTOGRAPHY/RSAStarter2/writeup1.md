@@ -3,18 +3,14 @@
 <html>
 
 <body>
-    <h1>RSA Starter 1- cryptohack</h1>
+    <h1>RSA Starter 2- cryptohack</h1>
 
     <h2>Challenge Description</h2>
-    <p> All operations in RSA involve modular exponentiation.
+    <p> RSA encryption is modular exponentiation of a message with an exponent e and a modulus N which is normally a product of two primes: N = p * q.
 
-Modular exponentiation is an operation that is used extensively in cryptography and is normally written like: 210 mod 17
+Together the exponent and modulus form an RSA "public key" (N, e). The most common value for e is 0x10001 or 65537.
 
-You can think of this as raising some number to a certain power (210 = 1024), and then taking the remainder of the division by some other number (1024 mod 17 = 4). In Python there's a built-in operator for performing this operation: pow(base, exponent, modulus)
-
-In RSA, modular exponentiation, together with the problem of prime factorisation, helps us to build a "trapdoor function". This is a function that is easy to compute in one direction, but hard to do in reverse unless you have the right information. It allows us to encrypt a message, and only the person with the key can perform the inverse operation to decrypt it.
-
-Find the solution to 10117 mod 22663
+"Encrypt" the number 12 using the exponent e = 65537 and the primes p = 17 and q = 23. What number do you get as the ciphertext?
 
  </p>
  
@@ -23,18 +19,33 @@ Find the solution to 10117 mod 22663
     <ol>
 <pre>
 import blog
-print(blog.solveup("find  two integers mod",pow(101,17),22663))
+def solve(m,e,n=-1,p=-1,q=-1):
+ if n==-1:
+   n=p*q
+ return pow(m,e,n)
+if __name__ == "__main__" :
+ m=blog.set(12,1)
+ n=blog.set(-1,2)
+ e=0
+ if n==-1:
+  p=blog.set(17,3)
+  q=blog.set(23,4)
+  n=p*q
+  e=blog.set(65537,5)
+ else:
+  e=blog.set(65537,3)
+ print(solve(m,e,n,p,q))
 </pre>        
        
     
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">19906
+    <p class="flag">301
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for introduce rsa and two integer mod</p>
+    <p>this is a    easy chanllenge for introduce rsa encrypt and  modular exponentiation and pow mod</p>
 </body>
 </html>
 
