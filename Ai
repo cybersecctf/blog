@@ -1,4 +1,5 @@
 blog readme cybersecctf Home index , https://cybersecctf.github.io/blog/README.md
+blog Ai cybersecctf, https://cybersecctf.github.io/blog/Ai
 obediantcat picoctf using cat  in linux very easy general, https://cybersecctf.github.io/blog/2023/practice/picoctf/obediantcat/writeup1.md
 erass nitectf2023 using cat and wget in linux writeups1 very easy,https://cybersecctf.github.io/blog/2023/nitectf2023/erass/writeup1.md    
 nicenetcat picoctf netcat in linux very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
@@ -229,5 +230,6 @@ ECBCBCWTF cryptohack aes-128-cbc decrypt medium crypto,https://cybersecctf.githu
 FlippingCookie cryptohack aes 128  admin cookie medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/FlippingCookie/writeup1.md
 symmenticcryptography cryptohack aes encrypt decrypt site medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/Symmetry/writeup1.md
 BeanCounter cryptohack ecb 128 xor png enc file data medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BeanCounter/writeup1.md
-intro-PUBLIC-KEY-CRYPTOGRAPHY cryptohack secure communication sign end recive python,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/writeup1.md
+intro-PUBLIC-KEY-CRYPTOGRAPHY cryptohack secure communication sign end recive python,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/intro/writeup1.md
 RSAStarter1 cryptohack introduce rsa two integer mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter1/writeup1.md
+RSAStarter2 cryptohack  rsa two integer pow  mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter2/writeup1.md

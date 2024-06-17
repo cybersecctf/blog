@@ -23,12 +23,7 @@ Find the solution to 10117 mod 22663
     <ol>
 <pre>
 import blog
-def solve(a,b):
- return blog.solveup("find  two integers mod",a,b)
-if __name__ == "__main__" :
- a=pow(101,17)
- b=22663
- print(solve(a,b))
+print(blog.solveup("find  two integers mod",pow(101,17),22663))
 </pre>        
        
     
