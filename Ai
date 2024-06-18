@@ -234,4 +234,5 @@ intro-PUBLIC-KEY-CRYPTOGRAPHY cryptohack secure communication sign end recive py
 RSAStarter1 cryptohack introduce rsa two integer mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter1/writeup1.md
 RSAStarter2 cryptohack  introduce rsa encrypt message two integer pow mod modular exponentiation easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter2/writeup1.md
 RSAStarter3 cryptohack  euler totient n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter3/writeup1.md
-RSAStarter4cryptohack  private key d  modular multiplicative inverse modular inverse n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter3/writeup1.md
+RSAStarter4 cryptohack  private key d  modular multiplicative phi inverse modular inverse n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter4/writeup1.md
+RSAStarter5 cryptohack  decrypt  rsa with n e c factordb easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter5/writeup1.md

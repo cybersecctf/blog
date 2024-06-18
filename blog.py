@@ -3,7 +3,6 @@ import os
 import sys
 import ast
 from decimal import Decimal, InvalidOperation
-
 islog = False
 
 class Result:
@@ -50,6 +49,8 @@ def run_function_from_module(module, func_name, *args):
     try:
         if hasattr(module, func_name):
             func = getattr(module, func_name)
+            log(f"Running function: {func_name}")
+            log(f"With arguments: {args}")
             return func(*args)
         else:
             print(f"The module does not have a '{func_name}' function.")
@@ -79,7 +80,7 @@ def solveup(term, *args):
     
     module = import_function_from_file(module_name, py_file_path)
     result = run_function_from_module(module, 'solve', *args)
-    
+    log(f"Arguments: {args}")
     if result is not None:
         log(f"Function: solve")
         log(f"Arguments: {args}")
