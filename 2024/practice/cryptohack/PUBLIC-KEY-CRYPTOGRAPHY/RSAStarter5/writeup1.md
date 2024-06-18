@@ -34,7 +34,7 @@ import blog
 from factordb.factordb import FactorDB
 
 def solve(n,e,c):
- phi = blog.solveup("phi",n)#calculate phi of n for factordb supported numbers
+ phi = blog.solveup("phi",n)#calculate phi of n for factordb supported numbers in python
  d = pow(e, -1, phi)
  return pow(c, d, n)
 if __name__ == "__main__" :
@@ -46,8 +46,6 @@ if __name__ == "__main__" :
   c = 77578995801157823671636298847186723593814843845525223303932     
   print(solve(n,e,c))
 </pre>        
-       
-    
     </ol>
 <br>
     <h2>Flag</h2>
@@ -58,5 +56,3 @@ if __name__ == "__main__" :
     <p>this is a    medium chanllenge for introduce rsa decrypt with n e c</p>
 </body>
 </html>
-
-

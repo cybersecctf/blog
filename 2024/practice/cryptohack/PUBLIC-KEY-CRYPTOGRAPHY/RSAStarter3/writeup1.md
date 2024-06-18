@@ -23,15 +23,15 @@ What is the totient of N?
     <ol>
 <pre>
 import blog
+from factordb.factordb import FactorDB
 def solve(n,p=-1,q=-1):
   blog.log("if n=-1 n=p*q solve(n,p,q)")
   if p==-1 and q==-1:
-   count=0
-   for k in range(1,n+1):
-     if   blog.solveup("gcd",n,k)==1:
-                   count+=1
-  else:
-        count=(p-1)*(q-1)    
+    f = FactorDB(n)
+    f.connect()
+    p,q = f.get_factor_list()
+
+  count=(p-1)*(q-1)    
   return count
 if __name__ == "__main__" :
  n=blog.set(-1,1)
