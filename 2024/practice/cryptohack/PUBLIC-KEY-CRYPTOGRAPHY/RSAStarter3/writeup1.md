@@ -30,7 +30,7 @@ def solve(n,p=-1,q=-1):
     f = FactorDB(n)
     f.connect()
     p,q = f.get_factor_list()
-
+    print(p,q)
   count=(p-1)*(q-1)    
   return count
 if __name__ == "__main__" :

@@ -101,7 +101,7 @@ heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflo
 IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://cybersecctf.github.io/blog/2024/pico2024/IntroToBurp/writeup1.md
 dont-you-love-banners picoctf2024 medium,https://cybersecctf.github.io/blog/2024/pico2024/dont-you-love-banners/writeup1.md
 BinarySearch picoctf binraysearch on host and bash,https://cybersecctf.github.io/blog/2024/pico2024/BinarySearch/writeup1.md
-MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
+MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb site easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
 MagikarpGroundMission pico2021 ls move between directories in linux very easy and decrypt-base64 easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
 tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
 EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
@@ -237,3 +237,4 @@ RSAStarter3 cryptohack  euler totient phi n p q rsa easy crypto,https://cybersec
 RSAStarter4 cryptohack  private key d  modular multiplicative   inverse modular inverse n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter4/writeup1.md
 RSAStarter5 cryptohack  decrypt  rsa with n e c factordb easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter5/writeup1.md
 RSAStarter6 cryptohack  sign message with n and d medium and get signature crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter6/writeup1.md
+Factoring cryptohack factoring factordb python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Factoring/writeup1.md
