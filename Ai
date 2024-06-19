@@ -238,3 +238,4 @@ RSAStarter4 cryptohack  private key d  modular multiplicative   inverse modular 
 RSAStarter5 cryptohack  decrypt  rsa with n e c factordb easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter5/writeup1.md
 RSAStarter6 cryptohack  sign message with n and d medium and get signature crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter6/writeup1.md
 Factoring cryptohack factoring factordb python isprime easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Factoring/writeup1.md
+Monoprime cryptohack rsa prime factore not pq n e ct decrypt easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Monoprime/writeup1.md
