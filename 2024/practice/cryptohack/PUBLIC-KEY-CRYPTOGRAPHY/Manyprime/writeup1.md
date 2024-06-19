@@ -21,6 +21,7 @@ Resources:
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
+for get flag run this code if blog.solveup("isprine",n) not working use site and get primefactor list of n and calculate phi and then get flag with run this code
 <pre>
 import blog
  
