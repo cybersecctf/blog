@@ -4,6 +4,8 @@ sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
 from factordb.factordb import FactorDB
 def solve(n,p=-1,q=-1):
+  if blog.solveup("isprime",n)=="isprime":
+    return n-1
   blog.log("if n=-1 n=p*q solve(n,p,q)")
   if p==-1 and q==-1:
     f = FactorDB(n)

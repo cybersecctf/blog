@@ -237,4 +237,4 @@ RSAStarter3 cryptohack  euler totient phi n p q rsa easy crypto,https://cybersec
 RSAStarter4 cryptohack  private key d  modular multiplicative   inverse modular inverse n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter4/writeup1.md
 RSAStarter5 cryptohack  decrypt  rsa with n e c factordb easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter5/writeup1.md
 RSAStarter6 cryptohack  sign message with n and d medium and get signature crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter6/writeup1.md
-Factoring cryptohack factoring factordb python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Factoring/writeup1.md
+Factoring cryptohack factoring factordb python isprime easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Factoring/writeup1.md

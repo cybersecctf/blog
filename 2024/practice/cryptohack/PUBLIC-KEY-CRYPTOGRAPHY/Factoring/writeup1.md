@@ -29,18 +29,23 @@ Resources:
 import blog
 from factordb.factordb import FactorDB
 def solve(n):
-
     f = FactorDB(n)
     f.connect()
-    p,q = f.get_factor_list()
-    return p,q
+    factors = f.get_factor_list()
+    if len(factors) == 1 and factors[0] == n:
+        # The number is prime
+     
+        return "isprime"
+    else:
+        # The number is composite; return its factors
+        return factors
 
 
 
 if __name__ == "__main__" :
- blog.islog=True
  n =blog.set( 510143758735509025530880200653196460532653147,1)
  s=solve(n)  
+
  print("flag is",min(s))
  
 </pre>

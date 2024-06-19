@@ -23,11 +23,12 @@ def solve(e, phi):
     return old_s % phi
 
 # Example usage:
-p = blog.set(857504083339712752489993810777,1)  # Replace with your chosen prime number
-q =blog.set( 1029224947942998075080348647219,2)  # Replace with your chosen prime number
+p = blog.set(61,1)  # Replace with your chosen prime number
+q =blog.set( 53,2)  # Replace with your chosen prime number
 n = blog.set(p * q,3)
 phi = blog.solveup("totient",n,p,q)
-e =65537  # Replace with your chosen public exponent
+e = 17  # Replace with your chosen public exponent
 
 d = solve(e, phi)
 print(f"The private key d is: {d}")
+ 
