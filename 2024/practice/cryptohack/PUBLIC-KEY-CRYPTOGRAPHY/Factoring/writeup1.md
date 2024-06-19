@@ -29,6 +29,7 @@ Resources:
 import blog
 from factordb.factordb import FactorDB
 def solve(n):
+    blog.log("factoring...")
     f = FactorDB(n)
     f.connect()
     factors = f.get_factor_list()
@@ -38,6 +39,7 @@ def solve(n):
         return "isprime"
     else:
         # The number is composite; return its factors
+        blog.log(f"factors{factors}")          
         return factors
 
 
