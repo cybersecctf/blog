@@ -245,3 +245,4 @@ ModulusInutilis cryptohack rsa    n e ct decrypt with e small like 3 easy crypto
 DiffieHellmanStarter1 cryptohack inverse element of d with g p easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter1/writeup1.md
 DiffieHellmanStarter2 cryptohack   smallest element g  primitive element  rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter2/writeup1.md
 DiffieHellmanStarter3 cryptohack   generate public key A in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter3/writeup1.md
+DiffieHellmanStarter4 cryptohack   generate public key  two person  in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter3/writeup1.md
