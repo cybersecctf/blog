@@ -243,4 +243,5 @@ Manyprime cryptohack rsa  many prime factore  n e ct decrypt easy crypto,https:/
 salty cryptohack rsa    n e ct decrypt with e small like 1 easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/salty/writeup1.md
 ModulusInutilis cryptohack rsa    n e ct decrypt with e small like 3 easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/ModulusInutilis/writeup1.md
 DiffieHellmanStarter1 cryptohack inverse element of d with g p easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter1/writeup1.md
-DiffieHellmanStarter2 cryptohack   smallest element g  primitive element  rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter1/writeup1.md
+DiffieHellmanStarter2 cryptohack   smallest element g  primitive element  rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter2/writeup1.md
+DiffieHellmanStarter3 cryptohack   generate public key A in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter3/writeup1.md
