@@ -1,10 +1,10 @@
 
 from pwn import *
-import binascii
-import warnings
 import sys
 sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
 import blog
+import binascii
+import warnings
 from Crypto.Cipher import DES3
 
 # Connect to the remote service
@@ -64,11 +64,11 @@ def solve(challenge=None, key=None, online=True):
 
         prompt = connection.recvuntil("flag\n")
         print(prompt.decode())
-
+        print( blog.solveup("cryptohack hex","encode",str(prompt)))  
         decrypted_with_f = detect_cycle(connection, "000000000000000000000000000000000000000000000000")
         iv = bytes(i ^ j for i, j in zip(decrypted_with_f[:8], decrypted_with_f[-8:]))
         print(f"[-] Calculated IV: {iv.hex()}")
-
+        
         print("\n============= Repeat with masked challenge... ====================\n")
         trying = "f"*128
         masked_challenge = bytes(i ^ j for i, j in zip(bytes.fromhex(trying),challenge))
@@ -76,7 +76,8 @@ def solve(challenge=None, key=None, online=True):
         unmask_plaintext1 = bytes(i ^ j for i, j in zip(decrypted_with_f, bytes.fromhex(128*"f")))[:8]
         
         plaintext = unmask_plaintext1.hex()+decrypted_with_f[8:].hex()
-
+      
+   
         print(f"\nSummary:")
         print(f"[-] Calculated Plaintext: {plaintext}")
         print(f"[-] Calculated IV: {iv.hex()}")
@@ -89,9 +90,9 @@ def solve(challenge=None, key=None, online=True):
         print(f"[-] Received Flag Response: {flag_response.decode()}")
 
 if __name__ == "__main__" :
-  #solve()
+  solve()
   # Placeholder ciphertext and key for the purpose of this example
-  ciphertext =blog.set( b'\x01\x02\x03\x04\x05\x06\x07\x08',1)
-  key = blog.set(b'\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10',2)
+  ciphertext = b'\x01\x02\x03\x04\x05\x06\x07\x08'
+  key = b'\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10'
   print(solve(challenge=ciphertext, key=key, online=False).hex())
 

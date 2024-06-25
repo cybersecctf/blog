@@ -21,6 +21,7 @@ unexpectedly creeping in the key. It is getting frustrating, please help
 In the context of your code, the challenge can be considered as the ciphertext that you want to decrypt, and the key is the secret information that allows you to decrypt the ciphertext or encrypt the plaintext. However, it’s important to note that the actual encryption and decryption using DES3 are not explicitly implemented in the provided code. Instead, the code communicates with a remote service or a local process that performs the encryption and decryption but for find correct encrypt and decrypt and keys should do it offline for find flag related to challenge on server.this code do local and server process on key ana  challenge.on online don't need import key and challenge should calculate and get it online
 <pre>
 from pwn import *
+import blog
 import binascii
 import warnings
 from Crypto.Cipher import DES3
@@ -82,11 +83,11 @@ def solve(challenge=None, key=None, online=True):
 
         prompt = connection.recvuntil("flag\n")
         print(prompt.decode())
-
+        print( blog.solveup("cryptohack hex","encode",str(prompt)))  
         decrypted_with_f = detect_cycle(connection, "000000000000000000000000000000000000000000000000")
         iv = bytes(i ^ j for i, j in zip(decrypted_with_f[:8], decrypted_with_f[-8:]))
         print(f"[-] Calculated IV: {iv.hex()}")
-
+        
         print("\n============= Repeat with masked challenge... ====================\n")
         trying = "f"*128
         masked_challenge = bytes(i ^ j for i, j in zip(bytes.fromhex(trying),challenge))
@@ -94,7 +95,8 @@ def solve(challenge=None, key=None, online=True):
         unmask_plaintext1 = bytes(i ^ j for i, j in zip(decrypted_with_f, bytes.fromhex(128*"f")))[:8]
         
         plaintext = unmask_plaintext1.hex()+decrypted_with_f[8:].hex()
-
+      
+   
         print(f"\nSummary:")
         print(f"[-] Calculated Plaintext: {plaintext}")
         print(f"[-] Calculated IV: {iv.hex()}")
@@ -107,14 +109,14 @@ def solve(challenge=None, key=None, online=True):
         print(f"[-] Received Flag Response: {flag_response.decode()}")
 
 if __name__ == "__main__" :
-  #solve()
+  solve()
   # Placeholder ciphertext and key for the purpose of this example
   ciphertext = b'\x01\x02\x03\x04\x05\x06\x07\x08'
   key = b'\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10'
   print(solve(challenge=ciphertext, key=key, online=False).hex())
 
 </pre>        
-       
+       blog.solveup("cryptohack hex","decode",hex))
     
     </ol>
 <br>

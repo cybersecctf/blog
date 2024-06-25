@@ -3,8 +3,12 @@ import os
 import sys
 import ast
 from decimal import Decimal, InvalidOperation
-islog = False
+from config_blog import *
 
+islog = False
+bloglocaladdress = config("bloglocaladdress", "")
+
+ 
 class Result:
     def __init__(self, md_url, py_url, score=0):
         self.md_url = md_url
@@ -21,9 +25,9 @@ class Result:
     def __str__(self):
         return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
 
-def log(str):
+def log(message):
     if islog:
-        print(str)
+        print(message)
 
 def find_term_in_file(file_path, search_term):
     with open(file_path, 'r') as file:
@@ -60,9 +64,12 @@ def run_function_from_module(module, func_name, *args):
         return None
 
 def solveup(term, *args):
+   
+   
+     
     search_term = term
-    file_path = "/home/mrrobot/Desktop/blog/Ai"
-    
+    file_path = bloglocaladdress+"Ai"
+    print(file_path)
     line = find_term_in_file(file_path, search_term)
     
     if not line:
@@ -72,8 +79,8 @@ def solveup(term, *args):
     md_url, py_url = extract_urls_from_line(line)
     
     module_name = os.path.basename(py_url).replace('.py', '')
-    py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', '/home/mrrobot/Desktop/blog/')
-    log(f"Url:{md_url}")
+    py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', bloglocaladdress)
+    log(f"Url: {md_url}")
     if not os.path.exists(py_file_path):
         log(f"File not found: {py_file_path}")
         return None
@@ -85,7 +92,7 @@ def solveup(term, *args):
         log(f"Function: solve")
         log(f"Arguments: {args}")
         log(f"Result: {result}")
-        log(f"Url:{md_url}")
+        log(f"Url: {md_url}")
         return result
     else:
         log("Function returned None")
@@ -150,6 +157,3 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
             print(alert)
     
     return val
- 
-
- 
