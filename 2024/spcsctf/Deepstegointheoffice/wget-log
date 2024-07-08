@@ -1,0 +1,35 @@
+failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘the’
+--2024-07-04 05:07:18--  http://standard/
+Resolving standard (standard)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘standard’
+--2024-07-04 05:07:38--  http://way./
+Resolving way. (way.)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘way.’
+--2024-07-04 05:07:48--  http://almost/
+Resolving almost (almost)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘almost’
+--2024-07-04 05:08:08--  http://the/
+Resolving the (the)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘the’
+--2024-07-04 05:08:28--  http://same/
+Resolving same (same)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘same’
+--2024-07-04 05:08:48--  http://as/
+Resolving as (as)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘as’
+--2024-07-04 05:09:08--  http://in/
+Resolving in (in)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘in’
+--2024-07-04 05:09:28--  http://any/
+Resolving any (any)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘any’
+--2024-07-04 05:09:48--  http://type/
+Resolving type (type)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘type’
+--2024-07-04 05:10:08--  http://of/
+Resolving of (of)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘of’
+--2024-07-04 05:10:28--  http://file/
+Resolving file (file)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘file’

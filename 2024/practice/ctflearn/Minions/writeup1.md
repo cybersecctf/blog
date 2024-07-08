@@ -18,6 +18,7 @@ we download image
 nothing found in srtings or  exiftools but using this script in image and 
     <pre>
 #python
+import blog
 import binwalk
 import zipfile
 import rarfile
@@ -54,23 +55,18 @@ def search_in_rar(rar_path, search_text):
                 with myrar.open(f) as myfile:
                     if search_text in myfile.read().decode():
                         print(f'Found "{search_text}" in {f.filename}')
-file="D3EDB.rar"
-search=""
-type="rar"
-if len(sys.argv)>1:
-    file=sys.argv[1]
-else:
- print("usage file searchtext type(rar/zip/binwalk)")
-if len(sys.argv)>2:
-    search=sys.argv[2]
-if len(sys.argv)>3:
-    type=sys.argv[3]  
-if type=="rar" or file.endswith("rar"):                                                        
- search_in_rar(file,search)
-elif type=="binwalk" or not file.endswith("zip"):
+def solve(file,search,type): 
+ if type=="rar" or file.endswith("rar"):                                                        
+  search_in_rar(file,search)
+ elif type=="binwalk" or not file.endswith("zip"):
   extract_and_search(file,search)
-else:
- search_in_zip(file,search)
+ else:
+  search_in_zip(file,search)
+if __name__ == "__main__" :
+ file=blog.set("Hey_You.png",1)
+ search=blog.set("",2)
+ type=blog.set("rar",3)
+ solve(file,search,type)
 </pre>
        binwalk say that have files inside it and text inside
 Nothing_Here_16/..txt  but can't unrar it because name ..txt is not supported and should be something like 1.txt 

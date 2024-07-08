@@ -1,3 +1,4 @@
+
 #python
 class Bijection:
     def __init__(self):
@@ -24,4 +25,4 @@ def solve(a,b,c):
   for z in c:
     print(bi.get_str(z))   
 if __name__ == "__main__" :
-    solve([1,2,3],["bijection","two","four"],[1])
+    solve([1,2,3],["bijection","two","four"],[1])        
