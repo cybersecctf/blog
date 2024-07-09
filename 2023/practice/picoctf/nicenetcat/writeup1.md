@@ -21,7 +21,18 @@ There is a nice program that you can talk to by using this command in a shell: $
         <li>use command $nc mercury.picoctf.net 22902>flag for run netcat and save content in flag file</li>
         <li>this is decimal number in every line can be asci code of characters so use this code for get char from decimal
   </li>
-<li> <pre>print(''.join(chr(int(x)) for x in open("flag").read().split()))</pre> and yes get flag start with pico
+<li> <pre>
+import blog
+import os
+def solve(x):
+ if os.path.exists(x):
+  x=open(x).read().strip()
+ s=''.join(chr(int(s)) for s in x.split())
+ return s
+if __name__ == "__main__" :
+ print(solve("flag"))
+ print(solve("65 78"))#test execute
+</pre> and yes get flag start with pico
 </li>
       
     </ol>
