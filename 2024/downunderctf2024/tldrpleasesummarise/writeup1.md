@@ -31,8 +31,7 @@ import subprocess
 import os
 import blog
 def solve(file_path, search="DUCTF"):
-    # Check if the file exists
-    print("Args",file_path)
+    
     command=""   
     if not os.path.isfile(file_path):
         command=file_path
@@ -44,9 +43,7 @@ def solve(file_path, search="DUCTF"):
     # Append commands to save output to temp.sh and run strings on it
     full_command = f"{command} > temp.sh && chmod +x temp.sh && strings temp.sh"
     
-    # Debugging: Print the command to verify
-    print("Full command to execute:")
-    print(command,full_command)
+    
     
     # Execute the full command and capture the output
     result = subprocess.run(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
