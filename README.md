@@ -37,4 +37,3 @@ blog.py is for solve up challenges on base of privious challenges like AI
     <p>you will see category and subject and some info about that what this problem do</p>
 </body>
 </html>
- 
