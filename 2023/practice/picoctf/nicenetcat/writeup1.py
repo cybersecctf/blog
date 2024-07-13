@@ -1,6 +1,6 @@
 
 import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 import os
 def solve(x):

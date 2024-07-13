@@ -18,14 +18,14 @@
         <li>use online tolls but for more pwn and rev and challenge like that is better use python code</li>
         <pre>
 #python
-import codecs,sys
-val="cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}"
-type="rot13"
-if len(sys.argv)>1:
-   val=sys.argv[1]
-if len(sys.argv)>2:
-   type=sys.argv[2]
-print(codecs.encode( val, type))
+import codecs
+import blog
+def solve(val,type):
+ return codecs.encode( val, type)
+if __name__ == "__main__" :
+ val=blog.set("cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_GYpXOHqX}",1)
+ type=blog.set("rot13",2)
+ print(solve( val, type))
 
   </pre>
                

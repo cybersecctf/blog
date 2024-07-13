@@ -2,7 +2,9 @@
 #python
 import os
 import subprocess
-
+import sys
+sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
+import blog
 def solve(file_path, search="{"):
     if not os.path.isfile(file_path):
         command = file_path
@@ -45,8 +47,10 @@ def solve(file_path, search="{"):
     else:
         return "\n".join(results)
 
-if __name__ == "__main__":
-    print(solve("ls", ""))
+if __name__ == "__main__": 
+  command=blog.set("strings garden.jpg",1)
+  search=blog.set("",2)
+  print(solve(command,search))
 
 
 

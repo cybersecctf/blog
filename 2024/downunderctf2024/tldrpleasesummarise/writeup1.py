@@ -4,7 +4,7 @@ import re
 import subprocess
 import os
 import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 def solve(file_path, search="DUCTF"):
     

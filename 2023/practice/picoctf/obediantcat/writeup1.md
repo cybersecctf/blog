@@ -25,7 +25,7 @@ import os
 def solve(file="flag.txt"):
   os.system(f"strings {file}");
 if __name__ == "__main__" :
-  solve()
+  solve("flag")
 </pre> for get flag after download with wget  </li>
                
 

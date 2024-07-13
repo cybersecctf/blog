@@ -66,9 +66,9 @@ def run_function_from_module(module, func_name, *args):
 def solveup(term, *args):
    
    
-     
+    bloglocaladdress="/home/solup/Desktop/blog/"
     search_term = term
-    file_path = bloglocaladdress+"Ai"
+    file_path = bloglocaladdress+"/Ai"
     print(file_path)
     line = find_term_in_file(file_path, search_term)
     

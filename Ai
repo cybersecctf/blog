@@ -30,7 +30,7 @@ Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and ch
 what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability medium,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
 AwayOnVacation irisctf2024 osint and search in instagram easy,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
 gloryofgarden picoctf2019 using pico strings file and grep for get flag and search in file very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
-what'sanetcat picoctf2019 using netcat very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/whatsanetcat/writeup1.md
+what'sanetcat picoctf2019 garden using netcat very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/whatsanetcat/writeup1.md
 2Warm picoctf2019 convert decimal to binarywith python very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/2warm/writeup1.md
 wherearetherobots picoctf2019 web explotation aand find hiddenpage with robots easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/wherearetherobots/writeup1.md 
 thenumbers picoctf2019 cryptography with python for convert decimal and asci to char very easy,  https://cybersecctf.github.io/blog/2024/practice/picoctf/thenumbers/writeup1.md 
@@ -250,3 +250,4 @@ ParameterInjection cryptohack   generate public key  two person  in rsa intercep
 Export-grade cryptohack   generate public key  two person  in rsa intercept message middle man medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Export-grade/writeup1.md
 desfunctional googlectf2024  DES3 Triple DES cipher key medium crypto,https://cybersecctf.github.io/blog/2024/googlectf/googlectf2024/desfunctional/writeup1.md 
 tldrpleasesummarise downunderctf2024 search in sh execute misc easy,https://cybersecctf.github.io/blog/2024/downunderctf2024/tldrpleasesummarise/writeup1.md
+cyberquize osctf2024 misc pwn check correct of quetions misc easy,https://cybersecctf.github.io/blog/2024/osctf/cyberquize/writeup1.md

@@ -19,7 +19,7 @@ garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f
 #python
 import os
 import subprocess
-
+import blog
 def solve(file_path, search="{"):
     if not os.path.isfile(file_path):
         command = file_path
@@ -62,8 +62,10 @@ def solve(file_path, search="{"):
     else:
         return "\n".join(results)
 
-if __name__ == "__main__":
-    print(solve("strings garden.jpg", ""))
+if __name__ == "__main__": 
+  command=blog.set("strings garden.jpg",1)
+  search=blog.set("",2)
+  print(solve(command,search))
 
 
 
