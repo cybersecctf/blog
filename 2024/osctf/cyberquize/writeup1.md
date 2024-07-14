@@ -17,7 +17,7 @@ nc 34.16.207.52 12345
 
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
-    <ol>  <a href="https://cybersecctf.github.io/blog/2024/osctf/cyberquize/writeup1.md">open full version here</a>
+    <ol>  <a href="https://cybersecctf.github.io/blog/?q=cyberquize%20osctf2024">open full version here</a>
 we connect nc and see al otof quetions and swer them correctly for get flag .careful for lowercase or uppercases
 and at end see flag if not answered them one flag cant show should guess one of them if can't answer one or two..of them or use this pwn code:
 <pre>
