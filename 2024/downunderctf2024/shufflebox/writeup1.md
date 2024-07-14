@@ -43,11 +43,11 @@ so final code is
 <pre>
 #python
 import itertools
-
+import blog
 def find_all(string, char):
     return [i for i, x in enumerate(string) if x == char]
 
-def solve(s1, t1, s2, t2, t3=None, s3=None):
+def solve(s1, t1, s2, t2, t3=None):
     # Collect positions for each character
     positions = {}
     for char in 'abcd':
@@ -78,18 +78,13 @@ def solve(s1, t1, s2, t2, t3=None, s3=None):
     return result
 
 # Example usage: 
-s1 = "aaaabbbbccccdddd"
-t1 = "ccaccdabdbdbbada"
-s2 = "abcdabcdabcdabcd"
-t2 = "bcaadbdcdbcdacab"
-t3 = "owuwspdgrtejiiud"
-s3 = None
+s1 = blog.set("aaaabbbbccccdddd",1)
+t1 = blog.set("ccaccdabdbdbbada",2)
+s2 =blog.set( "abcdabcdabcdabcd",3)
+t2 = blog.set("bcaadbdcdbcdacab",4)
+t3 = blog.set("owuwspdgrtejiiud",5)
+print( solve(s1, t1, s2, t2, t3))
 
-result_with_t3 = solve(s1, t1, s2, t2, t3=t3)
-result_with_s3 = solve(s1, t1, s2, t2, s3=s3)#if s3 isn't none and t3 is none
-
-print("Result with t3:", result_with_t3)
-print("Result with s3:", result_with_s3)
 
 </pre> 
 and wrap final answer in ductf

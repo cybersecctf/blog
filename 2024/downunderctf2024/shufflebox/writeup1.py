@@ -5,7 +5,7 @@ import itertools
 def find_all(string, char):
     return [i for i, x in enumerate(string) if x == char]
 
-def solve(s1, t1, s2, t2, t3=None, s3=None):
+def solve(s1, t1, s2, t2, t3=None):
     # Collect positions for each character
     positions = {}
     for char in 'abcd':
@@ -35,17 +35,12 @@ def solve(s1, t1, s2, t2, t3=None, s3=None):
 
     return result
 
-# Example usage:
+# Example usage: 
 s1 = "aaaabbbbccccdddd"
 t1 = "ccaccdabdbdbbada"
 s2 = "abcdabcdabcdabcd"
 t2 = "bcaadbdcdbcdacab"
 t3 = "owuwspdgrtejiiud"
-s3 = "your_custom_s3_string"
+print( solve(s1, t1, s2, t2, t3=t3))
 
-result_with_t3 = solve(s1, t1, s2, t2, t3=t3)
-result_with_s3 = solve(s1, t1, s2, t2, s3=s3)
-
-print("Result with t3:", result_with_t3)
-print("Result with s3:", result_with_s3)
 
