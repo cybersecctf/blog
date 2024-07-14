@@ -1,10 +1,11 @@
 
+#python
 import itertools
 
 def find_all(string, char):
     return [i for i, x in enumerate(string) if x == char]
 
-def solve(s1, t1, s2, t2, t3):
+def solve(s1, t1, s2, t2, t3=None, s3=None):
     # Collect positions for each character
     positions = {}
     for char in 'abcd':
@@ -24,16 +25,27 @@ def solve(s1, t1, s2, t2, t3):
 
     assert len(valid_perms) == 1
 
-    # Reverse permutation for t3
-    result = ''.join(t3[valid_perms[0][i]] for i in range(16))
+    # Reverse permutation for t3 or s3
+    if t3 is not None:
+        result = ''.join(t3[valid_perms[0][i]] for i in range(16))
+    elif s3 is not None:
+        result = ''.join(s3[valid_perms[0][i]] for i in range(16))
+    else:
+        raise ValueError("Either t3 or s3 must be provided.")
+
     return result
-if __name__ == "__main__" :
- # Given strings
- s1 = "aaaabbbbccccdddd"
- t1 = "ccaccdabdbdbbada"
- s2 = "abcdabcdabcdabcd"
- t2 = "bcaadbdcdbcdacab"
- t3 = "owuwspdgrtejiiud"
- # Solve the problem
- result = solve(s1, t1, s2, t2, t3)
- print(result)
+
+# Example usage:
+s1 = "aaaabbbbccccdddd"
+t1 = "ccaccdabdbdbbada"
+s2 = "abcdabcdabcdabcd"
+t2 = "bcaadbdcdbcdacab"
+t3 = "owuwspdgrtejiiud"
+s3 = "your_custom_s3_string"
+
+result_with_t3 = solve(s1, t1, s2, t2, t3=t3)
+result_with_s3 = solve(s1, t1, s2, t2, s3=s3)
+
+print("Result with t3:", result_with_t3)
+print("Result with s3:", result_with_s3)
+

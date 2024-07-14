@@ -21,6 +21,7 @@ nc 34.16.207.52 12345
 we connect nc and see al otof quetions and swer them correctly for get flag .careful for lowercase or uppercases
 and at end see flag if not answered them one flag cant show should guess one of them if can't answer one or two..of them or use this pwn code:
 <pre>
+#python
 import socket
 import blog
 # Predefined answers for the given questions
@@ -78,7 +79,6 @@ if __name__ == "__main__":
  host=blog.set('34.16.207.52',1)
  port=blog.set(12345,2)
  solve(host,port)
-
 </pre>
 and result of runniong this code is:
 <code>

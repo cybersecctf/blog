@@ -41,12 +41,13 @@ it create random permutation apply first part of  three line to perm and create 
 we don't know third line our code should explores all possible permutations of indices for the characters ‘a’, ‘b’, ‘c’, and ‘d’ in t1. It then checks if rearranging t2 according to each permutation results in the desired string s2. If a valid permutation is found, it is stored in the ok list. The final output is obtained by reversing the valid permutation and applying it to t3 that s's are first part and t's are second  part out txt file
 so final code is 
 <pre>
+#python
 import itertools
 
 def find_all(string, char):
     return [i for i, x in enumerate(string) if x == char]
 
-def solve(s1, t1, s2, t2, t3):
+def solve(s1, t1, s2, t2, t3=None, s3=None):
     # Collect positions for each character
     positions = {}
     for char in 'abcd':
@@ -66,19 +67,30 @@ def solve(s1, t1, s2, t2, t3):
 
     assert len(valid_perms) == 1
 
-    # Reverse permutation for t3
-    result = ''.join(t3[valid_perms[0][i]] for i in range(16))
+    # Reverse permutation for t3 or s3
+    if t3 is not None:
+        result = ''.join(t3[valid_perms[0][i]] for i in range(16))
+    elif s3 is not None:
+        result = ''.join(s3[valid_perms[0][i]] for i in range(16))
+    else:
+        raise ValueError("Either t3 or s3 must be provided.")
+
     return result
-if __name__ == "__main__" :
- # Given strings
- s1 = "aaaabbbbccccdddd"
- t1 = "ccaccdabdbdbbada"
- s2 = "abcdabcdabcdabcd"
- t2 = "bcaadbdcdbcdacab"
- t3 = "owuwspdgrtejiiud"
- # Solve the problem
- result = solve(s1, t1, s2, t2, t3)
- print(result)
+
+# Example usage: 
+s1 = "aaaabbbbccccdddd"
+t1 = "ccaccdabdbdbbada"
+s2 = "abcdabcdabcdabcd"
+t2 = "bcaadbdcdbcdacab"
+t3 = "owuwspdgrtejiiud"
+s3 = None
+
+result_with_t3 = solve(s1, t1, s2, t2, t3=t3)
+result_with_s3 = solve(s1, t1, s2, t2, s3=s3)#if s3 isn't none and t3 is none
+
+print("Result with t3:", result_with_t3)
+print("Result with s3:", result_with_s3)
+
 </pre> 
 and wrap final answer in ductf
    </ol>
