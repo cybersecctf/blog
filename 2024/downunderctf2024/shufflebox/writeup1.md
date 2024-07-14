@@ -41,45 +41,44 @@ it create random permutation apply first part of  three line to perm and create 
 we don't know third line our code should explores all possible permutations of indices for the characters ‘a’, ‘b’, ‘c’, and ‘d’ in t1. It then checks if rearranging t2 according to each permutation results in the desired string s2. If a valid permutation is found, it is stored in the ok list. The final output is obtained by reversing the valid permutation and applying it to t3 that s's are first part and t's are second  part out txt file
 so final code is 
 <pre>
-s1 = "aaaabbbbccccdddd"
-t1 = "ccaccdabdbdbbada"
-
-s2 = "abcdabcdabcdabcd"
-t2 = "bcaadbdcdbcdacab"
-
-t3 = "owuwspdgrtejiiud"
-
-pos = []
-
-# returns a list with all indicies of char in string
-def find_all(string, char):
-    l = []
-    for i,x in enumerate(string):
-        if x == char:
-            l.append(i)
-    return l
-
 import itertools
 
-# find all permuations for a b c and d then just combine them together
-# s1 is nice since its 4 a's then 4 b's etc
-for perma in itertools.permutations(find_all(t1,'a')):
-    for permb in itertools.permutations(find_all(t1,'b')):
-        for permc in itertools.permutations(find_all(t1,'c')):
-            for permd in itertools.permutations(find_all(t1,'d')):
-                pos.append(perma+permb+permc+permd)
+def find_all(string, char):
+    return [i for i, x in enumerate(string) if x == char]
 
-# check if perm that works for s1 works for s2
-ok = []
-for perm in pos:
-    # use t2 since we are reversing the permuation
-    if ''.join(t2[perm[p]] for p in range(16)) == s2:
-        ok.append(perm)
+def solve(s1, t1, s2, t2, t3):
+    # Collect positions for each character
+    positions = {}
+    for char in 'abcd':
+        positions[char] = find_all(t1, char)
 
-assert len(ok) == 1
+    # Generate all possible permutations of positions
+    pos = [p1 + p2 + p3 + p4 for p1 in itertools.permutations(positions['a'])
+                                for p2 in itertools.permutations(positions['b'])
+                                for p3 in itertools.permutations(positions['c'])
+                                for p4 in itertools.permutations(positions['d'])]
 
-# reverse for s3
-print(''.join(t3[ok[0][p]] for p in range(16)))
+    # Check if permutation that works for s1 works for s2
+    valid_perms = []
+    for perm in pos:
+        if ''.join(t2[perm[i]] for i in range(16)) == s2:
+            valid_perms.append(perm)
+
+    assert len(valid_perms) == 1
+
+    # Reverse permutation for t3
+    result = ''.join(t3[valid_perms[0][i]] for i in range(16))
+    return result
+if __name__ == "__main__" :
+ # Given strings
+ s1 = "aaaabbbbccccdddd"
+ t1 = "ccaccdabdbdbbada"
+ s2 = "abcdabcdabcdabcd"
+ t2 = "bcaadbdcdbcdacab"
+ t3 = "owuwspdgrtejiiud"
+ # Solve the problem
+ result = solve(s1, t1, s2, t2, t3)
+ print(result)
 </pre> 
 and wrap final answer in ductf
    </ol>
