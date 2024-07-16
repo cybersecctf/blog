@@ -95,7 +95,6 @@ c3  picoctf2024  Custom Cyclical Cipher! easy,https://cybersecctf.github.io/blog
 fileequallity learningctf2024 check file is equal,https://cybersecctf.github.io/blog/2024/learningctf/fileequallity/writeup1.md
 packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://cybersecctf.github.io/blog/2024/pico2024/packer/writeup1.md
 Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://cybersecctf.github.io/blog/2024/pico2024/Unminify/writeup1.md 
-
 heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,https://cybersecctf.github.io/blog/2024/pico2024/heap2/writeup1.md
 IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://cybersecctf.github.io/blog/2024/pico2024/IntroToBurp/writeup1.md
 dont-you-love-banners picoctf2024 medium,https://cybersecctf.github.io/blog/2024/pico2024/dont-you-love-banners/writeup1.md
@@ -252,3 +251,5 @@ desfunctional googlectf2024  DES3 Triple DES cipher key medium crypto,https://cy
 tldrpleasesummarise downunderctf2024 search in sh execute misc easy,https://cybersecctf.github.io/blog/2024/downunderctf2024/tldrpleasesummarise/writeup1.md
 cyberquize osctf2024 misc pwn socket connect check correct of quetions misc easy,https://cybersecctf.github.io/blog/2024/osctf/cyberquize/writeup1.md
 shufflebox downunderctf2024 find  permutation from  permutations length 16 crypto medium,https://cybersecctf.github.io/blog/2024/downunderctf2024/shufflebox/writeup1.md 
+SunZisPerfectMathClass downunderctf2024 ChineseRemainderTheorem  in range modinverse easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup1.md
+SunZisPerfectMathClass downunderctf2024 rsa Wieners Attack n1n2n3c1c2c3 easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.md
