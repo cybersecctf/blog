@@ -3,10 +3,9 @@ import os
 import sys
 import ast
 from decimal import Decimal, InvalidOperation
-from config_blog import *
+
 
 islog = False
-bloglocaladdress = config("bloglocaladdress", "")
 
  
 class Result:
