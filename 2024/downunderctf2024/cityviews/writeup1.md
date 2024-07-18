@@ -3,12 +3,16 @@
 <html>
 
 <body>
-    <h1>Deep stego in the office- spcsctf</h1>
+    <h1>cityviews- down under ctf 2024</h1>
 
     <h2>Challenge Description</h2>
     <p> 
-We hide the flag in the standard way. Almost the same as in any type of file
+After having to go on the run, I've had to bunker down. Which building did I capture this picture from?
 
+NOTE: Flag is case-insensitive and requires placing inside DUCTF{}! e.g DUCTF{building_name}
+
+Author: Anon
+<img src=" https://cybersecctf.github.io/blog/2024/downunderctf2024/cityviews/cityviews.jpeg" alt="ctf quetion image" width="100" height="100" class="inline"/>
 
 </p>
  
@@ -17,26 +21,7 @@ We hide the flag in the standard way. Almost the same as in any type of file
     <ol>
 understand this code and enter flag 0
 <pre>
-from time import sleep
-import socket
 
-sock = socket.socket()
-sock.connect(("ip-adress", port))
-
-while True:
-     sleep(1)
-    # get data from server
-     data = sock.recv(1024).decode('utf-8')
-    # check if there is already a flag there?
-     if 'grodno{' in data:
-         print(data)
-         break
-     task = f1(data) # extract task condition from data
-     result = f2(task) # calculate the answer
-    # send reply
-     sock.send((str(result) + '\r\n').encode())
-
-sock.close()
 </pre>        
        
     

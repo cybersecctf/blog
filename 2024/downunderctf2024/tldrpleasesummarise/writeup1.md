@@ -31,7 +31,8 @@ import subprocess
 import os
 import blog
 def solve(file_path, search="DUCTF"):
-    
+  results=[]
+  try:
     command=""   
     if not os.path.isfile(file_path):
         command=file_path
@@ -52,7 +53,6 @@ def solve(file_path, search="DUCTF"):
     combined_output = result.stdout + result.stderr
 
     
-    results=[]
     # Search for the search string in the command output
     for line in     combined_output.splitlines() : 
      if search in line:
@@ -62,6 +62,12 @@ def solve(file_path, search="DUCTF"):
     else:
         for x in  results:
              print(x)
+  except Exception as e:
+     for line in command.splitlines() : 
+      if search in line:
+        results.append(line)
+     return results 
+      
 
 if __name__ == "__main__" :
  # Example usage
