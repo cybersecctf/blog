@@ -38,7 +38,7 @@ a theorem of number theory. The CRT states that if one knows the remainders of t
  then one can determine uniquely the remainder of the division of n by the product of these integers, under certain conditions.  
 in here we should found suitable answers between range with run this code and enter in answer
 after answer was correct 6 parmeters n1 and n2 and n3 and c1 and c2 and c3 are given to us that are math behide correct answer 
-and are rsa and solve with <code>writeup2.solve(n1,n2,n3,c1,c2,c3)</code> inside this code  <a href="https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.py">writeup2.py</a> 
+and are rsa and solve with <code>writeup2.solve(n1,n2,n3,c1,c2,c3)</code> inside this code  <a href="https://github.com/cybersecctf/blog/blob/main/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.py">writeup2.py</a> 
 and get flag
 <pre>
 from sympy import mod_inverse
