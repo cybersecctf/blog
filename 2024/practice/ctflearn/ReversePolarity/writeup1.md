@@ -15,17 +15,17 @@
     <ol>
 first i think i should reverse string but letter i found is about reverse base and polarity and use this code for convert base to text
 <pre>
-import sys
-def decode_string(s,base):
-    return ''.join(chr(int(s[i*8:i*8+8],base)) for i in range(len(s)//8))
-X="01000011010101000100011001111011010000100110100101110100010111110100011001101100011010010111000001110000011010010110111001111101"
-base=2
-if len(sys.argv)>1:
-  X=sys.argv[1]
-if len(sys.argv)>2:
-  base=sys.argv[1]
-print(decode_string(X,base))
- 
+import blog
+def solve(s,operation="decode",length=8):
+   result=""
+   if operation=="decode":
+    result= ''.join(chr(int(s[i*length:i*length+length],2)) for i in range(len(s)//length))
+   else:
+    result =   int(bin(s)[2:])
+   return result
+if __name__ == "__main__" :
+ X=blog.set("01000011010101000100011001111011010000100110100101110100010111110100011001101100011010010111000001110000011010010110111001111101",1,"str")
+ print(solve(X))
 </pre>
        
     and get flag
