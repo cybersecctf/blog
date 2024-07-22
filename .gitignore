@@ -5,6 +5,8 @@ hackcmd.py
 blog.py
 Ai.py
 temp.sh
-**/writeup1.py
+git rm --cached **/writeup2.py
+git rm --cached **/temp.sh
+
 
 
