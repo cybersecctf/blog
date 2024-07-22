@@ -19,11 +19,11 @@ gwox{RgqssihYspOntqpxs}
     <ol>
         this is Vigenere Cipher with key can use any online tool like <a href="https://gchq.github.io/CyberChef/>CyberChef</a>
         or code from this <a href="https://cybersecctf.github.io/blog/2024/practice/cryptoctf1/crypto-acting-shifty/writeup1.md">writeup</a>
-    and this code
+    and run  this code
 <pre>
 #python 
 # -v "uiuweg{0jx_0fm_b@vj3ex3}" "utflag(if have key or chipher)" "uiuweg plaintext if not key"
-import sys
+import blog
 def find_key(known_plaintext, known_ciphertext):
     key = ''
     for i in range(len(known_plaintext)):
@@ -31,7 +31,9 @@ def find_key(known_plaintext, known_ciphertext):
         key += chr(shift + ord('a'))  # Assuming lowercase alphabet
     return key
 
-def vigenere_decrypt(ciphertext, key):
+def solve(ciphertext, key="",knownplain="",knownchipher=""):
+    if key=="":
+     key = find_key(knownplain, knownchipher)
     plaintext = ''
     key_index = 0
     for char in ciphertext:
@@ -47,27 +49,15 @@ def vigenere_decrypt(ciphertext, key):
             plaintext += char
     return plaintext
 print("usage $hack chipher -v   fullcipher   knowplain( or key)    knowncipher ") 
-cipher="uiuweg{0jx_0fm_b@vj3ex3}"
-knownplain="utflag"
-knownchipher="uiuweg"
-key=""
-if len(sys.argv)>1:
-   cipher=sys.argv[1]
-if len(sys.argv)>2:
-   key=sys.argv[2]
-if len(sys.argv)>3:
-   knownplain=sys.argv[2]
-   knownchipher= sys.argv[3]
-   key=""   
-known_ciphertext="uiuweg"
-if key=="":
-  key = find_key(knownplain, knownchipher)
-  print("key is",key)
-decrypted_text = vigenere_decrypt(cipher, key)
+cipher=blog.set("gwox{RgqssihYspOntqpxs}",1)
+knownplain=blog.set("",2)
+knownchipher=blog.set("",3)
+
+decrypted_text = solve(cipher, "blorpy",knownplain,knownchipher)
 print("Decrypted message:", decrypted_text)
 
 </pre>
-with parmeters <pre>gwox{RgqssihYspOntqpxs} blorpy</pre>
+with parmeters <pre>-v gwox{RgqssihYspOntqpxs} blorpy</pre>
 and get flag
     </ol>
 <br>

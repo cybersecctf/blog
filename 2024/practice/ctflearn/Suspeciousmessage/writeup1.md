@@ -14,10 +14,17 @@
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-this is playfair cipher open this <a href="https://www.boxentriq.com/code-breaking/playfair-cipher">site</a> with this options 
- <img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/Screenshot 2024-05-10123419.png" alt="ctf quetion image" class="inline"/>
+this is playfair cipher open this <a href="http://rumkin.com/tools/cipher/playfair.php">site</a> with this options 
+ <img src="https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/site.png" alt="playfair site screenshot" width="500" height="600" class="inline"/>
 and get flag
-
+<pre>
+import blog
+def solve(inspecturl="http://rumkin.com/tools/cipher/playfair.php"):
+  blog.solveup("inspect",inspecturl)
+  blog.solveup(inspecturl,"https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/site.png")
+if __name__ == "__main__" :
+ solve()
+</pre>
     
     </ol>
 <br>

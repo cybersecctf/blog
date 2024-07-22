@@ -18,9 +18,10 @@ BUH'tdy,|Bim5y~Bdt76yQ
 Modern Gaius Julius Caesar  and alphabet maybe means keyboard shift chipher that is use keyboard alphabet for shift number 
 like caesar so use this code and get flag  CTFlearn{Cyb3r-Cae54r]
 that should changed to have correct version of flag.
+with _ and }
 <pre>
-import sys
-def keyboard_shift_decrypt(ciphertext, shift,type="qwertyus"):
+import blog
+def solve(ciphertext, shift,type="qwertyus"):
     keyboard = "1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:\"zxcvbnm,./ZXCVBNM<>?"
     keyboard += keyboard.upper()  # Add uppercase letters
     keyboard += ' '  # Add space
@@ -37,17 +38,12 @@ def keyboard_shift_decrypt(ciphertext, shift,type="qwertyus"):
     return decrypted_text
 
 # Usage
-typekey="qwertyus"
-ciphertext = "BUH'tdy,|Bim5y~Bdt76yQ"
-if len(sys.argv)>1:
- ciphertext=sys.argv[1]
-shift = 2  # Replace with the actual shift used
-if len(sys.argv)>2:
- shift=sys.argv[2]
-if len(sys.argv)>3:
- typekey=sys.argv[3] 
-plaintext = keyboard_shift_decrypt(ciphertext, shift,typekey)
-print(plaintext)
+if __name__ == "__main__" :
+ ciphertext = blog.set("BUH'tdy,|Bim5y~Bdt76yQ",1)
+ shift=blog.set(2,2)
+ typekey=blog.set("qwertyus",3)
+ plaintext = solve(ciphertext, shift,typekey)
+ print(plaintext)
 
 </pre>
        

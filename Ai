@@ -160,7 +160,7 @@ wikipedia ctflearn wikipedia search very easy web,https://cybersecctf.github.io/
 WOWSoMeta ctflearn exiftool linux get meta of pic and image with  forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/WOWSoMeta/writeup1.md
 Binwalk ctflearn extract files inside another zip and pic any forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Binwalk/writeup1.md 
 Hextroadinary ctflearn xor hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Hextroadinary/writeup1.md
-vigenerecipher ctflearn vigenere cipher with key and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
+vigenerecipher ctflearn vigenere cipher with key known plaintext and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
 exif ctflean exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
 RubberDuck ctflearn    exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
 HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/HyperStreamtest/writeup1.md 
@@ -175,8 +175,8 @@ PikesPeak ctflearn strings linux easy forensics, https://cybersecctf.github.io/b
 Gobustme ctflearn gobuster  dir  web easy web, https://cybersecctf.github.io/blog/2024/practice/ctflearn/Gobustme/writeup1.md
 Chalkboard ctflean exiftool math forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Chalkboard/writeup1.md
 Tux ctflearn exiftool forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Tux/writeup1.md
-ModernGaiusJuliusCaesar ctflearn       keyboard shift cipher  easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
-keyboardtypes ctflearn keyboard type     easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
+ModernGaiusJuliusCaesar ctflearn keyboard shift cipher  easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
+keyboardtypes ctflearn keyboard type easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
 PhoIsTasty ctflearn seach hexdump easy forensics , https://cybersecctf.github.io/blog/2024/practice/ctflearn/PhoIsTasty/writeup1.md 
 timetraveller ctflearn search on history web.archive.org archive web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TimeTraveller/writeup1.md
 SimpleSteganography easy steganography steghide password easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SimpleSteganography/writeup1.md

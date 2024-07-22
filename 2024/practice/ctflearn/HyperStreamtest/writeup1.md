@@ -19,7 +19,7 @@ tools
 #python
 import string, itertools
 
-import sys
+import blog
  #create map repeating or ciustom like mapping 1 below for this quetion
 def create_mapping(i):
     # Generate all possible 5-letter combinations of 'A' and 'B'
@@ -38,21 +38,24 @@ def bacon_decrypt(ciphertext, mapping):
     
     return plaintext
 
-
+def solve(ciphertext,mapping=-1):
+ s=[]
  
-mapping1 = {'AAAAA': 'A', 'AAAAB': 'B', 'AAABA': 'C', 'AAABB': 'D', 'AABAA': 'E', 'AABAB': 'F', 'AABBA': 'G', 'AABBB': 'H', 'ABAAA': 'I', 'ABABA': 'L', 'ABBAA': 'N', 'ABBAB': 'O', 'ABBBB': 'P', 'BAAAA': 'Q', 'BAAAB': 'R', 'BAABA': 'T', 'BAABB': 'U', 'BABBB': 'X', 'BABBA': 'Y', 'ABBBA': 'M', 'BBBBA': 'S', 'AABBA': 'V', 'BABBB': 'W', 'BBBB': 'Z'}
-mapping2 = {'AAAAA': 'A', 'AAAAB': 'B', 'AAABA': 'C', 'AAABB': 'D', 'AABAA': 'E', 'AABAB': 'F', 'AABBA': 'G', 'AABBB': 'H', 'ABAAA': 'I', 'ABAAB': 'J', 'ABABA': 'K', 'ABABB': 'L', 'ABBAA': 'M', 'ABBAB': 'N', 'ABBBA': 'O', 'ABBBB': 'P', 'BAAAA': 'Q', 'BAAAB': 'R', 'BAABA': 'S', 'BAABB': 'T', 'BABAA': 'U', 'BABAB': 'V', 'BABBA': 'W', 'BABBB': 'X', 'BBAAA': 'Y', 'BBAAB': 'Z'}
- 
-# Your Bacon-encoded ciphertext
-ciphertext = 'ABAAAABABAABBABBAABBAABAAAAAABAAAAAAAABAABBABABBAAAAABBABBABABBAABAABABABBAABBABBAABB'  # Replace with your actual ciphertext
-if len(sys.argv)>1:
- ciphertext=sys.argv[1]
-if len(sys.argv)>2:
- mapping1=sys.argv[2]   
-
-for i in range(10):
- print(bacon_decrypt(ciphertext,create_mapping(i)))
-print(bacon_decrypt(ciphertext,mapping1))
+ mapping1 = {'AAAAA': 'A', 'AAAAB': 'B', 'AAABA': 'C', 'AAABB': 'D', 'AABAA': 'E', 'AABAB': 'F', 'AABBA': 'G', 'AABBB': 'H', 'ABAAA': 'I', 'ABABA': 'L', 'ABBAA': 'N', 'ABBAB': 'O', 'ABBBB': 'P', 'BAAAA': 'Q', 'BAAAB': 'R', 'BAABA': 'T', 'BAABB': 'U', 'BABBB': 'X', 'BABBA': 'Y', 'ABBBA': 'M', 'BBBBA': 'S', 'AABBA': 'V', 'BABBB': 'W', 'BBBB': 'Z'}
+ if mapping==-1:
+  s.append(bacon_decrypt(ciphertext,mapping1))
+   
+  for i in range(20):
+   d= bacon_decrypt(ciphertext,create_mapping(i))
+   if d.count('?')!=len(d):
+     s.append(d)
+ else:
+   s.append( bacon_decrypt(ciphertext,mapping))
+ return s
+if __name__ == "__main__" :
+ # Your Bacon-encoded ciphertext
+ ciphertext =blog.set('ABAAAABABAABBABBAABBAABAAAAAABAAAAAAAABAABBABABBAAAAABBABBABABBAABAABABABBAABBABBAABB',1)  # Replace with your actual ciphertext
+ print(solve(ciphertext))
 
 </pre>
 and get flag that is one of mapping in here is ILOUEBACONDONTYOU that have some means       
