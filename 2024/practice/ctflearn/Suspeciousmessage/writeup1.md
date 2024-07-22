@@ -21,7 +21,7 @@ and get flag
 import blog
 def solve(inspecturl="http://rumkin.com/tools/cipher/playfair.php"):
   blog.solveup("inspect",inspecturl)
-  blog.solveup(inspecturl,"https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/site.png")
+  blog.solveup("inspect","https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/site.png")
 if __name__ == "__main__" :
  solve()
 </pre>
