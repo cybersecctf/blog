@@ -1,22 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h1>ctf event- challengename Challenge Writeup(first save it)</h1>
-
-    <h2>Challenge Description</h2>
-    <p> At 1pm I called my uncle who was 64 years old 10 months ago, but I heard only that. Later I started thinking about the 24 hour clock.
-
-I hope you will help me solve this problem
- <a href="https://ctflearn.com/challenge/download/889">you_know_what_to_do.wav</a>
-</p>
- 
-    <h2>Solution Approach</h2>
-    <p>Here are the steps we took to solve the challenge:</p>
-    <ol>
-we use this python code for conver wav to numbers
-<pre>
 
 #python
 import numpy as np
@@ -96,21 +78,5 @@ ascii_characters = [chr(fragment) for fragment in fragments]
 decoded_message = ''.join(ascii_characters)
 
 print("Decoded message:", decoded_message)
-
-
-</pre>
-67847010810197110123678289808479718265807289125     that should manually split to 67 84 70 108 101 97 110 123 67 82 89 80 84 79 71 82 65 80 72 89 125       and convert this number to char like this <a href="https://cybersecctf.github.io/blog/2024/practice/picoctf/thenumbers/writeup1.md">writeup</a> for get   flag
-    
-    </ol>
-<br>
-    <h2>Flag</h2>
-    <p class="flag">CTFlean{CRYPTOGRAPHY}
-</p>
-
-    <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on decode tone dialing with python </p>
-</body>
-</html>
-
 
 
