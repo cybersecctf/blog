@@ -17,8 +17,8 @@ I hope you will help me solve this problem
     <ol>
 we use this python code for conver wav to numbers
 <pre>
-
 #python
+import blog
 import numpy as np
 import scipy.io.wavfile as wav
 from scipy.signal import find_peaks
@@ -74,7 +74,7 @@ def solve(file_path):
         detected_digits.extend(digits)
  return ''.join(detected_digits)
 # Combine detected digits into a string
-file_path = 'you_know_what_to_do.wav'
+file_path = blog.set('you_know_what_to_do.wav',1)
 detected_number =solve(file_path)#get detect numbers from wav
 print("Detected number:", detected_number)
 
