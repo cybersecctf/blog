@@ -30,7 +30,7 @@ thejohnsons irisctf2024 reverse enginering with gidra medium,  https://cybersecc
 Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and char easy, https://cybersecctf.github.io/blog/2024/practice/irisctf2024/runwhatsthat/writeup1.md 
 what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability medium,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
 AwayOnVacation irisctf2024 osint and search in instagram easy,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
-gloryofgarden picoctf2019 using pico strings file and grep for get flag and search in file very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
+gloryofgarden picoctf2019 using pico strings file read file and grep for get flag and search in file very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
 what'sanetcat picoctf2019 garden using netcat very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/whatsanetcat/writeup1.md
 2Warm picoctf2019 convert decimal to binarywith python very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/2warm/writeup1.md
 wherearetherobots picoctf2019 web explotation aand find hiddenpage with robots easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/wherearetherobots/writeup1.md 
@@ -254,3 +254,4 @@ cyberquize osctf2024 misc pwn socket connect check correct of quetions misc easy
 shufflebox downunderctf2024 find  permutation from  permutations length 16 crypto medium,https://cybersecctf.github.io/blog/2024/downunderctf2024/shufflebox/writeup1.md 
 SunZisPerfectMathClass downunderctf2024 ChineseRemainderTheorem  in range modinverse easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup1.md
 SunZisPerfectMathpart2Class downunderctf2024 rsa Wieners Attack n1n2n3c1c2c3 easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.md
+SubstitutionCipher ctflean substitution cipher decode python online medium crypto, https://cybersecctf.github.io/blog/2024/practice/ctflearn/SubstitutionCipher/writeup1.md
