@@ -18,32 +18,21 @@ merge
 <pre>
 #python
 from Crypto.Util.number import inverse, long_to_bytes
-import sys
-
-n = 831416828080417866340504968188990032810316193533653516022175784399720141076262857
-if len(sys.argv)>1:
- n=int(sys.argv[1])
-e = 65537
-if len(sys.argv)>2:
- e=int(sys.argv[2])
-c = 240986837130071017759137533082982207147971245672412893755780400885108149004760496
-if len(sys.argv)>3:
- c=int(sys.argv[3])
-p = 1593021310640923782355996681284584012117
-if len(sys.argv)>4:
-  p=int(sys.argv[4])
-q = 521911930824021492581321351826927897005221
-if len(sys.argv)>5:
- q=int(sys.argv[5])
-
- 
-phi = (p-1)*(q-1)
-
-d = inverse(e, phi)
-
-m = pow(c,d,n)
-
-print(long_to_bytes(m))
+import blog
+def solve(n,e,c,p=0,q=0):
+  if p==0 and q==0: 
+    p,q=blog.solveup("isprime",n)
+  phi = (p-1)*(q-1)
+  d = inverse(e, phi)
+  m = pow(c,d,n)
+  return long_to_bytes(m)
+if __name__ == "__main__" :
+ n = blog.set(831416828080417866340504968188990032810316193533653516022175784399720141076262857,1)
+ e = blog.set(65537,2)
+ c =blog.set( 240986837130071017759137533082982207147971245672412893755780400885108149004760496,3)
+ p = blog.set(1593021310640923782355996681284584012117,4)
+ q = blog.set(521911930824021492581321351826927897005221,5)
+ print(solve(n,e,c,p,q))
 </pre>
     
     </ol>
