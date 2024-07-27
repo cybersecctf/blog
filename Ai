@@ -258,3 +258,4 @@ SubstitutionCipher ctflean substitution cipher decode python online medium crypt
 rsanob ctflearn rsa nec small e medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/rsanob/writeup1.md
 5x5Crypto ctflearn Polybius square cipher exclude none k  medium  crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/5x5Crypto/writeup1.md
 rsabegginer ctflearn Low Public Exponent Attack small e easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSABeginner/writeup1.md
+TheSafestEncryption ctflearn xor two file medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSafestEncryption/writeup1.md
