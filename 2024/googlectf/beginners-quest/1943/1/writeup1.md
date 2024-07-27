@@ -26,20 +26,28 @@ import base64
 import itertools
 
 ciphers = [
-    "bWqznPKmVMkt0Obu8bAINKvcBYpurA2yC0NKkUTXWw24Y8AtW9eK9+zipS2Cs6qBHDF7Jpn4z2jm2iT/RWXw6QbQgNb2Ty64i5IuVZxpHsZ6GGr860eM7g==",
-    "dmrn1eTjXYw8y+bIx4V4buP0UcJ8qhG+X3hGnFiSTFiJZskgTI7Tssv9uDeE/b+QGjVsZdX63X28k0rfanPYvBrFjaL2UWucmIMLX+lyEtZtHGD26EmF9g==",
-    "amqiy6HpTN5ox6/fypQqaavmRIRq+0jGF05W2FWWW1+vL84iRoDd5uXzvmOG9v6RDDw1JID73Hjljg7GZj7N/Q6KycvxAjuJmJ8TRbxrHcYzWVL07UWM6g==",
-    "A7K+WILzJAdYo41+QSfb/Ud6MvX+cIopvwYoAcP5V3Y+6g2vYtZdzlulJPc1jvu1uDIgz1hjbLxAz6ya6zzIR7zc8Q9xeqJid/8KOg7HPhD/QI7Ohyj4Sg=="
+    "0529242a631234122d2b36697f13272c207f2021283a6b0c7908",
+    "2f28202a302029142c653f3c7f2a2636273e3f2d653e25217908",
+    "322921780c3a235b3c2c3f207f372e21733a3a2b37263b313012",
+    "2f6c363b2b312b1e64651b6537222e37377f2020242b6b2c2d5d",
+    "283f652c2b31661426292b653a292c372a2f20212a316b283c09",
+    "29232178373c270f682c216532263b2d3632353c2c3c2a293504",
+    "613c37373531285b3c2a72273a67212a277f373a243c20203d5d",
+    "243a202a633d205b3c2d3765342236653a2c7423202f3f652a18",
+    "2239373d6f740a1e3c651f207f2c212a247f3d2e65262430791c",
+    "263e203d63232f0f20653f207f332065262c3168313722367918",
+    "2f2f372133202f142665212637222220733e383f2426386b",
 ]
 
 crib = b"multi-time pad"
 
 for i, j in itertools.combinations(range(len(ciphers)), 2):
     log.info(f"XORing {i} and {j}")
-    xored = xor(base64.b64decode(ciphers[i]), base64.b64decode(ciphers[j]))
+    xored = xor(ciphers[i], ciphers[j])
     for offset in range(len(xored) - len(crib) + 1):
         output = xor(xored[offset:offset+len(crib)], crib)
         if all(chr(c) in string.printable for c in output):
+          if "{" in output or "}" in output:
             log.info(f"Found readable string at offset {offset}: {output}")
 </pre>
 
