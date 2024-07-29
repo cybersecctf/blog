@@ -18,16 +18,15 @@ ciphers = [
     "243a202a633d205b3c2d3765342236653a2c7423202f3f652a18",
     "2239373d6f740a1e3c651f207f2c212a247f3d2e65262430791c",
     "263e203d63232f0f20653f207f332065262c3168313722367918",
-    "2f2f372133202f142665212637222220733e383f2426386b"
+    "2f2f372133202f142665212637222220733e383f2426386b",
 ]
 
 crib = b"multi-time pad"
-
+c=0
 for i, j in itertools.combinations(range(len(ciphers)), 2):
     log.info(f"XORing {i} and {j}")
     xored = xor(ciphers[i], ciphers[j])
-    for offset in range(len(xored) - len(crib) + 1):
-        output = xor(xored[offset:offset+len(crib)], crib)
-        if all(chr(c) in string.printable for c in output):
-         
-            log.info(f"Found readable string at offset {offset}: {output}")
+    base64_xored = base64.b64encode(xored).decode("utf-8")  
+    if base64_xored.startswith('1b'):  
+     print(c,base64_xored)
+    c+=1

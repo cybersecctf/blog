@@ -260,3 +260,4 @@ rsanob ctflearn rsa nec small e medium crypto,https://cybersecctf.github.io/blog
 rsabegginer ctflearn Low Public Exponent Attack small e easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSABeginner/writeup1.md
 TheSafestEncryption ctflearn xor two file medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSafestEncryption/writeup1.md
 Zippy_zip ctflearn zip crc dta validation check medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Zippy_zip/writeup1.md
+somany64s ctflean base64 search for text in decoded hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/somany64s/writeup1.md

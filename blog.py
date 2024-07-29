@@ -4,7 +4,6 @@ import sys
 import ast
 from decimal import Decimal, InvalidOperation
 
-
 islog = False
 
  
@@ -23,6 +22,30 @@ class Result:
 
     def __str__(self):
         return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
+def loggui(term,web="",isheader=False):
+ 
+    if islog:
+     if isheader:
+        print(f"""
+       ____        _       
+      / ___|  ___ | |  
+      \___ \ / _ \| | 
+       ___) | (_) | |
+      |____/ \___/|_| 
+        _   _                     
+       | | | | 
+       | |_| |
+       |     |               
+       |\__,_|  
+      __ __  
+      |  __ \ 
+      | |__) |
+      |  ___/ 
+      | |     
+      |_|
+https://cybersecctf.github.io/blog""")
+    if islog and not isheader:
+      print(term)
 
 def log(message):
     if islog:
@@ -63,8 +86,7 @@ def run_function_from_module(module, func_name, *args):
         return None
 
 def solveup(term, *args):
-   
-   
+    loggui("","",True)
     bloglocaladdress="/home/solup/Desktop/blog/"
     search_term = term
     file_path = bloglocaladdress+"/Ai"
@@ -76,7 +98,7 @@ def solveup(term, *args):
         return None
     
     md_url, py_url = extract_urls_from_line(line)
-    
+    loggui("","")
     module_name = os.path.basename(py_url).replace('.py', '')
     py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', bloglocaladdress)
     log(f"Url: {md_url}")
@@ -156,3 +178,6 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
             print(alert)
     
     return val
+if __name__ == "__main__" :
+  islog=True
+  loggui("","",True)
