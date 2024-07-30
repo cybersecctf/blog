@@ -1,0 +1,73 @@
+
+import sys
+sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
+import blog
+import binascii
+
+import os,subprocess
+def base2(s, chars=['20', '30', '31'], operation="decode"):
+    if operation == "decode":
+        # Decoding logic
+        d = []
+        for i in range(0, len(s) - 1, 2):
+            x = s[i:i + 2]
+            if x == chars[0]:
+                d.append('|')
+            elif x == chars[1]:
+                d.append('0')
+            elif x == chars[2]:
+                d.append('1')
+
+        text = "".join(d)
+        binary_string = text.split("|")
+        p = []
+        for x in binary_string:
+            if x != '':
+                # Convert binary to integer
+                decimal_value = int(x, 2)
+                # Convert integer to ASCII character
+                p.append(chr(decimal_value))
+        return "".join(p)
+
+    elif operation == "encode":
+        # Encoding logic
+        encoded_string = []
+        for char in s:
+            # Convert ASCII character to binary
+            binary_string = format(ord(char), '08b')
+            for bit in binary_string:
+                if bit == '0':
+                    encoded_string.append(chars[1])
+                elif bit == '1':
+                    encoded_string.append(chars[2])
+            # Append separator after each character's binary representation
+            encoded_string.append(chars[0])
+
+        return "".join(encoded_string)
+def solve(file, type=""):
+    s=blog.solveup("read file",file,"")
+    s=blog.solveup("base64 decode","decode",s)
+    if type=="base64 decode":
+        return s               
+    s=s.replace(b"Nice! Now keep going. 54776f206d6f72652e",b"").decode()
+    s=base2(s)   
+    s=s.replace("Final Decryption! ","")
+    s=blog.solveup("base64 decode","decode",s)
+    return s
+def find_valid_hex_string(hex_string):
+    while len(hex_string) > 0:
+        try:
+            decoded_bytes = binascii.unhexlify(hex_string)
+            decoded_string = decoded_bytes.decode("utf-8")
+            return decoded_string
+        except UnicodeDecodeError:
+            # Remove the last character and try again
+            hex_string = hex_string[:-1]
+
+    return "Unable to find a valid string."
+ 
+
+    return hex_string      
+
+if __name__ == "__main__" :
+  print("d",solve("flag.txt",""))

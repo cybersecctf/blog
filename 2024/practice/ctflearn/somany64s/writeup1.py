@@ -9,9 +9,12 @@ import os,subprocess
 import base64
 
 def solve(file, search="", max_attempts=100):
-    base64s = "" 
-    with open(file, encoding='utf-8') as f:
+    base64s = ""
+    if os.path.exists(file): 
+     with open(file, encoding='utf-8') as f:
         base64s = f.read()
+    else:
+      base64s=file
 
     attempts = 0
     while attempts < max_attempts:
