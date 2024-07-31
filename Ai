@@ -261,4 +261,5 @@ rsabegginer ctflearn Low Public Exponent Attack small e easy crypto,https://cybe
 TheSafestEncryption ctflearn xor two file medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSafestEncryption/writeup1.md
 Zippy_zip ctflearn zip crc dta validation check medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Zippy_zip/writeup1.md
 somany64s ctflean base64 search for text in decoded hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/somany64s/writeup1.md
-EncryptionMaster ctflearn base2 base64 hex decode encode medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/EncryptionMaster/writeup1.md
+EncryptionMaster ctflearn base convertor 2 base64 hex decode encode medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/EncryptionMaster/writeup1.md
+SymbolicDecimals ctflearn symbol decimal ascii symbol-based ASCII encoding medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SymbolicDecimals/writeup1.md
