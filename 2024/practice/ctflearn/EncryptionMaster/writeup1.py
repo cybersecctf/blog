@@ -44,12 +44,27 @@ def base2(s, chars=['20', '30', '31'], operation="decode"):
             encoded_string.append(chars[0])
 
         return "".join(encoded_string)
-def solve(file, type=""):
+def solve(s,type="base64 decode",chars=['20', '30', '31']):
+  if type=="base64 decode":
+        return blog.solveup("base64 decode","decode",s)  
+  elif type=="base64 encode":
+        return blog.solveup("base64 decode","encode",s)  
+  elif type=="base2 decode":
+        return base2(s, chars, operation="decode")
+  elif type=="hex decode":
+        return blog.solveup("cryptohack hex", "decode",s )
+  elif type=="hex encode":
+        return  blog.solveup("cryptohack hex", "encode",s )
+def main(file,type="base64 decode"):
     s=blog.solveup("read file",file,"")
-    s=blog.solveup("base64 decode","decode",s)
+    
     if type=="base64 decode":
-        return s               
+        return blog.solveup("base64 decode","decode",s)      
+    s=blog.solveup("base64 decode","decode",s)
+
+               
     s=s.replace(b"Nice! Now keep going. 54776f206d6f72652e",b"").decode()
+    print(solve("54776f206d6f72652e","hex decode"))
     s=base2(s)   
     s=s.replace("Final Decryption! ","")
     s=blog.solveup("base64 decode","decode",s)
@@ -70,4 +85,4 @@ def find_valid_hex_string(hex_string):
     return hex_string      
 
 if __name__ == "__main__" :
-  print("d",solve("flag.txt",""))
+  print("d",main("flag.txt",""))
