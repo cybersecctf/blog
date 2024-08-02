@@ -20,6 +20,13 @@ merge
 from Crypto.Util.number import inverse, long_to_bytes
 import blog
 def solve(n,e,c,p=0,q=0):
+  if type(n)!="<class 'int'>":
+    n=int(n)
+  if type(e)!="<class 'int'>":
+    e=int(e)
+  if type(c)!="<class 'int'>":
+    c=int(c)
+
   if p==0 and q==0: 
     p,q=blog.solveup("isprime",n)
   phi = (p-1)*(q-1)

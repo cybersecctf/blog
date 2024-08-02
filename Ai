@@ -264,4 +264,5 @@ somany64s ctflean base64 search for text in decoded hard crypto,https://cybersec
 EncryptionMaster ctflearn base convertor 2 base64 hex decode encode medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/EncryptionMaster/writeup1.md
 SymbolicDecimals ctflearn symbol decimal ascii symbol-based ASCII encoding medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SymbolicDecimals/writeup1.md
 rsa-twins ctflearn rsa small n e=65537 factorization attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSATwins/writeup1.md
-simpsons ctflearn base vigenere cipher key medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSimpsons/writeup1.md
+thesimpsons ctflearn base vigenere cipher key medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSimpsons/writeup1.md
+CoppeRSALattice ctflearn rsa  small n e=65537 factorization attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/CoppeRSALattice/writeup1.md
