@@ -1,11 +1,11 @@
-import importlib.util
 import os
 import sys
 import ast
 from decimal import Decimal, InvalidOperation
+import importlib.util
 
 islog = False
-
+py_file_path=""
  
 class Result:
     def __init__(self, md_url, py_url, score=0):
@@ -60,6 +60,7 @@ def find_term_in_file(file_path, search_term):
     return None
 
 def extract_urls_from_line(line):
+   
     parts = line.split(',')
     md_url = parts[-1]
     py_url = md_url.replace('.md', '.py')
@@ -86,6 +87,7 @@ def run_function_from_module(module, func_name, *args):
         return None
 
 def solveup(term, *args):
+    global py_file_path
     loggui("","",True)
     bloglocaladdress="/home/solup/Desktop/blog/"
     search_term = term
@@ -101,6 +103,7 @@ def solveup(term, *args):
     loggui("","")
     module_name = os.path.basename(py_url).replace('.py', '')
     py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', bloglocaladdress)
+   
     log(f"Url: {md_url}")
     if not os.path.exists(py_file_path):
         log(f"File not found: {py_file_path}")
@@ -181,3 +184,5 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
 if __name__ == "__main__" :
   islog=True
   loggui("","",True)
+  
+  
