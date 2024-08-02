@@ -26,7 +26,12 @@ import os
 os.system(f"python {blog.py_file_path} '{ords}' {hexs}")#run writeups py files with this command also
 
 </pre>
-and want run it
+or run in terminal
+<code>
+$python blog.py ctflearn exiftool -v yourfilepath
+</code>
+for exiftool yourfile for search ctflearn exiftool in Ai and find relative writeups
+and return result
 clone blog and add blog.py to your path in linux or directory of this  code  and run it
 blog.py is for solve up challenges on base of privious challenges like AI
     <ol>

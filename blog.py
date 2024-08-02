@@ -3,6 +3,7 @@ import sys
 import ast
 from decimal import Decimal, InvalidOperation
 import importlib.util
+import argparse
 
 islog = False
 py_file_path=""
@@ -182,7 +183,24 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
     
     return val
 if __name__ == "__main__" :
-  islog=True
-  loggui("","",True)
+    islog = False
+    if len(sys.argv)==1:
+     islog = True
+    loggui("", "", True)
+    
+    parser = argparse.ArgumentParser(description="Python blog script")
+    parser.add_argument('terms', nargs='+', help='Search terms')
+    parser.add_argument('-v', nargs='*', help='Values for the solve function')
+    args = parser.parse_args()
+
+    terms = args.terms
+    values = args.v if args.v else []
+
+    # Combine the terms into a single search term if needed
+    search_term = " ".join(terms)
+
+    # Pass the search term and values to solveup
+    result = solveup(search_term, *values)
+    print(result)
   
   
