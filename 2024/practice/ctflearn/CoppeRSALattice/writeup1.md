@@ -3,11 +3,24 @@
 <html>
  
 <body>
-    <h1>picoctf2019---glory of garden  Writeup </h1>
+    <h1>CoppeRSA Lattice --ctflearn  Writeup </h1>
 
     <h2>Challenge Description</h2>
-    <p> This garden contains more than it seems.
-garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f47467/garden.jpg
+    <p>  There are plenty of bits of randomness in the key. This has to be secure!
+
+I am so confident, that I am sharing a snippet of my implementation:
+
+import random
+base = random.getrandbits(2048)
+p = next_prime(base + random.getrandbits(256))
+q = next_prime(base + random.getrandbits(256))
+n = p * q
+e = 65537
+print("e = ", e)
+print("n = ", n)
+c = power_mod(m, e, n)
+print("c = ", c)
+result below
 </p>
 
     <h2>Solution Approach</h2>

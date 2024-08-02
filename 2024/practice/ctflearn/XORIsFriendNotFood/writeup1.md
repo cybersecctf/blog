@@ -15,7 +15,7 @@ I think the flag started with: ctflearn{
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
         <li>for find result we xor text with hint and also suffix and get flag 
-with running this code
+with running this code for find flag
 
 <pre>
 import blog
