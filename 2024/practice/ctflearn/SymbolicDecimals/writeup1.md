@@ -3,17 +3,16 @@
 <html>
  
 <body>
-    <h1>picoctf2019---glory of garden  Writeup </h1>
+    <h1>Symbolic Decimals --ctflearn Writeup </h1>
 
     <h2>Challenge Description</h2>
-    <p> This garden contains more than it seems.
-garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f47467/garden.jpg
+    <p>  Did you know that you can hide messages with symbols? For example, !@#$%^&*( is 123456789!<br /> Now Try: ^&,*$,&),!@#,*#,!!^,(&,!!$,(%,$^,(%,*&,(&,!!$,!!%,(%,$^,(%,&),!!!,!!$,(%,$^,(%,&^,!)%,!)@,!)!,!@% However, this isn't as easy as you might think.
 </p>
 
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
-        <li>after using binawalk and exiftool not working using 
+        <li>we use this code for convert symbol to decimal
 
 <pre>
 import blog

@@ -85,4 +85,4 @@ def find_valid_hex_string(hex_string):
     return hex_string      
 
 if __name__ == "__main__" :
-  print("d",main("flag.txt",""))
+  print(main("flag.txt",""))

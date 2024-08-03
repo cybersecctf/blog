@@ -14,8 +14,7 @@ Ya know, I was thinking... wouldn't the Simpsons use octal as a base system? The
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
-        <li>after using binawalk and exiftool not working using 
-
+        <li>with run this code and get exiftool and answer quetions and decode octals..
 <pre>
 #python
 import blog

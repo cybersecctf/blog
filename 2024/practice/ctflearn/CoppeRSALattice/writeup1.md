@@ -26,7 +26,7 @@ result below
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
-        <li>after using binawalk and exiftool not working using 
+        <li>this small n factor attack rsa and solve with this code and get flag
 
 <pre>
 import blog
@@ -53,7 +53,7 @@ $python blog.py rsa -v 828185096713227839957427268876693748603664631340300767958
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a medium chanllenge for rsa factor attack</p>
+    <p>this is a medium chanllenge for rsa low n factor attack</p>
 
 </body>
 </html>
