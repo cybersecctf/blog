@@ -34,7 +34,9 @@ for exiftool yourfile for search ctflearn exiftool in Ai and find relative write
 and return result
 clone blog and add blog.py to your path in linux or directory of this  code  and run it
 blog.py is for solve up challenges on base of privious challenges like AI
-    <ol>
+   if still have problem in run writeups use this editor still beta
+https://github.com/cybersecctf/solveup
+ <ol>
  
     </ol>
 <br>
