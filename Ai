@@ -267,3 +267,4 @@ rsa-twins ctflearn rsa small n e=65537 factorization attack easy crypto,https://
 thesimpsons ctflearn base vigenere cipher key medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSimpsons/writeup1.md
 CoppeRSALattice ctflearn rsa  small n e=65537 factorization attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/CoppeRSALattice/writeup1.md
 XORIsFriendNotFood ctflearn xor \x prefix suffix medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/XORIsFriendNotFood/writeup1.md
+Polycrypto ctflearn polynomial binary long bytes representation hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Polycrypto/writeup1.md
