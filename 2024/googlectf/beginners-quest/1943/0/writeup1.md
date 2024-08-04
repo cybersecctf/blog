@@ -23,10 +23,13 @@ import blog
 def solve(type,text,codecs="text"):
  try:
   if type=="encode":
-   sample_string_bytes = text.encode("ascii") 
+   if codecs=="int hex":
+     return hex(text).replace("0x","")
+   sample_string_bytes = text
    base64_bytes = base64.b64encode(sample_string_bytes) 
    if codecs=="hex":
-     return binascii.hexlify(base64_bytes)
+     return binascii.hexlify(sample_string_bytes)
+   
    else:  
     return base64_bytes.decode("ascii") 
   else:
@@ -44,6 +47,8 @@ if __name__ == "__main__" :
  text=blog.set("VGhlIFZlbm9uYSBwcm9qZWN0IHdhcyBhIFVuaXRlZCBTdGF0ZXMgY291bnRlcmludGVsbGlnZW5jZSBwcm9ncmFtIGluaXRpYXRlZCBkdXJpbmcgV29ybGQgV2FyIElJLg==",2)
  codecs=blog.set("text",3)
  print(solve(type,text,codecs))
+
+
 </pre>
        and get this message
 <pre>
