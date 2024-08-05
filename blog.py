@@ -92,8 +92,7 @@ def solveup(term, *args):
     loggui("","",True)
     bloglocaladdress="/home/solup/Desktop/blog/"
     search_term = term
-    file_path = bloglocaladdress+"/Ai"
-    print(file_path)
+    file_path = bloglocaladdress+"Ai"
     line = find_term_in_file(file_path, search_term)
     
     if not line:

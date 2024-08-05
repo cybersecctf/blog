@@ -1,6 +1,6 @@
 
 import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 #python
 enc=blog.solveup("strings files","enc")
