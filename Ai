@@ -270,3 +270,4 @@ XORIsFriendNotFood ctflearn xor \x prefix suffix medium crypto,https://cybersecc
 Polycrypto ctflearn polynomial binary long bytes representation hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Polycrypto/writeup1.md
 We-want-Nudes-instead-of-Nukes ctflearn aes cbc aes-cbc hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/We-want-Nudes-instead-of-Nukes/writeup1.md
 imageediting ctflearn zsteg stegsolve image hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/imageediting/writeup1.md
+sanitycheck htbctf inspect url team info intro htb ctf2024 easy crypto,https://cybersecctf.github.io/blog/2024/htbctf/writeup1.md
