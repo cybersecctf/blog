@@ -23,7 +23,13 @@ You realise that each beat is one step closer to death. Darkness envelops you,
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
-        <li>after using binawalk and exiftool not working using 
+        <li>we open <a href="https://cybersecctf.github.io/blog/2024/htbctf/Dynastic/source.py">source.py</a>
+and see modified version of caesar that work with 0x41 twice and encrypt function that print encrypted flag in 
+<a href="https://cybersecctf.github.io/blog/2024/htbctf/Dynastic/output.txt">output.tx</a>  .
+so  we must decryp tthis value with reverse encrypt function and get flag just
+change location of to_identity_map and from_identity_map + to - and 
+with this code get flag
+
 
 <pre>
 import blog
