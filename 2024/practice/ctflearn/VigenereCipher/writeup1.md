@@ -48,10 +48,11 @@ def solve(ciphertext, key="",knownplain="",knownchipher=""):
         else:
             plaintext += char
     return plaintext
-print("usage $hack chipher -v   fullcipher   knowplain( or key)    knowncipher ") 
-cipher=blog.set("gwox{RgqssihYspOntqpxs}",1)
-knownplain=blog.set("",2)
-knownchipher=blog.set("",3)
+if __name__ == "__main__" :
+ print("usage $hack chipher -v   fullcipher   knowplain( or key)    knowncipher ") 
+ cipher=blog.set("gwox{RgqssihYspOntqpxs}",1)
+ knownplain=blog.set("",2)
+ knownchipher=blog.set("",3)
 
 decrypted_text = solve(cipher, "blorpy",knownplain,knownchipher)
 print("Decrypted message:", decrypted_text)
