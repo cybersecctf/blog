@@ -20,14 +20,18 @@ then convert hex to file with this <a href="https://cybersecctf.github.io/blog/2
 and see is zip file with password crackthem and cat flag.txt and get flag
 <pre>
 #python
-import os,sys
-zipfile="flag.zip"
-dictionary="/home/rockyou.txt "
-if len(sys.argv)>1:
-    zipfile=sys.argv[1]
-if len(sys.argv)>2:
-    dictionary=sys.argv[2]
-os.system("fcrackzip -v -D -u -p "+dictionary+" "+zipfile)
+import os
+import blog
+
+
+
+
+def solve(zipfile,dictionary):
+ os.system("fcrackzip -v -D -u -p "+dictionary+" "+zipfile)
+if __name__ == "__main__" :
+  dictionary=blog.set(blog.solveup("garden","locate rockyou.txt",""))
+  zipfile=blog.set("file.zip",1)
+  solve(zipfile,dictionary)
 </pre>
        
     

@@ -145,7 +145,7 @@ googlectf-beginners-quest 1943-1   google venona  multi  time pad medium xor att
 googlectf-beginners-quest 1943-2   google venona  one   time pad xor python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/2/writeup1.md
 googlectf-beginners-quest 1965-0   google basic   reverse string python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1965/0/writeup1.md
 bsides-delhi-ctf2018 RecursiveCracker2 convert hex to file forensics easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup2.md
-bsides-delhi-ctf2018 RecursiveCracker2 find nested zip password forensics python  easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup1.md
+bsides-delhi-ctf2018 RecursiveCracker2 find nested find zip password forensics python  easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup1.md
 google-ctf-2018-begginer floppy search text in zip misc easy,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc/writeup1.md 
 google-ctf-2018-begginer floppy2 run msdos file on linux get output on text file ubuntu/debian misc easy ,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/writeup1.md 
 ctflearn BasicInjection1  sql injection easy web sanitiz inputs,https://cybersecctf.github.io/blog/2024/practice/ctflearn/BasicInjection/writeup1.md
@@ -245,7 +245,7 @@ DiffieHellmanStarter1 cryptohack inverse element of d with g p easy crypto,https
 DiffieHellmanStarter2 cryptohack   smallest element g  primitive element  rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter2/writeup1.md
 DiffieHellmanStarter3 cryptohack   generate public key A in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter3/writeup1.md
 DiffieHellmanStarter4 cryptohack   generate public key  two person  in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter4/writeup1.md
-DiffieHellmanStarter5 cryptohack   generate public key  two person  in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter5/writeup1.md
+DiffieHellmanStarter5 cryptohack   generate public key  two person  in rsa  Diffie-Hellman p g a b B easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter5/writeup1.md
 ParameterInjection cryptohack   generate public key  two person  in rsa intercept message Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/ParameterInjection/writeup1.md
 Export-grade cryptohack   generate public key  two person  in rsa intercept message middle man medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Export-grade/writeup1.md
 desfunctional googlectf2024  DES3 Triple DES cipher key medium crypto,https://cybersecctf.github.io/blog/2024/googlectf/googlectf2024/desfunctional/writeup1.md 
@@ -271,4 +271,5 @@ Polycrypto ctflearn polynomial binary long bytes representation hard crypto,http
 We-want-Nudes-instead-of-Nukes ctflearn aes cbc aes-cbc hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/We-want-Nudes-instead-of-Nukes/writeup1.md
 imageediting ctflearn zsteg stegsolve image hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/imageediting/writeup1.md
 sanitycheck htbctf2024 inspect url team info intro htb ctf2024 easy crypto,https://cybersecctf.github.io/blog/2024/htbctf/writeup1.md
-Dynastic  htbctf2024 reverse python custom caesar easy rev crypto,<a href="https://cybersecctf.github.io/blog/2024/htbctf/Dynastic/writeup1.md">link text</a>
+Dynastic  htbctf2024 reverse python custom caesar easy rev crypto,https://cybersecctf.github.io/blog/2024/htbctf/Dynastic/writeup1.md
+defyinghell ctflearn Diffie–Hellman key exchange alice bob p A B,https://cybersecctf.github.io/blog/2024/practice/ctflearn/DefyingHell/writeup1.md
