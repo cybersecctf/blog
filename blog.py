@@ -51,7 +51,11 @@ https://cybersecctf.github.io/blog""")
 def log(message):
     if islog:
         print(message)
-
+def read_file(files):
+   val=""
+   with open(files, 'r') as file:
+       val=file.read()
+   return val
 def find_term_in_file(file_path, search_term):
     with open(file_path, 'r') as file:
         lines = file.readlines()
@@ -157,12 +161,20 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
     
     if len(sys.argv) > i:
         val = sys.argv[i]
-    
+        
     try:
         if not isinstance(val, str):
             return val
         if type == "auto":
+            try:          
+              val=open(val, 'rb').read()#if is file read it as val
+            except:
+                pass
+
             type = detect_value_type(val)
+        if type == "file": 
+          val=read_file(val)  
+          return file
         if type == "float":
             val = float(val)
         elif type == "int":

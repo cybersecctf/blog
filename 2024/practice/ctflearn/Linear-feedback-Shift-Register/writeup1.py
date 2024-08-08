@@ -27,12 +27,7 @@ def solve(cipher,prefix,msb_pos):
         
     return prefix + output.encode()
 if __name__ == "__main__" :
- cipher = blog.set("PRNG/secretMessage.hex",1)
- 
- try:
-  cipher=open(cipher, 'rb').read()
- except:
-  pass
+ cipher = blog.set("./PRNG/secretMessage.hex",1)
  prefix =blog.set( b"CTFlearn{",2)
  msb_pos = blog.set([6,5,3,2,0],3)
  print(solve(cipher,prefix,msb_pos))
