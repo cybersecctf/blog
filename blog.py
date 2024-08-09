@@ -4,6 +4,7 @@ import ast
 from decimal import Decimal, InvalidOperation
 import importlib.util
 import argparse
+import json
 
 islog = False
 py_file_path=""
@@ -52,6 +53,11 @@ def log(message):
     if islog:
         print(message)
 def read_file(files):
+   if ".json" in files :
+     print("json")
+     with open(files, 'r') as file:
+       json_data = json.load(file)
+       return json_data
    val=""
    with open(files, 'r') as file:
        val=file.read()
@@ -167,14 +173,14 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
             return val
         if type == "auto":
             try:          
-              val=open(val, 'rb').read()#if is file read it as val
+              val=read_file(val)  
             except:
                 pass
 
             type = detect_value_type(val)
         if type == "file": 
           val=read_file(val)  
-          return file
+          return val
         if type == "float":
             val = float(val)
         elif type == "int":
