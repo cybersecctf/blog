@@ -13,4 +13,4 @@ def solve( search="Cryptanalysis"):
    
      
 if __name__ == "__main__" :
-  print(solve("Alice and Bob"))
+  print(solve("Are SSH keys protected with a passphrase or a passwor?"))
