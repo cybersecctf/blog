@@ -174,9 +174,8 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
         if type == "auto":
             try:          
               val=read_file(val)  
-            except:
-                pass
-
+            except Exception as e:
+                log(f"this isn't file:{str(e)}")
             type = detect_value_type(val)
         if type == "file": 
           val=read_file(val)  

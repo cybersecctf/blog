@@ -1,0 +1,5 @@
+{
+  "What does SSH stand for?": "Secure Shell",
+  "How do webservers prove their identity?": "certificates",
+  "What is the main set of standards you need to comply with if you store or process payment card details?": "PCI-DSS"
+}

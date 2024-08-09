@@ -48,16 +48,19 @@ I agree not to complain too much about how theory heavy this room is.
 import blog
 
 import os,subprocess
-def search_json(term,file="def.json"):
-    a=blog.set("def.json",1,"file")
+def search_json(term,file):
+    a=blog.set(file,1)
+  
+    if term=="":
+         return a
     return a.get(term, "Term not found")
 
-def solve( search="Cryptanalysis"):
-    return search_json(search)
+def solve( file,search="Cryptanalysis"):
+    return search_json(file,search)
    
      
 if __name__ == "__main__" :
-  print(solve("Are SSH keys protected with a passphrase or a passwor?"))
+  print(solve("Are SSH keys protected with a passphrase or a passwor?","sol.json"))
 </pre>
     </ol>
 <br>
