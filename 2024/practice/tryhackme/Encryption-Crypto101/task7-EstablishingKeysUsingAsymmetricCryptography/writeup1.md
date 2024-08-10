@@ -36,18 +36,30 @@ In reality, you need a little more cryptography to verify the person you’re ta
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
-        <li>no need qution just click compleye
+        <li>read web and check complete
 
 <pre>
 import blog
 
-import os,subprocess
-def solve():
-   blog.solveup("inspect","https://robertheaton.com/2014/03/27/how-does-https-actually-work/","")
-   return "complete"
+import socket
+import ssl
+import pprint
+ 
+
+def solve(hostname):
+  try:
+    context = ssl.create_default_context()
+    conn = context.wrap_socket(socket.socket(socket.AF_INET), server_hostname=hostname)
+    conn.connect((hostname, 443))
+    cert = conn.getpeercert()
+    return cert
+  except Exception as e:
+     return str(e)
+
 
 if __name__ == "__main__" :
-  print(solve())
+  web=blog.set("www.zoomit.ir",1)
+  pprint.pprint(solve(web))#better print with pprint and pretty print
 </pre>
     </ol>
 <br>
@@ -56,7 +68,7 @@ if __name__ == "__main__" :
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a very   easy chanllenge for understands keys on real word and https</p>
 
 </body>
 </html>

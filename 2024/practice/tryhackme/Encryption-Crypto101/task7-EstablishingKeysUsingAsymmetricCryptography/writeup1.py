@@ -3,10 +3,22 @@ import sys
 sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 
-import os,subprocess
-def solve():
-   blog.solveup("inspect","https://robertheaton.com/2014/03/27/how-does-https-actually-work/","")
-   return "complete"
+import socket
+import ssl
+import pprint
+ 
+
+def solve(hostname):
+  try:
+    context = ssl.create_default_context()
+    conn = context.wrap_socket(socket.socket(socket.AF_INET), server_hostname=hostname)
+    conn.connect((hostname, 443))
+    cert = conn.getpeercert()
+    return cert
+  except Exception as e:
+     return str(e)
+
 
 if __name__ == "__main__" :
-  print(solve())
+  web=blog.set("www.zoomit.ir",1)
+  pprint.pprint(solve(web))#better print with pprint and pretty print
