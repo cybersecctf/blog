@@ -1,0 +1,5 @@
+{
+  "Should you trust DES? Yea/Nay": "Nay",
+  "What was the result of the attempt to make DES more secure so that it could be used for longer?": "Triple DES",
+  "Is it ok to share your public key? Yea/Nay": "Yea"
+}

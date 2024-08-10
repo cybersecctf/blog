@@ -276,4 +276,7 @@ defyinghell ctflearn Diffie–Hellman key exchange alice bob p A B,https://cyber
 Linear-....-lfsr ctflearn Linear Feedback Shift Register lfsr hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Linear-feedback-Shift-Register/writeup1.md
 task1-intro Encryption-Crypto101 tryhackme very easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/writeup1.md
 task2-Keyterms Encryption-Crypto101 defination of crypto read search json very easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task2-Keyterms/writeup1.md
-task3-Crucial-Crypto-Maths tryhackme mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task4-CrucialCryptoMaths/writeup1.md
+task3-Why-is-encryption defination easy crypto,-important tryhackme,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task3-encrypttion/writeup1.md
+task4-Crucial-Crypto-Maths tryhackme mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task4-CrucialCryptoMaths/writeup1.md
+task5-Types-of-Encryption tryhackme define Symmetric Asymmetric encryption  easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task5-TypesofEncryption/writeup1.md
+task6-RSA-Rivest-Shamir-Adleman tryhackme Asymmetric encryption n=p*q easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task6-RivestShamirAdleman/writeup1.md
