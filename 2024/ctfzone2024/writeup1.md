@@ -52,7 +52,7 @@ if __name__ == "__main__":
     P = blog.set(0,2)
     Q=blog.set(0,3)
     try:
-        for _ in range(100):
+        for _ in range(100):#manual change if not working in this problem
             x = random.randint(2, 18)
             assert solve(E((5, 1)), x*P, E) == x
     except Exception as e:
