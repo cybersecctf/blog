@@ -1,15 +1,53 @@
+ 
 
+<!DOCTYPE html>
+<html>
+ 
+<body>
+    <h1>tryhackme---encryption 101 task7 Establishing Keys Using Asymmetric Cryptography
+ Writeup </h1>
+
+    <h2>Challenge Description</h2>
+    <p> A very common use of asymmetric cryptography is exchanging keys for symmetric encryption.
+
+Asymmetric encryption tends to be slower, so for things like HTTPS symmetric encryption is better.
+
+But the question is, how do you agree a key with the server without transmitting the key for people snooping to see?
+
+Metaphor time
+Imagine you have a secret code, and instructions for how to use the secret code. If you want to send your friend the instructions without anyone else being able to read it, what you could do is ask your friend for a lock.
+
+Only they have the key for this lock, and we’ll assume you have an indestructible box that you can lock with it.
+
+If you send the instructions in a locked box to your friend, they can unlock it once it reaches them and read the instructions.
+
+After that, you can communicate in the secret code without risk of people snooping.
+
+In this metaphor, the secret code represents a symmetric encryption key, the lock represents the server’s public key, and the key represents the server’s private key.
+
+You’ve only used asymmetric cryptography once, so it’s fast, and you can now communicate privately with symmetric encryption.
+
+The Real World
+In reality, you need a little more cryptography to verify the person you’re talking to is who they say they are, which is done using digital signatures and certificates. You can find a lot more detail on how HTTPS (one example where you need to exchange keys) really works from this excellent blog post. https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+
+
+</p>
+
+    <h2>Solution Approach</h2>
+    <p>Here are the steps we took to solve the challenge:</p>
+    <ol> 
+        <li>read web and check complete
+
+<pre>
+#python
 import os
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding, rsa
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
-import sys
-sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 # Generate RSA private and public keys
-def generate_keys(e=65537, s=2048):
+def generate_keys(path="",e=65537, s=2048):
     try:
         # Generate private key
         private_key = rsa.generate_private_key(
@@ -19,12 +57,13 @@ def generate_keys(e=65537, s=2048):
 
         # Generate public key
         public_key = private_key.public_key()
+        write_keys_to_files(private_key,public_key,"private_key.pem", "public_key.pem",path)
         return private_key, public_key
     except Exception as e:
         print(f"An error occurred during key generation: {e}")
 
 # Write the private and public keys to files
-def write_keys_to_files(private_key, public_key, private_key_file, public_key_file):
+def write_keys_to_files(private_key, public_key, private_key_file, public_key_file,path=""):
     try:
         # Write private key to file
         with open(private_key_file, "wb") as f:
@@ -149,6 +188,60 @@ def hybrid_encrypt_file(private_key, recipient_public_key, input_file, output_fi
         print(f"An error occurred during hybrid encryption: {e}")
         traceback.print_exc()
 
+# Existing functions (generate_keys, write_keys_to_files, read_keys_from_files) remain unchanged
+
+# Decrypt the file using the private key and verify the signature
+def decrypt_and_verify_file(private_key, sender_public_key, input_file, output_file):
+    try:
+        with open(input_file, "rb") as f:
+            # Read the encrypted AES key, IV, and encrypted message
+            encrypted_aes_key = f.read(256)  # RSA key size is 2048 bits = 256 bytes
+            iv = f.read(16)  # AES block size for IV is 16 bytes
+            encrypted_message = f.read()
+
+        # Decrypt the AES key using the private key
+        aes_key = private_key.decrypt(
+            encrypted_aes_key,
+            padding.OAEP(
+                mgf=padding.MGF1(algorithm=hashes.SHA256()),
+                algorithm=hashes.SHA256(),
+                label=None
+            )
+        )
+
+        # Decrypt the message using the decrypted AES key
+        cipher = Cipher(algorithms.AES(aes_key), modes.CFB(iv), backend=default_backend())
+        decryptor = cipher.decryptor()
+        decrypted_message = decryptor.update(encrypted_message) + decryptor.finalize()
+
+        # The signature is the first 256 bytes (RSA key size)
+        signature = decrypted_message[:256]
+        original_message = decrypted_message[256:]
+
+        # Verify the signature
+        sender_public_key.verify(
+            signature,
+            original_message,
+            padding.PSS(
+                mgf=padding.MGF1(hashes.SHA256()),
+                salt_length=padding.PSS.MAX_LENGTH
+            ),
+            hashes.SHA256()
+        )
+
+        print("Signature verified successfully!")
+
+        # Write the original message to the output file
+        with open(output_file, "wb") as f:
+            f.write(original_message)
+
+        print(f"Decrypted and verified message written to '{output_file}'.")
+
+    except Exception as e:
+        import traceback
+        print(f"An error occurred during decryption and verification: {e}")
+        traceback.print_exc()
+
 # Main function to demonstrate the usage of the above functions
 def solve(search="", file=""):
     if search == "generate keys":
@@ -170,7 +263,7 @@ def solve(search="", file=""):
                 hashes.SHA256()
             )
             with open(file + ".sig", "wb") as f:
-                f.write(signature)
+                f.write(signature + message)
             print(f"File '{file}' signed and signature written to '{file}.sig'.")
         else:
             print("Failed to read keys from files.")
@@ -182,19 +275,36 @@ def solve(search="", file=""):
         else:
             print("Failed to read keys from files.")
     
+    elif search == "decrypt and verify":
+        private_key, public_key = read_keys_from_files("private_key.pem", "public_key.pem")
+        if private_key is not None and public_key is not None:
+            decrypt_and_verify_file(private_key, public_key, "encrypted_file.gpg", "decrypted_example.txt")
+        else:
+            print("Failed to proceed with decryption and verification due to key errors.")
+    
     else:
         print("Invalid search parameter.")
 
 # Example usage
 if __name__ == "__main__":
-   search=blog.set("generate keys",1)
-   file=blog.set("example.txt",2)
-   solve(search,file)
-   # solve("generate keys")
-    #solve("sign file", "example.txt")
-    #solve("read keys")
-    #private_key, public_key = read_keys_from_files("private_key.pem", "public_key.pem")
-    #if private_key is not None and public_key is not None:
-       # hybrid_encrypt_file(private_key, public_key, "example.txt", "encrypted_file.gpg")
-    #else:
-     #   print("Failed to proceed with signing and encryption due to key errors.")
+    solve("generate keys")
+    solve("sign file", "example.txt")
+    solve("read keys")
+    private_key, public_key = read_keys_from_files("private_key.pem", "public_key.pem")
+    if private_key is not None and public_key is not None:
+        hybrid_encrypt_file(private_key, public_key, "example.txt", "encrypted_file.gpg")
+        solve("decrypt and verify", "encrypted_file.gpg")
+    else:
+        print("Failed to proceed with signing and encryption due to key errors.")
+</pre>
+    </ol>
+<br>
+    <h2>Flag</h2>
+    <p class="flag">complete
+</p>
+
+    <h2>Conclusion</h2>
+    <p>this is a very   easy chanllenge for understands keys on real word and https</p>
+
+</body>
+</html>
