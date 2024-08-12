@@ -36,7 +36,9 @@ and return result
 clone blog and add blog.py to your path in linux or directory of this  code  and run it
 blog.py is for solve up challenges on base of privious challenges like AI
    if still have problem in run writeups use this editor still beta
+and also see ctfs and use them in apps like 
 https://github.com/cybersecctf/solveup
+
  <ol>
  
     </ol>
