@@ -88,11 +88,12 @@ def solve(hostname,username,passphrase,key_name):
     auth_keys_file.write(pub_key + "\n")
  # Connect to the local host using the generated key
 if __name__ == "__main__" :
- ssh_connect_with_key(hostname, username, os.path.expanduser(f"~/.ssh/{key_name}"), passphrase)
  hostname = blog.set("localhost",1)
  username = blog.set(os.getlogin(),2)  # Get the current logged-in user
  passphrase =blog.set( "your_passphrase",3)  # Optional
  key_name = blog.set("my_ssh_key",4)
+ ssh_connect_with_key(hostname, username, os.path.expanduser(f"~/.ssh/{key_name}"), passphrase)
+
  solve(hostname,username,passphrase,key_name)
 </pre>
 
