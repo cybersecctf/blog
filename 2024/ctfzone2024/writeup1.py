@@ -1,46 +1,58 @@
 
-import sys
-sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
-import blog
 from sage.all import *
-import random
-# sage
+from Crypto.Util.number import long_to_bytes
 from functools import namedtuple
+
+
+def genM(A=2**1000):
+    M = Matrix(QQ, [A*theta, 1, 0])
+    M = M.stack(vector([R(A*2*pi), 0, 0]))
+    M = M.stack(vector([A*w, 0, A]))
+    return Matrix(QQ, M)
+
+
+def convert(a2, a4, a6, Gx, Gy, Px, Py):
+    x = R["x"].gen()
+    f = x ** 3 + a2 * x ** 2 + a4 * x + a6
+    roots = f.roots()
+
+    # Singular point is a cusp.
+    if len(roots) == 1:
+        alpha = roots[0][0]
+        u = (Gx - alpha) / Gy
+        v = (Px - alpha) / Py
+        return int(v / u)
+
+    # Singular point is a node.
+    if len(roots) == 2:
+        if roots[0][1] == 2:
+            alpha = roots[0][0]
+            beta = roots[1][0]
+        elif roots[1][1] == 2:
+            alpha = roots[1][0]
+            beta = roots[0][0]
+        else:
+            raise ValueError("Expected root with multiplicity 2.")
+
+        t = (alpha - beta).sqrt()
+        u = (Gy + t * (Gx - alpha)) / (Gy - t * (Gx - alpha))
+        v = (Py + t * (Px - alpha)) / (Py - t * (Px - alpha))
+        #print(f"{u= }")
+        #print(f"{v = }")
+        return u, v
+
+    raise ValueError(f"Unexpected number of roots {len(roots)}.")
+
+
 Point = namedtuple("Point", ["x", "y"])
+R = RealField(prec=800)
 P, Q = loads(open("output.dump", "rb").read())
-print(P, Q)
-def solve(P, Q, E):
-    
-    try:
-     assert P == E((P[0], P[1]))
-    
-       
+u, v = convert(0, -3, -2, P.x, P.y, Q.x, Q.y)
 
-     res = 2*P
-     if res == Q:
-        return 2
-     if Q == E((0, 1, 0)):
-        return _order
-     if Q == P:
-        return 1
-     i = 3
-     while i <= P.order() - 1:
-        res = res + P
-        if res == Q:
-            return i
-        i += 1
-     return -1
-    except :
-        return "[-] Point does not lie on the curve"
+theta = u.argument()
+w = v.argument()
 
-E=blog.set(0,1)
-P = blog.set(0,2)
-Q=blog.set(0,3)
-try:
-        for _ in range(100):#manual change if not working in this problem
-            x = random.randint(2, 18)
-            assert solve(E((5, 1)), x*P, E) == x
-except Exception as e:
-        print(str(e))
+M = genM()
+L = M.LLL()
 
-
+print(long_to_bytes(abs(int(L[-1][1]))))

@@ -1,8 +1,6 @@
 from functools import namedtuple
 
-from secret import flag
 
-assert len(flag) == 33
 
 Point = namedtuple("Point", ["x", "y"])
 R = RealField(prec=800)
@@ -56,8 +54,4 @@ def multiply_by_scalar(P, n: int):
     return R0
 
 
-P = lift_x(R(5.0) + R.random_element())
-s = int.from_bytes(flag, 'big')
-Q = multiply_by_scalar(P, s)
-with open("output.dump", 'wb') as f:
-    f.write(dumps([P, Q]))
+pretty_print(x^2 / (x + 1)) 

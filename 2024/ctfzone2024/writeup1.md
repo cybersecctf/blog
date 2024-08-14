@@ -19,54 +19,143 @@
 and solve it with bruteforce or other method
 get p , q e by urself
 <pre>
-import blog
+#python conda activate   sage-env 
+#sage
 from sage.all import *
-import random
-# sage
+from Crypto.Util.number import long_to_bytes
 from functools import namedtuple
+
+
+def genM(A=2**1000):
+    M = Matrix(QQ, [A*theta, 1, 0])
+    M = M.stack(vector([R(A*2*pi), 0, 0]))
+    M = M.stack(vector([A*w, 0, A]))
+    return Matrix(QQ, M)
+
+
+def convert(a2, a4, a6, Gx, Gy, Px, Py):
+    x = R["x"].gen()
+    f = x ** 3 + a2 * x ** 2 + a4 * x + a6
+    roots = f.roots()
+
+    # Singular point is a cusp.
+    if len(roots) == 1:
+        alpha = roots[0][0]
+        u = (Gx - alpha) / Gy
+        v = (Px - alpha) / Py
+        return int(v / u)
+
+    # Singular point is a node.
+    if len(roots) == 2:
+        if roots[0][1] == 2:
+            alpha = roots[0][0]
+            beta = roots[1][0]
+        elif roots[1][1] == 2:
+            alpha = roots[1][0]
+            beta = roots[0][0]
+        else:
+            raise ValueError("Expected root with multiplicity 2.")
+
+        t = (alpha - beta).sqrt()
+        u = (Gy + t * (Gx - alpha)) / (Gy - t * (Gx - alpha))
+        v = (Py + t * (Px - alpha)) / (Py - t * (Px - alpha))
+        #print(f"{u= }")
+        #print(f"{v = }")
+        return u, v
+
+    raise ValueError(f"Unexpected number of roots {len(roots)}.")
+
+
 Point = namedtuple("Point", ["x", "y"])
+R = RealField(prec=800)
 P, Q = loads(open("output.dump", "rb").read())
-print(P, Q)
-def solve(P, Q, E):
-    
-    try:
-     assert P == E((P[0], P[1]))
-    
-       
+u, v = convert(0, -3, -2, P.x, P.y, Q.x, Q.y)
 
-     res = 2*P
-     if res == Q:
-        return 2
-     if Q == E((0, 1, 0)):
-        return _order
-     if Q == P:
-        return 1
-     i = 3
-     while i <= P.order() - 1:
-        res = res + P
-        if res == Q:
-            return i
-        i += 1
-     return -1
-    except :
-        return "[-] Point does not lie on the curve"
+theta = u.argument()
+w = v.argument()
 
-E=blog.set(0,1)
-P = blog.set(0,2)
-Q=blog.set(0,3)#get p,q from dump and calculate them with sage
-try:
-        for _ in range(100):#manual change if not working in this problem
-            x = random.randint(2, 18)
-            assert solve(E((5, 1)), x*P, E) == x
-except Exception as e:
-        print(str(e))
+M = genM()
+L = M.LLL()
+
+print(long_to_bytes(abs(int(L[-1][1]))))
+</pre>
+python version
+<pre>
+import numpy as np
+from sympy import symbols, sqrt, roots, re, im
+from Crypto.Util.number import long_to_bytes
+from collections import namedtuple
+
+# Precision for floating point numbers
+precision = 800
+np.set_printoptions(precision=precision)
+
+# Define named tuple for Points
+Point = namedtuple("Point", ["x", "y"])
+
+def genM(A=2**1000, u=None, v=None):
+    M = np.array([[A*u, 1, 0],
+                  [A*2*np.pi, 0, 0],
+                  [A*v, 0, A]], dtype=np.float64)
+    return M
+
+def convert(a2, a4, a6, Gx, Gy, Px, Py):
+    x = symbols('x')
+    f = x**3 + a2 * x**2 + a4 * x + a6
+    roots_ = roots(f)
+
+    roots_list = list(roots_.keys())
+
+    # Singular point is a cusp
+    if len(roots_list) == 1:
+        alpha = roots_list[0]
+        u = (Gx - alpha) / Gy
+        v = (Px - alpha) / Py
+        return abs(u), abs(v)
+
+    # Singular point is a node
+    elif len(roots_list) == 2:
+        alpha, beta = None, None
+
+        for root, multiplicity in roots_.items():
+            if multiplicity == 2:
+                alpha = root
+            else:
+                beta = root
+
+        if alpha is None or beta is None:
+            raise ValueError("Expected root with multiplicity 2.")
+
+        t = sqrt(re(alpha - beta))
+        u = (Gy + t * (Gx - alpha)) / (Gy - t * (Gx - alpha))
+        v = (Py + t * (Px - alpha)) / (Py - t * (Px - alpha))
+        return abs(u), abs(v)
+
+    raise ValueError(f"Unexpected number of roots {len(roots_list)}.")
+
+# Load points P and Q from a dump file
+P, Q = Point(x=1, y=2), Point(x=3, y=4)  # Replace this with actual deserialization code
+
+u, v = convert(0, -3, -2, P.x, P.y, Q.x, Q.y)
+
+# Directly use u and v as they are real numbers
+M = genM(u=u, v=v)
+
+# Perform LLL reduction using NumPy (this part needs a proper LLL implementation, which isn't directly available in NumPy)
+# Placeholder for LLL, assuming L is the result of LLL reduction
+L = np.linalg.qr(M)[0]  # Replace with proper LLL implementation
+
+# Print the result
+print(long_to_bytes(abs(int(L[-1][1]))))
+
+
 
 
 </pre>
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">CTFZone{m4yb3_5h35_4_c0mpl3x_0n3}
 </p>
 
     <h2>Conclusion</h2>
