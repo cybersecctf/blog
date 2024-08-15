@@ -21,11 +21,19 @@ import os
 import subprocess
 import blog
 def solve(file_path, search="{",home_dir=""):
+    if ">" in file_path or "<" in file_path:
+         d=[]
+         result = subprocess.run(file_path, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
+         s=result.stdout.splitlines()
+         for x in s:
+          if x!="":
+            d.append(x)
+         return d
     if not os.path.isfile(file_path):
-        command = file_path
+              command = file_path
     else: 
-        with open(file_path, 'r') as file:
-            command = file.read().strip()
+              with open(file_path, 'r') as file:
+                command = file.read().strip()
   
                  
     full_command = f"{command} > temp.sh && chmod +x temp.sh && strings temp.sh"
@@ -69,7 +77,8 @@ def solve(file_path, search="{",home_dir=""):
 
 if __name__ == "__main__": 
   command=blog.set("strings garden.jpg",1)
-  search=blog.set("",2)
+ 
+  search=blog.set("pico",2)
   print(solve(command,search))
 
 

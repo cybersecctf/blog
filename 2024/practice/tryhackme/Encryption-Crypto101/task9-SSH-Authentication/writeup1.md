@@ -44,8 +44,16 @@ import blog
 
 import paramiko
 import os
-
+import subprocess
 # Generate SSH keys
+def runsh(command):
+  d=[]
+  result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
+  s=result.stdout.splitlines()
+  for x in s:
+   if x!="":
+        d.append(x)
+  return d
 def generate_ssh_keys(key_name, passphrase=None):
     key = paramiko.RSAKey.generate(2048)
     private_key_path = os.path.expanduser(f"~/.ssh/{key_name}")
@@ -74,27 +82,38 @@ def ssh_connect_with_key(hostname, username, key_path, passphrase=None):
     finally:
         client.close()
 
+def crackpassword(file):
+  rockyou=blog.solveup("garden","locate rockyou.txt","/usr/share")
+  john=blog.solveup("garden","locate ssh2john","bin")
+  blog.solveup("garden",f"python {john} {file} >ssh.txt","")
 
+  d=blog.solveup("garden",f"john ssh.txt --wordlist={rockyou}","")   
+  return  d
 
-def solve(hostname,username,passphrase,key_name):
- # Generate SSH keys
- generate_ssh_keys(key_name, passphrase)
-
- # Add the public key to the authorized_keys file
- authorized_keys_path = os.path.expanduser("~/.ssh/authorized_keys")
- with open(f"{os.path.expanduser(f'~/.ssh/{key_name}.pub')}", 'r') as pub_key_file:
+def solve(q,val):
+ print(val)  
+ if q=="connect ssh":
+  # Generate SSH keys
+  generate_ssh_keys(key_name, passphrase) 
+  # Add the public key to the authorized_keys file
+  authorized_keys_path = os.path.expanduser("~/.ssh/authorized_keys")
+  with open(f"{os.path.expanduser(f'~/.ssh/{key_name}.pub')}", 'r') as pub_key_file:
     pub_key = pub_key_file.read()
- with open(authorized_keys_path, 'a') as auth_keys_file:
+  with open(authorized_keys_path, 'a') as auth_keys_file:
     auth_keys_file.write(pub_key + "\n")
- # Connect to the local host using the generated key
+  # Connect to the local host using the generated key
+  ssh_connect_with_key(hostname, username, os.path.expanduser(f"~/.ssh/{key_name}"), passphrase)
+  return
+ if q=="crack password":
+     return crackpassword(val)
 if __name__ == "__main__" :
- hostname = blog.set("localhost",1)
- username = blog.set(os.getlogin(),2)  # Get the current logged-in user
- passphrase =blog.set( "your_passphrase",3)  # Optional
- key_name = blog.set("my_ssh_key",4)
- ssh_connect_with_key(hostname, username, os.path.expanduser(f"~/.ssh/{key_name}"), passphrase)
-
- solve(hostname,username,passphrase,key_name)
+ val=[""]*5
+ q=blog.set("crack password",1)#or connect ssh
+ val[0] = blog.set("id_rsa",2,"str") #or  server to connect
+ val[1] = blog.set(os.getlogin(),3)  # Get the current logged-in user
+ val[2] =blog.set( "your_passphrase",4)  # Optional
+ val[3] = blog.set("my_ssh_key",5)
+ print(solve(q,val[0]))
 </pre>
 
     </ol>
