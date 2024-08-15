@@ -1,100 +1,288 @@
-
-<!DOCTYPE html>
-<html>
- 
-<body>
-    <h1>picoctf2019-glory of garden  Writeup </h1>
-
-    <h2>Challenge Description</h2>
-    <p> This garden contains more than it seems.
-garden:https://jupiter.challenges.picoctf.org/static/43c4743b3946f427e883f6b286f47467/garden.jpg
-</p>
-
-    <h2>Solution Approach</h2>
-    <p>Here are the steps we took to solve the challenge:</p>
-    <ol> 
-        <li>after using binawalk and exiftool not working using 
-
-<pre>
-#python
-import os
-import subprocess
-import blog
-def solve(file_path, search="{",home_dir=""):
-    if ">" in file_path or "<" in file_path:
-         d=[]
-         result = subprocess.run(file_path, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
-         s=result.stdout.splitlines()
-         for x in s:
-          if x!="":
-            d.append(x)
-         return d
-    if not os.path.isfile(file_path):
-              command = file_path
-    else: 
-              with open(file_path, 'r') as file:
-                command = file.read().strip()
-  
-                 
-    full_command = f"{command} > temp.sh && chmod +x temp.sh && strings temp.sh"
-    if home_dir!="":
-      os.chdir(home_dir)
-    try:
-        result = subprocess.run(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
-        combined_output = result.stdout + result.stderr
-    except subprocess.TimeoutExpired:
-        combined_output = "Command timed out after 15 seconds."
-    except subprocess.CalledProcessError as e:
-        combined_output = e.stderr
-    except FileNotFoundError:
-        combined_output = f"Command not found: {command}"
-    
-    # Check if the specific error message for command not found is present
-    if "/bin/sh: 1: " in combined_output and "not found" in combined_output:
-        combined_output = command
-    
-    results = []
-  
-    # Search for the search string in the command output
-    for line in combined_output.splitlines():
-        if search in line:
-            results.append(line)
-    
-    # If no results found and the file exists, process the file content itself
-    file_content=""
-    if len(results) == 0 and os.path.isfile(file_path):
-        with open(file_path, 'r') as file:
-            file_content = file.read()
-    for line in file_content.splitlines():
-            if search in line:
-                results.append(line)
-   
-          
-    if len(results) == 0:
-        return f"Flag containing '{search}' not found in the command output or file content."
-    else:
-        return "\n".join(results)
-
-if __name__ == "__main__": 
-  command=blog.set("strings garden.jpg",1)
- 
-  search=blog.set("pico",2)
-  print(solve(command,search))
-
-
-
- 
-
-
- 
-</pre>
-    </ol>
-<br>
-    <h2>Flag</h2>
-    <p class="flag">picoCTF{more_than_m33ts_the_3y3657BaB2C}
-</p>
-
-    <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
-</body>
-</html>
+blog readme cybersecctf Home index , https://cybersecctf.github.io/blog/README.md
+blog Ai cybersecctf, https://cybersecctf.github.io/blog/Ai
+obediantcat picoctf using cat  in linux very easy general, https://cybersecctf.github.io/blog/2023/practice/picoctf/obediantcat/writeup1.md
+erass nitectf2023 using cat and wget in linux writeups1 very easy,https://cybersecctf.github.io/blog/2023/nitectf2023/erass/writeup1.md     
+nicenetcat picoctf netcat in linux decimal to ascii very easy crypto, https://cybersecctf.github.io/blog/2023/practice/picoctf/nicenetcat/writeup1.md
+mod26 picoctf rot 13 with python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/mod26/writeup1.md
+information picoctf   sample decrypt with exiftool  image and forensics very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/information/writeup1.md
+pythonwrangling picoctf  reverse and decode in python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/PythonWrangling/writeup1.md
+waveaflag picoctf  reverse on python very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/waveaflag/writeup1.md 
+getahead  picoctf using burpsuit and curl for head request in url and web exploitation very easy, https://cybersecctf.github.io/blog/2023/practice/picoctf/getahead/writeup1.md
+happynewyear asisctf2023 copy and past flag very easy,https://cybersecctf.github.io/blog/2023/asisctf2023/happynewyear/writeup1.md
+MatryoshkaDoll picoctf  work with nested zip and images in python very easy Forensics,https://cybersecctf.github.io/blog/2023/practice/picoctf/Matryoshkadoll/writeup1.md
+PracticeFlag ctflearn copypast flag inspect url web easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/practiceflag/writeup1.md
+Insp3ct0r picoctf work with inspect and web developer in web browser very easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/Insp3ct0r/writeup1.md
+LetsWarmUp picoctf convert decimal to asci in python very easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/LetsWarmUp/writeup1.md
+tabtabattack picoctf  use tab autocomplete in linux terminal very easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/tabtabattack/writeup1.md
+Staticainotalwaysnoise picoctf analysis bash and elf binary files in linux, https://cybersecctf.github.io/blog//2024/practice/picoctf/Staticainotalwaysnoise/writeup1.md
+crackme picoctf reverse enginering and cryptography in python easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/crackme/writeup1.md
+2024 archive,https://github.com/cybersecctf/blog/tree/main/2024
+2023 archive,https://github.com/cybersecctf/blog/tree/main/2023
+2024 practice archive,staticainotalwaysnoise024/practice
+2023 practice archive,https://github.com/cybersecctf/blog/tree/main/2023/practice
+nitectf 2023,https://cybersecctf.github.io/blog/2023/nitectf2023
+asisctf 2023,https://cybersecctf.github.io/blog/2023/asisctf2023
+PickerI  picogymExclusive easy reverse engineering in python and netcat 0x hex to text,https://cybersecctf.github.io/blog/2024/practice/picoctf/PickerI/writeup1.md 
+warmedup  picoctf convert 0x hex to decimal in python very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/warmedup/writeup1.md
+bufferoverflow0 picoctf2022 binary exploitation via easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/bufferoverflow0/writeup1.md
+czech-where irisctf2024 osint search on internet and google map easy,https://cybersecctf.github.io/blog/2024/irisctf/czech-where/writeup1.md
+thejohnsons irisctf2024 reverse enginering with gidra medium,  https://cybersecctf.github.io/blog/2024/practice/irisctf2024/thejohnsons/writeup1.md 
+Rune?What’sthat?  irisctf2024Golang reverse enginering work with dcimal and char easy, https://cybersecctf.github.io/blog/2024/practice/irisctf2024/runwhatsthat/writeup1.md 
+what'sMyPassword? irisctf2024  web exploitation  and sql injection vulnerability medium,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/whatismypassword/writeup1.md 
+AwayOnVacation irisctf2024 osint and search in instagram easy,https://cybersecctf.github.io/blog/2024/practice/irisctf2024/awayonvacation/writeup1.md 
+gloryofgarden picoctf2019 using pico strings file read file and grep for get flag and search in file very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/gloryofgarden/writeup1.md
+what'sanetcat picoctf2019 garden using netcat very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/whatsanetcat/writeup1.md
+2Warm picoctf2019 convert decimal to binarywith python very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/2warm/writeup1.md
+wherearetherobots picoctf2019 web explotation aand find hiddenpage with robots easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/wherearetherobots/writeup1.md 
+thenumbers picoctf2019 cryptography with python for convert decimal and asci to char very easy,  https://cybersecctf.github.io/blog/2024/practice/picoctf/thenumbers/writeup1.md 
+Wiresharkdoodo picoctf2021 work with pcapng file and network and forensics easy,  https://cybersecctf.github.io/blog/2024/practice/picoctf/wireshardodo/writeup1.md 
+cookies picoctf2021 set cookies in loops of values with python easy,  https://cybersecctf.github.io/blog/2024/practice/picoctf/cookies/writeup1.md 
+scavengerhunt picoctf2021 swork with apache  server in mac and web exploitation easy,  https://cybersecctf.github.io/blog/2024/practice/picoctf/scavengerhunt/writeup1.md 
+webfunnylogin dicectf2024 sql injection and web exploitation and work with javascript easy,https://cybersecctf.github.io/blog/2024/dicectf/webfunnylogin/writeup1.md
+dicedicegoose dicectf2024 web exploitation with work on game and javascript and html easy,https://cybersecctf.github.io/blog/2024/practice/dicectf/dicedicegoose/writeup1.md
+winter dicectf2024 Cryptography   with work on Winternitz signature scheme and python medium,https://cybersecctf.github.io/blog/2024/practice/dicectf/cryptowinter/writeup1.md
+gpwaf dicectf 2024 work on SSTI web exploitations and javascript medium,https://cybersecctf.github.io/blog/2024/dicectf/gpwaf/writeup1.md
+someassemblyrequired1 picoctf2021 sw wor web assembly and javascript and web expolitation medium,  https://cybersecctf.github.io/blog/2024/practice/picoctf/someassemblyrequired1/writeup1.md 
+library 0xL4ughCTF2024 command injection in python medium,https://cybersecctf.github.io/blog/2024/practice/0xL4ughCTF/library/writeup1.md
+web/terms-and-conditions lactf2024 save file and edit script and fix button and erbexploitation easy,https://cybersecctf.github.io/blog/2024/lactf2024/termsandconditions/writeup1.md
+comments link,https://github.com/cybersecctf/blog/issues/1
+web/flaglang lactf2024 javascript yaml and web exploitation easy,https://cybersecctf.github.io/blog/2024/lactf2024/flaglang/writeup1.md
+dont-use-client-side client picoctf2019 side attack and javascript easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/dont-use-client-side/writeup1.md
+learning Types of Client-Side Attacks easy,https://www.geeksforgeeks.org/types-of-client-side-attacks/
+fixme2.py fix picomini2022beginner python script and =  very easy general,https://cybersecctf.github.io/blog/2024/practice/picoctf/fixme2py/writeup1.md
+Stonks picoctf2021 stack overflow in and solve with python and pwn medium,https://cybersecctf.github.io/blog/2024/practice/picoctf/stonks/writeup1.md
+stringsit picoctf2019 using strings and grep command in linux general easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/stringsit/writeup1.md
+valut-door-1 picoctf2019 java reverse engineering with python easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/vaultdoor1/writeup1.md
+firstfind picogymExclusive search text and filename in zip and nested folder,https://cybersecctf.github.io/blog/2024/practice/picoctf/firstfind/writeup1.md
+BigZip picogymExclusive search text and filename in zip and nested folder,https://cybersecctf.github.io/blog/2024/practice/picoctf/bigzip/writeup1.md
+ASCIIFTW picogymExclusive work with ghidra and extract hex and convert to asci online,https://cybersecctf.github.io/blog/2024/practice/picoctf/ASCIIFTW/writeup1.md
+ASCIINumbers picogymExclusive convert hex to ascii and text with python,https://cybersecctf.github.io/blog/2024/practice/picoctf/ASCIINumbers/writeup1.md
+ARMssembly1 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/ARMssembly1/writeup1.md 
+Bit-O-Asm-1 picogymExclusive reverse engineering in x86-64 with asm and eax,https://cybersecctf.github.io/blog/2024/practice/picoctf/Bit-O-Asm-1/writeup1.md
+wasm learning in ctf webassembly Reverse Engineering medium,https://medium.com/tenable-techblog/coding-a-webassembly-ctf-challenge-5560576e9cb7
+Bit-O-Asm-2  picogym Exclusive reverse engineering in x86-64 with asm and eax,https://cybersecctf.github.io/blog/2024/practice/picoctf/Bit-O-Asm-2/writeup1.md
+Bit-O-Asm-3  picogym Exclusive reverse engineering in x86-64 with asm and eax with python,https://cybersecctf.github.io/blog/2024/practice/picoctf/Bit-O-Asm-3/writeup1.md
+Bit-O-Asm-4  picogym Exclusive reverse engineering in x86-64 with asm and eax with python,https://cybersecctf.github.io/blog/2024/practice/picoctf/Bit-O-Asm-4/writeup1.md
+GDBbabystep1  picogymExclusive reverse engineering in x86-64 with asm and eax with python and disassemble main with gdb easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/GDBbabystep1/writeup1.md
+GDBbabystep2  picogymExclusive reverse engineering in x86-64 with asm and eax with python and disassemble main and watch eax with gdb easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/GDBbabystep2/writeup1.md 
+GDBbabystep3  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/GDBbabystep3/writeup1.md
+GDBbabystep4  picogymExclusive  main and watch memoryaddress abd rbp with gdb and watch asm when run medium, https://cybersecctf.github.io/blog/2024/practice/picoctf/GDBbabystep4/writeup1.md
+LocalTarget  picogymExclusive easy buferover flow very easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/LocalTarget/writeup1.md
+printhello learningctf2024 print argument very easy,https://cybersecctf.github.io/blog/2024/learningctf2024/printhello/writeup1.md
+PickerII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/PickerII/writeup1.md 
+PickerIII  picogymExclusive easy reverse engineering in python and netcat filter input and print flag with add new choice very easy ,https://cybersecctf.github.io/blog/2024/practice/picoctf/PickerIII/writeup1.md 
+PickerIV  picogymExclusive easy ret2win binary explotion very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/PickerIV/writeup1.md 
+WPA-ingOut  picogymExclusive get passwords of pcaqp file from wifi easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/WPA-ingOut/writeup1.md
+JAuth picogymExclusive gweb exploitation and component security and jwt  vulnerability, https://cybersecctf.github.io/blog/2024/practice/picoctf/JAuth/writeup1.md
+superssh picoctf2024 ssh easy general,https://cybersecctf.github.io/blog/2024/pico2024/superssh/writeup1.md
+TimeMachine picoctf2024 github commit general,https://cybersecctf.github.io/blog/2024/pico2024/TimeMachine/writeup1.md
+Commitmentissues picoctf2024 github commit general,https://cybersecctf.github.io/blog/2024/pico2024/CommitmentIssues/writeup1.md
+BlameGame picoctf2024 github commit search on github commit general,https://cybersecctf.github.io/blog/2024/pico2024/BlameGame/writeup1.md
+CollaborativeDevelopment picoctf2024 github  diff search easy,https://cybersecctf.github.io/blog/2024/pico2024/CollaborativeDevelopment/writeup1.md
+binhexa picoctf2024 doing binary operations on python and convert binary to hex general,https://cybersecctf.github.io/blog/2024/pico2024/binhexa/writeup1.md
+SecretofthePolyglot picoctf2024 convert image type and use file in linux and  forensics very easy,https://cybersecctf.github.io/blog/2024/pico2024/SecretofthePolyglot/writeup1.md
+Bookmarklet picoctf2024 run javascript in web and client side attack and web exploitation very easy,https://cybersecctf.github.io/blog/2024/pico2024/Bookmarklet/writeup1.md
+WebDecode picoctf2024 inspect search wepages base64,https://cybersecctf.github.io/blog/2024/pico2024/WebDecode/writeup1.md
+formatstring0 picoctf2024 detect format strings vulunerability linux very easy binary exploitation,https://cybersecctf.github.io/blog/2024/pico2024/formatstring0/writeup1.md
+ScanSurprise picoctf2024 search   qrcode text  inside zip forensics easy,https://cybersecctf.github.io/blog/2024/pico2024/ScanSurprise/writeup1.md
+Verify  picoctf2024  verify and check sha256sum  of file with checksum.txt forensics,https://cybersecctf.github.io/blog/2024/pico2024/Verify/writeup1.md
+heapoverflow pico2019  picoctf2024https://cybersecctf.github.io/blog/2024/practice/picoctf/heapoverflow/writeup1.md
+heap0 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://cybersecctf.github.io/blog/2024/pico2024/heap0/writeup1.md
+heap1 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities,https://cybersecctf.github.io/blog/2024/pico2024/heap1/writeup1.md
+MobPsycho picoctf2024  search and find  in apk content or file name for flag easy forensics,https://cybersecctf.github.io/blog/2024/pico2024/Mobpsycho/writeup1.md
+Customencryption picoctf2024  custom encryption with diffie hellman   and reverse it medium,https://cybersecctf.github.io/blog/2024/pico2024/Customencryption/writeup1.md
+c3  picoctf2024  Custom Cyclical Cipher! easy,https://cybersecctf.github.io/blog/2024/pico2024/C3/writeup1.md
+50char  learningctf2024  create 50 random character  in python very easy,https://cybersecctf.github.io/blog/2024/learningctf2024/char50/writeup1.md
+fileequallity learningctf2024 check file is equal,https://cybersecctf.github.io/blog/2024/learningctf/fileequallity/writeup1.md
+packer  picoctf2024 reverse enginering with reduce size of elf and use on ghidra medium ,https://cybersecctf.github.io/blog/2024/pico2024/packer/writeup1.md
+Unminify  picoctf2024 web exploitation  obfuscation minification get content of  site with curl  very easy,https://cybersecctf.github.io/blog/2024/pico2024/Unminify/writeup1.md 
+heap2 picoctf2024 bufferoverflow and binay exploitation and heap 0 bufferoverflow vulnerabilities and solve with python pwn and gdb,https://cybersecctf.github.io/blog/2024/pico2024/heap2/writeup1.md
+IntroToBurp picoctf2024 web exploitation with work on burpsuit and register and otp,https://cybersecctf.github.io/blog/2024/pico2024/IntroToBurp/writeup1.md
+dont-you-love-banners picoctf2024 medium,https://cybersecctf.github.io/blog/2024/pico2024/dont-you-love-banners/writeup1.md
+BinarySearch picoctf binraysearch on host and bash,https://cybersecctf.github.io/blog/2024/pico2024/BinarySearch/writeup1.md
+MindyourPsandQs pico2021 rsa   small n(less 100 char) and e 65537   python factordb site easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MindyourPsandQs/writeup1.md 
+MagikarpGroundMission pico2021 ls move between directories in linux very easy and decrypt-base64 easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/MagikarpGroundMission/writeup1.md 
+tunn3lv1s10n picoctf2021 hex editor and png forensics very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/tunn3lv1s10n/writeup1.md 
+EasyPeasy picoctf2021 cryptography reverse xor pwn  python  easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/EasyPeasy/writeup1.md 
+ARMssembly0 picoctf2021 reverse enginerring asm convert decimal to 32bit hex easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/ARMssembly0/writeup1.md 
+speedsandfeeds picoctf2021 gcode cnc viewer reverse engineering very easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/speedsandfeeds/writeup1.md 
+Shop picoctf2024 hack nc shop convert decimal array string,https://cybersecctf.github.io/blog/2024/practice/picoctf/Shop/writeup1.md
+interencdec picoctf2024 cryptography base64 caesar decrypt easy,https://cybersecctf.github.io/blog/2024/pico2024/interencdec/writeup1.md
+newcaesar picoctf2021 reverse and cryptography of cuastom cipher and caesar in python easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/newcesar/writeup1.md
+tcacheattack leaningctf with   sample c code easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/CacheMeOutside/writeup2.md
+CacheMeOutside picoctf2021  tcache attack with c and heap/binary exploitation medium,https://cybersecctf.github.io/blog/2024/practice/picoctf/CacheMeOutside/writeup1.md
+minirsa picoctf2021   rsa small values n c e=3 easy, https://cybersecctf.github.io/blog/2024/practice/picoctf/MiniRSA/writeup1.md
+DachshundAttacks picoctf2021 rsa small d and Wiener RSA attack easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/DachshundAttacks/writeup1.md
+TrivialFlagTransferProtocol picoctf2021  extract wifi file and image with steghide  forensics easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/TrivialFlagTransferProtocol/writeup1.md
+amateursctf readme,https://cybersecctf.github.io/blog/2024/amateursctf/Readme.md
+denied amateursctf curl get cookie web easy,https://cybersecctf.github.io/blog/2024/amateursctf/denied/writeup1.md
+aesy amateursctf  aes decrypt with key crypto easy,https://cybersecctf.github.io/blog/2024/amateursctf/aesy/writeup1.md
+agile-rut amateursctf2024 get flag from font forensics easy,https://cybersecctf.github.io/blog/2024/amateursctf/agile-rut/writeup1.md
+bathroom-break amateursctf2024   find location of  two image with google search and reviews osint easy,https://cybersecctf.github.io/blog/2024/amateursctf/bathroom-break/writeup1.md
+easy1 picoctf2019 vigenercipher with key crypto python easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/easy1/writeup1.md
+Wiresharktwootwoootwotwoo... picocctf2021 pcapnf wireshark get flag forensic medium,https://cybersecctf.github.io/blog/2024/practice/picoctf/Wiresharktwoo/writeup1.md
+caesar picoctf2019 caesay decrypt and crypto easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
+firstgrep picoctf2019  grep forensics easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
+bases picoctf2019  convert base64 to text crypto  easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
+ NoPaddingNoProblem picoctf2021 rsa oracle attack with pwn nc cryptography easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/NoPaddingNoProblem/writeup1.md 
+rsaattack learningctf2024 find rsaatttack and decrypt c cryptography medium,https://cybersecctf.github.io/blog/2024/learningctf2024/rsaatttack/writeup1.md
+basic-mod1 picoct2022    substitution cipher python cryptography   easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md
+basic-mod2 picoct2022    substitution cipher python cryptography modular inverse   easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md
+cryptoctf1  crypto-acting-shifty vigener chipher with key or plaintext crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptoctf1/crypto-acting-shifty/writeup1.md
+cryptoctf1 keepitzipped zip password   and search text inside it forensics crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptoctf1/keepitzipped/writeup1.md
+MTVCribs RickAndMortyCTF crypto xor onetimepad xorwith key from values medum,https://cybersecctf.github.io/blog/2024/practice/RickAndMortyCTF/crypto-mtv-cribs/writeup1.md
+babyrsa dicectf2022 rsa rooted n rsa easy crypto, https://cybersecctf.github.io/blog/2024/practice/dicectf/babyrsa/writeup1.md  
+googlectf-beginners-quest 0000-0  caesar and crypto easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/0/writeup1.md
+googlectf-beginners-quest 0000-1  caesar with key and vigenere cipher crypto easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/1/writeup1.md
+googlectf-beginners-quest 0000-2  vigenere cipher crypto  with frequency analysis easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/2/writeup1.md
+googlectf-beginners-quest 0000-3    cipher  transposition substitution   easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/0000/3/writeup1.md
+googlectf-beginners-quest 1837-0  american morse code decoder  easy with python ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/0/writeup1.md
+googlectf-beginners-quest 1837-1  decode vigener chipher after american morse code decoder  easy with python  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/1/writeup1.md
+googlectf-beginners-quest 1837-2  detect adfgvx and  decode with key medium crypto  ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup2.md
+googlectf-beginners-quest 1837-2  get flag from two chipher and plain text crypto medium ,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1837/2/writeup1.md
+googlectf-beginners-quest 1943-0 google socat connect and base convertor base64 decode encode venona  easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/0/writeup1.md
+googlectf-beginners-quest 1943-1   google venona  multi  time pad medium xor attack,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/1/writeup1.md
+googlectf-beginners-quest 1943-2   google venona  one   time pad xor python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1943/2/writeup1.md
+googlectf-beginners-quest 1965-0   google basic   reverse string python easy,https://cybersecctf.github.io/blog/2024/googlectf/beginners-quest/1965/0/writeup1.md
+bsides-delhi-ctf2018 RecursiveCracker2 convert hex to file forensics easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup2.md
+bsides-delhi-ctf2018 RecursiveCracker2 find nested find zip password forensics python  easy ,  https://cybersecctf.github.io/blog/2024/bsidesdl/RecursiveCracker/writeup1.md
+google-ctf-2018-begginer floppy search text in zip misc easy,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc/writeup1.md 
+google-ctf-2018-begginer floppy2 run msdos file on linux get output on text file ubuntu/debian misc easy ,https://cybersecctf.github.io/blog/2024/googlectf/begginer2018/floppymisc2/writeup1.md 
+ctflearn BasicInjection1  sql injection easy web sanitiz inputs,https://cybersecctf.github.io/blog/2024/practice/ctflearn/BasicInjection/writeup1.md
+ctflearn charcterencoding convert hex to ascii and base64 easy crypto ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/charcterencoding/writeup1.md
+ctflearn Forensics101 strings files and image pic grep flag easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Forensics101/writeup1.md
+ctflearn TakingLS ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/TakingLS/writeup1.md
+ctflearn base22the6 ls search inside zip file forensics python easy, https://cybersecctf.github.io/blog/2024/practice/ctflearn/base22the6/writeup1.md
+morsecode ctflearn convert moresecode to english and american style text easy crypto,  https://cybersecctf.github.io/blog/2024/practice/ctflearn/MorseCode/writeup1.md
+wherecanmyrobotgo ctflearn find robot in site with python easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wherecanmyrobotgo/writeup1.md
+ReversePolarity ctflearn convert base2 to string crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ReversePolarity/writeup1.md
+wikipedia ctflearn wikipedia search very easy web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/wikipedia/writeup1.md
+WOWSoMeta ctflearn exiftool linux get meta of pic and image with  forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/WOWSoMeta/writeup1.md
+Binwalk ctflearn extract files inside another zip and pic any forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Binwalk/writeup1.md 
+Hextroadinary ctflearn xor hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Hextroadinary/writeup1.md
+vigenerecipher ctflearn vigenere cipher with key known plaintext and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
+exif ctflean exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
+RubberDuck ctflearn    exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
+HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/HyperStreamtest/writeup1.md 
+QRCode ctflearn qrcode rot13 base64 decode encode python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/QRCode/writeup1.md 
+SimpleProgramming ctflearn python programming read lines coun 1 0 easy rev ,gitisgood ctflearn git show history changes easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/GitIsGood/writeup1.md
+https://cybersecctf.github.io/blog/2024/practice/ctflearn/SimpleProgramming/writeup1.md
+iamdump ctflearn cat dump file linux forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Imadump/writeup1.md 
+Snowboard ctflearn file linux forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Snowboard/writeup1.md
+LazyGameChallenge ctflearn binary explitation manual very easy ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/LazyGameChallenge/writeup1.md 
+LazyGamesource ctflearn play game bet  very easy ,https://cybersecctf.github.io/blog/2024/practice/ctflearn/LazyGameChallenge/game.md 
+PikesPeak ctflearn strings linux easy forensics, https://cybersecctf.github.io/blog/2024/practice/ctflearn/PikesPeak/writeup1.md 
+Gobustme ctflearn gobuster  dir  web easy web, https://cybersecctf.github.io/blog/2024/practice/ctflearn/Gobustme/writeup1.md
+Chalkboard ctflean exiftool math forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Chalkboard/writeup1.md
+Tux ctflearn exiftool forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Tux/writeup1.md
+ModernGaiusJuliusCaesar ctflearn keyboard shift cipher  easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
+keyboardtypes ctflearn keyboard type easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
+PhoIsTasty ctflearn seach hexdump easy forensics , https://cybersecctf.github.io/blog/2024/practice/ctflearn/PhoIsTasty/writeup1.md 
+timetraveller ctflearn search on history web.archive.org archive web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TimeTraveller/writeup1.md
+SimpleSteganography easy steganography steghide password easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SimpleSteganography/writeup1.md
+myblog ctflearn  notmywriteup,https://github.com/rishitsaiya/CTFlearn-Writeups/tree/master/Web/My%20Blog
+PDFbyfdpumyp ctflearn strings pdf forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/PDFbyfdpumyp/writeup1.md
+Suspeciousmessage ctflearn playfair cipher crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/writeup1.md
+minions ctflearn binwalk rar zip search forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/writeup1.md
+GandalfTheWise ctflearn xor two string forensics crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/GandalfTheWise/writeup1.md
+simplebuf ctflearn binary exploitation overflow easy c,https://cybersecctf.github.io/blog/2024/practice/ctflearn/simplebuf/writeup1.md
+tonedialing ctflearn tone dialing decoder groupby crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/tonedialing/writeup1.md
+cryptohack greatesnake join python decimal to asci with hex version run easy   crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/greatsnakes/writeup1.md 
+xor  search hex key join python decimal to asci with hex version run snakes search easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/greatsnakes/writeup2.md 
+cryptohack ascii decimal to asci python easy   crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ascii/writeup1.md 
+cryptohack hex to ascii python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/hex/writeup1.md
+cryptohack base64 encode/decode hex to base64 ascii easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/base64/writeup1.md
+cryptohack BytesandBigIntegers    encode/decode full long byte message base64 ascii easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/BytesandBigIntegers/writeup1.md
+cryptohack xorstarter xor string integer list  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorstarter/writeup1.md
+XORProperties cryptohack xor two hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/xorproperties/writeup1.md
+cryptohack Favouritebyte decode one hex key single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/Favouritebyte/writeup1.md
+youeitherknowxoryoudont cryptohack decode one xor hex partial key search single byte XOR cypher easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/youknowxor/writeup1.md 
+cryptohack  GreatestCommonDivisor Greatest Common Divisor (GCD) egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/gcd/writeup1.md 
+cryptohack ExtendedGCD   Extended GCD egcd  with  Euclid's Algorithm non recursive  python easy  crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/egcd/writeup1.md 
+cryptohack modulararithmetic1  modular arithmetic and find  two integers mod and check congruent python crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic1/writeup1.md
+cryptohack ModularArithmetic2   Fermat's little theorem fermat test easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/writeup1.md
+cryptohack findpq2  small  n with fermat little  n find pq easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularArithmetic2/fermatfactor/writeup1.md
+cryptohack ModularInverting  modular Inverting and extended gcd python easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularInverting/writeup1.md
+cryptohack QuadraticResidues  root0   quadratic residue  calculate square root  module smaller one as the flag easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/QuadraticResidues/writeup1.md
+LegendreSymbol cryptohack calculate  quadratic residues Legendre Symbol easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/LegendreSymbol/writeup1.md
+ModularSquareRoot cryptohack ,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularSquareRoot/writeup1.md 
+ChineseRemainderTheorem cryptohack modinverse easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ChineseRemainderTheorem/writeup1.md
+AdriensSigns cryptohack challenge euler criterion medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/AdriensSigns/writeup1.md
+sanitycheck angstromctf2024 reverse string python very easy misc,   https://cybersecctf.github.io/blog/2024/actf/sanity/writeup1.md 
+putnam angstromctf2024 connect netcat sum python easy misc,https://cybersecctf.github.io/blog/2024/actf/putnam/writeup1.md
+trip angstromctf2024 exiftool linux python  very easy misc, https://cybersecctf.github.io/blog/2024/actf/trip/writeup1.md
+jojo1 nopsctf convert hex to string easy crypto,https://cybersecctf.github.io/blog/2024/nopsctf/jojo/1/writeup1.md 
+MorseMe nopsctf decode morse from file string easy crypto, https://cybersecctf.github.io/blog/2024/nopsctf/MorseMe/writeup1.md
+whreiiam1/3 nopsctf   search in google leans easy osint,https://cybersecctf.github.io/blog/2024/nopsctf/whreiiam/writeup1.md
+MODULAR BINOMIALS binomials and find pq witn ne1e2c1c2 crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/ModularArithmetic/ModularBinomials/writeup1.md
+KeyedPermutations cryptohack bijection defination implementation easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/KeyedPermutations/writeup1.md
+ResistingBruteforce cryptohack single-key attack against AES biclique easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ResistingBruteforce/writeup1.md
+StructureofAES cryptohack SYMMETRIC  convert byte matrix easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/StructureofAES/writeup1.md
+RoundKeys cryptohack  SYMMETRIC addroundkeys   xor two matrix to byte  easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/RoundKeys/writeup1.md
+ConfusionthroughSubstitution cryptohack crypto easy, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ConfusionthroughSubstitution/writeup1.md
+DiffusionthroughPermutation    cryptohack diffusion  shiftrows mixcolumns  crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/DiffusionthroughPermutation/writeup1.md
+BringingItAllTogether    cryptohack  aes decrypt python full learning crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BringingItAllTogether/writeup1.md
+ModesofOperationStarter    cryptohack  aes online crypto easy,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ModesofOperationStarter/writeup1.md
+PasswordsasKeys cryptohack aes decrpt key attack wordlist python easy crypto, https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/PasswordsasKeys/writeup1.md
+ECBOracle cryptohack easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ECBOracle/writeup1.md
+ECBCBCWTF cryptohack aes-128-cbc decrypt medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/ECBCBCWTF/writeup1.md
+FlippingCookie cryptohack aes 128  admin cookie medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/FlippingCookie/writeup1.md
+symmenticcryptography cryptohack aes encrypt decrypt site medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/Symmetry/writeup1.md
+BeanCounter cryptohack ecb 128 xor png enc file data medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/symmenticcryptography/BeanCounter/writeup1.md
+intro-PUBLIC-KEY-CRYPTOGRAPHY cryptohack secure communication sign end recive python,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/intro/writeup1.md
+RSAStarter1 cryptohack introduce rsa two integer mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter1/writeup1.md
+RSAStarter2 cryptohack  introduce rsa encrypt message two integer pow mod modular exponentiation easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter2/writeup1.md
+RSAStarter3 cryptohack  euler totient phi n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter3/writeup1.md
+RSAStarter4 cryptohack  private key d  modular multiplicative   inverse modular inverse n p q rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter4/writeup1.md
+RSAStarter5 cryptohack  decrypt  rsa with n e c factordb easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter5/writeup1.md
+RSAStarter6 cryptohack  rsa sign message with n and d medium and get signature crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/RSAStarter6/writeup1.md
+Factoring cryptohack factoring factordb python isprime easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Factoring/writeup1.md
+Monoprime cryptohack rsa prime factore not pq n e ct decrypt easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Monoprime/writeup1.md
+Manyprime cryptohack rsa  many prime factore  n e ct decrypt easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Manyprime/writeup1.md 
+salty cryptohack rsa    n e ct decrypt with e small like 1 easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/salty/writeup1.md
+ModulusInutilis cryptohack rsa    n e ct decrypt with e small like 3 easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/ModulusInutilis/writeup1.md
+DiffieHellmanStarter1 cryptohack inverse element of d with g p easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter1/writeup1.md
+DiffieHellmanStarter2 cryptohack   smallest element g  primitive element  rsa easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter2/writeup1.md
+DiffieHellmanStarter3 cryptohack   generate public key A in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter3/writeup1.md
+DiffieHellmanStarter4 cryptohack   generate public key  two person  in rsa  Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter4/writeup1.md
+DiffieHellmanStarter5 cryptohack   generate public key  two person  in rsa  Diffie-Hellman p g a b B easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/DiffieHellmanStarter5/writeup1.md
+ParameterInjection cryptohack   generate public key  two person  in rsa intercept message Diffie-Hellman  p g a easy crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/ParameterInjection/writeup1.md
+Export-grade cryptohack   generate public key  two person  in rsa intercept message middle man medium crypto,https://cybersecctf.github.io/blog/2024/practice/cryptohack/PUBLIC-KEY-CRYPTOGRAPHY/Export-grade/writeup1.md
+desfunctional googlectf2024  DES3 Triple DES cipher key medium crypto,https://cybersecctf.github.io/blog/2024/googlectf/googlectf2024/desfunctional/writeup1.md 
+tldrpleasesummarise downunderctf2024 search in sh execute misc easy,https://cybersecctf.github.io/blog/2024/downunderctf2024/tldrpleasesummarise/writeup1.md
+cyberquize osctf2024 misc pwn socket connect check correct of quetions misc easy,https://cybersecctf.github.io/blog/2024/osctf/cyberquize/writeup1.md
+shufflebox downunderctf2024 find  permutation from  permutations length 16 crypto medium,https://cybersecctf.github.io/blog/2024/downunderctf2024/shufflebox/writeup1.md 
+SunZisPerfectMathClass downunderctf2024 ChineseRemainderTheorem  in range modinverse easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup1.md
+SunZisPerfectMathpart2Class downunderctf2024 rsa Wieners Attack n1n2n3c1c2c3 easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.md
+SubstitutionCipher ctflean substitution cipher decode python online medium crypto, https://cybersecctf.github.io/blog/2024/practice/ctflearn/SubstitutionCipher/writeup1.md
+rsanob ctflearn rsa nec small e medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/rsanob/writeup1.md
+5x5Crypto ctflearn Polybius square cipher exclude none k  medium  crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/5x5Crypto/writeup1.md
+rsabegginer ctflearn Low Public Exponent Attack small e easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSABeginner/writeup1.md
+TheSafestEncryption ctflearn xor two file medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSafestEncryption/writeup1.md
+Zippy_zip ctflearn zip crc dta validation check medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Zippy_zip/writeup1.md
+somany64s ctflean base64 search for text in decoded hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/somany64s/writeup1.md
+EncryptionMaster ctflearn base convertor 2 base64 hex decode encode medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/EncryptionMaster/writeup1.md
+SymbolicDecimals ctflearn symbol decimal ascii symbol-based ASCII encoding medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SymbolicDecimals/writeup1.md
+rsa-twins ctflearn rsa small n e=65537 factorization attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSATwins/writeup1.md
+thesimpsons ctflearn base vigenere cipher key medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TheSimpsons/writeup1.md
+CoppeRSALattice ctflearn rsa  small n e=65537 factorization attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/CoppeRSALattice/writeup1.md
+XORIsFriendNotFood ctflearn xor \x prefix suffix medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/XORIsFriendNotFood/writeup1.md
+Polycrypto ctflearn polynomial binary long bytes representation hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Polycrypto/writeup1.md
+We-want-Nudes-instead-of-Nukes ctflearn aes cbc aes-cbc hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/We-want-Nudes-instead-of-Nukes/writeup1.md
+imageediting ctflearn zsteg stegsolve image hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/imageediting/writeup1.md
+sanitycheck htbctf2024 inspect url team info intro htb ctf2024 easy crypto,https://cybersecctf.github.io/blog/2024/htbctf/writeup1.md
+Dynastic  htbctf2024 reverse python custom caesar easy rev crypto,https://cybersecctf.github.io/blog/2024/htbctf/Dynastic/writeup1.md
+defyinghell ctflearn Diffie–Hellman key exchange alice bob p A B,https://cybersecctf.github.io/blog/2024/practice/ctflearn/DefyingHell/writeup1.md
+Linear-....-lfsr ctflearn Linear Feedback Shift Register lfsr hard crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Linear-feedback-Shift-Register/writeup1.md
+task1-intro Encryption-Crypto101 tryhackme very easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/writeup1.md
+task2-Keyterms Encryption-Crypto101 defination of crypto read search json very easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task2-Keyterms/writeup1.md
+task3-Why-is-encryption defination easy crypto,-important tryhackme,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task3-encrypttion/writeup1.md
+task4-Crucial-Crypto-Maths tryhackme mod easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task4-CrucialCryptoMaths/writeup1.md
+task5-Types-of-Encryption tryhackme define Symmetric Asymmetric encryption  easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task5-TypesofEncryption/writeup1.md
+task6-RSA-Rivest-Shamir-Adleman tryhackme Asymmetric encryption n=p*q easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task6-RivestShamirAdleman/writeup1.md
+task7-Establishing-Keys-Using-Asymmetric-Cryptography tryhackme  sign file read write keys.pem easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task7-EstablishingKeysUsingAsymmetricCryptography/writeup1.md
+task8-Digital-signatures-and-Certificates tryhackme get web certificate  easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task8-Digital-signatures-and-Certificates/writeup1.md
+She-s-the-Real-one-ctfzone2024 elliptic curve discrete medium crypto,https://cybersecctf.github.io/blog/2024/ctfzone2024/writeup1.md
+task9-Encryption-Crypto101-SSH-Authentication tryhackme ssh connect authentication crack password id_rsa shh key pairs easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task9-SSH-Authentication/writeup1.md
+task10-Encryption-Crypto101- diffie helman key exchange Explaining-Diffie-Hellman-Key-Exchange p g to shared key medium crypto, https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task10-Explaining-Diffie-Hellman-Key-Exchange/writeup1.md
+Task-11-Encryption-Crypto101-PGP-GPG-and-AES tryhackme pgp gpg aes crack gpg file medium crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task11-PGP-GPG-and-AES/writeup1.md

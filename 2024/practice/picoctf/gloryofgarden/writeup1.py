@@ -6,7 +6,7 @@ import sys
 sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 def solve(file_path, search="{",home_dir=""):
-    if ">" in file_path or "<" in file_path:
+    if ">" in file_path or "<" in file_path or search=="$run":
          d=[]
          result = subprocess.run(file_path, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
          s=result.stdout.splitlines()
