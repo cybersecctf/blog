@@ -38,7 +38,7 @@ import blog
 
 import os,subprocess
 def solve(file,key ):
-
+ blog.solveup("garden","unzip gpg_1593559828557.zip","$run")  
  blog.solveup("garden","gpg --import {key}","$run")
  blog.solveup("garden",f"gpgp {file}","$run")
  s=blog.solveup("garden","cat message","$run")
