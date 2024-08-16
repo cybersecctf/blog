@@ -1,4 +1,6 @@
 
+#python conda activate   sage-env 
+#sage
 from sage.all import *
 from Crypto.Util.number import long_to_bytes
 from functools import namedtuple

@@ -132,24 +132,22 @@ def convert(a2, a4, a6, Gx, Gy, Px, Py):
         return abs(u), abs(v)
 
     raise ValueError(f"Unexpected number of roots {len(roots_list)}.")
+def solve(P,Q):
 
-# Load points P and Q from a dump file
-P, Q = Point(x=1, y=2), Point(x=3, y=4)  # Replace this with actual deserialization code
+ u, v = convert(0, -3, -2, P.x, P.y, Q.x, Q.y)
+ # Directly use u and v as they are real numbers
+ M = genM(u=u, v=v)
+ # Perform LLL reduction using NumPy (this part needs a proper LLL implementation, which isn't directly available in NumPy)
+ # Placeholder for LLL, assuming L is the result of LLL reduction
+ L = np.linalg.qr(M)[0]  # Replace with proper LLL implementation
+ # Print the result
+ return long_to_bytes(abs(int(L[-1][1])))
 
-u, v = convert(0, -3, -2, P.x, P.y, Q.x, Q.y)
-
-# Directly use u and v as they are real numbers
-M = genM(u=u, v=v)
-
-# Perform LLL reduction using NumPy (this part needs a proper LLL implementation, which isn't directly available in NumPy)
-# Placeholder for LLL, assuming L is the result of LLL reduction
-L = np.linalg.qr(M)[0]  # Replace with proper LLL implementation
-
-# Print the result
-print(long_to_bytes(abs(int(L[-1][1]))))
-
-
-
+if __name__ == "__main__" :
+  P, Q = loads(open("output.dump", "rb").read())
+  p=blog.set(P,1)
+  q=blog.set(Q,2)
+  print(solve(p,q))
 
 </pre>
     </ol>
