@@ -43,12 +43,11 @@ def mapping( word1, word2):
    if word1[i] not in calpha:
        calpha.append(word1[i])
        dalpha.append(word2[i])
-def solve(ciphertext):
+def solve(ciphertext,s1="TAMLOGFKISREHDWCYZBUXQJVNP",s2="eatsionrhldcpmuwfbygvkqxz "):
     s=[] 
     found=False   
     mapping("MIT","the")#add more by own to reach foull alphabet like below          
-    mapping( "TAMLOGFKISREHDWCYZBUXQJVNP", "eatsionrhldcpmuwfbygvkqxz ")
-    mapping("MIT","the")#add more by own to reach foull alphabet like below          
+    mapping( s1, s2)
     print(calpha)               
     for i in range(len(ciphertext)):
       found=False
@@ -62,7 +61,6 @@ def solve(ciphertext):
 # Main execution
 if __name__ == "__main__":
     blog.solveup("inspect","https://www.dcode.fr/monoalphabetic-substitution","") #if site not work use code for mapping and run flag
-    
     ciphertext = blog.solveup("read file", "Substitution.txt", "")
     ciphertext = blog.set(ciphertext, 1)
     ciphertext=solve(ciphertext)

@@ -71,22 +71,26 @@ import blog
 from collections import Counter
 
 import os,subprocess
-s
-
+ 
+#map s1 to s2  to find solve
 def solve(val,s1,s2):
    blog.islog=True
-   return blog.solveup("substitution cipher",val,")
+   return blog.solveup("ctflean substitution cipher",val,"lcjg","isof")
 if __name__ == "__main__" :
-  print(solve("Uyv sxd gyi siqvw x sinduxjd pvzjdw po axffojdz xgxo wsxcc wuidvw."))
+  print(solve("xjnvw lc sluxjmw jsqm wjpmcqbg jg wqcxqmnvw; xjzjmmjd lc wjpm sluxjmw jsqm bqccqm zqy” Zlwvzjxj Zpcvcol","lcjgzqy","isofman"))
+  blog.solveup("inspect","https://quipqiup.com/","")
 </pre>
-    </ol>
+decrypted text is "today is victory over yourself of yesterday; tomorrow is your victory over lesser men” Miyamoto Musashi"
+find mapping by yourself and add it in blog.solveup("tryhackme substitution cipher","abcdefghijklmnopqrstuvwxyz",yourmapping)
+  Miyamoto Musashi is flag person who told it 
+ </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">picoCTF{more_than_m33ts_the_3y3657BaB2C}
+    <p class="flag">Miyamoto Musashi
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a    easy chanllenge for substitution cipher</p>
 
 </body>
 </html>

@@ -254,7 +254,7 @@ cyberquize osctf2024 misc pwn socket connect check correct of quetions misc easy
 shufflebox downunderctf2024 find  permutation from  permutations length 16 crypto medium,https://cybersecctf.github.io/blog/2024/downunderctf2024/shufflebox/writeup1.md 
 SunZisPerfectMathClass downunderctf2024 ChineseRemainderTheorem  in range modinverse easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup1.md
 SunZisPerfectMathpart2Class downunderctf2024 rsa Wieners Attack n1n2n3c1c2c3 easy crypto,https://cybersecctf.github.io/blog/2024/downunderctf2024/SunZisPerfectMathClass/writeup2.md
-SubstitutionCipher ctflean substitution cipher decode python online medium crypto, https://cybersecctf.github.io/blog/2024/practice/ctflearn/SubstitutionCipher/writeup1.md
+SubstitutionCipher ctflean substitution cipher decode python online medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SubstitutionCipher/writeup1.md
 rsanob ctflearn rsa nec small e medium crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/rsanob/writeup1.md
 5x5Crypto ctflearn Polybius square cipher exclude none k  medium  crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/5x5Crypto/writeup1.md
 rsabegginer ctflearn Low Public Exponent Attack small e easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RSABeginner/writeup1.md
@@ -284,3 +284,4 @@ task7-Establishing-Keys-Using-Asymmetric-Cryptography tryhackme  sign file read 
 task8-Digital-signatures-and-Certificates tryhackme get web certificate  easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task8-Digital-signatures-and-Certificates/writeup1.md
 She-s-the-Real-one ctfzone2024 elliptic curve discrete medium crypto,https://cybersecctf.github.io/blog/2024/ctfzone2024/writeup1.md
 task9-Encryption-Crypto101-SSH-Authentication tryhackme ssh connect authentication crack password id_rsa shh key pairs easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task9-SSH-Authentication/writeup1.md
+task1-introduction-cryptographyintro tryhackme substitution cipher easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/cryptographyintro/task1-introduction/writeup1.md
