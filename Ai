@@ -282,5 +282,5 @@ task5-Types-of-Encryption tryhackme define Symmetric Asymmetric encryption  easy
 task6-RSA-Rivest-Shamir-Adleman tryhackme Asymmetric encryption n=p*q easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task6-RivestShamirAdleman/writeup1.md
 task7-Establishing-Keys-Using-Asymmetric-Cryptography tryhackme  sign file read write keys.pem easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task7-EstablishingKeysUsingAsymmetricCryptography/writeup1.md
 task8-Digital-signatures-and-Certificates tryhackme get web certificate  easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task8-Digital-signatures-and-Certificates/writeup1.md
-She-s-the-Real-one-ctfzone2024 elliptic curve discrete medium crypto,https://cybersecctf.github.io/blog/2024/ctfzone2024/writeup1.md
+She-s-the-Real-one ctfzone2024 elliptic curve discrete medium crypto,https://cybersecctf.github.io/blog/2024/ctfzone2024/writeup1.md
 task9-Encryption-Crypto101-SSH-Authentication tryhackme ssh connect authentication crack password id_rsa shh key pairs easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task9-SSH-Authentication/writeup1.md
