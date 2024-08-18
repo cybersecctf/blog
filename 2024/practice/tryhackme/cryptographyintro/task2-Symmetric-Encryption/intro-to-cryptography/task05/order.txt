@@ -1,5 +1,0 @@
-sender: Alice
-recipient: Mallory
-currency: USD
-amount: 1000
-notes: weekly payment

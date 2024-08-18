@@ -163,18 +163,20 @@ def decrypt(ciphertext, key):
     padded_plaintext = cipher.decrypt(actual_ciphertext)
     plaintext = unpad(padded_plaintext, AES.block_size)
     return plaintext.decode('utf-8')
-def findpass(file,type):
+def findpass(file,type,key):
   if type=="AES256":
-   blog.solveup("garden",f"gpg --output original_message.txt --decrypt {file}","","")
-   return blog.solveup("garden",f"strings original_message.txt","")
+   return blog.solveup("garden",f"gpg  --decrypt {file}","","")
+   
   if type=="AES256-CBC": 
-   blog.solveup("garden",f"openssl aes-256-cbc -d -in {file} -out original_message.txt","","")
-   return blog.solveup("garden",f"strings original_message.txt","")
-  return blog.solveup("garden",f"strings original_message.txt","")
+    return blog.solveup("garden",f'gpg aes-256-cbc -d -in {file}',"","")
+  if type=="CAMELLIA256": 
+   return blog.solveup('garden',f'gpg  --cipher-algo CAMELLIA256 --decrypt {file}',"")
+  
+  return f"invalid type {type}"
 def solve(operation,val,key):
   if "findpass" in operation:
       s=operation.split()
-      return findpass(val,s[1])   
+      return findpass(val,s[1],key)   
   if operation=="encrypt":
        return encrypt(val, key)   
   else:
@@ -182,7 +184,7 @@ def solve(operation,val,key):
 # Example usage
 if __name__ == "__main__":
     # Generate a random 256-bit (32-byte) key
-
+    blog.solveup("garden","unzip intro-to-cryptography.zip","")  
     key = generate_key(32)
 
     # Define the plaintext message
@@ -190,15 +192,16 @@ if __name__ == "__main__":
 
     # Encrypt the plaintext
     encrypted_message = solve("encrypt",plaintext, key)
-    print(f"Encrypted message: {encrypted_message}")
+   # print(f"Encrypted message: {encrypted_message}")for understand task
 
     # Decrypt the message back to plaintext
     decrypted_message = solve("decrypt",encrypted_message, key)
-    print(f"Decrypted message: {decrypted_message}")
-    blog.islog=True
+    #print(f"Decrypted message: {decrypted_message}") for understand task
+    
     print(solve("findpass AES256","intro-to-cryptography/task02/quote01.txt.gpg","s!kR3T55"))
     print(solve("findpass AES256-CBC","intro-to-cryptography/task02/quote02","s!kR3T55"))
-
+    print(solve("findpass CAMELLIA256","intro-to-cryptography/task02/quote03.txt.gpg","s!kR3T55"))
+           
 </pre>
     </ol>
 <br>
@@ -207,7 +210,8 @@ if __name__ == "__main__":
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a medium chanllenge for work on Symmetric Encryption
+</p>
 
 </body>
 </html>
