@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
- 
+ <title>try hack me---Crucial Crypto Maths  Writeup </title>
 <body>
     <h1>try hack me---Crucial Crypto Maths  Writeup </h1>
 

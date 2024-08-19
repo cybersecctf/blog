@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    
-</head>
+
+   <title>picoctf 2019-  2Warm</title>   
+
 <body>
     <h1>picoctf 2019-  2Warm</h1>
 
@@ -17,7 +17,13 @@ Can you convert the number 42 (base 10) to binary (base 2)?
     <h2>Solution Approach</h2>
     <p>Here are the steps we took to solve the challenge:</p>
     <ol>
-        <li> you can get it manual but for all numbers use online or python code<pre>print(bin(42))</pre>
+        <li> you can get it manual but for all numbers use online or python code
+<pre>
+def solve(ch):
+  return bin(ch)
+if __name__ == "__main__" :
+ print(solve(42).replace("0b",""))
+</pre>
  </li>
     </ol>
 <br>

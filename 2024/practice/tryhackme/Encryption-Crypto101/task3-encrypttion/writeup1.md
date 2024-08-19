@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
- 
+<title>tryhackme---Task 3 why is Encryption important?Writeup </title> 
 <body>
     <h1>tryhackme---Task 3 why is Encryption important?Writeup </h1>
 

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
- 
+ <title>tryhackme---tas5-Types of Encryption  Writeup </title> 
 <body>
     <h1>tryhackme---tas5-Types of Encryption  Writeup </h1>
 

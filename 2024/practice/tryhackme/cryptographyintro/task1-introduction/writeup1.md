@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
 <html>
- 
+ <title>  tryhackme--task1-cryptographyintro  Writeup 
+</title>
 <body>
     <h1>tryhackme--task1-cryptographyintro  Writeup </h1>
 

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-
+  <title>ARMssembly 0-picoctf2021</title>
 <body>
     <h1>ARMssembly 0-picoctf2021</h1>
 

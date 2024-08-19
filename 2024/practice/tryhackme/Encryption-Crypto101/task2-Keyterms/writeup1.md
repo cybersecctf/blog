@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
- 
+<title>tryhackme---Key terms  Writeup </title>
 <body>
     <h1>tryhackme---Key terms  Writeup </h1>
 
