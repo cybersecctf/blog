@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-     
+<title>
+NiteCTF 2023 - ERASS Challenge Writeup
+</title>    
 </head>
 <body>
     <h1>NiteCTF 2023 - ERASS Challenge Writeup</h1>
