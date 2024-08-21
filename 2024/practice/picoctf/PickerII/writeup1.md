@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Picker II- picoGym Exclusive</h1>
+<title>Picker II- picoGym Exclusive</title>
 
 <h2>Challenge Description</h2>
 <p> AUTHOR: LT 'SYREAL' JONES
