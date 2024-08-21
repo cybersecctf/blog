@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
 <html>
- 
+     <title>n00bzctf2024---rsa  Writeup </title>
+
 <body>
     <h1>n00bzctf2024---rsa  Writeup </h1>
 
