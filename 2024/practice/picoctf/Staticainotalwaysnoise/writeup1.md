@@ -1,3 +1,4 @@
+<title>practice picoCTF 2021 - Static ain't always noise Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

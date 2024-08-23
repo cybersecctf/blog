@@ -1,3 +1,4 @@
+<title>interencdec- picoctf2024</title>
 
 <!DOCTYPE html>
 <html>

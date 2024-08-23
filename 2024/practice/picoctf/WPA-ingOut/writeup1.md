@@ -1,3 +1,4 @@
+<title>WPA-ing Out- picoGym Exclusive</title>
 
 <!DOCTYPE html>
 <html>

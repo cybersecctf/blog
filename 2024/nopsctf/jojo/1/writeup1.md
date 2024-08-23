@@ -1,3 +1,4 @@
+<title>Jojo is missing!- N0PSctf2024</title>
 
 <!DOCTYPE html>
 <html>

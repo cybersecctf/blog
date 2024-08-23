@@ -1,3 +1,4 @@
+<title>ModulusInutilis - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

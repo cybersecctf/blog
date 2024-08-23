@@ -1,3 +1,4 @@
+<title>dicectf 2024- web/funnylogin Challenge Writeup(first save it)</title>
 
 <!DOCTYPE html>
 <html>

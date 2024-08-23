@@ -1,3 +1,4 @@
+<title>picoctf 2019-  what's a net cat? Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

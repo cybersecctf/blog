@@ -1,3 +1,4 @@
+<title>Passwords as Keys- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

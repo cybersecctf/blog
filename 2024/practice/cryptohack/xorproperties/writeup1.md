@@ -1,3 +1,4 @@
+<title>XOR Properties- cryptohack</title>
 <!DOCTYPE html>
 <html>
 

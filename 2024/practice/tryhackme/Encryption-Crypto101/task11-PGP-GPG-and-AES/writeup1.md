@@ -1,3 +1,4 @@
+<title>tryhackme encryption101---PGP, GPG and AES Writeup </title>
 
 <!DOCTYPE html>
 <html>

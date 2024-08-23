@@ -1,3 +1,4 @@
+<title>Random cipher- spcsctf</title>
 
 <!DOCTYPE html>
 <html>

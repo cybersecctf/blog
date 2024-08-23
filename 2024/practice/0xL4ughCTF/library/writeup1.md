@@ -1,3 +1,4 @@
+<title>Library - 0xL4ugh CTF 2024 </title>
 
 <!DOCTYPE html>
 <html>

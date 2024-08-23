@@ -1,3 +1,4 @@
+<title>Extended GCD- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>Quadratic Residues- cryptohack</title>
 <!DOCTYPE html>
 <html>
 

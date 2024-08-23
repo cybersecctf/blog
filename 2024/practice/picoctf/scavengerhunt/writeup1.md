@@ -1,3 +1,4 @@
+<title>cpicoctf 2021- Scavenger Hunt</title>
 
 <!DOCTYPE html>
 <html>

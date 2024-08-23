@@ -1,3 +1,4 @@
+<title>Modular Inverting-cryptohack</title>
 
 <!DOCTYPE html>
 <html>

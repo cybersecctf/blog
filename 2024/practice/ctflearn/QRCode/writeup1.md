@@ -1,3 +1,4 @@
+<title>QR Code- ctflearn</title>
 <!DOCTYPE html>
 <html>
 

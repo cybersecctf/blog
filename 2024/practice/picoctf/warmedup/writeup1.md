@@ -1,3 +1,4 @@
+<title>picoctf 2019- Warmed Up Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

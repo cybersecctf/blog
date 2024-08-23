@@ -1,3 +1,4 @@
+<title>Scan Surprise- picoctf2024</title>
 
 <!DOCTYPE html>
 <html>

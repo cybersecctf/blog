@@ -1,3 +1,4 @@
+<title>XOR Starter- INTRODUCTION TO CRYPTOHACK</title>
 
 <!DOCTYPE html>
 <html>

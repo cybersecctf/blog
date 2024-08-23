@@ -1,3 +1,4 @@
+<title>Keyed Permutations- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

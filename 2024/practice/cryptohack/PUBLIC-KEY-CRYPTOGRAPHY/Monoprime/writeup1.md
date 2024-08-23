@@ -1,3 +1,4 @@
+<title>Factoring - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

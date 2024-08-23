@@ -1,3 +1,4 @@
+<title>practice picoCTF 2021- Tab, Tab, Attack Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

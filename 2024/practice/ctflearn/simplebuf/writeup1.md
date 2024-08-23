@@ -1,3 +1,4 @@
+<title>Simple bof- ctflearn</title>
 
 <!DOCTYPE html>
 <html>

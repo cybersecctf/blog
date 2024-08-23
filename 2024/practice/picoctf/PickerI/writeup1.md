@@ -1,3 +1,4 @@
+<title>WebDecode-picoctf2024</title>
 
 <!DOCTYPE html>
 <html>

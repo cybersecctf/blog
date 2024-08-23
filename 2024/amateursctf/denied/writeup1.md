@@ -1,3 +1,4 @@
+<title>denied-  amateurctf2024</title>
 
 <!DOCTYPE html>
 <html>

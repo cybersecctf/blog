@@ -1,3 +1,4 @@
+<title>practice picoCTF 2019- Lets Warm Up Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

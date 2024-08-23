@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+<title>picopractice(2021)- information Challenge Writeup</title>
+   
 </head>
 <body>
     <h1>picopractice(2021)- information Challenge Writeup</h1>

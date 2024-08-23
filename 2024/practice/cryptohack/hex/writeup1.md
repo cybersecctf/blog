@@ -1,3 +1,4 @@
+<title>hex- cryptohack</title>
 <!DOCTYPE html>
 <html>
 

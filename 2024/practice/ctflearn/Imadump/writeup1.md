@@ -1,3 +1,4 @@
+<title>I'm a dump-ctflearn</title>
 
 <!DOCTYPE html>
 <html>

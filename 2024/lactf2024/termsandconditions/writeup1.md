@@ -1,3 +1,4 @@
+<title>lactf2024- web/terms-and-conditions</title>
 
 <!DOCTYPE html>
 <html>

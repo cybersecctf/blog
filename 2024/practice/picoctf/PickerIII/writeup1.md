@@ -1,3 +1,4 @@
+<title>Picker III- picoGym Exclusive</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>Bringing It All Together- cryptoahck</title>
 
 <!DOCTYPE html>
 <html>

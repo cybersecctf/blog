@@ -1,3 +1,4 @@
+<title>Lazy Game Challenge- ctflearn</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>amateursctf2024-solved 12/58 a</title>
 
 <!DOCTYPE html>
 <html>

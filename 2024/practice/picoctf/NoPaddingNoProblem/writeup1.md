@@ -1,3 +1,4 @@
+<title>No Padding, No Problem- picoctf 2021</title>
 
 <!DOCTYPE html>
 <html>

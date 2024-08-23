@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+ <title>picoctf(2021)- GET aHEAD Challenge Writeup</title> 
 </head>
 <body>
     <h1>picoctf(2021)- GET aHEAD Challenge Writeup</h1>

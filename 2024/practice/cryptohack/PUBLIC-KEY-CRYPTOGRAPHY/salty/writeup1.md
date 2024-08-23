@@ -1,3 +1,4 @@
+<title>salty - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>picoctf2019- dont-use-client-side</title>
 
 <!DOCTYPE html>
 <html>

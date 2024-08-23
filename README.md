@@ -2,7 +2,7 @@
 <html>
 
 <body>
- more comming soon in <a href="http://dawoodahstudio.com/">play&secure</a>for use ctf solutions for messaging and game
+ more comming soon in <a href="https://playandsecure.com/ps">play&secure</a>for use ctf solutions for messaging and game
     <h1>cybersectctf  blog and ctf writeups  </h1>
 <head>
     <meta charset="UTF-8">

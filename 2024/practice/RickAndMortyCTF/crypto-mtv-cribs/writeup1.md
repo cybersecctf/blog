@@ -1,3 +1,4 @@
+<title>MTV Cribs-  RickAndMortyCTF</title>
 
 <!DOCTYPE html>
 <html>

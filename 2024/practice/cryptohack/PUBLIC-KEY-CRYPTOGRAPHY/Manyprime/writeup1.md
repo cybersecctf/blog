@@ -1,3 +1,4 @@
+<title>manyprimes - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

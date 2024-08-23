@@ -1,3 +1,4 @@
+<title>web/dicedicegoose-dicectf 2024</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>Flipping Cookie- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

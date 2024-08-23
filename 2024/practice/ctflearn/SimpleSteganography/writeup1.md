@@ -1,3 +1,4 @@
+<title>Simple Steganography-ctflearn</title>
 
 <!DOCTYPE html>
 <html>

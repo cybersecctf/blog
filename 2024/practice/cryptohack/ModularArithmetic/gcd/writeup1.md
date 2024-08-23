@@ -1,3 +1,4 @@
+<title>Greatest Common Divisor- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

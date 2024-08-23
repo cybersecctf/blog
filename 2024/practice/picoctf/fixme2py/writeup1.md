@@ -1,3 +1,4 @@
+<title>beginner picomini 2022- fixme2.py)</title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>Tux! - ctflearn</title>
 <!DOCTYPE html>
 <html>
 

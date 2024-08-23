@@ -1,3 +1,4 @@
+<title>one_liner- ShunyaCTF2024</title>
 
 <!DOCTYPE html>
 <html>

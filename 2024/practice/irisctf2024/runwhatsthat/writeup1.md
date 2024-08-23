@@ -1,3 +1,4 @@
+<title>Rune? What’s that?- irisctf 2024 Challenge Writeup</title>
 
 <!DOCTYPE html>
 <html>

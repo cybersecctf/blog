@@ -1,3 +1,4 @@
+<title>ctflearn---A secure LCG?  Writeup </title>
  
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>Deep stego in the office- spcsctf</title>
 import blog
 blog.islog=True
 blog.solveup("garden","capture.pcap","tools")

@@ -1,3 +1,4 @@
+<title>Symbolic Decimals --ctflearn Writeup </title>
 
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<title>osctf2024-cyberquize Writeup </title>
  
 <!DOCTYPE html>
 <html>

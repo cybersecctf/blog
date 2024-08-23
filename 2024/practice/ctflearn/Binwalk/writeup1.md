@@ -1,3 +1,4 @@
+<title>Binwalk- ctflearn</title>
 
 <!DOCTYPE html>
 <html>

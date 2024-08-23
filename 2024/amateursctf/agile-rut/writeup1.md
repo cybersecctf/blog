@@ -1,3 +1,4 @@
+<title>agile-rut- amateurctf2024</title>
 
 <!DOCTYPE html>
 <html>

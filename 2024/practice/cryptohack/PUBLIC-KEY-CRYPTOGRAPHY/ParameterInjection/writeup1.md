@@ -1,3 +1,4 @@
+<title>Parameter Injection- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

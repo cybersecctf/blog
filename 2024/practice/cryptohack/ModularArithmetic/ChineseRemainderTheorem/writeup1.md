@@ -1,3 +1,4 @@
+<title>Chinese Remainder - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

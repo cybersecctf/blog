@@ -1,3 +1,4 @@
+<title>Modular Arithmetic 2- cryptohack</title>
 <!DOCTYPE html>
 <html>
 

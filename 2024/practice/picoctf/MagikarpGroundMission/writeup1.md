@@ -1,3 +1,4 @@
+<title>Magikarp Ground Mission- picoctf2021</title>
 
 <!DOCTYPE html>
 <html>

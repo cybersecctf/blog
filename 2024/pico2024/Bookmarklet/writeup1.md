@@ -1,3 +1,4 @@
+<title>Bookmarklet- picoctf2024</title>
 <!DOCTYPE html>
 <html>
 

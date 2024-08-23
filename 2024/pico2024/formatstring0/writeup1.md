@@ -1,3 +1,4 @@
+<title>format string 0-picoctf2024</title>
 
 <!DOCTYPE html>
 <html>

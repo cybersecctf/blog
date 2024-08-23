@@ -1,3 +1,4 @@
+<title>Diffie-Hellman Starter 2 - cryptohack</title>
 
 <!DOCTYPE html>
 <html>

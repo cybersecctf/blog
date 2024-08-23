@@ -1,3 +1,4 @@
+<title>X Marked the Spot- uiuctf2024</title>
 
 <!DOCTYPE html>
 <html>

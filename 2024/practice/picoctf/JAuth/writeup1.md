@@ -1,3 +1,4 @@
+<title>JAuth- picoGym Exclusive</title>
 
 <!DOCTYPE html>
 <html>

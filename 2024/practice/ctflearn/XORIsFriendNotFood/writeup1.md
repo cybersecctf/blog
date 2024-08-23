@@ -1,3 +1,4 @@
+<title>XOR Is Friend Not Food--ctflearn  Writeup </title>
 
 <!DOCTYPE html>
 <html>

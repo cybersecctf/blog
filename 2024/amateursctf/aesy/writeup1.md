@@ -1,3 +1,4 @@
+<title>aesy- amateurctf2024</title>
 
 <!DOCTYPE html>
 <html>

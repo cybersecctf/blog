@@ -1,3 +1,4 @@
+<title>Bean Counter- cryptohack</title>
 
 
 <html>

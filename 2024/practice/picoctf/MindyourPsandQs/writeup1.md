@@ -1,3 +1,4 @@
+<title>Mind your Ps and Qs- cpicoctf2024</title>
 
 <!DOCTYPE html>
 <html>

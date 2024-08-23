@@ -1,3 +1,4 @@
+<title>Symmetry- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

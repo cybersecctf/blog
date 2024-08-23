@@ -1,3 +1,4 @@
+<title>google-ctf-2018-beginners misc-floppy</title>
 
 <!DOCTYPE html>
 <html>

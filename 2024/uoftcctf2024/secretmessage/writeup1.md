@@ -1,3 +1,4 @@
+<title>Secret Message 1 - uoftctf2024</title>
 
 <!DOCTYPE html>
 <html>

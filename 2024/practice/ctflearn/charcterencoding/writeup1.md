@@ -1,3 +1,4 @@
+<title>Character Encoding- ctflearn</title>
 
 <!DOCTYPE html>
 <html>

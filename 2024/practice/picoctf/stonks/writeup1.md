@@ -1,3 +1,4 @@
+<title>picoctf 2021 Stonks</title>
 
 <!DOCTYPE html>
 <html>

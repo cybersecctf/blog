@@ -1,3 +1,4 @@
+<title>Base64- cryptohack</title>
 
 <!DOCTYPE html>
 <html>

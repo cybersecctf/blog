@@ -1,3 +1,4 @@
+<title>Some Assembly Required 1- picoctf 2021</title>
 
 <!DOCTYPE html>
 <html>

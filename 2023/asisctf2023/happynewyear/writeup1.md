@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
+<title>aisisCTF 2023 - happy neew year ....2024 Challenge Writeup</title>
 </head>
 <body>
     <h1>aisisCTF 2023 - happy neew year ....2024 Challenge Writeup</h1>

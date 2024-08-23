@@ -1,3 +1,4 @@
+<title>Bases-picoctf2019</title>
 
 <!DOCTYPE html>
 <html>

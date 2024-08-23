@@ -1,3 +1,4 @@
+<title>basic-mod1- picoctf2022</title>
 
 <!DOCTYPE html>
 <html>
