@@ -286,5 +286,6 @@ She-s-the-Real-one ctfzone2024 elliptic curve discrete medium crypto,https://cyb
 task9-Encryption-Crypto101-SSH-Authentication tryhackme ssh connect authentication crack password id_rsa shh key pairs easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/Encryption-Crypto101/task9-SSH-Authentication/writeup1.md
 task1-introduction-cryptographyintro tryhackme substitution cipher easy crypto,https://cybersecctf.github.io/blog/2024/practice/tryhackme/cryptographyintro/task1-introduction/writeup1.md
 task2-introduction-cryptographyintro tryhackme symmetric encrypt camellia256 ion openssl connection easy crypto pinnedposts,https://cybersecctf.github.io/blog/2024/practice/tryhackme/cryptographyintro/task2-Symmetric-Encryption/writeup1.md
-rsa n00bzctf2024 Coppersmith rsa attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/n00bzctf2024/writeup1.md
+rsa n00bzctf2024 Coppersmith rsa attack easy crypto,https://cybersecctf.github.io/blog/2024/practice/n00bzctf2024/rsa/writeup1.md
 sanitycheck sekaictf2024 inspect web discord  easy crypto,https://cybersecctf.github.io/blog/2024/sekaictf2024/sanitycheck/writeup1.md
+venegar n00bzctf2024 vigenere cipher easy crypto,https://cybersecctf.github.io/blog/2024/practice/n00bzctf2024/venegar/writeup1.md
