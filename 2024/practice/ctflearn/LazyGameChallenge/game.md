@@ -1,3 +1,4 @@
+<title>ctflearn-lazygamechallenge  </ctitle>
 <pre>
 #python
 # I DID NOT CREATE THE ORIGINAL GAME, BUT John_123 created it.

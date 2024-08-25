@@ -24,11 +24,10 @@ class Result:
 
     def __str__(self):
         return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
-def loggui(term,web="",isheader=False):
- 
+def loggui(term, web="", isheader=False):
     if islog:
-     if isheader:
-        print(f"""
+        if isheader:
+            print(r"""
        ____        _       
       / ___|  ___ | |  
       \___ \ / _ \| | 
@@ -45,9 +44,10 @@ def loggui(term,web="",isheader=False):
       |  ___/ 
       | |     
       |_|
-https://cybersecctf.github.io/blog""")
-    if islog and not isheader:
-      print(term)
+        https://cybersecctf.github.io/blog""")
+        if not isheader:
+            print(term)
+
 
 def log(message):
     if islog:
