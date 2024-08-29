@@ -289,3 +289,5 @@ task2-introduction-cryptographyintro tryhackme symmetric encrypt camellia256 ion
 rsa n00bzctf2024 Coppersmith rsa attack factordb site crypto,https://cybersecctf.github.io/blog/2024/practice/n00bzctf2024/rsa/writeup1.md
 sanitycheck sekaictf2024 inspect web discord  easy crypto,https://cybersecctf.github.io/blog/2024/sekaictf2024/sanitycheck/writeup1.md
 venegar n00bzctf2024 vigenere cipher easy crypto,https://cybersecctf.github.io/blog/2024/practice/n00bzctf2024/venegar/writeup1.md
+snaitycheck htbctf2024 sanitycheck very easy misc,https://cybersecctf.github.io/blog/2024/htbctf2024/snaitycheck/writeup1.md
+fastrsa htbctf2024 https://cybersecctf.github.io/blog/2024/htbctf2024/fastrsa/writeup1.md
