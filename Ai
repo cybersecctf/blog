@@ -162,7 +162,7 @@ Binwalk ctflearn extract files inside another zip and pic any forensics easy,htt
 Hextroadinary ctflearn xor hex easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Hextroadinary/writeup1.md
 vigenerecipher ctflearn vigenere cipher with key known plaintext and python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/VigenereCipher/writeup1.md
 exif ctflean exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/exif/writeup1.md 
-RubberDuck ctflearn    exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
+RubberDuck ctflearn search file exiftool photo image forenscs easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/RubberDuck/writeup1.md
 HyperStreamtest    ctflearn  bacon cipher decode ab  python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/HyperStreamtest/writeup1.md 
 QRCode ctflearn qrcode rot13 base64 decode encode python easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/QRCode/writeup1.md 
 SimpleProgramming ctflearn python programming read lines coun 1 0 easy rev ,gitisgood ctflearn git show history changes easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/GitIsGood/writeup1.md
