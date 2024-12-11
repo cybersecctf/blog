@@ -26,7 +26,7 @@ because webarchive havn't flag open this <a href="https://www.playandsecure.com/
 
 just press f12 and go application and see local storage and find flag there .web archive have only web.archive.org values
 see image
-<img src=" https://cybersecctf.github.io/blog/2024/practice/ctflearn/myblog/Capture.PNG" alt="noxtal blog" width="500" height="600" class="inline"/>
+<img src=" https://www.playandsecure.com/docs/Capture.png" alt="noxtal blog" width="500" height="600" class="inline"/>
 
 <pre>
 
