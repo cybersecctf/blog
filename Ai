@@ -124,7 +124,7 @@ Wiresharktwootwoootwotwoo... picocctf2021 pcapnf wireshark get flag forensic med
 caesar picoctf2019 caesay decrypt and crypto easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
 firstgrep picoctf2019  grep forensics easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
 bases picoctf2019  convert base64 to text crypto  easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/caesar/writeup1.md 
- NoPaddingNoProblem picoctf2021 rsa oracle attack with pwn nc cryptography easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/NoPaddingNoProblem/writeup1.md 
+NoPaddingNoProblem picoctf2021 rsa oracle attack with pwn nc cryptography easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/NoPaddingNoProblem/writeup1.md 
 rsaattack learningctf2024 find rsaatttack and decrypt c cryptography medium,https://cybersecctf.github.io/blog/2024/learningctf2024/rsaatttack/writeup1.md
 basic-mod1 picoct2022    substitution cipher python cryptography   easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md
 basic-mod2 picoct2022    substitution cipher python cryptography modular inverse   easy,https://cybersecctf.github.io/blog/2024/practice/picoctf/basic-mod1/writeup1.md
@@ -179,8 +179,8 @@ ModernGaiusJuliusCaesar ctflearn keyboard shift cipher  easy crypto,https://cybe
 keyboardtypes ctflearn keyboard type easy crypto,https://cybersecctf.github.io/blog/2024/practice/ctflearn/ModernGaiusJuliusCaesar/writeup1.md
 PhoIsTasty ctflearn seach hexdump easy forensics , https://cybersecctf.github.io/blog/2024/practice/ctflearn/PhoIsTasty/writeup1.md 
 timetraveller ctflearn search on history web.archive.org archive web,https://cybersecctf.github.io/blog/2024/practice/ctflearn/TimeTraveller/writeup1.md
-SimpleSteganography easy steganography steghide password easy forensics,https://github.com/cybersecctf/blog/blob/main/2024/practice/ctflearn/myblog/writeup1.md 
-myblog ctflearn  notmywriteup,https://github.com/rishitsaiya/CTFlearn-Writeups/tree/master/Web/My%20Blog
+SimpleSteganography easy steganography steghide password easy forensics,https://cybersecctf.github.io/blog/2024/practice/ctflearn/SimpleSteganography/writeup1.md
+myblog ctflearn  notmywriteup,https://github.com/cybersecctf/blog/blob/main/2024/practice/ctflearn/myblog/writeup1.md 
 PDFbyfdpumyp ctflearn strings pdf forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/PDFbyfdpumyp/writeup1.md
 Suspeciousmessage ctflearn playfair cipher crypto easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Suspeciousmessage/writeup1.md
 minions ctflearn binwalk rar zip search forensics easy,https://cybersecctf.github.io/blog/2024/practice/ctflearn/Minions/writeup1.md
