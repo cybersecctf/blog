@@ -1,4 +1,4 @@
-
+<a href="https://cybersecctf.github.io/blog/?q=myblog">writeup full version here</a>
 <!DOCTYPE html>
 <html>
      <title>picoctf2024---myblog Writeup</title>
@@ -22,7 +22,7 @@ Hint: replace the flag{} part with CTFlearn{}.
     <p>Here are the steps we took to solve the challenge:</p>
     <ol> 
         <li>site is dead now but if anyone intersted on abse of other writeups and webarchive i added it in link above
-<a href="https://cybersecctf.github.io/blog/?q=myblog">writeup full version here</a>
+
 because webarchive havn't flag open this <a href="https://www.playandsecure.com/docs/NoxtalsCyberworld.html">noxtal</a>
 
 just press f12 and go application and see local storage and find flag there .web archive have only web.archive.org values
