@@ -29,8 +29,7 @@ just press f12 and go application and see local storage and find flag there .web
 see image
 <img src="https://www.playandsecure.com/docs/Capture.png" alt="noxtal blog" width="500" height="600" class="inline"/>
 
-<pre>
-
+ 
     </ol>
 <br>
     <h2>Flag</h2>
