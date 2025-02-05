@@ -9,4 +9,4 @@ blog.solveup("snakes search",ords,hexs)#will publish ascii of this list of numbe
 import os
 os.system(f"python {blog.py_file_path} '{ords}' {hexs}")#run writeups py files with this command alsos
 
-#test
+#testsss
