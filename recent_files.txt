@@ -1,0 +1,10 @@
+/home/solup/Desktop/blog/Ai
+/home/solup/Desktop/solup2/blog.py
+/home/solup/Desktop/solup2/test1.py
+/home/solup/Desktop/solup2/sol.py
+/home/solup/Desktop/solup2/notes.py
+/home/solup/Desktop/nitectf/beyonddisplay/writeup1.py
+sol.py
+/home/solup/Desktop/solup2/editor.py
+/home/solup/Desktop/solup2/editorcomand.py
+/home/solup/Desktop/nitectf/beyonddisplay/writeup1.md
