@@ -4,7 +4,7 @@
 <html>
 
 <body>
-    <h1>web/lucky-flag-lact/h1>
+    <h1>web/lucky-flag-lact2025</h1>
 
     <h2>Challenge Description</h2>
     <p> Just click the flag :) <a href="https://lucky-flag.chall.lac.tf/">lucky-flag.chall.lac.tf</a>
@@ -15,7 +15,7 @@
     <ol>
 we open link see page 
 <img src=" https://cybersecctf.github.io/blog/2025/lactf/lucky-flag/luckyflag.PNG" alt="ctf quetion image" width="500" height="600" class="inline"/>
-it seems click on right button and find flag but with many buttons see isn't possible so in reality should check script
+it seems click on right button and find flag but with many buttons see isn't possible so in reality should check script 
 <code>
 const $ = q => document.querySelector(q);
 const $a = q => document.querySelectorAll(q);
@@ -45,6 +45,9 @@ for (const box of boxes) {
   }
 };
 </code>
+
+that is xor code with 0x62 aqnd can use python code or javascript with console.log and print flag
+this python code
 <pre>
 import ast
 
@@ -61,16 +64,18 @@ flag = ''.join(chr(ord(c) ^ 0x62) for c in decoded)
 print(f"Decoded Flag: {flag}")
 
 </pre>  
-    
+    after running get flag that is here
     </ol>
 <br>
     <h2>Flag</h2>
-    <p class="flag">flag{}
+    <p class="flag">lactf{w4s_i7_luck_0r_ski11}
+
 </p>
 
     <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
+    <p>this is a    easy chanllenge for work on develper tools in in chrome and web exploitations and xor decoding in javascript or python</p>
 </body>
 </html>
 
 
+ 

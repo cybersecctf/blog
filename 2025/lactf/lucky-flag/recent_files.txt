@@ -1,4 +1,5 @@
 /home/solup/Desktop/blog/2025/lactf/lucky-flag/writeup1.md
+/home/solup/Desktop/blog/2025/lactf/lucky-flag/writeup1.py
 /home/solup/Desktop/solup2/blog.py
 /home/solup/Desktop/solup2/test1.py
 /home/solup/Desktop/solup2/sol.py
@@ -7,4 +8,3 @@
 sol.py
 /home/solup/Desktop/solup2/editor.py
 /home/solup/Desktop/solup2/editorcomand.py
-/home/solup/Desktop/nitectf/beyonddisplay/writeup1.md
