@@ -12,4 +12,3 @@ flag = ''.join(chr(ord(c) ^ 0x62) for c in decoded)
 
 # Print the decoded flag
 print(f"Decoded Flag: {flag}")
-

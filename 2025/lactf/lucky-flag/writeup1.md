@@ -17,6 +17,7 @@ we open link see page
 <img src=" https://cybersecctf.github.io/blog/2025/lactf/lucky-flag/luckyflag.PNG" alt="ctf quetion image" width="500" height="600" class="inline"/>
 it seems click on right button and find flag but with many buttons see isn't possible so in reality should check script 
 <code>
+
 const $ = q => document.querySelector(q);
 const $a = q => document.querySelectorAll(q);
 
@@ -49,6 +50,7 @@ for (const box of boxes) {
 that is xor code with 0x62 aqnd can use python code or javascript with console.log and print flag
 this python code
 <pre>
+
 import ast
 
 # Encrypted string (from the JavaScript code)
