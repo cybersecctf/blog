@@ -1,2 +1,0 @@
-/home/solup/Desktop/blog/Ai
-/home/solup/Desktop/blog/2025/lactf/i-spy/writeup1.md

@@ -30,7 +30,7 @@ import requests
 import jwt
 
 # URL of the Flask app
-url = "https://i-spy.chall.lac.tf/" 
+
 
 # Secret key used for encoding/decoding tokens
 secret_key = "in page"
@@ -42,7 +42,7 @@ def decode_token(token):
         return decoded['value']
     except:
         return None
-def solve():
+def solve(url = "https://i-spy.chall.lac.tf/"):
  # Step 1: Get the HTML source code
  response = requests.get(url)
  print("HTML Source Code:", response.text)

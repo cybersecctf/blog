@@ -2,7 +2,7 @@ import requests
 import jwt
 
 # URL of the Flask app
-url = "https://i-spy.chall.lac.tf/" 
+
 
 # Secret key used for encoding/decoding tokens
 secret_key = "in page"
@@ -14,19 +14,38 @@ def decode_token(token):
         return decoded['value']
     except:
         return None
-def solve():
+def solve(url = "https://i-spy.chall.lac.tf/",val="",type="all"):
  # Step 1: Get the HTML source code
- response = requests.get(url)
- print("HTML Source Code:", response.text)
+ if type=="all" or type=="source" or val!="":
+  response = requests.get(url)
+  if val in response.text and val!="":
+    print(f"val found:{val}")
+    print("----------------")
+    print("HTML Source Code:", response.text)
+  if val=="":
+    print("HTML Source Code:", response.text)
 
  # Step 2: Get the JavaScript console logs (this requires a browser environment, not directly possible with requests)
 
  # Step 3: Get the stylesheet
- response = requests.get(f"{url}/styles.css")
- print("Stylesheet:", response.text)
+ if type=="all" or  "style" in type or val!="":
+  cssfile="styles.css"
+  if type!="style" and type!="all":
+     cssfile=type.replace("style ","")
+     
+  response = requests.get(f"{url}/{cssfile}")
+  print(f"css url{cssfile}")
+  print("Stylesheet:", response.text)
 
  # Step 4: Get the JavaScript code
- response = requests.get(f"{url}/thingy.jss")
+ if type=="all" or  "script" in type or val!="":
+  scriptfile=f"thingy.js"
+  if type!="script" and  type!="all":
+     scriptfile=type.replace("script ","")
+     
+  response = requests.get(f"{url}/{scriptfile}")
+  print("Stylesheet:", response.text)
+ response = requests.get(f"{url}/thingy.js")
  print("JavaScript Code:", response.text)
 
  # Step 5: Get the header
