@@ -298,3 +298,4 @@ crypto/RSAaaS lactf2025 rsa find p q print two 64bit prime easy crypto,https://c
 
 web/Ispy lactf2025  web inspect easy web,https://cybersecctf.github.io/blog/2025/lactf/i-spy/writeup1.md
 rev/javascryption lactf2025 reverse javascrypt base64 url encode  easy web,https://cybersecctf.github.io/blog/2025/lactf/javascryption/writeup1.md
+crypto/bige lactf2025 rsa attacks common modulus attack medium crypto,https://cybersecctf.github.io/blog/2025/lactf/bige/writeup1.md

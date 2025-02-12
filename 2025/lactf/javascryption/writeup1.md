@@ -5,7 +5,7 @@
 <html>
  
 <body>
-    <h1>ctfzone2024---rev/javascryption Writeup </h1>
+    <h1>lactf2025--rev/javascryption Writeup </h1>
 
     <h2>Challenge Description</h2>
     <p>  
