@@ -17,6 +17,8 @@ A website!
 
 
 <a href="https://i-spy.chall.lac.tf">run site ehre or download site and run it locally<a href="https://cybersecctf.github.io/blog/2025/lactf/i-spy/app/app.zip">click here</a></a>
+all source can run with flask from  <a href="https://cybersecctf.github.io/blog/2025/lactf/i-spy/app/app.zip">click app.zip</a> 
+
 </p>
 
     <h2>Solution Approach</h2>
