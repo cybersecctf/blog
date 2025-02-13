@@ -1,3 +1,0 @@
-type="hi" 
-if type=="all" and type=="hi":
- print("hi")
