@@ -1,3 +1,4 @@
+#test
 def unscramble_flag(target):
     # Length of the target
     target_len = len(target)
