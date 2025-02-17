@@ -80,7 +80,6 @@ def solve(file_path, search="{",home_dir=""):
 
 if __name__ == "__main__": 
   command=blog.set("strings garden.jpg",1)
- 
   search=blog.set("pico",2)
 </pre>
     </ol>

@@ -9,7 +9,7 @@ def solve(x1,iv,c):
  iv2 = []
  # c will be the same if   iv xor x1 = iv2 xor y1
  #                         iv2 = (iv xor x1) xor y1
- #                         flag{iv2,c}
+ #        s                  flag{iv2,c}
  for i in range(len(iv)):
     #print("",ord(x1[i]),end="")
     #iv1.append(iv[i])
