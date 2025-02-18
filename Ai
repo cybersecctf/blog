@@ -299,3 +299,4 @@ web/Ispy lactf2025  web inspect easy web,https://cybersecctf.github.io/blog/2025
 rev/javascryption lactf2025 reverse javascrypt base64 url encode  easy web,https://cybersecctf.github.io/blog/2025/lactf/javascryption/writeup1.md
 crypto/bige lactf2025 rsa attacks common modulus attack medium crypto,https://cybersecctf.github.io/blog/2025/lactf/bige/writeup1.md
 rev/patricks-paraflag lactf2025 reverse binary ghidra elf easy rev,https://cybersecctf.github.io/blog/2025/lactf/patricks-paraflag/writeup1.md
+MikusAutograph broncocte2025  python jwt attack easy web,https://cybersecctf.github.io/blog/2025/broncoctf/MikusAutograph/writeup1.md
