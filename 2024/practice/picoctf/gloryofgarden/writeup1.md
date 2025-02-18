@@ -24,6 +24,7 @@ import sys
 sys.path.append('/home/solup/Desktop/blog')  # This is an absolute path
 import blog
 def solve(file_path, search="{",home_dir=""):
+    print("s")
     if ">" in file_path or "<" in file_path or search=="$run":
          d=[]
          result = subprocess.run(file_path, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
@@ -45,6 +46,7 @@ def solve(file_path, search="{",home_dir=""):
     try:
         result = subprocess.run(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
         combined_output = result.stdout + result.stderr
+   
     except subprocess.TimeoutExpired:
         combined_output = "Command timed out after 15 seconds."
     except subprocess.CalledProcessError as e:
@@ -63,24 +65,22 @@ def solve(file_path, search="{",home_dir=""):
         if search in line:
             results.append(line)
     
-    # If no results found and the file exists, process the file content itself
-    file_content=""
-    if len(results) == 0 and os.path.isfile(file_path):
-        with open(file_path, 'r') as file:
-            file_content = file.read()
-    for line in file_content.splitlines():
-            if search in line:
-                results.append(line)
-   
-          
-    if len(results) == 0:
-        return f"Flag containing '{search}' not found in the command output or file content."
-    else:
-        return "\n".join(results)
+    print(results)
 
 if __name__ == "__main__": 
   command=blog.set("strings garden.jpg",1)
+ 
   search=blog.set("pico",2)
+  print("command",command,search)
+  print(solve(command,search))
+
+
+
+ 
+
+
+ 
+
 </pre>
     </ol>
 <br>

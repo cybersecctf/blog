@@ -7,8 +7,8 @@ import argparse
 import json
 
 islog = False
-py_file_path = ""
-
+py_file_path=""
+ 
 class Result:
     def __init__(self, md_url, py_url, score=0):
         self.md_url = md_url
@@ -24,7 +24,6 @@ class Result:
 
     def __str__(self):
         return f"URL: {self.md_url}, Score: {self.score}, Code: {self.code}"
-
 def loggui(term, web="", isheader=False):
     if islog:
         if isheader:
@@ -49,33 +48,30 @@ def loggui(term, web="", isheader=False):
         if not isheader:
             print(term)
 
+
 def log(message):
     if islog:
         print(message)
-
 def read_file(files):
-    if ".json" in files:
-        print("json")
-        with open(files, 'r') as file:
-            json_data = json.load(file)
-            return json_data
-    val = ""
-    with open(files, 'r') as file:
-        val = file.read()
-    return val
-
-def find_term_in_file(file_path, search_term, count=None):
+   if ".json" in files :
+     print("json")
+     with open(files, 'r') as file:
+       json_data = json.load(file)
+       return json_data
+   val=""
+   with open(files, 'r') as file:
+       val=file.read()
+   return val
+def find_term_in_file(file_path, search_term):
     with open(file_path, 'r') as file:
         lines = file.readlines()
-    results = []
     for line in lines:
         if search_term in line:
-            results.append(line.strip())
-            if count and len(results) >= count:
-                break
-    return results
+            return line.strip()
+    return None
 
 def extract_urls_from_line(line):
+   
     parts = line.split(',')
     md_url = parts[-1]
     py_url = md_url.replace('.md', '.py')
@@ -101,44 +97,41 @@ def run_function_from_module(module, func_name, *args):
         print(f"Error: {str(e)}")
         return None
 
-def solveup(term, *args, count=None):
+def solveup(term, *args):
     global py_file_path
-    loggui("", "", True)
-    bloglocaladdress = "/home/solup/Desktop/blog/"
+    loggui("","",True)
+    bloglocaladdress="/home/solup/Desktop/blog/"
     search_term = term
-    file_path = bloglocaladdress + "Ai"
-    lines = find_term_in_file(file_path, search_term, count)
+    file_path = bloglocaladdress+"Ai"
+    line = find_term_in_file(file_path, search_term)
     
-    if not lines:
+    if not line:
         log(f"Search term '{search_term}' not found in the file.")
         return None
     
-    results = []
-    for line in lines:
-        md_url, py_url = extract_urls_from_line(line)
-        loggui("", "")
-        module_name = os.path.basename(py_url).replace('.py', '')
-        py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', bloglocaladdress)
-        
-        print(f"Url: {md_url}")
-        print("-----------------------------------------------")
-        if not os.path.exists(py_file_path):
-            log(f"File not found: {py_file_path}")
-            continue
-        
-        module = import_function_from_file(module_name, py_file_path)
-        result = run_function_from_module(module, 'solve', *args)
-        log(f"Arguments: {args}")
-        if result is not None:
-            log(f"Function: solve")
-            log(f"Arguments: {args}")
-            log(f"Result: {result}")
-            log(f"Url: {md_url}")
-            results.append(md_url)
-        else:
-            log("Function returned None")
+    md_url, py_url = extract_urls_from_line(line)
+    loggui("","")
+    module_name = os.path.basename(py_url).replace('.py', '')
+    py_file_path = py_url.replace('https://cybersecctf.github.io/blog/', bloglocaladdress)
+   
+    print(f"Url: {md_url}")
+    print("-----------------------------------------------")
+    if not os.path.exists(py_file_path):
+        log(f"File not found: {py_file_path}")
+        return None
     
-    return results
+    module = import_function_from_file(module_name, py_file_path)
+    result = run_function_from_module(module, 'solve', *args)
+    log(f"Arguments: {args}")
+    if result is not None:
+        log(f"Function: solve")
+        log(f"Arguments: {args}")
+        log(f"Result: {result}")
+        log(f"Url: {md_url}")
+        return result
+    else:
+        log("Function returned None")
+        return None
 
 def detect_value_type(value):
     log(f"Detecting value type for: {value}")
@@ -181,13 +174,13 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
             return val
         if type == "auto":
             try:          
-                val = read_file(val)  
+              val=read_file(val)  
             except Exception as e:
                 log(f"this isn't file:{str(e)}")
             type = detect_value_type(val)
         if type == "file": 
-            val = read_file(val)  
-            return val
+          val=read_file(val)  
+          return val
         if type == "float":
             val = float(val)
         elif type == "int":
@@ -206,28 +199,25 @@ def set(val, i=1, type="auto", alert="usage argument -v"):
             print(alert)
     
     return val
-
-if __name__ == "__main__":
+if __name__ == "__main__" :
     islog = False
-    if len(sys.argv) == 1:
-        islog = True
+    if len(sys.argv)==1:
+     islog = True
     loggui("", "", True)
     
     parser = argparse.ArgumentParser(description="Python blog script")
     parser.add_argument('terms', nargs='+', help='Search terms')
     parser.add_argument('-v', nargs='*', help='Values for the solve function')
-    parser.add_argument('-c', type=int, help='Number of results to return')
     args = parser.parse_args()
 
     terms = args.terms
     values = args.v if args.v else []
-    count = args.c if args.c else None
 
     # Combine the terms into a single search term if needed
     search_term = " ".join(terms)
 
-    # Pass the search term, values, and count to solveup
-    results = solveup(search_term, *values, count=count)
-    if results:
-        for result in results:
-            print(result)
+    # Pass the search term and values to solveup
+    result = solveup(search_term, *values)
+    print(result)
+  
+  
