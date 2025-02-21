@@ -1,26 +1,3 @@
-<title>Scan Surprise- picoctf2024</title>
-
-<!DOCTYPE html>
-<html>
-
-<body>
-    <h1>Scan Surprise- picoctf2024</h1>
-
-    <h2>Challenge Description</h2>
-    <p> AUTHOR: JEFFERY JOHN
-
-Description
-I've gotten bored of handing out flags as text. Wouldn't it be cool if they were an image instead?
-You can download the challenge files here:
-<a href="https://artifacts.picoctf.net/c_atlas/1/challenge.zip">challenge.zip</a>
-Additional details will be available after launching your challenge instance.
-</p>
- 
-    <h2>Solution Approach</h2>
-    <p>Here are the steps we took to solve the challenge:</p>
-    <ol>
-      we can use this code and run for find qrcode text in zipfile
-<pre>
 #python
 from PIL import Image
 from pyzbar.pyzbar import decode
@@ -82,17 +59,3 @@ if __name__=="__main__":
  zip_file_path = blog.set("challenge.zip",1)
  stext = blog.set("pico")
  solve(zip_file_path,stext)
-</pre>
-    
-    </ol>
-<br>
-    <h2>Flag</h2>
-    <p class="flag">picoCTF{p33k_@_b00_3f7cf1ae}
-</p> 
-
-    <h2>Conclusion</h2>
-    <p>this is a very   easy chanllenge for work on develper tools in in chrome and web exploitations</p>
-</body>
-</html>
-
-
