@@ -6,7 +6,7 @@ import scp  # Install with: pip install scp
 host = "atlas.picoctf.net"
 port = 61691 
 username = "ctf-player"
-password = "f3b61b38"
+password = ""
 remote_file_path = "drop-in/flag.png"
 local_file_path = "./flag.png"  # Save locally
 

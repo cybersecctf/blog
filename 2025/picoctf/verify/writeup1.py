@@ -2,10 +2,10 @@ import paramiko
 import time
 
 # SSH Connection Details
-host = "atlas.picoctf.net"
-port = 61691   
+host = "rhea.picoctf.net"
+port = 63869   
 username = "ctf-player"
-password = "f3b61b38"
+password = "6abf4a82"
 
 # Connect to SSH
 client = paramiko.SSHClient()
