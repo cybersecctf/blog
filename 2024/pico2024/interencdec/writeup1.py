@@ -1,6 +1,7 @@
 #python
+ 
 import sys
-sys.path.append('/home/mrrobot/Desktop/blog')  # This is an absolute path
+ 
 import blog
 def caesar_decrypt(ciphertext, shift):
     plaintext = ""
@@ -21,9 +22,10 @@ def solve(ciphertext,searchtext,shift=-1):
  if shift ==-1:
   for shift in range(1, 33):
     plaintext = caesar_decrypt(ciphertext, shift)
+    print(plaintext)
     if searchtext in plaintext :
         print("Shift:", shift)
-        print("Decrypted result plaintext:", plaintext)
+        print(f"find {searchtext} in shift {shift} ", plaintext)
      
  else:
     plaintext = caesar_decrypt(ciphertext, shift)

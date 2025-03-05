@@ -25,6 +25,9 @@ $echo "d3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrX2xoNjBsMDBpfQ==" |base64 -d
 </p>
 <pre>
 #python
+ 
+import sys
+ 
 import blog
 def caesar_decrypt(ciphertext, shift):
     plaintext = ""
@@ -45,9 +48,10 @@ def solve(ciphertext,searchtext,shift=-1):
  if shift ==-1:
   for shift in range(1, 33):
     plaintext = caesar_decrypt(ciphertext, shift)
+    print(plaintext)
     if searchtext in plaintext :
         print("Shift:", shift)
-        print("Decrypted result plaintext:", plaintext)
+        print(f"find {searchtext} in shift {shift} ", plaintext)
      
  else:
     plaintext = caesar_decrypt(ciphertext, shift)
@@ -57,6 +61,7 @@ if __name__ == "__main__" :
     searchtext=blog.set("",2)
     shift=blog.set(-1,3)
     solve(ciphertext,searchtext,shift)
+ 
 </pre>
                    
     </ol>

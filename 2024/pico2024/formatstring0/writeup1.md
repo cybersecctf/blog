@@ -22,7 +22,7 @@ we use  this code we check c  code have format string volunerbility or no that s
        <pre>
 #python
 import re
-
+import blog
 def find_format_string_vulnerabilities(c_code):
     vulnerabilities = []
     # Regular expression pattern to match printf-like functions
@@ -32,25 +32,25 @@ def find_format_string_vulnerabilities(c_code):
         vulnerabilities.append(match.group(0))
     return vulnerabilities
 
-file_path="./format-string-0.c"
-def read_c_code_from_file(file_path):
+
+def solve(file_path):
     with open(file_path, 'r') as file:
         return file.read()
-
-# Specify the path to the C file
-c_file_path = 'format-string-0.c'
-
-# Read the C code from the file
-c_code = read_c_code_from_file(c_file_path)
-
-# Search for format string vulnerabilities
-vulnerabilities = find_format_string_vulnerabilities(c_code)
-if vulnerabilities:
-    print("Potential format string vulnerabilities found:")
-    for vulnerability in vulnerabilities:
+    # Specify the path to the C file
+    c_file_path = 'format-string-0.c'
+    # Read the C code from the file
+    c_code = read_c_code_from_file(c_file_path)
+    # Search for format string vulnerabilities
+    vulnerabilities = find_format_string_vulnerabilities(c_code)
+    if vulnerabilities:
+     print("Potential format string vulnerabilities found:")
+     for vulnerability in vulnerabilities:
         print(vulnerability)
-else:
-    print("No potential format string vulnerabilities found.")
+     else:
+        print("No potential format string vulnerabilities found.")
+if __name__=="__main__":
+ file_path=blog.set("./format-string-0.c",1,"str")
+ solve(file_path)
 </pre>
 but only can use three value and not values like %%% .
 so see inputs when see input see this two value Gr%114d_Cheese

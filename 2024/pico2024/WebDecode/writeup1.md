@@ -17,19 +17,7 @@ Start searching here to find the flag <a href="http://titan.picoctf.net:55220/">
     <ol>
 we going to about page 
 <pre>
-import base64
-import blog
-def solve(operation,a): 
- try:
-  if operation=="decode":
-    return base64.b64decode(a)
-  else:
-    return base64.b64encode(a)
- except Exception as e:
-  return f"not a base64 nymber {str(e)}"
-if __name__ == "__main__" :
-  a=blog.set("cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMWY4MzI2MTV9",1)
-  print(solve("decode",a)) 
+wpjvJAM{jhlzhy_k3jy9wa3k_i204hkj6}
 </pre>
        
     

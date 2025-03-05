@@ -1,0 +1,10 @@
+/home/solup/Desktop/blog/2024/pico2024/interencdec/writeup1.py
+/home/solup/Desktop/solup2/editor3.py
+/home/solup/Desktop/solup2/sol20241612.py
+/home/solup/Desktop/solup2/blog.py
+/home/solup/Desktop/solup2/test1.py
+/home/solup/Desktop/solup2/test2.py
+/home/solup/Desktop/solup2/test.py
+/home/solup/Desktop/solup2/notes.py
+/home/solup/Desktop/solup2/sol.py
+/home/solup/Desktop/blog/2025/lactf/extended/writeup1.md
