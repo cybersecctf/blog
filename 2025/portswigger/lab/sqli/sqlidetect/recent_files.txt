@@ -1,0 +1,2 @@
+/home/solup/Desktop/blog/2025/portswigger/lab/sqli/sqlidetect/writeup1.md
+/home/solup/Desktop/blog/2025/portswigger/lab/sqli/sqlidetect/writeup1.py

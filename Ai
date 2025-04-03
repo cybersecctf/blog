@@ -301,3 +301,4 @@ crypto/bige lactf2025 rsa attacks common modulus attack medium crypto,https://cy
 rev/patricks-paraflag lactf2025 reverse binary ghidra elf easy rev,https://cybersecctf.github.io/blog/2025/lactf/patricks-paraflag/writeup1.md
 MikusAutograph broncocte2025  python jwt attack easy web,https://cybersecctf.github.io/blog/2025/broncoctf/MikusAutograph/writeup1.md
 picoctf2024 verify session connect easy web,https://cybersecctf.github.io/blog/2025/picoctf/verify/writeup1.md
+endian picoctf encode decode endian easy crypto,https://cybersecctf.github.io/blog/2025/picoctf/endianness/writeup1.md
