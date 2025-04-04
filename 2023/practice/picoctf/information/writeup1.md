@@ -19,7 +19,19 @@ Files can always be changed in a secret way. Can you find the flag? link:cat.jpg
     <ol>
      in this challenge i use <pre> 
 $exiftool $1
-</pre>(if use in file)or <pre>$exiftool  cat.jpg </pre>  
+</pre>(if use in file)or <pre> 
+import shlex
+import os,subprocess
+def solve(file):
+ 
+ 
+ process = subprocess.run(f"exiftool {file}",
+                                    capture_output=True,
+                                    text=True,
+                                    timeout=10)
+ return process.stdout
+if __name__ == "__main__" :
+ solve("cat.jpg")</pre>  
 
 in       exiftool cat.jpg  license is 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'   that is like base64
 use with pytho code
